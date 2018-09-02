@@ -13,13 +13,13 @@ label E1D1S1:
     
     
     voice "audio/voice/E1/D1/S1/Train Announcer/1.ogg"
-    "Train Announcer" "Внимание passengers:"
+    "Диктор поезда" "Внимание пассажиры:"
 
     voice "audio/voice/E1/D1/S1/Train Announcer/2.ogg"
-    "Train Announcer" "We will be arriving at our destination shortly."
+    "Диктор поезда" "Мы скоро прибудем в пункт назначения."
 
     voice "audio/voice/E1/D1/S1/Train Announcer/3.ogg"
-    "Train Announcer" "Please ensure you have all your belongings prior to exiting."
+    "Диктор поезда" "Пожалуйста, убедитесь, что не забыли никаких вещей."
     pf "...{w}...{w}..."
     
     $renpy.pause(.5)
@@ -28,7 +28,7 @@ label E1D1S1:
     
     pf "?!"
     
-    "Something strikes my cheek! {w}I turn away from the window and see a small hand beside me."
+    "Что-то ударило меня по щеке! {w}Я отворачиваюсь от окна и вижу маленькую руку рядом со мной."
     
     play music "audio/music/Day Out (GAME VERSION).ogg" fadein 3
     #scene  bg travel train dusk with Dissolve(.1)
@@ -40,7 +40,7 @@ label E1D1S1:
     
     show nikki smi b1 at cc with dissolve
     
-    "Nikki." 
+    "Никки." 
     
     "I glance at her sleeping form. She was always a bit of a restless sleeper. I move her hand back to her side, not as gently as I could have done it. We're almost there; she may as well wake up."
 
@@ -172,7 +172,7 @@ label E1D1S1:
     $renpy.pause(1.5, hard=True)
     
     voice "audio/voice/E1/D1/S1/Train Announcer/4.ogg"
-    "Train Announcer" "We have arrived at Isokaze Station. Please stand clear of the doors."
+    "Диктор поезда" "Мы прибыли на станцию Исоказе. Пожалуйста, не прислоняйтесь к дверям."
     
     if (E1D1S1_nikkimad == 1) :
         "I can't help but feel a little bad."
