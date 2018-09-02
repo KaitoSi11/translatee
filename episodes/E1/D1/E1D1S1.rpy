@@ -13,7 +13,7 @@ label E1D1S1:
     
     
     voice "audio/voice/E1/D1/S1/Train Announcer/1.ogg"
-    "Train Announcer" "Attention passengers:"
+    "Train Announcer" "Внимание passengers:"
 
     voice "audio/voice/E1/D1/S1/Train Announcer/2.ogg"
     "Train Announcer" "We will be arriving at our destination shortly."
