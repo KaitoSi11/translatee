@@ -368,9 +368,9 @@ label start:
     scene bg title with Dissolve(2.0)
     $ config.rollback_enabled = True
     
-    "Welcome to {i}ACE Academy{/i}!"
+    "Добро пожаловать в {i}Академию ACE{/i}!"
     
-    "Let's get a few things set up for you..."
+    "Давайте настроим кое-что..."
     #label rollbackchoice:
     #    "{i}{b}Rollback Function{/b}{/i}{p}This feature allows you to scroll back and re-pick options within a certain period of time. {w}Configuration will not impact the story in any way... pick to your preference!"
     #    "Would you like to enable {i}{b}Rollback Function{/b}{/i}?"
@@ -419,7 +419,7 @@ label start:
                 jump naming
 
 
-    "Please select {color=#FFBF00}[pfirst]'s{/color} main characteristic:"
+    "Пожалуйста, выберите {color=#FFBF00}[pfirst]'s{/color} характеристику:"
 
     image athleticimage 1 = "i/Personalities/Athletic_idle.png"
     image intelimage 1 = "i/Personalities/Intelligent_idle.png"
@@ -459,7 +459,7 @@ label start:
     hide intelimage
     hide intuitiveimage
     with dissolve
-    "That's it.{w} Good luck at {i}ACE Academy{/i}!"
+    "Вот и всё.{w} Удачи вам в  {i}Академии ACE{/i}!"
 
     $ inv.add("defaultCore")
     $ inv.add("defaultFrame")
