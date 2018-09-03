@@ -42,7 +42,7 @@ label E1D1S1:
     
     "Никки." 
     
-    "I glance at her sleeping form. She was always a bit of a restless sleeper. I move her hand back to her side, not as gently as I could have done it. We're almost there; she may as well wake up."
+    "Я глянул на её спящую form. У неё всегда был немного беспокойный сон. Я отодвинул руку в её сторону, не так осторожно, как я мог бы это сделать. Мы очти прибыли; она могла также проснуться."
 
     play sound "audio/sfx/Human/Poke_1.ogg"
     $renpy.pause(.75)
