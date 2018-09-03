@@ -9,16 +9,16 @@ label E1D1S2:
     
     $ achievement.grant("welcome_to_isokaze")
     
-    "As we exit the train, I'm bombarded with a cacophony of noise. {w}A businessman walks briskly past, talking sternly on his phone, while a nearby mother tries in vain to soothe her screaming child. {w}A group of older women sneak quick glances at us and whisper amongst themselves. Every so often they burst into laughter."
+    "Как только мы вышли из поезда, на меня обрушилась какофония звуков. {w}Бизнесмен быстро проходит мимо, говоря по телефону строгим тоном, пока стоящая рядом мать тщетно старалась успокоить плачущего ребёнка. {w}Группа пожилых женщин украдкой бросает взгляды на нас и перешёптывается между собой. Они часто громко смеялись."
     
     play music "audio/music/Isokaze (GAME VERSION).ogg" fadein 3
     
     show nikki neu at cc with Dissolve(.75)
     
-    "Nikki eagerly steps off the train and breathes in the cool air."
+    "Никки с нетерпением выходит из поезда, вдыхая прохладный воздух."
        
     if (E1D1S1_nikkimad == 1) :
-            "Fortunately for me, she quickly reverts to her usual self."
+            "К счастью для меня, она быстро вернулась в своё обычное состояние."
     
     show nikki hap at cc
     show note:
@@ -27,36 +27,36 @@ label E1D1S2:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D1/S2/Nikki/1.ogg"
-    sf "Ah, that’s more like it!"
-    "She glances back at me and puts her hands on her hips."
+    sf "Ах, так-то лучше!"
+    "Она оглядывается на меня и кладет руки на бедра."
     show nikki neu at cc
     voice "audio/voice/E1/D1/S2/Nikki/2.ogg"
-    sf "Hurry up, slowpoke!"
+    sf "Поторопись, слоупок!"
     
     
     if (MCStory == 1):
-        "I carry both our luggage with ease and nimbly step onto the platform."
+        "Я легко беру наш багаж и выхожу на платформу."
     
     elif (MCStory != 1):
-        "Struggling with the weight of both of our luggage, I stumble off the train."
+        "Борясь с весом нашего башажа, я падаю, выходя из поезда."
         #SFX Luggage Slamming
         play sound "audio/sfx/Impacts/Luggage Drop.ogg"
         
-        "The suitcases fall ungracefully beside me onto the platform. It's a good thing there's nothing fragile in here. Offering to carry both of our bags no longer seems like such a good idea."
+        "Чемоданы бесцеремонно падают рядом со мной на платформу. Хорошо, что здесь нет ничего хрупкого. Предложение нести обе наши сумки уже не кажется такой хорошей идеей."
         
         show nikki smi at cc
         
-        pf "Great. {w}Fantastic. {w}Wonderful."
-        "I take a moment to stretch my burning limbs."
+        pf "Отлично. {w}Превосходно. {w}Просто замечательно."
+        "Я минутку передохнул, разминая горящие конечности."
         
-    pf "You see Uncle Kaito yet?"
+    pf "Ты уже видела дядю Кайто?"
     
     show nikki cur at cc
     voice "audio/voice/E1/D1/S2/Nikki/3.ogg"
-    sf "Umm, not yet. When were we supposed to meet him?"
-    pf "6:30-ish... {w}Looks like he's running a bit late. {w}Probably traffic."
+    sf "Эмм, ещё нет. Когда мы должны с ним встретиться?"
+    pf "В 6:30... {w}Похоже, он немного опаздывает. {w}Вероятно пробки."
     $renpy.pause(1)
-    "After a few minutes of scanning, a familiar face appears out of the crowd."
+    "После нескольких минут сканирования, из толпы появляется знакомое лицо."
     
     play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 3
     
@@ -70,11 +70,11 @@ label E1D1S2:
         yzoom .75
     show nikki sur at cc with dissolve
     voice "audio/voice/E1/D1/S2/Nikki/4.ogg"
-    sf "Uncle Kaito!"
+    sf "Дядя Кайто!"
     
     show kaito hap at r3
     
-    "His face splits in a wide grin."
+    "Его лицо расплылось в широкой ухмылке."
     voice "audio/voice/E1/D1/S2/Kaito/7.ogg"
     hk "{b}W~el~com~e   to   Ja~pan~!{/b}"
     
