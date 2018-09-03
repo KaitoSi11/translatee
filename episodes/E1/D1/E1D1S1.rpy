@@ -89,7 +89,7 @@ label E1D1S1:
             show nikki dis with dissolve
             voice "audio/voice/E1/D1/S1/Nikki/6.ogg"
             sf "Ты же шутишь, да? Я действительно храплю?"
-            pf "How can such a small person make such a {i}loud{/i} noise?"
+            pf "Как такая маленька девочка может извадать такой {i}громкий{/i} шум?"
             show nikki wor
             voice "audio/voice/E1/D1/S1/Nikki/7.ogg"
             sf "О Боже, Я больше никогда не смогу показать лицо на публике! Долгие поездки будут казаться ещё дольше, если я не смогу поспать! А что насчёт ночёвок? Как я вообще найду парня?"
