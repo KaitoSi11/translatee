@@ -435,19 +435,19 @@ label start:
 
     label CharacterBackstory:
         menu:
-            "Athletic":
+            "Сила":
                 $ MCStory = 1
                 hide intelimage
                 hide intuitiveimage
                 with dissolve
 
-            "Intelligent":
+            "Интеллект":
                 $ MCStory = 2
                 hide athleticimage
                 hide intuitiveimage
                 with dissolve
 
-            "Intuitive":
+            "Интуиция":
                 $ MCStory = 3
                 hide athleticimage
                 hide intelimage
