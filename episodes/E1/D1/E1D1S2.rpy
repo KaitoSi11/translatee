@@ -76,34 +76,34 @@ label E1D1S2:
     
     "Его лицо расплылось в широкой ухмылке."
     voice "audio/voice/E1/D1/S2/Kaito/7.ogg"
-    hk "{b}W~el~com~e   to   Ja~pan~!{/b}"
+    hk "{b}До~бро по~жа~ло~ва~ть в Я~по~ни~ю~~!{/b}"
     
     show nikki hap at cc
     
-    "Nikki giggles at Kaito's {i}English{/i}."
+    "Никки хихикает над {i}англисйким{/i} Кайто."
     voice "audio/voice/E1/D1/S2/Nikki/5.ogg"
-    sf "{b}He~llo!~ My name is Ni~kki~~{/b}"
+    sf "{b}При~вет!~ Меня зовут Ни~кки~~{/b}"
     
     show kaito smi at r3
     show nikki neu at cc
     with dissolve
     
     menu:
-        "Hey.":
-                pf "Hey, Uncle Kaito."
+        "Привет.":
+                pf "Привет, дядя Кайто."
                 
                 show kaito hap at r3
                 voice "audio/voice/E1/D1/S2/Kaito/1.ogg"
-                hk "How's my favourite nephew doing?"
-                pf "I'm your only nephew."
+                hk "Как поживает моя любимый племянник?"
+                pf "Я твой единственный племянник."
                 
                 show kaito mis at r3
                 voice "audio/voice/E1/D1/S2/Kaito/2.ogg"
-                hk "Still my favourite!"
+                hk "Все ещё любимый!"
                 
                 show nikki smi at cc
                 
-                "Nikki laughs."
+                "Никки смеётся."
     
         "Herro!":
             stop music fadeout .75
@@ -124,35 +124,35 @@ label E1D1S2:
                 xzoom .75
                 yzoom .75
             $renpy.pause(1)
-            "They both stare at me."
-            pf "...What?"
+            "Они оба смотрят на меня."
+            pf "...Что?"
             
             show kaito ske at r3
             show nikki dis at cc
             voice "audio/voice/E1/D1/S2/Nikki/6.ogg"
-            sf "You can't say that! That's offensive!"
-            pf "You two were just doing the same thing!"
+            sf "Ты не можешь говорить это! Это оскорбительно!"
+            pf "Вы двое только что делали тоже самое!"
             
             show kaito dis at r3
             voice "audio/voice/E1/D1/S2/Kaito/3.ogg"
-            hk "You have quite a bit to learn, kiddo."
+            hk "Тебе ещё нужно немного подучиться, пацан."
             
             show nikki thi at cc
             
-            "Nikki crosses her arms and nods in agreement. {w}What did I do wrong?!"
+            "Никки скрестила руки и кивнула в знак согласия. {w}Что я сделал не так?!"
             play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 3
                 
-        "Uncle Kaito speaks fluent English...":
-            pf "I spoke to you two hours ago... {w}You don't talk like that."
+        "Дядя Кайто свободно говорит по-английски...":
+            pf "Я разговаривал с тобой два часа назад... {w}Ты так не говорил."
             
             show kaito mis at r3
             
-            "Kaito shoots me an impish grin."
+            "Кайто смотрит на меня с проказливой усмешкой."
             voice "audio/voice/E1/D1/S2/Kaito/4.ogg"
-            hk "Darn, foiled again!"
+            hk "Чёрт, снова раскусили меня!"
     
-        "WTF?":
-            pf "Um, why are you two talking like that?"
+        "Какого хрена?":
+            pf "Эм, почему вы так говорите?"
             
             show kaito mis at r3
             show note:
@@ -161,8 +161,8 @@ label E1D1S2:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D1/S2/Kaito/5.ogg"
-            hk "{b}Wh~at do y~ou me~an?{/b}"
-            pf "Stop."
+            hk "{b}Ч~то ты име~ешь в ви~ду?{/b}"
+            pf "Прекратите."
             
             show nikki mis at cc
             show note:
@@ -171,13 +171,13 @@ label E1D1S2:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D1/S2/Nikki/7.ogg"
-            sf "{b}Sto~p what Oniiiiiiii-cha~nnnnn?{/b}"
-            pf "Seriously!"
+            sf "{b}Пре~кра~тить что, браа~аааааааа~тик?{/b}"
+            pf "Серьёзно!"
             
             show kaito hap at r3
             show nikki smi at cc
             
-            "Nikki and Kaito burst out laughing. {w}There's no way I'm actually related to these two."
+            "Никки и Кайто рассмеялись. {w}Не может быть, чтобы я был связмн с этими двумя."
     
     #SFX Stomach Grumble
     play sound "audio/sfx/Human/Stomach Grumble.ogg"
@@ -191,20 +191,20 @@ label E1D1S2:
         xzoom .75
         yzoom .75
     $renpy.pause(1)
-    "A loud grumble interrupts us."
+    "Громкое урчание прервало нас."
     
     show nikki sur b1 at cc with dissolve
     voice "audio/voice/E1/D1/S2/Nikki/8.ogg"
-    sf "Hehe... Sorry."
+    sf "Хехе... Извините."
     
     show kaito hap at r3
     
-    "Uncle Kaito roars with laughter."
+    "Дядя Кайто рычит, смеясь."
     
     show kaito smi at r3
     show nikki smi b1 at cc
     voice "audio/voice/E1/D1/S2/Kaito/6.ogg"
-    hk "Let's get some food in you."
+    hk "Пойдёмте накормим вас."
     
     stop ambient fadeout 3
     stop music fadeout 3
