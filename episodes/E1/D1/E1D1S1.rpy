@@ -75,7 +75,7 @@ label E1D1S1:
             pf Ой, извини. Не заметил тебя."
             voice "audio/voice/E1/D1/S1/Nikki/3.ogg"
             sf "Это было грубо!"
-        "О каком это ещё \"сне\" ты говоришь?":
+        "О каком это ещё \"сне\"\ ты говоришь?":
             pf "Я не смог поспать."
             show nikki cur
             voice "audio/voice/E1/D1/S1/Nikki/4.ogg"
