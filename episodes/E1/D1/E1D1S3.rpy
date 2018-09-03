@@ -5,7 +5,7 @@ label E1D1S3:
     
     $renpy.pause(1)
     voice "audio/voice/E1/D1/S3/Kaito/2.ogg"
-    hk "Welcome home!"
+    hk "Добро пожаловать домой!"
     
     play ambient "audio/ambience/Night Crickets.ogg" fadein 1
     scene white with fade
@@ -14,40 +14,40 @@ label E1D1S3:
     
     play music "audio/music/Hanging Out (GAME VERSION).ogg" fadein 1
     
-    "This place is the opposite of the cozy-yet-cramped apartment I expected. Instead, I feel like I've just walked into the cover of a home decor magazine."
+    "Это место отличается от уютной, но тесной квартиры, которую я ожидал. Вместо этого, я чувствую, что я только что вошел в обложку журнала домашнего декора."
     
     show kaito smi at r2 with dissolve:
         xzoom -1
     voice "audio/voice/E1/D1/S3/Kaito/3.ogg"
-    hk "You guys hungry? Dinner should be here soon."
+    hk "Вы голодны? Скоро должны привезти ужин."
     
     show nikki hap at l2 with dissolve
     voice "audio/voice/E1/D1/S3/Nikki/1.ogg"
-    sf "Sweet! What are we having?"
+    sf "Классно! Что у нас будет?"
     show kaito mis at r2
     voice "audio/voice/E1/D1/S3/Kaito/4.ogg"
-    hk "Well, I figured it’d be good to expose you to some {i}true{/i} Japanese cuisine!"
-    pf "Which is?"
+    hk "Ну, Я подумал, что было бы неплохо показать вам {i}настоящую{/i} японскую кухню!"
+    pf "Какую же?"
     show kaito hap at r2
     voice "audio/voice/E1/D1/S3/Kaito/5.ogg"
-    hk "Sushi, of course! 100\% bonafide {i}nigirizushi to makizushi{/i}!"
+    hk "Суши, конечно! 100\% настоящие {i}нигири суши и маки суши{/i}!"
     show kaito smi at r2
     
     $ E1D1S3_mcdoesntlikesushi = 0
     
     menu:
         "Sushi!":
-            pf "Great! I love sushi."
+            pf "Отлично, я люблю суши."
             
             show kaito hap at r2
             show nikki smi at l2
             
             "Kaito grins."
             voice "audio/voice/E1/D1/S3/Kaito/6.ogg"
-            hk "Your American sushi can't even begin to compare to the {i}authentic{/i} stuff."
+            hk "Ваши американские суши не могу даже начать сравниваться с подлинными вещами."
                
-        "Sounds good.":
-            pf "I could do with some cold, raw fish."
+        "Звучит неплохо.":
+            pf "Я не против сырой, холодной рыбы."
             
             show kaito smi at r2
             show nikki ske at l2
@@ -58,31 +58,31 @@ label E1D1S3:
                 yzoom .75
             $renpy.pause(1)
             voice "audio/voice/E1/D1/S3/Nikki/2.ogg"
-            sf "Somehow, when you say it, it doesn't sound so appetizing anymore..."
-            "Kaito lets out a hearty laugh."
+            sf "Теперь, когда ты так сказал, это звучит не так аппетитно..."
+            "Kaito выпустил сердечный смех."
     
-        "Damnit, I hate raw fish.":
+        "Черт, я ненавижу сырую рыбу.":
             $ E1D1S3_mcdoesntlikesushi = 1
-            pf "Sushi? Hmm..."
+            pf "Суши? Хммм..."
             
             show kaito mis at r2
             show nikki smi at l2
             
-            "Kaito winks at me."
+            "Кайто подмигивает мне."
             voice "audio/voice/E1/D1/S3/Kaito/7.ogg"
-            hk "Don’t worry, kiddo, not everything is sashimi. Trust me, you'll love it!"
-            "I'm still not convinced."
+            hk "Не волнуйся, паренёк, там не всё одно сашими. Поверь мне, тебе понравится!"
+            "Я все еще не убежден."
             
     show kaito smi at r2
     show nikki neu at l2
     
     voice "audio/voice/E1/D1/S3/Kaito/8.ogg"
-    hk "By the way, your things came in a few days ago. I put them in your rooms. Why don't you two go upstairs and start unpacking while I get dinner ready."
-    pf "Sounds good."
+    hk "Кстати, ваши вещи прибыли несколько дней назад. Я положил их в ваши комнаты. Почему бы вам не пойти наверх и начать их распаковывать, пока я готовлю обед."
+    pf "Звучит неплохо."
     
     show nikki smi at l2
     
-    "Nikki nods and we head upstairs together."  
+    "Никки кивнула, и мы вместе отправились наверх."  
     
     scene black with fade
     
@@ -97,18 +97,18 @@ label E1D1S3:
     
     $ kaiOut = "sCasual"
     
-    "The hallway upstairs is narrower than the one back home, but Kaito's house is not small. {w}Nikki heads into the first room on the right. {w}My room is right beside hers, and Kaito's is further down the hall."                                                     
+    "Коридор наверху уже, чем дома, но дом Кайто не маленький. {w}Никки направилась в первую комнату справа. {w}Моя комната находится рядом с ней, а комната Кайто дальше по коридору."                                                     
             
-    "Even with all of the boxes lying around, I'm surprised by how spacious my room is. It might even be larger than my dorm room at CINY."
+    "Даже с расставленными ящиками, я удивлен тем, насколько просторная моя комната. Она возможно даже больше, чем комната в общежитии в CINY."
     
-    "I head over to the wall and sit on the edge of my bed. Thank goodness Kaito had the beds made before we arrived. {w}I don't even remember which box holds my linens. {w}Maybe it's this one?"
+    "Я направился к стене и сел на край кровати. Слава богу, Кайто поставил кровати прежде чем мы приехали. {w}Я даже не помню в какой коробке моё бельё. {w}Возможно, в этой?"
     
-    "I pull the nearest box towards me and rip open the top. Just clothes in here. May as well start putting some of this away, though."
+    "Я притянул ближайшую коробку и открыл её. Там просто одежда. Может начать из неёё выкладвать."
     
-    "I've just emptied the box when Kaito's voice echoes from downstairs."
+    "Я только что разобрал вещи из коробки, когда голос Кайто донёсся снизу."
             
     voice "audio/voice/E1/D1/S3/Kaito/9.ogg"
-    hk "{b}HEY GUYS! FOOD’S HERE!{/b}"
+    hk "{b}ЭЙ, РЕБЯТА! ЕДА ПРИЕХАЛА!{/b}"
     
     scene black with fade
     #The Alpha build does a cool "persona-y" sliding transition of this, but for now we'll just fade
@@ -129,14 +129,14 @@ label E1D1S3:
         yzoom .75
     $renpy.pause(1)
     voice "audio/voice/E1/D1/S3/Nikki/3.ogg"
-    sf "Ugh, I'm stuffed..."
+    sf "Ух, я наелась..."
     
     show nikki neu at l2
     
     menu:
-        "OM NOM NOM!":
+        "ОМ НОМ НОМ!":
             if (E1D1S3_mcdoesntlikesushi == 0):
-                "I eagerly reach for more even after both Nikki and Kaito have put down their chopsticks."
+                "Я жадно тянусь ещё за едой, даже после того, как Никки и Кайто кладут свои палочки для еды."
                 
                 show kaito cur at r2
                 show exclamation:
@@ -145,29 +145,29 @@ label E1D1S3:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D1/S3/Kaito/10.ogg"
-                hk "You weren't kidding about liking sushi..."
+                hk "Ты не шутил, когда говорил, что любишь суши..."
                 
                 show nikki hap at l2
                 voice "audio/voice/E1/D1/S3/Nikki/4.ogg"
-                sf "You should see him at an all-you-can-eat buffet! It’s like watching a vacuum cleaner, if vacuum cleaners could eat."
-                "I  finish the last piece and heave a satisfied sigh."
+                sf "Вы бы видели его в буфете «все, что вы можете есть»! Это как смотреть на пылесос, если бы пылесосы могли есть."
+                "Я съедаю последний кусочек и довольно вздыхаю."
                 
                 show kaito smi at r2
                 voice "audio/voice/E1/D1/S3/Kaito/11.ogg"
-                hk "So, what’s the verdict on {i}authentic{/i} sushi?"
-                pf "Hmm... not bad."
+                hk "Ну, какой вердикт вынесешь {i}настоящим{/i} суши?"
+                pf "Хмм... Неплохо."
                 
                 show nikki mis at l2
                 voice "audio/voice/E1/D1/S3/Nikki/5.ogg"
-                sf "\"Not bad\" he says with a mouth full of sushi and rice all over his face!"
+                sf "\"Неплохо\" говорит он с полным ртом суши и рисом на лице!"
                 
                 show kaito hap at r2
                 show nikki smi at l2
                 
-                "Nikki and Kaito seem amused as I brush away the rice on my face."
+                "Никки и Кайто кажутся удивленными, когда я убираю рис с лица."
                          
             else:
-                "I eagerly reach for more even after both Nikki and Kaito have put down their chopsticks."
+                "Я жадно тянусь ещё за едой, даже после того, как Никки и Кайто кладут свои палочки для еды."
                 
                 show kaito ske at r2
                 show question:
@@ -176,7 +176,7 @@ label E1D1S3:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D1/S3/Kaito/12.ogg"
-                hk "Are you sure you don’t like sushi?"
+                hk "Ты уверен, что не любишь суши?"
                 
                 show nikki sur at l2
                 show shocked:
@@ -185,37 +185,37 @@ label E1D1S3:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D1/S3/Nikki/6.ogg"
-                sf "Wow. He’s really wolfing it down!"
-                "I finish the last piece and stifle a burp."
+                sf "Вау, он действительно всё съел!"
+                "Я съедаю последний кусочек и подавляю отрыжку."
                 
                 show kaito cur at r2
                 voice "audio/voice/E1/D1/S3/Kaito/13.ogg"
-                hk "So, what'd you think?"
-                pf "It's okay."
+                hk "Ну, Что думаешь?"
+                pf "Нормально."
                 
                 show kaito mis at r2
                 
-                "Kaito sees right through my attempt to play it cool and smiles in triumph."
+                "Kaito видит прямо через мою попытку играть в крутого, и улыбается в триумфе."
                 
-        "I'm feeling full too...":
+        "Я тоже наелся...":
             pf "Ditto."
             
             show kaito hap at r2
             
-            "Kaito eats the last piece of sushi and washes it down with some green tea."
+            "Kaito ест последний кусок суши и омывает его зеленым чаем."
             show note:
                 xoffset 1040
                 yoffset 5
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D1/S3/Kaito/14.ogg"
-            hk "Ahhh, that hit the spot!"
+            hk "Аахх, прямо в точку!"
     
     show kaito smi at r2
     show nikki neu at l2
     with dissolve
     
-    "Kaito leans back in his chair, resting his hands behind his head."
+    "Кайто откидывается на спинку стула, положив руки за голову."
     voice "audio/voice/E1/D1/S3/Kaito/15.ogg"
     hk "So, what was CINY like?"
     
