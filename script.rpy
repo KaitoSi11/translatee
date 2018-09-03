@@ -19,33 +19,33 @@ init python:
     sfull = sfirst+" "+plast
     sf = DynamicCharacter("sfull", color="#FFD633")
 
-    ym = Character("Yuuna Misaki", color="#58D3F7")
+    ym = Character("Юна Мисаки", color="#58D3F7")
     
-    ki = Character("Kaori Itami", color="#FA5858")
+    ki = Character("Каори Итами", color="#FA5858")
     
     ss = Character("Shou Shinjirou", color="#01DF3A")
     
-    ma = Character("Mayu Akemi", color="#00FFBF")
+    ma = Character("Маю Акеми", color="#00FFBF")
     
-    hk = Character("Kaito Hikari", color="#FF8000")
+    hk = Character("Кайто Хикари", color="#FF8000")
     
-    hy = Character("Yuki Hikari")
+    hy = Character("Юки Хикари")
     
-    am = Character("Akira Masato", color="#CCCCCC")
+    am = Character("Акира Масато", color="#CCCCCC")
     
-    vb = Character("Valerie Belle", color="#FFFF00")
+    vb = Character("Валерия Бель", color="#FFFF00")
     
-    ms = Character("Mei Satomi", color="#835930")
+    ms = Character("Мэй Сатоми", color="#835930")
     
     GEARpf = Character("Eagle", color="#4D94FF")
     
-    mv = Character("Uncle Miguel")
+    mv = Character("Дядя Мигель")
     
-    ky = Character("Ken \"Yen\" Kokan")
+    ky = Character("Кен \"Йен\" Кокан")
     
-    acc = Character("Yuri Aliyev")
+    acc = Character("Брий Алиев")
     
-    don = Character("Donnie Roos")
+    don = Character("Донни Рус")
     
     dfirst = "James"
     dfull = dfirst+" "+plast
@@ -54,53 +54,53 @@ init python:
     e = Character("Eileen")
     
     
-    aks = Character("Akio Shinjirou")
-    kt = Character("Ken Takeo")
-    tk = Character("Tatsuo Kimura")
-    gua = Character("Guard")
-    an = Character("Announcer")
-    eng1 = Character("Engineer")
-    eng1m = Character("Male Engineer")
+    aks = Character("Акио Синдзиро")
+    kt = Character("Кен Такео")
+    tk = Character("Тацуо Кимура")
+    gua = Character("Стражник")
+    an = Character("Диктор")
+    eng1 = Character("Инженер")
+    eng1m = Character("Инженер мужчина")
     fk = Character("Arcade Gosu")
     rn = Character("Tech Gosu")
-    dr = Character("Driver")
-    iceman = Character("Ice Cream Man")
+    dr = Character("Водитель")
+    iceman = Character("Мороженщик")
     ez = Character("Ex Zee")
-    rec1 = Character("Dorm Receptionist")
-    dormf1 = Character("Female ACE Student")
-    hito = Character("Hitomi")
-    wait = Character("Waiter")
-    oldman = Character("Old Man")
-    alm = Character("Aludian Rep")
+    rec1 = Character("Регистратор общежития")
+    dormf1 = Character("Студентка ACE")
+    hito = Character("Хитоми")
+    wait = Character("Официант")
+    oldman = Character("Старик")
+    alm = Character("Алудийский конгрессмен")
     
     rc1m = Character("Male Administrator")
     rc2f = Character("Female Receptionist")
     rc3f = Character("Female Receptionist")
     
-    profm = Character("Professor - Piloting 101")
-    prof1m = Character("Professor - GEAR Arsenal 201")
-    prof2f = Character("Professor - GEAR History 201")
-    prof3f = Character("Professor - International Bridging")
-    prof4m = Character("Professor - Physical Education")
-    sprof1 = Character("Club Host")
+    profm = Character("Профессор - Piloting 101")
+    prof1m = Character("Профессор - Арсенал GEAR 201")
+    prof2f = Character("Профессор - История GEAR 201")
+    prof3f = Character("Профессор - International Bridging")
+    prof4m = Character("Профессор - Physical Education")
+    sprof1 = Character("Владелец клуба")
     
-    mec1m = Character("Male Mechanic")
-    mech1 = Character("Mechanic")
-    photo1 = Character("Photographer")
-    aeng = Character("Aludian Engineer")
+    mec1m = Character("Мужчина механик")
+    mech1 = Character("Механик")
+    photo1 = Character("Фотограф")
+    aeng = Character("Алудийский инженер")
     
-    pres1m = Character("Mr. Takeda")
+    pres1m = Character("Мистер Такеда")
     
-    stu1f = Character("Female Student")
-    stu3f = Character("Female Student")
-    stu4f = Character("Female Student")
-    stu9f = Character("Female Student")
+    stu1f = Character("Студентка")
+    stu3f = Character("Студентка")
+    stu4f = Character("Студентка")
+    stu9f = Character("Студентка")
     
-    stu2m = Character("Male Student")
-    stu5m = Character("Male Student")
-    stu6m = Character("Male Student")
-    stu7m = Character("Male Student")
-    stu8m = Character("Male Student")
+    stu2m = Character("Студент")
+    stu5m = Character("Студент")
+    stu6m = Character("Студент")
+    stu7m = Character("Студент")
+    stu8m = Character("Студент")
     
     fbro1 = Character("Frat Bro")
     fbro2 = Character("Frat Bro")
@@ -110,58 +110,58 @@ init python:
     fbra1f = Character("Frat Bra")
     fbra2f = Character("Frat Bra")
     
-    hstu1f = Character("Female High School Student")
-    hstu2m = Character("Male High School Student")
-    hstu3f = Character("Female High School Student")
+    hstu1f = Character("Старшеклассница")
+    hstu2m = Character("Старшеклассник")
+    hstu3f = Character("Старшеклассница")
     
-    barm = Character("Male Bartender")
+    barm = Character("Мужчина бармен")
     
     Bully1 = Character("Goon")
     Bully2 = Character("Goon")
     
     dass1 = Character("Dasshu Coordinator")
     
-    bh = Character("Bill Hang")
-    tj = Character("Simone Cuwell")
+    bh = Character("Билл Хэнг")
+    tj = Character("Саймон Квелл")
     
     sl  = Character("SLASHER")
-    mk  = Character("Mitsuki Oshiro")
+    mk  = Character("Мицуки Оширо")
     
-    hotm1  = Character("Attractive Male 1")
-    hotm2  = Character("Attractive Male 2")
-    hotm3  = Character("Attractive Male 3")
-    hotm4  = Character("Attractive Male 4")
-    hotm4  = Character("Attractive Male 4")
-    girl1 = Character("Fan Girl 1")
-    girl2 = Character("Fan Girl 2")
+    hotm1  = Character("Привлекательный мужчина 1")
+    hotm2  = Character("Привлекательный мужчина 2")
+    hotm3  = Character("Привлекательный мужчина 3")
+    hotm4  = Character("Привлекательный мужчина 4")
+    hotm4  = Character("Привлекательный мужчина 4")
+    girl1 = Character("Фанатка 1")
+    girl2 = Character("Фанатка 2")
     team1m = Character("Teammate")
     
-    ip  = Character("Ivan Poddubny")
+    ip  = Character("Иван Поддубный")
     
-    flirtyg1 = Character("Attractive Female 1")
-    flirtyg2 = Character("Attractive Female 2")
+    flirtyg1 = Character("Привлекательная женщина 1")
+    flirtyg2 = Character("Привлекательная женщина 2")
     
     tc = Character("Tennis Captain Ryoma Echizan")
-    ei = Character("Eito Iwasa")
+    ei = Character("Эйто Иваса")
     
     dk = Character("Dishu Khan")
-    ama = Character("AmaLee")
+    ama = Character("АмаЛи")
     recep = Character("Receptionist")
     
-    cafec1 = Character("Cafe Customer 1")
-    cafec2 = Character("Cafe Customer 2")
+    cafec1 = Character("Посетитель 1")
+    cafec2 = Character("Посетитель 2")
     
-    hstuf1 = Character("Nikki's Bestie 1")
+    hstuf1 = Character("Подруга Никки 1")
     
-    hstuf3 = Character("Nikki's Bestie 2")
+    hstuf3 = Character("Подруга Никки 2")
     
-    hstu1f = Character("Nikki's Bestie 1")
+    hstu1f = Character("Подруга Никки 1")
     
-    hstu3f = Character("Nikki's Bestie 2")
+    hstu3f = Character("Подруга Никки 2")
     
-    creep = Character("\"That\" Guy")
+    creep = Character("\"Этот\" парень")
     
-    vg = Character("Vendor")
+    vg = Character("Продавец")
     
     GuestM = Character("Panel Audience")
     
