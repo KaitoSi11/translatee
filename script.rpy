@@ -386,21 +386,21 @@ label start:
 
 
     label naming:
-        $ pfirst = renpy.input("Enter male MCs first name:")
+        $ pfirst = renpy.input("Введите имя персонажа:")
         $ pfirst = pfirst.strip()
         if pfirst == "":
             $ pfirst = "Tristan"
 
-        $ plast = renpy.input("Enter male MCs last name:")
+        $ plast = renpy.input("Введите фамилию персонажа:")
         $ plast = plast.strip()
         if plast == "":
             $ plast = "Spade"
 
-        "Proceed as {color=#FFBF00}[pfirst] [plast]{/color}?"
+        "Продолжить как {color=#FFBF00}[pfirst] [plast]{/color}?"
 
 
         menu:
-            "Yes":
+            "Да.":
                 #$ pfull = "[pfirst] [plast]"
                 $ pfull = pfirst+" "+plast
                 $ pf = DynamicCharacter("pfull", color="#FFBF00")
@@ -415,7 +415,7 @@ label start:
                 
                 #$ pfull = pfirst+" "+plast
                 #$ sfull = sfirst+" "+plast
-            "Rename":
+            "Нет, я передумал":
                 jump naming
 
 
