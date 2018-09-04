@@ -44,7 +44,7 @@ label E1D1S3:
             
             "Kaito grins."
             voice "audio/voice/E1/D1/S3/Kaito/6.ogg"
-            hk "Ваши американские суши не могу даже начать сравниваться с подлинными вещами."
+            hk "Ваши американские суши не могу даже начать сравниваться с нашими настоящими."
                
         "Звучит неплохо.":
             pf "Я не против сырой, холодной рыбы."
@@ -59,7 +59,7 @@ label E1D1S3:
             $renpy.pause(1)
             voice "audio/voice/E1/D1/S3/Nikki/2.ogg"
             sf "Теперь, когда ты так сказал, это звучит не так аппетитно..."
-            "Kaito выпустил сердечный смех."
+            "Кайто выпустил сердечный смех."
     
         "Черт, я ненавижу сырую рыбу.":
             $ E1D1S3_mcdoesntlikesushi = 1
@@ -112,7 +112,7 @@ label E1D1S3:
     
     scene black with fade
     #The Alpha build does a cool "persona-y" sliding transition of this, but for now we'll just fade
-    "—After Dinner—"
+    "—После ужина—"
     
     
     #BG Uncle Kaitos Home
@@ -136,7 +136,7 @@ label E1D1S3:
     menu:
         "ОМ НОМ НОМ!":
             if (E1D1S3_mcdoesntlikesushi == 0):
-                "Я жадно тянусь ещё за едой, даже после того, как Никки и Кайто кладут свои палочки для еды."
+                "Я жадно тянусь за добавкой, даже после того, как Никки и Кайто кладут свои палочки для еды."
                 
                 show kaito cur at r2
                 show exclamation:
@@ -167,7 +167,7 @@ label E1D1S3:
                 "Никки и Кайто кажутся удивленными, когда я убираю рис с лица."
                          
             else:
-                "Я жадно тянусь ещё за едой, даже после того, как Никки и Кайто кладут свои палочки для еды."
+                "Я жадно тянусь за добавкой, даже после того, как Никки и Кайто кладут свои палочки для еды."
                 
                 show kaito ske at r2
                 show question:
@@ -195,10 +195,10 @@ label E1D1S3:
                 
                 show kaito mis at r2
                 
-                "Kaito видит прямо через мою попытку играть в крутого, и улыбается в триумфе."
+                "Кайто видит прямо через мою попытку играть в крутого, и улыбается в триумфе."
                 
         "Я тоже наелся...":
-            pf "Ditto."
+            pf "То же самое."
             
             show kaito hap at r2
             
@@ -217,54 +217,54 @@ label E1D1S3:
     
     "Кайто откидывается на спинку стула, положив руки за голову."
     voice "audio/voice/E1/D1/S3/Kaito/15.ogg"
-    hk "So, what was CINY like?"
+    hk "Ну, what was CINY like?"
     
-    pf "The usual. Exams, a messy dorm room, a part-time job."
+    pf "Как обычно. Жкзамены, грязная комната общежития, подработка."
     
     show nikki hap at l2
     voice "audio/voice/E1/D1/S3/Nikki/7.ogg"
-    sf "And you still managed to save enough money to buy yourself a bike."
+    sf "И ты все же смог накопить денег на покупку мотоцикла(велосипеда?)."
     
-    pf "True. I could have bought it sooner if maintaining a GEAR wasn't such a money sink."
+    pf "Точно. Я мог бы купить его раньше, если бы обслуживание GEAR не было таким затратным."
     
     show kaito cur at r2
     show nikki neu at l2
     voice "audio/voice/E1/D1/S3/Kaito/16.ogg"
-    hk "Oh, you're still using your original GEAR?"
+    hk "Ох, Ты все ещё используешь свой старый GEAR?"
     
-    pf "Yup."
+    pf "Да."
     
     show kaito ske at r2
     voice "audio/voice/E1/D1/S3/Kaito/17.ogg"
-    hk "Is it giving you trouble? You should probably replace it if it needs that many fixes."
+    hk "Это не доставляет тебе проблем? Ты должен заменить его."
     
-    "Everyone says that, but when I think about all the time I spent with Dad… {w}I'm not ready to put those memories aside, especially now that they can never be replaced. {w}Besides, Dad was great at what he did. I know there's still plenty of fight left in that mech."
+    "Все это говорят, но когда я думаю о времени, проведенное с отцом… {w}Я не готов откинуть эти воспоминания, особенно сейчас, когда они никогда не могут быть заменены. {w}К тому же, отец был хорош в том, что делал. Я знаю, что ещё остался порох в пороховницах этого меха."
             
-    pf "I guess, but Dad and I worked on it together. A lot of blood, sweat, and tears went into it and I'm not quite ready to give up on all of that hard work."
+    pf "Полагаю, но мы с отцом работали над ним вместе. Много крови, пота и слез ушло на это, и я не совсем готов отказаться от всей этой тяжелой работы."
     
     show kaito neu at r2
     show nikki hap at l2
     voice "audio/voice/E1/D1/S3/Nikki/8.ogg"
-    sf "It's true. Especially that one time when butterfingers here dropped the torch. Remember that? There was {i}a lot{/i} of blood--"
+    sf "Так и есть. Особенно тогда, когда этот растяпа уронил свечу. Помнишь? Тогда было {i}много{/i} крови--"
     
-    pf "{b}Nikki!{/b}"
+    pf "{b}Никки!{/b}"
     
     show nikki smi at l2
     
-    "She smiles sweetly at me."
+    "Она мило улыбнулась мне."
     
     show nikki mis at l2
     voice "audio/voice/E1/D1/S3/Nikki/9.ogg"
-    sf "What? I'm just backing you up, big bro."
+    sf "Что? Я просто поддерживаю тебя, братец."
     
     show kaito hap at r2
     
-    "Uncle Kaito laughs."
+    "Дядя Кайто смеется."
     
     show kaito smi at r2
     show nikki neu at l2
     voice "audio/voice/E1/D1/S3/Kaito/18.ogg"
-    hk "I understand. It should be arriving at the academy any day now. All you'll have to do is present the proper ID to claim it."
+    hk "Понимаю. Он должен прибыть в академию в любой день. Все, что тебе нужно сделать, это указать правильный ID, чтобы забрать его."
     
     show kaito sur at r2
     show exclamation:
@@ -273,32 +273,32 @@ label E1D1S3:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D1/S3/Kaito/19.ogg"
-    hk "Oh yeah, that reminds me..."
+    hk "О, точно, это напомнило мне..."
     
-    "Uncle Kaito jumps to his feet and grabs something off a nearby table. {w}He returns with a packet of papers, which he hands to Nikki."
+    "Дядя кайто вскочил на ноги, и взял что-то с соседнего стола. {w}Он вернулся с пачкой бумаг, и передал их Никки."
     
     show kaito neu at r2
     voice "audio/voice/E1/D1/S3/Kaito/20.ogg"
-    hk "Here are your transfer papers. They're already filled out and all the docs you need are in there. All you have to do is hand this to the headmaster first thing tomorrow morning."
+    hk "Вот твои бумаги о переводе. Там находятся все необходимые бумаги. Они уже заполнены. Все, что тебе осталось сделать, это первым делом передать их директору завтра утром."
     
     show nikki hap at l2
     voice "audio/voice/E1/D1/S3/Nikki/10.ogg"
-    sf "Okay! Thanks, Uncle."
+    sf "Хорошо! Спасибо, дядя."
     
     show kaito smi at r2
     voice "audio/voice/E1/D1/S3/Kaito/21.ogg"
-    hk "Here."
+    hk "Вот."
     
-    "He hands each of us a SIM card."
+    "Он даёт каждому из нас SIM карту."
     voice "audio/voice/E1/D1/S3/Kaito/22.ogg"
-    hk "Put these SIM cards into your phones. I've already added credit to them to start you off."
+    hk "Вставьте эти SIM карты в ваши телефоны. Я уже положил на них деньги, чтобы они заработали."
     
     show kaito neu at r2
     show nikki smi at l2
     
-    "Kaito looks over at me."
+    "Кайто посмотрел на меня."
     voice "audio/voice/E1/D1/S3/Kaito/23.ogg"
-    hk "And you took care of your transfer stuff?"
+    hk "А ты позаботился о бумагао о переводе?"
     
     show bg homekaito main night:
         linear .30 yoffset -50
@@ -319,34 +319,34 @@ label E1D1S3:
         linear .30 yoffset 0
     
     
-    "I nod."
+    "Я кивнул."
     
     show kaito smi at r2
     voice "audio/voice/E1/D1/S3/Kaito/24.ogg"
-    hk "Great."
+    hk "Отлично."
     
-    "I pop the new SIM card into my phone."
+    "Я вставил новую SIM в свой телефон."
 
-    "After a moment of waiting, the phone boots up to an empty contacts list. I quickly exchange numbers with Nikki and Uncle Kaito. I can add the rest of my old contacts later."
+    "Немного подождав, телефон включается, показывая пустой лист контактов. Я бысто обменялся телефонами с Никки и дядей Кайто. Старые контакты я могу добавить позже."
     voice "audio/voice/E1/D1/S3/Kaito/25.ogg"
-    hk "Don't hesitate to call me if you need anything."
+    hk "Не стесняйтесь звонить мне, если вам что-нибудь понадобится."
     
-    pf "We won't."
+    pf "Не будем."
     
     show nikki neu at l2 with dissolve
     $renpy.pause(1)
     
-    "The conversation lulls into a silence."
+    ""njn hfpujdjh e,f.rbdftn."
     
-    pf "Hey, Nikki, we should probably unpack a bit before the jet lag takes over."
+    pf "Эй, Никки, мы определённо дожны распаковать вещи пока пока не наступил джетлаг(П.п. Джетлаг -  синдром смены часового пояса, десинхрония/десинхроноз)."
     
     show nikki smi at l2
     voice "audio/voice/E1/D1/S3/Nikki/11.ogg"
-    sf "Good idea."
+    sf "Хорошая идея."
     voice "audio/voice/E1/D1/S3/Kaito/1.ogg"
-    hk "Alright. Don't stay up too late, though. You both have a long day ahead of you tomorrow."
+    hk "Хорошо. До поздна не засиживайтесь. У вас завтра впереди длинный день."
     
-    "We excuse ourselves from the table and head upstairs."
+    "Мы встали из-за стола и направились наверх."
     
     scene black with fade
     
