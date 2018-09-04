@@ -77,42 +77,42 @@ label E1D1S4:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D1/S4/Nikki/6.ogg"
-    sf "Oh, I almost forgot! What kind of uniform do you have to wear anyway? I mean, mine’s... normal, but you’re going to ACE Academy."
+    sf "Ох, я почти забыла! Какую форму ты должен носить? Я имею в виду, что моя... обычная, но ты же идёшь в академию ACE."
     
-    "I shrug."
+    "Я пожал плечами."
     
-    pf "The dress code says something about distinguishing the students in the pilot program from the rest of the student body. The pilots wear teal markings to indicate their program." 
+    pf "Форма говорит о том, что ты обычный студент или в программе пилотов. У пилотов на одежде тиановая маркировка." 
     
     show nikki cur at cc
     voice "audio/voice/E1/D1/S4/Nikki/7.ogg"
-    sf "Ooh, that sounds good. You transferred directly into their pilot program, right?"
+    sf "Ооо, звучит неплохо. Ты перевёлся прямо в программу пилотов, да?"
     
-    pf "Yup." 
+    pf "Да." 
     
     show nikki hap at cc
     voice "audio/voice/E1/D1/S4/Nikki/8.ogg"
-    sf "I heard that program is hard to get into, but I never doubted you! I hope they're ready for you because you're going to kick butt!"
+    sf "Я слышала к ним сложно попать, но я в тебе не сомневалась! Я надеюсь они готовы, ведь ты надёрешь им зад!"
     
-    pf "Thanks, sis."
+    pf "Спасибо, сестрёнка."
     
-    "The clock on my nightstand flashes 11:00 PM."
+    "Часы на тумбочке показали 11:00 PM."
     
-    pf "I think it's time to go to bed."
+    pf "Думаю, пора спать."
     
     show nikki wor at cc
     voice "audio/voice/E1/D1/S4/Nikki/9.ogg"
-    sf "What? Already?"
+    sf "Что? Уже?"
     
-    "I gently herd her out of my room."
+    "Я нежно вытолкнул её из комнаты."
     show crying:
         xoffset 720
         yoffset 160
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D1/S4/Nikki/10.ogg"
-    sf "But it's not {i}that{/i} late!"
+    sf "Но ещё не {i}настолько{/i} поздно!"
     
-    pf "Come on. You don't want to be falling asleep in class now, do you?"
+    pf "Да ладно. Ты же не хочешь потом уснуть в классе?"
     
     show nikki sad at cc
     show storm:
@@ -120,18 +120,18 @@ label E1D1S4:
         yoffset 160
         xzoom .75
         yzoom .75
-    "She pouts, and I'm worried she'll continue to argue, but she just mumbles something incoherent and turns towards her room."
+    "Она вздыхает, и я волнуюсь, что она продолжит спорить, но она просто бормочет что-то бессвязное и направляется в свою комнату."
     
-    pf "Good night."
+    pf "Спокойной ночи."
     
     show nikki smi at cc
     voice "audio/voice/E1/D1/S4/Nikki/11.ogg"
-    sf "Night."
+    sf "Спокойной."
     
     hide nikki with dissolve
     play sound "audio/sfx/Impacts/Box Shuffling.ogg" fadein 5 fadeout 5
     
-    "I return to my mess of boxes and try to organise them into something resembling a neat pile. {w}As I reach for the last box, a picture frame falls to the ground with a loud clatter. My heart tightens in my chest as I snatch it up and inspect it for any fractures. {w}Luckily, it's unharmed."
+    "Я возвращаюсь к разбросанным коробкам и пытаюсь собрать их в аккуратную кучю. {w}Когда я добираюсь до последней коробки, рамка с фотографией падает на землю с громким грохотом. Сержде сжимается в груди, когда я хватаю её и проверяю, не разбилась ли она. {w}К счастью, она невредима."
     
     
     $ persistent.gpix[0][0] = 1
