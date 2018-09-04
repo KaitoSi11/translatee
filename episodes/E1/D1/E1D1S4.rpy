@@ -1,7 +1,7 @@
 label E1D1S4:
         
     scene bg homekaito myroom night packed with fade
-    "Alright, time to unpack."
+    "Хорошо, Время распаковки."
     
     play sound "audio/sfx/Impacts/Box Shuffling.ogg" fadein 1 fadeout 1
     
@@ -13,53 +13,53 @@ label E1D1S4:
     
     play music "audio/music/After a Long Day (GAME VERSION).ogg" fadein 1
     voice "audio/voice/E1/D1/S4/Nikki/1.ogg"
-    sf "You done unpacking yet?"
+    sf "Ты уже распаковал вещи?"
     
     show nikki neu at r3 with dissolve:
         xzoom -1
     
-    "Nikki seems tense. Although there's a small smile on her lips, her brows are furrowed in worry."
+    "Никки выглядит напряжённой. Не смотря на небольшую улыбку, её брови дрожат от волнения."
     
-    pf "Just about. What about you?"
+    pf "Только что. А ты?"
     
     show nikki ner at cc with dissolve:
         xzoom 1
     voice "audio/voice/E1/D1/S4/Nikki/2.ogg"
-    sf "Almost… but hey, what do you think about this whole uniform thing? It's kinda weird, isn't it?"
+    sf "Почти… но слушай, что ты думаешь об этой форме? Она довольно странная, не так ли?"
     show dots:
         xoffset 720
         yoffset 160
         xzoom .75
         yzoom .75
-    "She shifts uncomfortably from one foot to the other."
+    "Она переминается с ноги на нону uncomfortably."
     
     menu:
-        "I think it’s a great idea.":
-            pf "It’ll be a nice change. And we won’t have to worry about mismatched socks or anything like that." 
+        "Я думаю, это отличная идея.":
+            pf "Это будет неплохой переменой. И нам не придется беспокоиться о несовпадающих носках или что-то в этом роде." 
             show nikki smi at cc
-            "She giggles."
+            "Она хихикает."
             show nikki mis at cc
             voice "audio/voice/E1/D1/S4/Nikki/3.ogg"
-            sf "Maybe that's something that happens to you, but my socks always match."
+            sf "Может с тобой такое и происходит, но мои носки всегда совпадают."
     
-        "It doesn't make a difference.":
-            pf "Does it matter? We'll get used to it."
+        "Без разницы.":
+            pf "А это важно? Мы привыкнем."
             show nikki thi at cc
-            "Nikki stares at the ground."
+            "Никки смотри в пол."
             voice "audio/voice/E1/D1/S4/Nikki/4.ogg"
-            sf "I suppose you're right."
+            sf "Полагаю, ты прав."
     
-        "It'll be like one of my Japanese animes!":
-            pf "Are you kidding? It'll be great! Just think of all those girls in short skirts. Huehuehue."
+        "Это же будет как в моих любимых аниме!":
+            pf "Ты шутишь? Это же отлично! Просто подумай о всех этих девушках в коротких юбках. Хехехехе."
             show nikki ske at cc
-            "And those perfectly timed updrafts revealing cute, colorful panties--"
+            "И этот ветер, идеально выбирающий время, показывая разноцветные трусики--"
             
             show nikki ann
             play sound "audio/sfx/Human/light_punch.ogg"
             with Shake((0, 0, 0, 0), .5, dist=10)
             
             $renpy.pause(.25)
-            pf "Ow!"
+            pf "Ау!"
             "For such a small girl, she sure packs a punch."
             "Nikki sighs."
             #show tsuBlush:
@@ -68,7 +68,7 @@ label E1D1S4:
                # xzoom .75
                 #yzoom .75
             voice "audio/voice/E1/D1/S4/Nikki/5.ogg"
-            sf "You’re hopeless."
+            sf "Ты безнадёжен."
             
     show nikki sur at cc with dissolve
     show exclamation:
@@ -138,13 +138,13 @@ label E1D1S4:
     
     scene cg mc family photo at Zoom((1920, 1080), (1740, 180, 1920, 1080), (1740, 180, 1920, 1080), 0) with dissolve
     
-    "I run my finger over our smiling faces: me, Nikki, Mom, Dad. {w}We were at the fair and Nikki wanted to ride the roller coaster. {w}I remember Mom and I had just argued over something stupid before the picture was taken, but you'd never be able to tell from this photo. Mom always looked so poised and together."
+    "Я провёл пальцем по улыбающимся лицам: я, Никки, мама, папа. {w}Мы были на ярмарке, и Никки хотела покататься на американских горках. {w}Помню, что спорил с мамой о чем-то глупом до того, как была сделана фотография, но по ней вы никогда не сможете сказать этого. Мама всегда выглядела уравновешенной."
     
     scene cg mc family photo at Zoom((1920, 1080), (1740, 180, 1920, 1080), (0, 0, 3840, 2160), 5.0)
     
-    "I place the frame beside my computer, trying to ignore the lump in my throat."
+    "Я положил рамку рядом с компьютером, пытаясь подавить ком в горле."
     
-    "I lay on my bed and close my eyes, but my thoughts refuse to quiet. {w}Eventually my exhaustion takes over and I fall asleep among a tangle of questions and \"what if's\" running through my mind."
+    "Я лёг на кровать и закрыл глаза, но мылсли отказывались уходить. {w}В конце концов усталость берет верх, и я засыпаю среди путаницы вопросов и «что, если», носящихся в голове."
     
     stop music fadeout 3
     stop ambient fadeout 3
