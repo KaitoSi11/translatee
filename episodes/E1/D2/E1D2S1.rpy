@@ -8,35 +8,35 @@ label E1D2S1:
     scene black with fade
     play sound [ "audio/sfx/Technology/Phone Alarm.ogg", "audio/sfx/Technology/Phone Alarm.ogg", "audio/sfx/Technology/Phone Alarm.ogg" ]
     $renpy.pause(2.5)
-    pf "What…?"
+    pf "Что…?"
     scene bg homekaito myroom blurry with fade
-    "Soft sunlight filters through my window, warming my cheek. The distant melody of birdsong is nearly drowned by the annoying blare of my alarm."
-    "I roll away from the window and see \"7:00 AM\" flash on my clock."
-    pf "That can't be right, can it?"
+    "Мягкие солнечные лучи проходят через окно, грея мою щёку. Мелодичное пение птиц вдалеке почти утоплено в раздражающем звуке будильника."
+    "Я отвернулся от окна и увидел \"7:00 AM\" на часах."
+    pf Неужели уже утро?"
     
     menu:
-        "Yes, it can. Time to get up":
+        "Так и есть. Пора вставать":
             $ E1D2S1_timetogetup = 1
             $ E1D2S1_okaytimetogo = 0
             $ E1D2S1_almostup = 0
             stop sound
             play sound "audio/sfx/Technology/Button Click.ogg"
-            "I turn off the alarm. I've never been a morning person, but I actually don't feel as tired as I normally would… I'm even feeling kind of energized. {w}Jet lag works in mysterious ways, I guess. At least I won't be late for my first day." 
+            "Я выключил будильник. Я никогда не был жаворонком, но вообще-то я не чувствую себя таким же уставшим как обычно… Я даже чувствую себя переполненным энергией. {w}Полагаю, джетлаги как-то странно работают. По крайней мере, я не опоздаю в свой первый день." 
             scene white with fade
             scene bg homekaito myroom day with Dissolve(2)
             play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 1
             
-            "Pushing myself out of bed, I automatically begin my morning ritual. Without thinking, I grab my jeans and have them halfway up my legs before I notice the uniform slung over my chair."
-            pf "Crap…"
-            "This will take some getting used to…"
-            "I slip off my pants and grab my uniform. I'll admit, as far as uniforms go, these aren't that bad. They're a little too flashy for my tastes and not at all what I was expecting, but the cut is flattering and the teal stripes look pretty cool."
-            "I face the mirror to fix my tie. {w}The knot could be better, but there haven't been many opportunities in which I've needed to wear a tie. {w}I still look damn good, which is all that matters."
-            "After a quick check to make sure I have all my things, I head downstairs." 
+            "Встав с кровати, я на автомате начал свой утренний ритуал. Не раздумывая, я взял джинсы и почти надев их заметил форму, валяющуюся на стуле."
+            pf "Чёрт…"
+            "К этому придётся привыкнуть…"
+            "Я снял джинсы и взял форму. Должен пирзнать, что касается формы, эта довольно-таки неплоха. Она немного яркая для моего вкуса и, совсем не то, чего я ожидал, но разрез льстит, а тиановые полосы выглядят довольно круто."
+            "Я взглянул в зеркало, чтобы поправить галстук. {w}Узел мог бы быть лучше, но у меня не было много случаев, в которых мне нужно было одевать гастук {w}Я всё ещё выгляжу чертовски хорошо, это всё, что имеет значение."
+            "После быстрой проверки, чтобы убедиться, что собрал все вещи, я спустился вниз." 
             scene black with fade
             play sound "audio/sfx/Human/Going Upstairs (wood).ogg" fadein 1
             $renpy.pause(3)
     
-        "Commence Operation \"5 more minutes\".":
+        "Commence Operation \"ещё 5 минут\".":
             stop sound
             play sound "audio/sfx/Technology/Button Click.ogg"
             "I smash the \"snooze\" button and am rewarded with blissful silence. {w}Just five more minutes and I'll be ready to face the world."
