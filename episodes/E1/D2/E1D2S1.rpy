@@ -36,7 +36,7 @@ label E1D2S1:
             play sound "audio/sfx/Human/Going Upstairs (wood).ogg" fadein 1
             $renpy.pause(3)
     
-        "Commence Operation \"ещё 5 минут\".":
+        "Ещё 5 минут...":
             stop sound
             play sound "audio/sfx/Technology/Button Click.ogg"
             "I smash the \"snooze\" button and am rewarded with blissful silence. {w}Just five more minutes and I'll be ready to face the world."
