@@ -184,10 +184,10 @@ label E1D2S1:
         
     if (E1D2S1_timetogetup == 1) or (E1D2S1_okaytimetogo == 1):
         if (E1D2S1_timetogetup == 1):
-            "Скоро я вошёл на кухню нетерпя начать день. Пробуждение в такой час чувствуется большим достижением."
+            "Скоро я вошёл на кухню, нетерпя начать день. Пробуждение в такой час чувствуется большим достижением."
             show nikki smi at cc with dissolve
             "Никки подавила зевок, когда положила тарелку с яичницей и тостами. {w}Внезапно, я не чувствую такого успеха."
-            pf "А для меня ты тоже приготовила?"
+            pf "А мне ты тоже приготовила завтрак?"
             show nikki cur at cc with dissolve
             $renpy.pause(1)
             show dots:
@@ -209,110 +209,110 @@ label E1D2S1:
             show nikki neu at cc
             voice "audio/voice/E1/D2/S1/Nikki/11.ogg"
             sf "Он уже ушёл на работу, так что нам придётся самим закрывать дверь, когда пойдём."
-            "Я кивнул, и она подвинулась ко мне с игривой улыбкой." 
+            "Я кивнул, и она подошла ко мне с игривой улыбкой." 
     
         elif (E1D2S1_okaytimetogo == 1):
             show nikki neu at cc with dissolve
-            "Stifling a yawn, I saunter into the kitchen and see Nikki at the table nibbling on some toast. She sees me enter and her face lights up."
+            "Подавляя зевоту, я медленно вваливаюсь на кухню и вижу Никки за столом. кушающую тосты. Она заметила, что я вошёл и её лицо озарилось улыбкой."
             show nikki hap at cc
             voice "audio/voice/E1/D2/S1/Nikki/12.ogg"
-            sf "Good, you're up! I was just about to go get you."
-            pf "Well, I'm here."
+            sf "Отлично, ты встал! Я уже собиралась идти за тобой."
+            pf "Ну, я уже здесь."
             voice "audio/voice/E1/D2/S1/Nikki/13.ogg"
-            sf "I made toast. Want some?"
-            pf "Mmhm."
-            "I sit down at the table but she just laughs."
+            sf "Я сделала тосты. Хочешь?"
+            pf "Хмхм."
+            "Я сел за стол, но она просто засмеялась."
             show nikki smi at cc
             voice "audio/voice/E1/D2/S1/Nikki/14.ogg"
-            sf "It's in the toaster. Go get it yourself."
-            "Grumbling, I pick up the toast from the toaster and take a bite."
-            pf "No Uncle Kaito?"
+            sf "Они в тостере. Иди возьми сам."
+            "Ворча, я взял тост и укусил."
+            pf "Дяди Кайто нет?"
             show nikki neu at cc
             voice "audio/voice/E1/D2/S1/Nikki/15.ogg"
-            sf "He already left for work."
-            pf "Mm."
-            "I'm enjoying the silence when Nikki sidles up to me wearing a playful grin." 
+            sf "Он уже ушёл на работу."
+            pf "Хм."
+            "Я наслаждался тишикой, когда Никки подошла ко мне с игривой улыбкой." 
     
         show nikki smi at cc
-        "In her white shirt and plaid skirt, she does a little twirl and looks expectantly at me."
+        "В белой рубашке и клетчатой юбке она немного крутится на месте и выжидательно смотрит на меня."
         voice "audio/voice/E1/D2/S1/Nikki/16.ogg"
-        sf "Sooo?"
+        sf "Ну как?"
     
         menu:
-            "She does look cute... This is going to make my job hard.":
-                "I cross my arms and scowl."
+            "Она выглядит мило... Это сделает мою жизнь сложнее.":
+                "Я скрестил руки и нахмурился."
                 show nikki ner at cc
                 voice "audio/voice/E1/D2/S1/Nikki/17.ogg"
-                sf "What?"
-                pf "No."
+                sf "Что?"
+                pf "Нет."
                 show panic:
                     xoffset 720
                     yoffset 160
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S1/Nikki/18.ogg"
-                sf "No?"
-                pf "No, that won't work."
+                sf "Нет?"
+                pf "Нет, так не пойдёт."
                 show nikki wor at cc
                 voice "audio/voice/E1/D2/S1/Nikki/19.ogg"
-                sf "What's wrong?"
-                "Worry furrows her brow as Nikki starts fidgeting with her uniform."
+                sf "Что не так?"
+                "Беспокойство отражается на её лице, когда Никки начала нервно поправлять форму."
                 show nikki sad at cc
-                pf "Oh, nothing. I was just trying to figure out the best way to bring my GEAR to your school."
+                pf "Ох, ничего. я просто пытался выяснить как лучше доставить GEAR в твою школу."
                 show nikki ske at cc
-                "She raises her brow in question."
-                pf "Well, how else am I going to keep all the boys away from you?"
+                "Она вопросительно подняла бровь."
+                pf "Ну а как мне ещё удерживать всех парней от тебя?"
                 show nikki smi b1 at cc with dissolve
                 show regBlush:
                     xoffset 720
                     yoffset 160
                     xzoom .75
                     yzoom .75
-                "Nikki giggles, and a soft pink tinges her cheeks."
+                "Никки зизикнула, и её щёки немного порозовели."
                 voice "audio/voice/E1/D2/S1/Nikki/20.ogg"
-                sf "You're being ridiculous."
-                pf "I'm even considering writing your school a strongly worded letter."
+                sf "Ты смешон."
+                pf "Я даже думаю написать строгое письмо в твою школу."
                 voice "audio/voice/E1/D2/S1/Nikki/21.ogg"
-                sf "Oh no, let it not come to that!"
-                "I smile, but Nikki sees the concern in my eyes."
+                sf "О нет, не надо этого!"
+                "Я улыбнулся, но Никки увидела заботу в моих глазах."
                 show nikki neu at cc
                 voice "audio/voice/E1/D2/S1/Nikki/22.ogg"
-                sf "I'll be fine. I'm a big girl now, I can handle myself."
-                pf "Yeah, you're right."
-                "But as an older brother, my instinct is to protect her, even if she doesn't really need that protection anymore."
+                sf "Я буду в порядке. я уже большая девочка, могу сама справиться."
+                pf "Да, ты права."
+                "Но как старший брат, я настаиваю на её защите, даже если она больше не нуждается в этой защите."
         
-            "What do you mean by \"sooo\"?":
+            "Что ты имеешь в виду этим \"ну как\"?":
                 "..."
-                "I stare blankly at her."
-                pf "\"Sooo\" what?"
+                "Я безучастно смотрел на нее."
+                pf "\"Ну как\" что?"
                 show nikki mis at cc
-                "She rolls her eyes, but her voice is still sickly sweet."
+                "Она закатила глаза, но её голос всё ещё болезненно-сладкий."
                 voice "audio/voice/E1/D2/S1/Nikki/23.ogg"
-                sf "Don't you notice anything {i}different{/i} about me today?"
-                pf "Hmm…"
-                "Did she get a haircut? {w}No. Dyed her hair? {w}No. New style? {w}Uh, maybe. Not sure. Should I go with that?"
+                sf "Ты не заметил никаких {i}изменений{/i} во мне сегодня?"
+                pf "Хммм…"
+                "Она подстриглась? {w}Нет. Покрасила волосы? {w}Нет. Изменила стиль? {w}Эм, возможно. Я не уверен. Должен ли я пойти в этом направлении?"
                 show nikki dis at cc
-                "{i}tap, tap, tap.{/i}"
-                "Nikki taps her foot, her smile faltering."
-                "I need to say something soon."
-                pf "I like what you did with your hair?"
+                "{i}Тук, тук, тук.{/i}"
+                "Никки стучит ногой, ее улыбка прерывается."
+                "Я должен что-нибудь сказать, и поскорее."
+                pf "Мне нравится то, что ты сделала со своими волосами?"
                 show storm:
                     xoffset 720
                     yoffset 160
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S1/Nikki/24.ogg"
-                sf "No."
-                "Shoot, okay. {w}What about her eyes? Coloured contacts? {w}Nope, still amber. Um…"
+                sf "Нет."
+                "Мимо, хорошо. {w}Что насчёт её глаз? Контактные линзы другого цвета? {w}Нет, все ещё янтарные. Эмм…"
                 
                 #SFX Lightbulb
                 play sound "audio/sfx/UI or Plot Element/Lightbulb.ogg"
                 
-                pf "Ah…!"
-                pf "It's your ridiculous clothes!"
+                pf "Ага…!"
+                pf "Это твоя дурацкая одежда!"
                 show nikki sur b1 at cc with dissolve
                 "Nikki's eyes widen. She kind of looks like she got the wind knocked out of her."
-                pf "I'm right, aren't I?"
+                pf "Я прав, не так ли?"
                 show nikki wor at cc
                 show panic:
                     xoffset 720
@@ -320,8 +320,8 @@ label E1D2S1:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S1/Nikki/25.ogg"
-                sf "Ridiculous?! Oh my god, do I look just awful?"
-                pf "Um, no, of course not. I mean, it's a weird choice, but if you're going for the \"naughty schoolgirl\" look then you've got it down."
+                sf "Дурацкая? О боже, я выгляжу так плохо?"
+                pf "Эм, нет, конечно нет. Я имею в виду, что это плохой выбор, но если ты собиралась выглядеть как \"непослушная школьница\", то у тебя получилось."
                 show nikki ann at cc
                 show vein:
                     xoffset 720
@@ -329,30 +329,30 @@ label E1D2S1:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S1/Nikki/26.ogg"
-                sf "A weird choice? This is my uniform, you jerk! I didn't \"choose\" to wear this!"
-                "Oh, that explains a lot. Uniforms. Like what I'm wearing now, except not at all. Suddenly, my uniform doesn't seem too bad."
-                pf "Haha, did I say \"ridiculous\"? I meant \"great\". You look good!"
+                sf "Плохой выбор? Это моя форма, придурок! Я не \"выбирала\" одевать это!"
+                "А, ну это многое объясняет. Форма. Как та, что сейчас на мне. Внезапно, моя форма выглядит не так уж и плохо."
+                pf "Хаха, разве я сказал \"дурацкая\"? Я имел в виду \"отличная\". Ты хорошо выглядишь!"
                 show nikki dis at cc
                 voice "audio/voice/E1/D2/S1/Nikki/27.ogg"
-                sf "Ugh, forget it. Finish your cold toast. We're going to be late."
+                sf "Ах, хабудь. Заканчивай есть холодный тост. Мы опоздаем."
         
-            "My little sister can't be this cute!":
+            "Моя сестра не можеть быть такой милой!":
                 ##SFX: Poke Noise
                 play sound "audio/sfx/Human/Poke Noise.ogg"
                 show nikki win b1 at cc with dissolve
-                "Too adorable! I pinch her cheek, ignoring her protests as she squirms."
+                "Слишком прелестно! Я щипал её за щёки, игнорируя протесты, пока она извивалась."
                 show crying:
                     xoffset 720
                     yoffset 160
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S1/Nikki/28.ogg"
-                sf "Eeeeeep! S-Stop it!"
+                sf "Ааааааааай! П-Прекрати!"
                 pf "KYAAAAA~! Kawaii desu!"
                 show nikki ann b1 at cc
-                "Nikki puts on a sour expression as she wrenches free from my grasp. She gingerly pokes her cheek, as if to reassure herself it's still there."
-                "I grin at her and pat her head."
-                pf "D'awww, don't be mad."
+                "Никки нахмурилась, когда вырвалась из моих рук. Она осторожно похлопала себя по щеке, словно уверяя себя, она все ещё тут."
+                "Я усмехаюсь и глажу её по голове."
+                pf "Ооооооо, не злись."
                 show nikki neu b1 at cc
                 show tsuBlush:
                     xoffset 720
@@ -360,14 +360,14 @@ label E1D2S1:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S1/Nikki/29.ogg"
-                sf "Hmph!"
-                "Despite her grumpy facade, I can see traces of a smile forming."
+                sf "Хммм!"
+                "Несмотря на её сердитый вид, я заметил следы появляющейся улыбки."
     
     elif (E1D2S1_almostup == 1):
         "Nikki frowns when I finally make it into the kitchen. I don't know what {i}she's{/i} so annoyed about. I'm the one who could have used at least another hour of sleep."
         show nikki ann at cc with dissolve
         voice "audio/voice/E1/D2/S1/Nikki/30.ogg"
-        sf "Finally! I thought you'd fallen back asleep."
+        sf "наконец-то! Я думала ты снова уснул."
         "I grunt in response and sit at the table, yawning widely."
         #stomach growl
         play sound "audio/sfx/Human/Stomach Grumble.ogg"
