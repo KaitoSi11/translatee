@@ -111,7 +111,7 @@ label E1D2S1:
                     play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 1
                     show nikki smi at cc with dissolve
                 
-                    "Я скинул одеяло и встретился лицом к лицу с сестрой. Между нашими лицами была пара дюймов"
+                    "Я скинул одеяло и встретился лицом к лицу с сестрой. Между нашими лицами была пара дюймов."
                     show note:
                         xoffset 720
                         yoffset 160
@@ -184,10 +184,10 @@ label E1D2S1:
         
     if (E1D2S1_timetogetup == 1) or (E1D2S1_okaytimetogo == 1):
         if (E1D2S1_timetogetup == 1):
-            "I soon arrive in the kitchen, eager to begin my day. Waking up successfully at this hour feels kind of like a big accomplishment."
+            "Скоро я вошёл на кухню нетерпя начать день. Пробуждение в такой час чувствуется большим достижением."
             show nikki smi at cc with dissolve
-            "Nikki stifles a yawn as she sets down a plate of eggs and toast. {w}Suddenly, I don't feel so accomplished."
-            pf "Did you make one for me too?"
+            "Никки подавила зевок, когда положила тарелку с яичницей и тостами. {w}Внезапно, я не чувствую такого успеха."
+            pf "А для меня ты тоже приготовила?"
             show nikki cur at cc with dissolve
             $renpy.pause(1)
             show dots:
@@ -196,20 +196,20 @@ label E1D2S1:
                 xzoom .75
                 yzoom .75
             $renpy.pause(2.5)
-            "She blinks in surprise and it takes a moment for her to respond."
+            "Она удивлённо моргнула, и через пару секунд ответила."
             show nikki hap at cc with dissolve
             voice "audio/voice/E1/D2/S1/Nikki/9.ogg"
-            sf "As a matter of fact, I did!"
-            "She grins, and places another plate down on the table."
+            sf "Вообще-то да."
+            "Она усмехнулась, и положила ещё одну тарелку на стол."
             show nikki cur at cc
             voice "audio/voice/E1/D2/S1/Nikki/10.ogg"
-            sf "Look at you, big bro, waking up bright and early. You're taking \"starting over\" to the next level."
-            pf "Hey, I try."
-            pf "Where's Uncle Kaito?"
+            sf "Вгляни на себя, братец, встаёшь рано и сияешь. Ты переносишь \"новую жизнь\" на новый уровень."
+            pf "Эй, я пытаюсь."
+            pf "Где дядя Кайто?"
             show nikki neu at cc
             voice "audio/voice/E1/D2/S1/Nikki/11.ogg"
-            sf "He already left for work so we'll have to lock up when we leave."
-            "I nod, and she sidles over to me, wearing a playful look." 
+            sf "Он уже ушёл на работу, так что нам придётся самим закрывать дверь, когда пойдём."
+            "Я кивнул, и она подвинулась ко мне с игривой улыбкой." 
     
         elif (E1D2S1_okaytimetogo == 1):
             show nikki neu at cc with dissolve
@@ -427,27 +427,27 @@ label E1D2S1:
             scene black with fade
             jump E1D2S2
     
-        "Take the motorcycle":
+        "Взять мотоцикл":
             $ E1D2S1_firstdaybike = 1
-            "Eh. I'm sure it'll be fine if I take my bike. {w}There must be at least {i}some{/i} form of parking that doesn't require a permit."
-            pf "Yeah… I'll take my bike."
+            "Эх. Я уверен, все будет хорошо, если я возьму мотоцикл. {w}Там должна быть хоть {i}какая-то{/i} парковка, которая не требует разрешения."
+            pf "Дааа… Я возьму мотоцикл."
             show nikki mis at cc
             voice "audio/voice/E1/D2/S1/Nikki/39.ogg"
-            sf "Oh, right. Of course. I forgot how much you cried when it was taken for shipping."
-            pf "Very funny… Now I might not offer you a ride."
+            sf "Ох, точно. Конечно. Я и забыла как ты плакал, когда его забрали для транспортировки."
+            pf "Очень забавно… Теперь я не предложу тебе прокатиться."
             show nikki neu at cc
             voice "audio/voice/E1/D2/S1/Nikki/40.ogg"
-            sf "Even if you did, I'd still have to pass. I need to figure out how to navigate around Isokaze sometime, right?"
-            pf "Really? Being seen on a bike like mine would automatically make you the most popular girl in school. You sure you want to pass up such a great opportunity?"
+            sf "Даже если и предложил бы, то мне всё равно пришлось бы отказаться. I need to figure out how to navigate around Isokaze sometime, right?"
+            pf "Правда? Если тебя увидят на моём мотоцикле, то это автоматически сделает тебя самой популярной девочкой в школе. Уверена, что хочешь пропустить такую отличную возможность?"
             show nikki mis at cc
             voice "audio/voice/E1/D2/S1/Nikki/41.ogg"
-            sf "Please, have you met me? With my winsome smile and ample charm, I won't need your bike to be popular."
-            pf "Whatever you say."
+            sf "Пожалуйста, ты видел меня? С моей обаятельной улыбкой и шармом мне не нужен твой мотоцикл, чтобы быть популярной."
+            pf "Как скажешь."
             show nikki smi at cc
-            "Nikki heads towards the bus stop and waves goodbye."
+            "Никки пошла на автобус, но остановилась и помахала на прощанье."
             voice "audio/voice/E1/D2/S1/Nikki/42.ogg"
-            sf "Good luck on your first day!"
-            pf "You too!"
+            sf "Удачи в твой первый день!"
+            pf "И тебе!"
     
     stop music fadeout 3
     scene black with fade
