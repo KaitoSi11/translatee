@@ -21,7 +21,7 @@ label E1D2S1:
             $ E1D2S1_almostup = 0
             stop sound
             play sound "audio/sfx/Technology/Button Click.ogg"
-            "Я выключил будильник. Я никогда не был жаворонком, но вообще-то я не чувствую себя таким же уставшим как обычно… Я даже чувствую себя переполненным энергией. {w}Полагаю, джетлаги как-то странно работают. По крайней мере, я не опоздаю в свой первый день." 
+            "Я выключил будильник. Я никогда не был жаворонком, но вообще-то я не чувствовал себя таким же уставшим как обычно… Я даже чувствовал себя переполненным энергией. {w}Полагаю, джетлаги как-то странно работают. По крайней мере, я не опоздаю в свой первый день." 
             scene white with fade
             scene bg homekaito myroom day with Dissolve(2)
             play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 1
@@ -29,8 +29,8 @@ label E1D2S1:
             "Встав с кровати, я на автомате начал свой утренний ритуал. Не раздумывая, я взял джинсы и почти надев их заметил форму, валяющуюся на стуле."
             pf "Чёрт…"
             "К этому придётся привыкнуть…"
-            "Я снял джинсы и взял форму. Должен пирзнать, что касается формы, эта довольно-таки неплоха. Она немного яркая для моего вкуса и, совсем не то, чего я ожидал, но разрез льстит, а тиановые полосы выглядят довольно круто."
-            "Я взглянул в зеркало, чтобы поправить галстук. {w}Узел мог бы быть лучше, но у меня не было много случаев, в которых мне нужно было одевать гастук {w}Я всё ещё выгляжу чертовски хорошо, это всё, что имеет значение."
+            "Я снял джинсы и взял форму. Должен признать, что касается формы, эта довольно-таки неплоха. Она немного яркая для моего вкуса и, совсем не то, чего я ожидал, но разрез льстит, а тиановые полосы выглядят довольно круто."
+            "Я взглянул в зеркало, чтобы поправить галстук. {w}Узел мог бы быть лучше, но у меня не было много случаев, в которых мне нужно было одевать гастук {w}Я всё ещё выгляжу чертовски хорошо, и это всё, что имеет значение."
             "После быстрой проверки, чтобы убедиться, что собрал все вещи, я спустился вниз." 
             scene black with fade
             play sound "audio/sfx/Human/Going Upstairs (wood).ogg" fadein 1
@@ -39,30 +39,30 @@ label E1D2S1:
         "Ещё 5 минут...":
             stop sound
             play sound "audio/sfx/Technology/Button Click.ogg"
-            "I smash the \"snooze\" button and am rewarded with blissful silence. {w}Just five more minutes and I'll be ready to face the world."
+            "Я нажал кнопку \"повтора\" и вознаградился блаженной тишиной. {w}Ещё пять минут и я буду готов встретить мир."
             scene black with fade
             "…"
             play sound [ "audio/sfx/Technology/Phone Alarm.ogg", "audio/sfx/Technology/Phone Alarm.ogg", "audio/sfx/Technology/Phone Alarm.ogg" ]
             $renpy.pause(3)
-            "That could {b}not{/b} have been five minutes.{w} Why do you hate me, clock?"
+            "Ещё {b}не могло{/b} пройти пять минут.{w} За что вы меня ненавидите, часы?"
     
             menu:
-                "Okay, time to go.":
+                "Хорошо, пора вставать.":
                     $ E1D2S1_timetogetup = 0
                     $ E1D2S1_okaytimetogo = 1
                     $ E1D2S1_almostup = 0
                     stop sound
                     play sound "audio/sfx/Technology/Button Click.ogg"
-                    "Fine, I'll get up now. {w}If I stay here any longer I might never leave."
+                    "Хорошо, я сейчас встану. {w}Если я пролежу ещё больше, то вообще не уйду из дома."
                     scene bg homekaito myroom blurry with fade
                     scene white with fade
                     scene bg homekaito myroom day with Dissolve(2)
                     play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 1
                 
-                    "Mustering willpower and determination, I heave myself out of my warm bed. {w}Mornings and I have never really seen eye-to-eye, and I stumble around my room as animated as a zombie. I automatically throw my things into my bag and hope that I've gotten everything I need. {w}I think I have. {w}If I haven't, I guess I'll find out at school."
+                    "Собрав аолю и решительность, я покинул тёплую кровать {w}Утро и я никогда не виделись лицом к лицу, и я шатался по комнате как зомби. Я автоматически бросил вещи в свою сумку и надеялся, что получил всё, что мне нужно. {w}Я думал, что получил. {w}Если нет, то узнаю об этом в школе."
                     "I finish dressing myself in jeans and a T-shirt and am about to go downstairs, when I notice the dark uniform laying over my chair."
                 
-                    "Whose idea was it to force everyone into uniforms anyway?"
+                    "Чькй идеей было заставлять всех носить форму?"
                 
                     "I sigh and slip into my uniform. {w}I can't even remember the last time I needed a tie or a suit jacket… or even slacks."
                     "Well, whatever. {w}Feeling a little more like a living person, I grab my bag and head downstairs."
