@@ -170,7 +170,7 @@ label E1D2S1:
                     "Зевая, я издал небольшой стон, когда потягивался, и практически выпал из постели. {w}Как только ноги вспомнили всоё предназначение, я начал собирать вещи. {w}Спотыкаясь по комнате, я врезался в стул и форма упала на пыльный пол."
                     pf "Отлично, давай будем выглядеть как бездомный студент."
                     "Я отряхнул форму, и мне удалось избавиться от большей части пыли. Достаточно хорошо."
-                    "Ничто в этой форме не кажется естественным. Никто в моём возрасте не носит ежедневно костюм с галстуком--because that's basically what this is. {w}К тому же, материал довольно жесткий, но полагаю, что это цена, которую ты платишь за крутой вид."
+                    "Ничто в этой форме не кажется естественным. Никто в моём возрасте не носит ежедневно костюм с галстуком. {w}К тому же, материал довольно жесткий, но полагаю, что это цена, которую ты платишь за крутой вид."
                     "После успешного переодевания, я провёл рукой по волосам, пытаясь уложить большую их часть, прежде чем взял сумку и спустился."
                     scene black with fade
                     play sound "audio/sfx/Human/Going Upstairs (wood).ogg" fadein 1
@@ -364,27 +364,27 @@ label E1D2S1:
                 "Несмотря на её сердитый вид, я заметил следы появляющейся улыбки."
     
     elif (E1D2S1_almostup == 1):
-        "Nikki frowns when I finally make it into the kitchen. I don't know what {i}she's{/i} so annoyed about. I'm the one who could have used at least another hour of sleep."
+        "Никки хмурилась, когда я наконец вошёл на кухню. Я не знаю, почему {i}она{/i} раздражена. Я один тут, кому не помешал бы ещё час сна."
         show nikki ann at cc with dissolve
         voice "audio/voice/E1/D2/S1/Nikki/30.ogg"
         sf "наконец-то! Я думала ты снова уснул."
-        "I grunt in response and sit at the table, yawning widely."
+        "Я поворчал в ответ, и сев за стол широко зевнул."
         #stomach growl
         play sound "audio/sfx/Human/Stomach Grumble.ogg"
-        "Before me is a plate of eggs and toast, and my stomach growls at the promise of food. {w}I dig in with gusto, but grimace at the first bite."
-        pf "This is cold."
+        "Передо мной яичница с тостами, и мой желудок урчит в предвкушении еды. {w}Я с удовольствием налетаю на еду, но на первом укусе я осознаю кое-что"
+        pf "Она холодная."
         show nikki dis at cc
         voice "audio/voice/E1/D2/S1/Nikki/31.ogg"
-        sf "That's what happens when you lounge around in bed all morning. Now eat faster. We're going to be late."
-        "Geez, someone's crabby in the morning."
+        sf "Вот что происходит, когда всё утро валяешься в постели. Теперь быстро ешь. Мы опоздаем."
+        "Господи, кое-кто слишком раздражителен с утра."
     
     stop music fadeout 3
     play music "audio/music/Isnt This Nice (GAME VERSION).ogg" fadein 2
-    "We finish our meal in silence, with Nikki occasionally shooting hurried glances my way. {w}I wolf down my food and gather my stuff, then meet Nikki by the door."
+    "Мы закочили завтракать в тишине, пока Никки бросала на меня быстрые взгялы. {w}Я поглотил еду, собрал вещи и встретил Никки у двери."
     show nikki thi at cc with dissolve
     voice "audio/voice/E1/D2/S1/Nikki/32.ogg"
-    sf "How are you going to get to the academy?"
-    pf "My motorcycle, obviously."
+    sf "Как ты собираешься добираться до академии?"
+    pf "На мотоцикле, естественно."
     show nikki ske at cc
     show question:
         xoffset 720
@@ -392,36 +392,36 @@ label E1D2S1:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D2/S1/Nikki/33.ogg"
-    sf "Oh, you don't need a permit then? I remember you were worrying about that."
-    "Permit? {w}I completely forgot! {w}I'll need a parking permit for my bike, but they should have visitor parking which I can use… If I can find a spot."
-    "So, what should I do? {w}Should I take the motorcycle anyway and hope for the best, or should I take the bus today and take my bike once I've gotten my permit?" 
+    sf "А разве тебе не нужно разрешение? Я помню, ты волновался об этом."
+    "Разрешение? {w}Я напрочь забыл оь этом! {w}Мне нужно разрешение на парковку мотоцикла, но у них должна же быть гостевая парковка, которую я могу использовать... Если найду место."
+    "Итак, что мне сделать? {w}Взять мотоцикл, и надеяться на лучшее, или поехать на автобусе, а потом на мотоцикле, когда получу разрешение?" 
     
     menu:
-        "Take the bus":
+        "Поехать на автобусе":
             $ E1D2S1_firstdaybus = 1
-            pf "You're right, I'll take the bus today. I need to sort out my parking situation before taking my bike."
+            pf "Ты права, сегодня я поеду на автобусе. Надо разобраться с ситуацией с парковкой, прежде чем брать мотоцикл."
             show nikki neu at cc
-            "Nikki nods in affirmation."
+            "Никки согласно кивнула."
             voice "audio/voice/E1/D2/S1/Nikki/34.ogg"
-            sf "Which bus will you be taking?"
-            pf "The line that heads to the south side of the city."
+            sf "На каком автобусе поедешь?"
+            pf "На том, который движется на юг города."
             show nikki sad at cc
-            "She pouts."
+            "Она вздохнула."
             voice "audio/voice/E1/D2/S1/Nikki/35.ogg"
-            sf "Aww, I'm taking the one going west..."
-            pf "That's not at the same intersection, is it?"
+            sf "Эх, а я на том, что поедет на запад..."
+            pf "Это не на этом же перекрёстке, не так ли?"
             show nikki thi at cc
             voice "audio/voice/E1/D2/S1/Nikki/36.ogg"
-            sf "No, I don't think so."
-            pf "Oh… Well, at least it'll help you get familiar with the city."
+            sf "Нет, я так не думаю."
+            pf "Ну... По крайней мере ты сможешь изучить город."
             show nikki neu at cc
             voice "audio/voice/E1/D2/S1/Nikki/37.ogg"
-            sf "Yeah, you're right."
-            pf "I'll see you later then?"
+            sf "Да, ты прав."
+            pf "Увидимся позже?"
             show nikki smi at cc
             voice "audio/voice/E1/D2/S1/Nikki/38.ogg"
-            sf "Have a good time at school, 'kay?"
-            "She beams at me."
+            sf "Хорошо провести время в школе, окей?"
+            "Она лучезарно улыбнулась мне."
 
             stop music fadeout 3
             scene black with fade
