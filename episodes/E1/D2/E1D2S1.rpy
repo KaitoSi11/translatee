@@ -21,7 +21,7 @@ label E1D2S1:
             $ E1D2S1_almostup = 0
             stop sound
             play sound "audio/sfx/Technology/Button Click.ogg"
-            "Я выключил будильник. Я никогда не был жаворонком, но вообще-то я не чувствовал себя таким же уставшим как обычно… Я даже чувствовал себя переполненным энергией. {w}Полагаю, джетлаги как-то странно работают. По крайней мере, я не опоздаю в свой первый день." 
+            "Я выключил будильник. Я никогда не был жаворонком, но вообще-то и не чувствовал себя таким же уставшим как обычно… Я даже чувствовал себя переполненным энергией. {w}Полагаю, джетлаги как-то странно работают. По крайней мере, я не опоздаю в свой первый день." 
             scene white with fade
             scene bg homekaito myroom day with Dissolve(2)
             play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 1
@@ -60,50 +60,50 @@ label E1D2S1:
                     play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 1
                 
                     "Собрав аолю и решительность, я покинул тёплую кровать {w}Утро и я никогда не виделись лицом к лицу, и я шатался по комнате как зомби. Я автоматически бросил вещи в свою сумку и надеялся, что получил всё, что мне нужно. {w}Я думал, что получил. {w}Если нет, то узнаю об этом в школе."
-                    "I finish dressing myself in jeans and a T-shirt and am about to go downstairs, when I notice the dark uniform laying over my chair."
+                    "Я заканчил одеваться в джинсы и футболку, и собирался спуститься вниз, когда заметил тёмную форму, лежащую на стуле."
                 
-                    "Чькй идеей было заставлять всех носить форму?"
+                    "Чьей идеей было заставлять всех носить форму?"
                 
-                    "I sigh and slip into my uniform. {w}I can't even remember the last time I needed a tie or a suit jacket… or even slacks."
-                    "Well, whatever. {w}Feeling a little more like a living person, I grab my bag and head downstairs."
+                    "Я вздохнул и переоделся в форму. {w}Я не могу вспомнить последний раз, когда мне нужен галстук или пиджак ... или даже брюки."
+                    "Ну да пофиг. {w}Чувствуя себя немного более живым, я схватил свою сумку и спустился вниз."
                     scene black with fade
                     play sound "audio/sfx/Human/Going Upstairs (wood).ogg" fadein 1
                     $renpy.pause(3)
             
-                "I'm almost up… zzz...":
+                "Я пости проснулся… zzz...":
                     $ E1D2S1_timetogetup = 0
                     $ E1D2S1_okaytimetogo = 0
                     $ E1D2S1_almostup = 1
                     stop sound
                     play sound "audio/sfx/Technology/Button Click.ogg"
-                    "I smash the \"snooze\" button again. {w}Mornings were not meant to be seen. {w}I can afford to stay here a little longer, right? {w}It won't take me that long to get ready. {w}I'll just sleep another five minutes… {w}maybe ten…"
+                    "Я снова нажал кнопку \"повтора\". {w}Утро не должно быть замечено. {w}Я же могу позволить себе поспать немного подольше? {w}Мне не нужно долго собираться. {w}Я просто посплю ещё пять минут… {w}Может быть десять…"
                     $renpy.pause(3)
                     "…"
                     play sound "audio/sfx/Human/Poke Noise.ogg"
                     $renpy.pause(1)
-                    "Something jabs my side."
+                    "Что-то бьёт меня в бок."
                     
                     play music "audio/music/Baka! (GAME VERSION).ogg" fadein 3
                     voice "audio/voice/E1/D2/S1/Nikki/1.ogg"
-                    sf "Hey! Wake up! You’re going to be late!"
+                    sf "Эй! Просыпайся! Ты опоздпешь!"
                 
-                    "Ugh, who is this harpy screeching in my ear? {w}Go away…"
+                    "Ух, какая гарпия кричит мне в ухо? {w}Кыш, кыш…"
                     voice "audio/voice/E1/D2/S1/Nikki/2.ogg"
-                    sf "Do you really want to be late on your first day?"
+                    sf "Ты действительно хочешь опоздать в первый день?"
                     
                     play sound "audio/sfx/Human/Poke Noise.ogg"
                     $renpy.pause(1)
                 
-                    "Oh, right... {w}school. {w}I'll be fine. {w}There's still time."
+                    "Ох, точно... {w}школа. {w}Всё будет в порядке. {w}Ещё есть время."
                     
                     play sound "audio/sfx/Human/Poke Noise.ogg"
                 
-                    "But the jabs to my side are persistent. Over and over and {i}over{/i} again."
+                    "Но удары по мне были настойчивы. Снова, и снова, и {i}снова{/i}."
                     
                     play sound "audio/sfx/Human/Poke Noise.ogg"
                     $renpy.pause(1)
                 
-                    pf "Stop it… {w}Stop--Nikki!" 
+                    pf "Хватит… {w}Прекрати--Никки!" 
                     stop music fadeout 3
                     scene bg homekaito myroom blurry
                     scene white with fade
@@ -111,33 +111,33 @@ label E1D2S1:
                     play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 1
                     show nikki smi at cc with dissolve
                 
-                    "I pull the blankets down and am greeted by my sister's face inches from my own."
+                    "Я скинул одеяло и встретился лицом к лицу с сестрой. Между нашими лицами была пара дюймов"
                     show note:
                         xoffset 720
                         yoffset 160
                         xzoom .75
                         yzoom .75
                     voice "audio/voice/E1/D2/S1/Nikki/3.ogg"
-                    sf "Good morning, princess."
-                    "I glare daggers at her, but she deflects them with a smile."
+                    sf "Доброе утро, принцесса."
+                    "Я метал в неё ножи взглядом, но она отражала их улыбкой."
                 
                     show nikki mis at cc
                     voice "audio/voice/E1/D2/S1/Nikki/4.ogg"
-                    sf "How nice of you to finally join the world of the living. I almost thought you'd died in there with how long it took me to wake you."
+                    sf "Как мило с твоей стороны наконец присоединиться к миру живых. Я уже думала, что ты умер, судя по тому, сколько времени мне понадобилось, чтобы разбудить тебя."
                 
-                    pf "Ugh."
+                    pf "Тьфу."
                     
                     show nikki hap at cc
                     voice "audio/voice/E1/D2/S1/Nikki/5.ogg"
-                    sf "Aren't you glad I came in here and woke you?"
+                    sf "Разве ты не рад, что я пришла и разбудила тебя?"
                 
-                    pf "I guess."
+                    pf "Полагаю..."
                     
                     show nikki smi at cc
                     voice "audio/voice/E1/D2/S1/Nikki/6.ogg"
-                    sf "Mmhm. Now what would you do without me?"
+                    sf "Хмммм. И что бы ты делал без меня?"
                 
-                    pf "Sleep."
+                    pf "Спал."
                     
                     show nikki ann at cc
                     $renpy.pause(.5)
@@ -147,31 +147,31 @@ label E1D2S1:
                         xzoom .75
                         yzoom .75
                     $renpy.pause(1)
-                    "She crosses her arms and gives me a stern look."
+                    "Она скрестила руки и сурово посмотрела на меня."
                     voice "audio/voice/E1/D2/S1/Nikki/7.ogg"
-                    sf "No more sleeping! You need to eat before we go. I know what you're like when you're hungry, and I wouldn't subject anyone to that kind of torture."
+                    sf "Никакого сна! Тебе нужно поесть, прежде чем идти. Я знаю, каково тебе, когда ты голоден, и я не стала бы подвергать кого-либо такой пытке."
                 
-                    "She throws off my blankets and heads for the door."
+                    "Она сбрасывает моё одеяло и идёт к двери."
                     show nikki dis at cc
                     voice "audio/voice/E1/D2/S1/Nikki/8.ogg"
-                    sf "I'll go fix us breakfast. Don't you even think of falling back asleep!"
+                    sf "Я сделаю нам завтрак. Даже не думай снова засыпать!"
                     
                     hide nikki with dissolve
                 
-                    "Who, me? {w}Just who does she think she's talking… to..."
+                    "Кто, я? {w}Да с кем она вообще думает, она говорит… со..."
                 
                     #FX: Maybe have a small black fade in and out here to simulate him nearly dozing off again?
                     scene black with Dissolve(2.5)
                     scene bg homekaito myroom day with fade
                 
-                    "Whoa--that was close."
-                    "… {w}I really should get up now."
+                    "Воу--Это было близко."
+                    "… {w}Мне действительно пора вставать."
                 
-                    "Yawning, I let out a small groan as I stretch, and practically fall out of bed. {w}Once my legs remember how to work, I begin gathering all of my things. {w}While stumbling around the room, I bump into my chair and my uniform slides to the dusty floor."
-                    pf "Great. Let's look like the new homeless student."
-                    "I shake out my uniform and am successful in getting most of the dust off of it. Good enough."
-                    "Nothing about this uniform feels natural. Nobody my age wears a suit and tie everyday--because that's basically what this is. {w}Plus, the material is pretty stiff, but I guess that's the price you pay for looking sharp."
-                    "After successfully dressing myself, I run my hands through my hair, trying to flatten most of it down, before grabbing my bag and heading downstairs."
+                    "Зевая, я издал небольшой стон, когда потягивался, и практически выпал из постели. {w}Как только ноги вспомнили всоё предназначение, я начал собирать вещи. {w}Спотыкаясь по комнате, я врезался в стул и форма упала на пыльный пол."
+                    pf "Отлично, давай будем выглядеть как бездомный студент."
+                    "Я отряхнул форму, и мне удалось избавиться от большей части пыли. Достаточно хорошо."
+                    "Ничто в этой форме не кажется естественным. Никто в моём возрасте не носит ежедневно костюм с галстуком--because that's basically what this is. {w}К тому же, материал довольно жесткий, но полагаю, что это цена, которую ты платишь за крутой вид."
+                    "После успешного переодевания, я провёл рукой по волосам, пытаясь уложить большую их часть, прежде чем взял сумку и спустился."
                     scene black with fade
                     play sound "audio/sfx/Human/Going Upstairs (wood).ogg" fadein 1
                     $renpy.pause(3)
