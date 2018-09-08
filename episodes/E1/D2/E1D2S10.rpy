@@ -13,52 +13,52 @@ label E1D2S10:
     
     label E1D2S10_WentSolo:
         scene black with fade:
-        "I grab the handle and push my way inside."
+        "Я взялся за ручку двери и вошёл внутрь."
         play ambient "audio/ambience/Pilot Lounge.ogg" fadein 1
         scene bg campus lounge day with fade
-        "Groups of students fill the lounge, all of them wearing similar striped teal uniforms. I take a few steps, then pause, trying to decide how to handle the situation."
+        "В зале была группа студентов, и все были одеты в похожую тианову форму. Я сделал несколько шагов, затем останавился, пытаясь решить, как справиться с ситуацией."
         $ E1S2D10_AskedOtherTeams = 1
         menu: 
-            "I’ll just be honest about my situation.":
+            "Я просто буду честен в своей ситуации.":
                 play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 1
-                "There has to be at least one or two teams looking for a new member."
-                "I set my sights on a small group of people closest to me, who are speaking animatedly amongst themselves. They seem friendly enough." 
-                pf "Hey! How's it going?"
+                "Должна быть хотя бы одна или две команды, ищущие нового участника."
+                "Я взглядуд на небольшую группу людей, сидевших ближе всего ко мне, оживленно говорящих между собой. Они выглядели достаточно дружелюбными." 
+                pf "Привет! Как дела?"
                 show studentM extra at l2
                 show studentM2 extra at r2
                 with dissolve
-                "They all turn and look at me. A girl closest to me gives me a once over." 
+                "Они развернулись и посмотрели на меня. Близсидящая девушка быстро оглядела меня." 
                 voice "audio/voice/E1/D2/S10/stu7m/2.ogg"
-                stu7m "Uh… Hi. Can we help you with something?"
-                "The guy beside her speaks up before I can answer."
+                stu7m "Эм… Привет. Мы чем-то можем помочь?"
+                "Парень, рядом с ней, начал говорить прежде чем я ответил."
                 voice "audio/voice/E1/D2/S10/stu2m/1.ogg"
-                stu2m "Hey, you're new right? I saw you around campus today. You certainly stick out."
-                "He glances at my blond hair."
-                pf "I guess I do look a little different."
+                stu2m "Эй, ты же новенький, да? Я видел тебя сегодня в кампусе. Ты пределённо выделяешься."
+                "Он смотрел на мои светлые волосы."
+                pf "Полагаю, я выгляжу немного иначе."
                 voice "audio/voice/E1/D2/S10/stu7m/3.ogg"
-                stu7m "Did you just transfer here?"
-                pf "Yeah, from CINY in the States."
+                stu7m "Ты только что перевёлся к нам?"
+                pf "Да, из CINY, что в Штатах."
                 voice "audio/voice/E1/D2/S10/stu7m/4.ogg"
-                stu7m "Bit late in the year to transfer, isn't it?" 
-                "Is it? The year just started. But they all nod, agreeing with one another." 
+                stu7m "Немного поздний период года для перевода, не так ли?" 
+                "Разве? Учебный год только начался. Но они все согласно кивнули." 
                 voice "audio/voice/E1/D2/S10/stu2m/2.ogg"
-                stu2m "Yeah, teams usually get picked in the summer before classes begin. Who are you teamed up with?"
-                pf "Yeah, that's sort of my problem. I was hoping that someone in the lounge could help me out. You wouldn't happen to need another pilot, would you?" 
-                "The second student shakes his head." 
+                stu2m "Да, команды обычно формируются летом, прежде чем начнутся занятия. Ты уже нашёл команду?"
+                pf "Да... В этом как раз моя проблема. Я надеялся,что кто-то в холле поможет мне. Вам ведь не нужен ещё один пилот?" 
+                "Второй студент помотал головой." 
                 voice "audio/voice/E1/D2/S10/stu2m/3.ogg"
-                stu2m "No, we're all filled up. At least in pilot positions." 
-                pf "Just my luck. Any chance you know of anyone looking?" 
-                "The group exchanges glances before the first student speaks again."
+                stu2m "Нет, у нас всё заполнено. По крайней мере мест пилотов нет." 
+                pf "Как всегда не везёт. Может вы знаете кого-то, кто ищёт человека в команду?" 
+                "Группа обменялась взглядами, прежде чем первый студент снова заговорил."
                 voice "audio/voice/E1/D2/S10/stu7m/5.ogg"
-                stu7m "Shinjirou and Itami were looking for another pilot weren't they?" 
+                stu7m "Синдзиро и Итами искали ещё одного пилота, не так ли?" 
                 voice "audio/voice/E1/D2/S10/stu2m/4.ogg"
-                stu2m "Oh yeah. If I were you, I'd talk to them. Last I heard, their team wasn't full. You'll probably learn a lot from them too. They were both top pilots in their first year." 
-                "Shinjirou? Is that the guy who approached me before? I didn't get the impression that he was a top pilot. Maybe there's more to that guy than I thought." 
-                pf "Well, thanks. I appreciate the help."
+                stu2m "Точно. На твоём месте я бы поговорил с ними. Последнее, что я слышал, что их команда не была полной. Вероятно, ты также научишься многому у них. Они были лучшими пилотами в свой первый год." 
+                "Синдзиро? Это тот парень, который поддходил ко мне ранее? У меня не сложилось впечатление, что он был лучшим пилотом. Может быть в этом парне есть что-то больше, чем я думал." 
+                pf "Ну, что ж, спасибо за помощь."
                 hide studentM extra
                 hide studentM2 extra
                 with dissolve
-                "I smile and turn away from the group. Guess I'm back where I started." 
+                "Я улыбнулся и отошёл от группы. Похоже мы возвращаемся в начало." 
         
             "I'm a smooth operator.":
                 "I put on my most charming smile and glance around the room, looking for an appropriate target."
