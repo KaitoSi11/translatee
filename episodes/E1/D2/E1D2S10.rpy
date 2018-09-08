@@ -61,147 +61,147 @@ label E1D2S10:
                 "Я улыбнулся и отошёл от группы. Похоже мы возвращаемся в начало." 
         
             "I'm a smooth operator.":
-                "I put on my most charming smile and glance around the room, looking for an appropriate target."
-                "I catch the eyes of a pretty girl across the lounge and stride towards her."
+                "Я надел свою самую очаровательную улыбку и осмотрел на комнату, ища подходящую цель."
+                "Я выцепил взгядом симпатичную девушку, и направился к ней."
                 show studentF2 extra at r2 with dissolve
-                pf "Hi, I'm [pfirst]."
+                pf "Привет, Я [pfirst]."
                 show bully2 extra at l2 with dissolve
                 play music "audio/music/Stress (GAME VERSION).ogg" fadein 1
-                "Before she can answer, a tall guy steps towards us and looks at me coldly." 
+                "Прежде, чем она ответила, высокий парень подошёл к нам, и холодно посмотрел на меня." 
                 voice "audio/voice/E1/D2/S10/stu2m/5.ogg"
-                stu2m "What do you want?" 
-                pf "Since you asked, I was just hoping to learn the name of this lovely lady."
-                "She blinks in surprise, and tries to hide the growing blush in her cheeks. He becomes even more flustered by her response."
+                stu2m "Тебе чего надо?" 
+                pf "Раз ты спросил, я как раз надеялся узнать имя этой милой дамы."
+                "Она удивлённо моргнула, и попыталась скрыть появляющийся румянец на щеках. Он стал еще более взволнованным, наблюдая её реакцию."
                 voice "audio/voice/E1/D2/S10/stu2m/6.ogg"
-                stu2m "She doesn't want to know yours!"
-                pf "Are you sure about that?"
+                stu2m "Она не хочет тебя знать!"
+                pf "Ты уверен в этом?"
                 voice "audio/voice/E1/D2/S10/stu2m/7.ogg"
-                stu2m "Huh?"
-                pf "Did you ask her?"
+                stu2m "Хм?"
+                pf "Ты спросил её?"
                 voice "audio/voice/E1/D2/S10/stu2m/8.ogg"
-                stu2m "Well, no."
-                pf "Then how do you know she isn't as curious about me as I am about her?"
-                "Without waiting for him to sputter out a response, I turn to the girl."
-                pf "As I said before we were so rudely interrupted, I'm [pfirst], and you are?"
-                "She smiles shyly."
-                stu9f "Mitsuki."
-                "The guy's face is bright red as he steps between us, and turns towards her."
+                stu2m "Ну, нет."
+                pf "Тогда откуда тебе знать, что она не заинтересована во мне так же, как я в ней?"
+                "Не дожидаясь его ответа, я повернулся к девушке."
+                pf "Как я говорил ранее, прежде чем нас грубо прервали, я [pfirst], а тебя как зовут?"
+                "Она стеснительно улыбалась."
+                stu9f "Мицуки."
+                "Лицо парня было ярко-красным, когда он встал между нами, и повернулся к ней."
                 voice "audio/voice/E1/D2/S10/stu2m/9.ogg"
-                stu2m "Why would you tell this asshole your name?"
-                stu9f "I can tell my name to anyone I want."
+                stu2m "Какого хрена ты говоришь этому придурку своё имя?"
+                stu9f "Я могу сказать свое имя всем, кому хочу."
                 voice "audio/voice/E1/D2/S10/stu2m/10.ogg"
-                stu2m "But this guy? No way!"
+                stu2m "Но этому парню? Ни за что!"
                 hide studentF2 extra
                 hide bully2 extra
                 with dissolve
                 stop music fadeout 3
-                "I back away as the couple continue to argue. Even if they have an opening on their team, it probably wouldn't work out."
-                "I catch her gazing at me from the corner of my eye as her boyfriend continues to lecture her. Heh, still got it!"
-                "As I search for another team, I spot a group of giggling girls watching me intensely... {w}Bullseye. I head towards them."
+                "Я отошёл, пока пара ругалась. Даже если у них открыт набор в команду, то это, вероятно, не сработает."
+                "Я заметил, как она смотрела на меня краем глаза, пока ёё продолжал отчитывать парень. Хех, всё ещё работает!"
+                "Пока я искал другую группу, я увидел группу хихикающих девушек, наблюдающих за мной... {w}Бинго. Я подошёл к ним."
                 play music "audio/music/Isnt This Nice (GAME VERSION).ogg" fadein 1
                 show studentF2 extra at l3
                 show studentF extra at r3
                 show highschoolgirl2 extra at cc
                 with dissolve
-                pf "Hello ladies." 
-                "One of them smiles." 
+                pf "Привет, дамы." 
+                "Одна из них улыбнулась." 
                 voice "audio/voice/E1/D2/S10/stu1f/stu1f_01.ogg"
-                stu1f "Having some trouble?" 
-                pf "Me? Never! But I guess not everyone appreciates my charm." 
+                stu1f "У тебя небольшие проблемы?" 
+                pf "У меня? Да никогда в жизни! Но я думаю, не каждый ценит мое обаяние." 
                 voice "audio/voice/E1/D2/S10/stu1f/stu1f_02.ogg"
-                stu1f "Maybe you just aren't very good at picking who you speak to. I know I certainly wouldn't say no."
-                "I grin."
-                pf "Oh yeah? And why's that?"
+                stu1f "Может ты просто не очень хорошо выбираешь с кем говорить. Я бы точно не отказала тебе."
+                "Я усмезнулся."
+                pf "О, да? И почему это"
                 voice "audio/voice/E1/D2/S10/stu1f/stu1f_03.ogg"
-                stu1f "You look just like a young Ceonardo DiLaprio!"
+                stu1f "Ты выглядишь как молодой Сеонардо ДиЛаприо!"
                 voice "audio/voice/E1/D2/S10/stu4f/stu4f_01.ogg"
-                stu4f "Ooh, Ceonardo DiLaprio!"
+                stu4f "Ооо, Сеонардо ДиЛаприо!"
                 voice "audio/voice/E1/D2/S10/stu3f/Alexandria Bearden_stu3f_1.ogg"
-                stu3f "Wait, which one's Ceonardo DiLaprio?"
+                stu3f "Подожди, какой Сеонардо ДиЛаприо?"
                 voice "audio/voice/E1/D2/S10/stu1f/stu1f_04.ogg"
-                stu1f "You know--Ceonardo DiLaprio."
+                stu1f "Ну, ты знаешь--Сеонардо ДиЛаприо."
                 voice "audio/voice/E1/D2/S10/stu4f/stu4f_02.ogg"
-                stu4f "Ceonardo DiLaprio, he was in {i}Jomeo and Ruliet{/i}."
+                stu4f "Сеонардо ДиЛаприо, он играл в {i}Джомео(JoJo Refference) and Рульетте{/i}."
                 voice "audio/voice/E1/D2/S10/stu3f/Alexandria Bearden_stu3f_2.ogg"
-                stu3f "Ohhhh, Ceonardo DiLaprio! I guess he does look like him."
-                pf "Great, I'm glad we got that established."
+                stu3f "Ооох, Сеонардо ДиЛаприо! Полагаю, он похож на него."
+                pf "Отлично, я рад, что мы установили это."
                 voice "audio/voice/E1/D2/S10/stu4f/stu4f_03.ogg"
-                stu4f "Who are you anyway?" 
-                pf "I'm a transfer student from CINY." 
+                stu4f "Так кто ты такой?" 
+                pf "Я студент, переведённый из CINY." 
                 voice "audio/voice/E1/D2/S10/stu1f/stu1f_05.ogg"
-                stu1f "You're from the States?" 
-                pf "Yeah. Just transferred into the second year pilot program." 
-                "One of the girls nudges her friend. She leans in close and whispers something, then tries to hide her smile." 
+                stu1f "Ты из Штатов?" 
+                pf "Да. Только что перевелся на второй год обучения программы пилотов." 
+                "Одна из девушек легко толкнула свою подругу. Она наклонилась ближе и шептала что-то, потом попыталась скрыть улыбку." 
                 voice "audio/voice/E1/D2/S10/stu1f/stu1f_06.ogg"
-                stu1f "What is it?" 
+                stu1f "Что такое?" 
                 voice "audio/voice/E1/D2/S10/stu3f/Alexandria Bearden_stu3f_3.ogg"
-                stu3f "… He's from the States." 
+                stu3f "… Он из Штатов." 
                 voice "audio/voice/E1/D2/S10/stu1f/stu1f_07.ogg"
-                stu1f "So?" 
+                stu1f "Ииии?" 
                 voice "audio/voice/E1/D2/S10/stu4f/stu4f_04.ogg"
-                stu4f "Sooo, remember that old GEAR in the hangar? It came from the States." 
+                stu4f "Ну, помнишь тот старый GEAR в ангаре? Он прибыл из Штатов." 
                 voice "audio/voice/E1/D2/S10/stu1f/stu1f_08.ogg"
-                stu1f "Is that GEAR yours?" 
-                pf "Uh… Maybe." 
+                stu1f "Это твой GEAR?" 
+                pf "… Возможно." 
                 voice "audio/voice/E1/D2/S10/stu3f/Alexandria Bearden_stu3f_4.ogg"
-                stu3f "Hm… I didn't realise America was so far behind Japan when it comes to GEAR." 
-                "My smile melts away."
-                pf "It's always worked fine for me." 
-                "My GEAR is important to me. Does everyone think it's junk?" 
+                stu3f "Хм… Я и не знала, что Америка так отстала от Японии, когда дело доходит до GEAR." 
+                "Моя улыбка пропала."
+                pf "Как по мне, он все ещё отлично работает." 
+                "Мой GEAR важен для меня. Вс считают его мусором?" 
                 voice "audio/voice/E1/D2/S10/stu1f/stu1f_09.ogg"
-                stu1f "What team was willing to have you join them?" 
-                pf "No one yet. That's what I'm looking for." 
-                "She exchanges looks with her friends then turns back to me and shakes her head." 
+                stu1f "Какая команда пожелала, чтобы ты присоединился к ним?" 
+                pf "Никакая, пока что. Я как раз и ищу команду." 
+                "Она обменялась взглядами со своими друзьями, затем повернулась ко мне и покачала головой." 
                 voice "audio/voice/E1/D2/S10/stu1f/stu1f_10.ogg"
-                stu1f "Well, good luck. I don't think any team will take you on with GEAR like that." 
+                stu1f "Ну, удачи. Не думаю, что какая-то команда возьмёт тебя с таким GEAR." 
                 hide studentF2 extra
                 hide studentF extra
                 hide highschoolgirl2 extra
                 with dissolve
-                "She and the rest of her friends turn away from me and I'm left awkwardly staring at their backs."
-                "I guess my GEAR is everyone's first impression of me."
+                "Она и остальные ее друзья отвернулись от меня, и я неловко смотрел на их спины."
+                "Полагаю, мой GEAR - это первое впечатление ко мне."
         
-            "I should probably target groups of 3":
+            "Я должен искать группы по 3 человека":
                 play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 1
-                "Since teams function as groups of at least 4 pilots, my best bet is to assume that any group of three is still looking for a fourth member. {w}My eyes fall on a group of three students sitting at the far end of the room. There's an extra chair next to them, so I saunter over and take a seat."
+                "Раз команда работает как группа по меньшей мере из 4 пилотов, лучше всего предположить, что любая группа из трех человек по-прежнему ищет четвертого участника. {w}Мои глаза пали на группу из трех учеников, сидящих в дальнем конце комнаты. Рядом с ними есть дополнительный стул, поэтому я подошёл и сел."
                 show studentM extra at l3
                 show studentM2 extra at l1
                 show studentF2 extra at r1
                 with dissolve
-                pf "Hey, you guys look like you're missing a pilot." 
+                pf "Привет, вы выглядите так, как-будто ищете пилота." 
                 voice "audio/voice/E1/D2/S10/stu7m/6.ogg"
-                stu7m "And who are you exactly?"
-                pf "Transfer student from CINY. Best in my class back home and looking for a team that needs a skilled member." 
-                "The group of three exchange looks with each other." 
+                stu7m "А ты кто такой?"
+                pf "Студент, переведённый из CINY. Лучший в своём классе, и ищущий команду, нуждающуюся в квалифицорованном человеке." 
+                "Они обменялись взглядами друг с другом." 
                 voice "audio/voice/E1/D2/S10/stu2m/11.ogg"
-                stu2m "Transfer? I heard the exam was pretty tough." 
-                pf "I managed." 
+                stu2m "Переведённый? Я слышал, что экзамен был довольно тяжёлым." 
+                pf "Я справился." 
                 voice "audio/voice/E1/D2/S10/stu7m/7.ogg"
-                stu7m "Right, well we're actually not looking." 
-                "She smiles politely and waves over another pilot."
+                stu7m "Хорошо, но вообще-то мы не ищем никого." 
+                "Девушка вежливо улыбается и машет другому пилоту."
                 show studentF extra at r3 with dissolve
                 voice "audio/voice/E1/D2/S10/stu7m/8.ogg"
-                stu7m "This is our fourth member, sorry." 
-                "She looks at me, like he's expecting me to move from his seat. I don't."
-                pf "Any idea who is looking?" 
+                stu7m "Прости, но это наш четвёртый пилот." 
+                "Она посмотрела на меня, будто бы он ожидал, что я освобожу его место. Ну уж нет."
+                pf "Есть идеи, кто ещё ищёт?" 
                 voice "audio/voice/E1/D2/S10/stu2m/12.ogg"
-                stu2m "We don't keep tabs on all the other teams and their needs. As far as I know, all teams were formed over the summer, but you can keep asking around to see if anyone's missing a member."
-                pf "Well, thanks anyway."
+                stu2m "Мы не следим за другими командами и их нуждами. Насколько я знаю, команды формируются летом, но ты все ещё можешь поспрашивать, вдруг кому не хватает людей."
+                pf "Ну, в люьом случае, спасибо."
                 hide studentF2 extra
                 hide studentF extra
                 hide studentM extra
                 hide studentM2 extra
                 with dissolve
-                "I stand and walk away from the group. Scanning the room again, I see there are no other groups of three. Everyone seems to have a group of pilots they work with already."  
-                "So much for trying to find a team this way." 
+                "Я встал и отошёл от них. Снова оглядев комнату, я вижу, что больше нет групп по три человека. Кажется, у всех есть группа пилотов, с которыми они  уже работают."  
+                "Так много усилий для того, чтобы найти команду таким образом." 
     
-    "Should I see if Shou will still take me or just head home and try again tomorrow?"
+    "Пойти ли к Сё и посмотреть, примет ли он все ещё меня, или просто пойти домой, и попробовать завтра?"
     stop music fadeout 3
     menu:
-            "Maybe Shou will give me another chance.":
+            "Возможно, Сё даст мне ещё один шанс.":
                 jump E1D2S11
     
-            "I've had enough rejection for one day.":
+            "Достаточно с меня отказов за один день.":
                 $ E1D2S10_EnoughRejection = 1
                 jump E1D2S12
     
