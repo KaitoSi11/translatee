@@ -57,7 +57,7 @@ init python:
     aks = Character("Акио Синдзиро")
     kt = Character("Кен Такео")
     tk = Character("Тацуо Кимура")
-    gua = Character("Стражник")
+    gua = Character("Охранник")
     an = Character("Диктор")
     eng1 = Character("Инженер")
     eng1m = Character("Инженер мужчина")
