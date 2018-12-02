@@ -23,7 +23,7 @@ init python:
     
     ki = Character("Каори Итами", color="#FA5858")
     
-    ss = Character("Shou Shinjirou", color="#01DF3A")
+    ss = Character("Сё Синдзиро", color="#01DF3A")
     
     ma = Character("Маю Акеми", color="#00FFBF")
     
@@ -37,7 +37,7 @@ init python:
     
     ms = Character("Мэй Сатоми", color="#835930")
     
-    GEARpf = Character("Eagle", color="#4D94FF")
+    GEARpf = Character("Орёл", color="#4D94FF")
     
     mv = Character("Дядя Мигель")
     
@@ -141,7 +141,7 @@ init python:
     flirtyg1 = Character("Привлекательная женщина 1")
     flirtyg2 = Character("Привлекательная женщина 2")
     
-    tc = Character("Tennis Captain Ryoma Echizan")
+    tc = Character("Tennis Captain Райома Эчизан")
     ei = Character("Эйто Иваса")
     
     dk = Character("Dishu Khan")
@@ -372,14 +372,14 @@ label start:
     
     "Давайте настроим кое-что..."
     #label rollbackchoice:
-    #    "{i}{b}Rollback Function{/b}{/i}{p}This feature allows you to scroll back and re-pick options within a certain period of time. {w}Configuration will not impact the story in any way... pick to your preference!"
+    #    "{i}{b}Функция отката{/b}{/i}{p}This feature allows you to scroll back and re-pick options within a certain period of time. {w}Configuration will not impact the story in any way... pick to your preference!"
     #    "Would you like to enable {i}{b}Rollback Function{/b}{/i}?"
     #    menu:
-    #        "Yes please.":
+    #        "Да.":
     #            $ config.rollback_enabled = True
     #            "{i}{b}Rollback Function{/b}{/i} enabled! Please use your mousewheel to access this function."
     #
-    #        "No way!":
+    #        "Нет!":
     #            $ config.rollback_enabled = False
     #            "{i}{b}Rollback Function{/b}{/i} disabled!"
 
