@@ -309,7 +309,7 @@ label E1D2S13:
         sf "Не уверена, что могу поверить в то, что {i}ты{/i} там самый нормальный человек."
     
     elif (E1D2S11_JoinedTheTeam == 0) and (E1D2S3_MetKaoriWasRudeNoHelmet == 1):
-        pf "It could have been better. On my way into school, this dumb girl tried to cross the street and basically jumped in front of my bike. And the best part? She was a complete jerk to me when I stopped to check on her."
+        pf "Могло быть лучше. По дороге в школу эта глупая девушка пыталась перейти дорогу и практически выпрыгнула перед моим мотоциклом. А знаешь какая лучшая часть? Она вела себя очень противно, когда я остановился помочь ей."
         show nikki ske at cc
         show drop:
             xoffset 720
@@ -317,32 +317,32 @@ label E1D2S13:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S13/Nikki/41.ogg"
-        sf "To be fair, you probably gave her a heart attack." 
-        pf "That's her fault! My light was still green. {i}Her{/i} light was red."
+        sf "Справедливости ради, из-за тебя её мог хватить сердечный приступ." 
+        pf "Это её вина! Мой сигнал был все ещё зелёный. {i}Её{/i} сигнал был красный."
         show nikki thi at cc
         voice "audio/voice/E1/D2/S13/Nikki/42.ogg"
-        sf "Oh… well, even so…" 
+        sf "Ох… хорошо, даже так…" 
         
         if (E1D2S10_EnoughRejection == 1):
-            pf "And to make matters worse, when I tried to join a team, the {i}only{/i} team looking for another member was hers."
+            pf "И что ещё хуже, когда я пытался вступить в команду, {i}единственная{/i} команда, искавшая членов, была её."
             show nikki cur at cc
             voice "audio/voice/E1/D2/S13/Nikki/43.ogg"
-            sf "Ohhhh, man. How did that go?" 
-            pf "As soon as she saw me she said no."
+            sf "Оххх, мужик. И как это прошло?" 
+            pf "Как только она меня увидела, то сказала нет."
             
         show nikki mis at cc
         voice "audio/voice/E1/D2/S13/Nikki/44.ogg"
-        sf "Maybe you should stop running people over?" 
-        pf "It's not like I do this for fun!"
+        sf "Может тебе стоит перестать сбивать людей?" 
+        pf "Как будто я это делаю веселья ради!"
         show nikki smi at cc
-        "She just laughs." 
+        "Она просто смеялась." 
     
     elif (E1D2S11_JoinedTheTeam == 0) and (E1D2S11_ComingCleanAboutRunningOverKaori == 1):
-        pf "It was interesting... to say the least."
+        pf "Это было интересно... по меньшей мере."
         show nikki cur at cc
         voice "audio/voice/E1/D2/S13/Nikki/51.ogg"
-        sf "Sounds like a good story." 
-        pf "Well... It started out with me nearly running over this girl."
+        sf "Звучит как хорошая история." 
+        pf "Ну... Она произошла со мной, когда я чуть не сбил эту девушку."
         show nikki sur at cc
         show shocked:
             xoffset 720
@@ -350,12 +350,12 @@ label E1D2S13:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S13/Nikki/52.ogg"
-        sf "You nearly ran someone over? I knew you drove too crazy on that bike." 
-        pf "It wasn't my fault! She walked out in front of me."
+        sf "Ты чуть не сбил кого-то? Я знала, что ты слишком безумно водишь мотоцикл." 
+        pf "Это была не моя вина! Она вышла передо мной."
         show nikki ske at cc
         voice "audio/voice/E1/D2/S13/Nikki/53.ogg"
-        sf "Uh huh, is she okay?" 
-        pf "She was fine... At least, I thought she was fine."
+        sf "Ага, она в порядке?" 
+        pf "Она была в порядке... По крайней мере, я думал, что она в порядке."
         show nikki dis at cc
         show drop:
             xoffset 720
@@ -363,22 +363,22 @@ label E1D2S13:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S13/Nikki/54.ogg"
-        sf "You didn't stay to find out? Wow, jerk." 
-        pf "Hey, she didn't seem hurt so I didn't think it was a big deal. But then I ended up running into her later that day. She's another pilot, and her team was the only one looking for a new member."
+        sf "Ты не остановился, чтобы проверить? Вау, придурок." 
+        pf "Эй, она не выглядела раненой, так что я подумал, что ничего страшного. Но потом я столкнулся с ней позже в тот же день. Она была другим пилотом. И ей команда была единственной, которая искала новочо члена."
         show nikki ske at cc
         voice "audio/voice/E1/D2/S13/Nikki/55.ogg"
-        sf "Ouch. Did she let you join? After all, it sounds like she didn't see you." 
-        pf "Well, she was obsessing over finding out who nearly ran her over, so I felt bad for leaving the scene like I did. Maybe she'd actually gotten hurt or something. {w}So like an idiot I confessed and apologised to her. As expected, she was furious and refused to let me on the team."
+        sf "Ауч. Она позволила тебе вступить? В конце концов, похоже, что она тебя не видела." 
+        pf "Ну, она была одержима тем, что пыталась узнать кто её чуть не сбил. Так что я чувствовал себя плохо за то, что сбежал с места дтп. Может она действительно поранилась или что-то ещё. {w}Так что я как идиот признался ей и извинился. Как и ожидалось, она разъярилась и отказала мне."
         show nikki mis at cc
         voice "audio/voice/E1/D2/S13/Nikki/56.ogg"
-        sf "I hate to say it, but it serves you right. That's karma."
-        pf "That smug smile of yours makes me think you don't hate saying that."
+        sf "Мне не нравится говорить это, но с тобой поступили правильно. Это карма."
+        pf "Эта самодовольная улыбка заставляет меня думать, что на самом деле тебе нравится это говорить."
         show nikki smi at cc
         voice "audio/voice/E1/D2/S13/Nikki/57.ogg"
-        sf "No, you're right, I loved it!"  
+        sf "Нет, ты прав, я обожаю это!"  
     
     elif (E1D2S11_JoinedTheTeam == 0) and (E1D2S3_EncounteredKaori == 0):
-        pf "It was okay. No luck finding a team, though."
+        pf "он был норм. Хоть и не повезло найти команду."
         show nikki wor at cc
         show panic:
             xoffset 720
@@ -386,16 +386,16 @@ label E1D2S13:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S13/Nikki/45.ogg"
-        sf "No?" 
-        pf "One guy offered me a space, but to be honest, he was a bit... strange. I wasn't crazy about the idea of joining him."
+        sf "Нет?" 
+        pf "Один парень предложил мне место, но честно говоря, он был немного... странный. Я не сходил с ума по поводу идеи присоединиться к нему."
         show nikki neu at cc
         voice "audio/voice/E1/D2/S13/Nikki/46.ogg"
-        sf "Beggars can't be choosers." 
-        pf "Yeah, I guess. I was hoping that another team was looking but nobody in the Pilot's Lounge was very helpful."
+        sf "Неимущие не могут быть теми, кто выбирает." 
+        pf "Да, я полагаю. Я надеялся, что какая-нибудь другая команда ищет, но никто в зале пилотов не был очень полезным."
         show nikki smi at cc
         voice "audio/voice/E1/D2/S13/Nikki/47.ogg"
-        sf "I'm sure you can try again tomorrow."
-        pf "Yeah, but it would have been better if I'd found one today."
+        sf "Уверена, что ты можешь попробовать завтра."
+        pf "Да, но было бы лучше, если бы я нашел сегодня."
     
     show nikki cur at cc
     voice "audio/voice/E1/D2/S13/Nikki/48.ogg"
