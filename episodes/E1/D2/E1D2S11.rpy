@@ -1,7 +1,7 @@
 label E1D2S11:
     
     if (E1D2S9_AgreeJoinShouTeam == 0):
-        "Оставшись без вариантов, я осмотрел зал в поисках Сё. He'd mentioned that his team needed another member… Hopefully that's still the case."
+        "Оставшись без вариантов, я осмотрел зал в поисках Сё. Он упоминал, что его команде не хватает человека… Надеюсь, что все ещё так."
         play music "audio/music/Day Out (GAME VERSION).ogg" fadein 1
         "Я заметил его стоящим с двумя девушками на противоположном конце комнаты. Первая девушка, с ярко-рыжими волосами, стояла в стороне и быстро разговаривала по телефону. Другая девушка с темными волосами шаркала ногой, пока Сё что-то оживлённо ей рассказывал." 
         pf "Привет, Сё!" 
@@ -143,7 +143,7 @@ label E1D2S11:
         show shou hap at cc
         "Сё повернулся к рыжей."
         voice "audio/voice/E1/D2/S11/Shou/8.ogg"
-        ss "Эй, перестань быть грубой!"
+        ss "Эй, перестань вести себя грубо!"
         show kaori neu at cc
         show shou neu at r3:
             xzoom -1
@@ -155,7 +155,7 @@ label E1D2S11:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S11/Shou/9.ogg"
-        ss "Я хочу сказать, ты скоро закончишь? Я юы хотел, чтобы ты познакомилась кое с кем."
+        ss "Я хочу сказать, ты скоро закончишь? Я бы хотел, чтобы ты познакомилась кое с кем."
         show kaori dis at cc
         "Она нахмурилась."
         voice "audio/voice/E1/D2/S11/Kaori/1.ogg"
@@ -563,74 +563,74 @@ label E1D2S11:
     elif (E1D2S3_EncounteredKaori == 0):
         stop music fadeout 3
         show shou hap at cc
-        "Shou turns towards the redhead."
+        "Сё повернулся к рыжей."
         play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 1 fadeout 1
         voice "audio/voice/E1/D2/S11/Shou/41.ogg"
-        ss "Hey, quit being rude!"
+        ss "Эй, перестань вести себя грубо!"
         show kaori neu at cc
         show shou neu at r3:
             xzoom -1
         with dissolve
-        "Her gaze shifts to him and his smile falters."
+        "Её взгляд переключился на него, и его улыбка спала."
         show drop:
             xoffset 1175
             yoffset 20
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S11/Shou/42.ogg"
-        ss "I mean, will you be done soon? I'd like you to meet someone."
+        ss "Я хочу сказать, ты скоро закончишь? Я бы хотел, чтобы ты познакомилась кое с кем."
         show kaori dis at cc
         "She frowns."
         voice "audio/voice/E1/D2/S11/Kaori/1.ogg"
-        ki "I need to call you back."
+        ki "Я перезвоню."
         show kaori neu at cc
-        "And snaps her phone shut."
+        "И закрыла телефон."
         show shou smi at r3
         voice "audio/voice/E1/D2/S11/Shou/43.ogg"
-        ss "So, this is Kaori."
+        ss "Так, это Каори."
         show kaori ske at cc
-        "She gives me a quick once over, then crosses her arms over her chest." 
+        "Она быстро осмотрела меня, потом скрестила руки." 
         show question:
             xoffset 720
             yoffset 110
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S11/Kaori/36.ogg"
-        ki "A pilot?"
+        ki "Пилот?"
         show shou mis at r3
         voice "audio/voice/E1/D2/S11/Shou/44.ogg"
-        ss "Not just any pilot, but a pilot who's willing to join my team!"
+        ss "не просто какой-нибудь пилот, а пилот, желающий вступить в мою команду!"
         show kaori dis at cc
         voice "audio/voice/E1/D2/S11/Kaori/37.ogg"
-        ki "{i}Your{/i} team?"
+        ki "{i}Твою{/i} команду?"
         show shou hap at r3
-        "Her eyes narrow at Shou and he shrinks back, then wears a sheepish grin."
+        "Её глаза впились в Сё и он отпрянул назад, затем робко улыбнулся."
         voice "audio/voice/E1/D2/S11/Shou/45.ogg"
-        ss "I mean {i}our{/i} team."
+        ss "Я имел в виду {i}нашу{/i} команду."
         show kaori neu at cc
         voice "audio/voice/E1/D2/S11/Kaori/38.ogg"
-        ki "That's better."
-        "She turns back towards me."
+        ki "Так-то лучше."
+        "Она повернулась обратно ко мне."
         show kaori thi at cc
         show shou smi at r3
         with dissolve
         voice "audio/voice/E1/D2/S11/Kaori/39.ogg"
-        ki "Hm… I suppose you'll do. Not like we really have a choice or anything."
+        ki "Хм… Полагаю ты подойдёшь. Не то чтобы у нас был выбор."
         menu: 
-            "Well, that was easy!": 
-                pf "Heh, and they said joining this team would be hard."
+            "Ну, это было просто!": 
+                pf "Хех, и они сказали, что присоединиться к этой команде будет сложно."
                 show kaori dis at cc
                 show shou hap at r3
-                "Shou stifles a laugh, but Kaori narrows her eyes."
+                "Сё сдерживал смех, но Каори вцепилась в него взглядом."
                 voice "audio/voice/E1/D2/S11/Kaori/40.ogg"
-                ki "Who's \"they\"?"
-                pf "Uh, no one... just the people in my class."
+                ki "Кто \"они\"?"
+                pf "Эм, никто... просто люди в моём классе."
                 show kaori ske at cc
                 voice "audio/voice/E1/D2/S11/Kaori/41.ogg"
-                ki "Which class?"
-                pf "Piloting 101?"
+                ki "Каком классе?"
+                pf "101 пилотный?"
                 show kaori ann at cc
-                "She suddenly whirls on Shou."
+                "Она внезапно налетела на Сё."
                 show kaori ang at cc
                 show vein:
                     xoffset 720
@@ -638,39 +638,39 @@ label E1D2S11:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Kaori/42.ogg"
-                ki "You brought me a first year?!"
+                ki "Ты привёл мне первогодку?!"
                 show shou mis at r3
                 voice "audio/voice/E1/D2/S11/Shou/46.ogg"
-                ss "No, he's just new!"
-                pf "I'm a second year, but a transfer student so they're making me take Piloting 101 again."
+                ss "Нет, он просто новенький!"
+                pf "Я второгодка, но переведённый ученик так что они заставили меня снова взять 101 пилотный."
                 show kaori dis at cc
                 show shou smi at r3
                 with dissolve
-                "She relaxes."
+                "Она расслабилась."
                 voice "audio/voice/E1/D2/S11/Kaori/43.ogg"
-                ki "Well, I hope you at least know how to fight. I don't want to spend forever catching you up to our level."
-                pf "I can hold my own."
+                ki "Ну, я надеюсь, ты хоть как-то умеешь сражаться. Я не хочу потратить вечность на то, чтобы достиг нашего уровня."
+                pf "Я справлюсь."
                 show kaori thi at cc
                 voice "audio/voice/E1/D2/S11/Kaori/44.ogg"
-                ki "We'll see."
+                ki "Посмотрим."
                 show shou mis at r3
-                "Shou leans in close to me and lowers his voice."
+                "Сё наклонился ко мне и понизил голос."
                 voice "audio/voice/E1/D2/S11/Shou/47.ogg"
-                ss "I think she likes you!"
+                ss "Я думаю ты ей нравишься!"
                 show shou smi at r3
-                "If that's how she acts towards somebody she likes, then I hope I never get on her bad side."
+                "Если она так себя ведёт с теми, кто ей нравится, то надеюсь никогда не попать на плохую её сторону."
     
-            "Nice to meet you.": 
-                "I extend my hand."
-                pf "I'm [pfirst]. Pleased to meet you."
+            "Приятно познакомиться.": 
+                "Я протянул руку."
+                pf "Я [pfirst]. Рад познакомиться."
                 show kaori neu at cc
-                "She stares blankly at my hand and makes no move to take it. After a minute, I lower it. {w}Well that was awkward."
-                pf "Anyway, thanks for letting me join your team. I was kind of worried I wouldn't be able to find one."
-                "Shou claps me on the back."
+                "Она безучастно посмотрела на мою руку и ничего не сделала. Через минуту я опустил её. {w}Ну, это было неловко."
+                pf "В любом случае, спасибо, что позволили мне присоединиться к вашей команде. Я беспокоился, что не смогу найти."
+                "Сё хлопнул меня по спине."
                 show shou mis at r3
                 voice "audio/voice/E1/D2/S11/Shou/48.ogg"
-                ss "Aren't you glad you had me to look out for you?"
-                pf "Yeah, you're like my fairy godmother."
+                ss "Разве ты не рад, что у тебя есть я, который присмотрит за тобой?"
+                pf "Да, ты как моя крестная фея."
                 show shou ske at r3
                 show confused:
                     xoffset 1175
@@ -678,7 +678,7 @@ label E1D2S11:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Shou/49.ogg"
-                ss "Yeah!--Wait, what?"
+                ss "Да!--Подожди, что?"
                 show kaori mis at cc
                 show shou cur at r3
                 with dissolve
