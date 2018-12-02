@@ -141,33 +141,33 @@ label E1D2S11:
     with dissolve
     if (E1D2S3_MetKaoriWasNice == 1):
         show shou hap at cc
-        "Shou turns towards the redhead."
+        "Сё повернулся к рыжей."
         voice "audio/voice/E1/D2/S11/Shou/8.ogg"
-        ss "Hey, quit being rude!"
+        ss "Эй, перестань быть грубой!"
         show kaori neu at cc
         show shou neu at r3:
             xzoom -1
         with dissolve
-        "Her gaze shifts to him and his smile falters."
+        "Ее взгляд переключился на него, и его улыбка спала."
         show drop:
             xoffset 1175
             yoffset 20
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S11/Shou/9.ogg"
-        ss "I mean, will you be done soon? I'd like you to meet someone."
+        ss "Я хочу сказать, ты скоро закончишь? Я юы хотел, чтобы ты познакомилась кое с кем."
         show kaori dis at cc
-        "She frowns."
+        "Она нахмурилась."
         voice "audio/voice/E1/D2/S11/Kaori/1.ogg"
-        ki "I need to call you back."
+        ki "Я перезвоню."
         show kaori neu at cc
-        "And snaps her phone shut."
+        "И закрыла телефон."
         show shou smi at r3
         stop music fadeout 3
         voice "audio/voice/E1/D2/S11/Shou/10.ogg"
-        ss "So, this is Kaori."
-        "Something about that scowl seems familiar… especially that hair--"
-        "Oh no."
+        ss "Так, Это Каори."
+        "Что-то в этом хмуром выражении кажется знакомым… особенно эти волосы--"
+        "О нет."
         show kaori ske at cc
         play music "audio/music/Sneaking About (GAME VERSION).ogg" fadein 1
         show question:
@@ -176,30 +176,30 @@ label E1D2S11:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S11/Kaori/2.ogg"
-        ki "You…"
+        ki "Ты…"
         menu: 
-            "Apologise again.":
-                pf "Look, about earlier, I really am sorry--"
+            "Снова извиниться.":
+                pf "Слушай, насчёт того,что было ранее, мне очень жаль--"
                 show kaori ann at cc
                 voice "audio/voice/E1/D2/S11/Kaori/3.ogg"
-                ki "Forget it."
-                "She waves her hand dismissively."
-                pf "But I don't want there to be any hard feelings--"
+                ki "Забудь."
+                "Она небрежно махнула рукой."
+                pf "Но я не хочу, чтобы были какие-то обиды--"
                 show kaori dis at cc
-                "She stares at me and crosses her arms, as if daring me to defy her."
+                "Она смотрела на меня и скрестила руки, словно я осмелился ослушаться её."
                 show shou cur at r3
                 voice "audio/voice/E1/D2/S11/Kaori/4.ogg"
-                ki "I told you to forget it."
+                ki "Я же сказала - забудь."
                 show question:
                     xoffset 1175
                     yoffset 20
                     xzoom .75
                     yzoom .75
-                "Shou glances back and forth between us."
+                "Сё водил взляд туда и обратно между нами."
                 show shou mis at r3
                 voice "audio/voice/E1/D2/S11/Shou/11.ogg"
-                ss "Bro, why didn't you tell me you two were already friends?"
-                pf "Well, actually--"
+                ss "Бро, почему ты не сказал мне, что вы уже друзья?"
+                pf "Ну, на самом деле--"
                 show kaori ang at cc
                 show vein:
                     xoffset 720
@@ -207,77 +207,77 @@ label E1D2S11:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Kaori/5.ogg"
-                ki "Shut up!"
+                ki "Заткнись!"
                 show mayu sad at l3
                 show kaori ann at cc
                 show shou sad at r3
                 with dissolve
-                "I instinctively pause. Who knew a girl so petite could be so terrifying."
+                "Я инстинктивно остановился. Кто знал, что такая маленькая девушка может быть настолько ужасающей."
                 show shou ner at r3
-                "She glares at Shou, who is already cowering and protecting his head."
+                "Она смотрела на Сё, который уже сжался и защищал голову."
                 show frightful:
                     xoffset 1175
                     yoffset 20
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Shou/12.ogg"
-                ss "Don't hurt me!"
+                ss "Не бей меня!"
                 show kaori thi at cc
-                "Kaori rolls her eyes."
+                "Каори закатила глаза."
                 voice "audio/voice/E1/D2/S11/Kaori/6.ogg"
-                ki "He and I are {i}not{/i} friends."
+                ki "Я и он {i}не{/i} друзья."
                 show shou neu at r3
                 voice "audio/voice/E1/D2/S11/Shou/13.ogg"
-                ss "Um, okay. So, like I said, this is Kaori, and this is…"
+                ss "Хм, хорошо. Итак, как я уже сказал, это Каори, а это…"
                 pf "[pfirst]."
                 show shou smi at r3
                 voice "audio/voice/E1/D2/S11/Shou/14.ogg"
-                ss "Right."
+                ss "Точно."
                 
-            "What are the odds that we'd run into each other again…":
-                pf "What are you doing here?"
+            "Каковы шансы, что мы снова столкнемся друг с другом…":
+                pf "Что ты тут делаешь?"
                 show kaori dis at cc
                 "She crosses her arms."
                 voice "audio/voice/E1/D2/S11/Kaori/7.ogg"
-                ki "This is {i}my{/i} team--"
+                ki "Это {i}моя{/i} команда--"
                 show shou mis at r3
                 voice "audio/voice/E1/D2/S11/Shou/15.ogg"
-                ss "Well, actually, this is our--"
+                ss "Ну, на самом деле, она наша--"
                 show kaori ann at cc
                 show shou ner at r3
                 with dissolve
-                "Shou flinches from Kaori's piercing glare."
+                "Шоу вздрогнул от пронзительного взгляда Каори."
                 show drop:
                     xoffset 1175
                     yoffset 20
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Shou/16.ogg"
-                ss "--your team. Right, carry on."
-                pf "Sorry, I didn't mean it like that. I just didn't expect to see you again."
+                ss "--твоя команда. Точно, продолжай."
+                pf "Прости, я не это имел в виду. Просто не ожидал увидеть тебя снова."
                 show kaori thi at cc
-                "She pauses, then shrugs."
+                "Она сделала паузу, затем пожала плечами."
                 voice "audio/voice/E1/D2/S11/Kaori/8.ogg"
-                ki "Me neither."
+                ki "Я тоже."
                 show shou sur at r3 with dissolve
                 show shou hap at r3 with dissolve
-                "Shou's eyes widen in surprise. Then he breaks into his usual grin and slaps me--a little too forcefully--on the back."
+                "Глаза Сё расширились от удивления. Затем он улыбается как обычно и хлопает меня - слишком сильно - по спине."
                 show shou mis at r3
                 voice "audio/voice/E1/D2/S11/Shou/17.ogg"
-                ss "Kaori's actually being civil towards you? Why didn't you tell me that you two were friends?"
+                ss "Каори вежлива к тебе? Почему ты не сказал мне, что вы друзья?"
                 show kaori dis at cc
                 voice "audio/voice/E1/D2/S11/Kaori/9.ogg"
-                ki "We aren't. He ran into me this morning… literally."
+                ki "Мы не друзья. Он врезался в меня утром… буквально."
                 show shou ske at r3
-                "Shou raises an eyebrow at me."
+                "Сё поднял бровь на меня."
                 show question:
                     xoffset 1175
                     yoffset 20
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Shou/18.ogg"
-                ss "And you're still alive?"
-                pf "Huh?"
+                ss "И ты ещё жив?"
+                pf "Что?"
                 show kaori ang at cc
                 show vein:
                     xoffset 720
@@ -285,10 +285,10 @@ label E1D2S11:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Kaori/10.ogg"
-                ki "What is that supposed to mean?!"
+                ki "Что это должно значить?!"
                 show mayu sad at l3
                 show shou ner at r3
-                "She steps towards Shou, who immediately jumps back."
+                "Она шагнула к Сё, который уже отпрыгнул назад."
                 show kaori ann at cc
                 show frightful:
                     xoffset 1175
@@ -296,22 +296,22 @@ label E1D2S11:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Shou/19.ogg"
-                ss "Nothing!"
+                ss "Ничего!"
                 show shou smi at r3
                 voice "audio/voice/E1/D2/S11/Shou/19_1.ogg"
-                ss "Anyway, since you two aren't friends… This is Kaori."
-                pf "I'm [pfirst]. Nice to meet you."
+                ss "Во всяком случае, поскольку вы двое не друзья… Это Каори."
+                pf "Я [pfirst]. Приятно познакомиться."
     
         show kaori neu at cc
         stop music fadeout 3
-        "Kaori nods."
+        "Каори кивнула."
         show shou mis at r3
         voice "audio/voice/E1/D2/S11/Shou/20.ogg"
-        ss "Soooo?"
+        ss "Тааааак?"
         show kaori thi at cc
-        "She shrugs."
+        "Она пожала плечами."
         voice "audio/voice/E1/D2/S11/Kaori/11.ogg"
-        ki "It's not like we have much of a choice anyway."
+        ki "Так или иначе, не похоже что у нас есть большой выбор."
         show mayu neu at l3
         show shou hap at r3
         show note:
@@ -320,9 +320,9 @@ label E1D2S11:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S11/Shou/21.ogg"
-        ss "Sweet! You're on the team, bro!"
+        ss "Славно! Ты в команде, бро!"
         show kaori neu at cc
-        pf "Thanks, I think."
+        pf "Спасибо, я полагаю."
     
     
     elif (E1D2S3_MetKaoriWasRudeNoHelmet == 1):
@@ -331,7 +331,7 @@ label E1D2S11:
             xzoom -1
         show kaori ann at cc
         with dissolve
-        "Shou is about to get the redhead's attention, when she snaps her phone shut and stomps over to us."
+        "Сё собирался привлечь внимание рыжей,когда она захлопнула телефон и подошла к нам."
         play music "audio/music/Stress (GAME VERSION).ogg" fadein 1
         show kaori ang at cc
         show exclamation:
@@ -340,7 +340,7 @@ label E1D2S11:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S11/Kaori/17.ogg"
-        ki "You better not be about to introduce him, Shou!"
+        ki "Тебе лучше не пытаться представить его, Сё!"
         show mayu sad at l3
         show kaori ann at cc
         show shou ner at r3
@@ -349,40 +349,40 @@ label E1D2S11:
             yoffset 20
             xzoom .75
             yzoom .75
-        "He hesitates."
+        "Он колеблется."
         show shou ske at r3
         voice "audio/voice/E1/D2/S11/Shou/31.ogg"
-        ss "Uh…"
-        "Seriously? Out of all of the pilots in this program, I just had to run into her. What have I done to deserve this torture?"
+        ss "Эм…"
+        "Серьёзно? из всех пилотов этой программы, мне пришлось столкнуться именно с ней. За что я заслужил эту пытку?"
         show kaori ang at cc
         voice "audio/voice/E1/D2/S11/Kaori/18.ogg"
-        ki "He didn't even care that he nearly {i}killed{/i} me!"
+        ki "Его даже не волнует, что он {i}чуть не убил{/i} меня!"
         show kaori ann at cc
-        "Oh. {w}Right. {w}Karma's a bitch."
+        "О. {w}Точно. {w}Карма та ещё сука."
         show shou ner at r3
-        "I guess I could have done a little more to remedy the situation, but she's completely overreacting. "
+        "Наверное, я мог бы сделать чуть больше, чтобы исправить ситуацию, но она слишком остро реагирует. "
         
         menu:
-            "Suck it up and apologise.":
-                "This might be my only chance to join a team. I should try to make things right… even if she is insufferable."
-                pf "You're right. I didn't handle myself well back there, and I'd like to apologise for that and for endangering you."
+            "Смириться и извиниться.":
+                "Возможно это единственный шанс попасть в команду. Я должен попытаться сделать все правильно ... даже если она невыносима."
+                pf "Ты права. Я не очень хорошо повёл себя тогда, и хотел бы извиниться за то, что подверг тебя опасности"
                 show kaori dis at cc
                 show shou neu at r3
                 with dissolve
-                "Her steady glare never waivers. I glance at Shou, who nods encouragingly. {w}After a few moments, she drops her glare and steps towards me."
+                "Её твёрдый взгляд не спадал. Я глянул на Сё, который одобрительно кивал. {w}Через несколько мгновений она опустила взгляд и шагнула ко мне."
                 show kaori thi at cc
                 voice "audio/voice/E1/D2/S11/Kaori/19.ogg"
-                ki "Apology {i}not{/i} accepted."
+                ki "Извинения {i}не{/i} приняты."
                 show shou ner at r3
                 voice "audio/voice/E1/D2/S11/Shou/32.ogg"
-                ss "Kaori--"
+                ss "Каори--"
                 show kaori ann at cc
                 voice "audio/voice/E1/D2/S11/Kaori/20.ogg"
-                ki "No. Obviously he's just apologising because he needs to join a team."
-                pf "I made a mistake and I want to make things right."
+                ki "нет. Очевидно, он просто извиняется, потому что ему нужно присоединиться к команде."
+                pf "Я сделал ошибку, и я хочу сделать все правильно."
                 show shou ske at r3
                 voice "audio/voice/E1/D2/S11/Shou/33.ogg"
-                ss "C'mon, Kaori, everyone deserves a second chance."
+                ss "Да ладно, Каори, каждый заслуживает второй шанс."
                 stop music fadeout 3
                 show kaori ang at cc
                 show vein:
@@ -391,27 +391,27 @@ label E1D2S11:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Kaori/21.ogg"
-                ki "His second chance is me not reporting him to the proper authorities."
+                ki "Его второй шанс это то, что я не сообщила о нём соответствующим властям."
                 hide kaori with dissolve
                 show mayu wor at l3
                 show shou thi at r3
-                "With a huff, she pushes past us and into the crowd of pilots. Shou smiles apologetically to me."
+                "Она раздражённо прошла мимо нас в толпу пилотов. Сё извиняющимся тоном улыбнулся мне."
                 show shou neu at r3
                 voice "audio/voice/E1/D2/S11/Shou/34.ogg"
-                ss "Sorry, but--"
-                pf "I get it."
+                ss "Прости, но--"
+                pf "Я понял."
                 hide shou with dissolve
                 hide mayu with dissolve
-                "He gives me one last look before leaving. Mayu follows closely at his heels."
-                "Well, this sucks."
+                "Он последний раз взглянул на меня перед уходом. Маю последовала за ним по пятам."
+                "Ну, это отстой."
                 jump E1D2S12
     
-            "It's too late to apologise…":
-                pf "too late…"
+            "Слишком поздно извиняться…":
+                pf "Слишком поздно…"
                 show kaori ske at cc
                 voice "audio/voice/E1/D2/S11/Kaori/22.ogg"
-                ki "What?"
-                pf "Nothing.{w} Look, you aren't hurt. Can't we just put the past in the past?"
+                ki "Что?"
+                pf "Ничего.{w} Слушай, ты же не ранена. Не можем мы просто оставить прошлое в прошлом?"
                 show kaori ang at cc
                 show vein:
                     xoffset 720
@@ -419,30 +419,30 @@ label E1D2S11:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Kaori/23.ogg"
-                ki "No! Your light was red and you ran it!"
+                ki "Нет! Твой цвет был красным, и ты проехал на него!"
                 show kaori ann at cc
-                pf "It was not red!"
+                pf "Он не был красным!"
                 show kaori ang at cc
                 voice "audio/voice/E1/D2/S11/Kaori/24.ogg"
-                ki "And did you not hear the part where you nearly killed me?"
+                ki "И ты не слышал ту часть, где ты чуть не убил меня?"
                 show kaori ann at cc
-                pf "{i}Nearly{/i} being the key word."
+                pf "{i}Чуть{/i} было ключевым словом."
                 show kaori ang at cc
                 voice "audio/voice/E1/D2/S11/Kaori/25.ogg"
-                ki "The last thing I need on this team is another careless idiot!"
+                ki "Последнее, что мне нужно в этой команде - еще один неосторожный идиот!"
                 show kaori ann at cc
                 show shou ske at r3 with dissolve
                 voice "audio/voice/E1/D2/S11/Shou/35.ogg"
-                ss "Hey! I resent that--"
+                ss "эй! Я возмущён этим--"
                 show kaori ang at cc
                 voice "audio/voice/E1/D2/S11/Kaori/26.ogg"
-                ki "Shut up, Shou!"
+                ki "Завались, Сё!"
                 show kaori ann at cc
                 show shou neu at r3
-                "He falls silent."
-                pf "This isn't entirely my fault, either. You shouldn't have started to cross so early. You should have waited for the light to turn."
+                "Он замолк."
+                pf "Это не только моя вина. Ты не должна была так рано переходить дорогу. надо было подождать пока загорится твой цвет."
                 show kaori ann b1 at cc
-                "Her face turns as red as her hair and her eyes grow impossibly wide."
+                "Её лицо покраснело в тон с волосами, и глаза невероятно расширились."
                 show kaori ang b1 at cc
                 stop music fadeout 3
                 show exclamation:
@@ -451,7 +451,7 @@ label E1D2S11:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Kaori/27.ogg"
-                ki "It {i}had{/i} turned!"
+                ki "{i}Он{/i} загорелся!"
                 show mayu wor at l3
                 show kaori ann at cc
                 show shou thi at r3
@@ -466,24 +466,24 @@ label E1D2S11:
                     yoffset 135
                     xzoom .75
                     yzoom .75
-                "We aren't getting anywhere. I glance at Shou, whose face has gone pale. Even Mayu is cowering beside them. She's staring so hard at a spot on the floor I'm worried she'll burn a hole through it."
-                pf "Fine. Even if I apologise now, you wouldn't believe me, so I think it's probably best if I just go."
+                "Так мы никуда не придём. Я посмотрел на Сё, лицо его было бледным. Даже Маю сжалась рядом с ним. Она так пристально смотрит в пол, что может дыру в нём прожечь."
+                pf "Хорошо. Даже если я сейчас извинюсь, ты не поверишь мне. Так что будет лучше всего, если я просто пойду."
                 show kaori dis at cc
                 voice "audio/voice/E1/D2/S11/Kaori/28.ogg"
-                ki "That's the first intelligent thing you've said today."
-                pf "Thanks for the invite anyway, Shou."
+                ki "Это первая умная вещь, которую ты сказал сегодня."
+                pf "В любом случае, спасибо за приглашение Сё."
                 show shou ner at r3
                 voice "audio/voice/E1/D2/S11/Shou/36.ogg"
-                ss "Sure…"
+                ss "Конечно…"
                 hide mayu
                 hide kaori
                 hide shou
                 with Dissolve(2.5)
-                "After one last look, I walk away."
+                "Ещё раз взлгянув на них, я ушел."
                 jump E1D2S12
     
-            "I'm starting to regret {i}not{/i} running you over.":
-                pf "But you're not dead, are you?"
+            "Я начинаю жалеть, что {i}не{/i} переехал тебя.":
+                pf "Но ты же не мертва, не так ли?"
                 show kaori ske at cc
                 show question:
                     xoffset 720
@@ -491,16 +491,16 @@ label E1D2S11:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Kaori/29.ogg"
-                ki "What kind of stupid question is that?"
-                pf "You keep talking about how you nearly died. Well, you know what? You're not dead. In fact, you're completely fine. So there's no need to get your panties in a twist over nothing."
+                ki "Что это за тупой вопрос?"
+                pf "Ты продолжаешь говорить о том, что чуть не умерла. Ну, знаешь что? Ты не мертва. По факту, ты полностью в порядке. Так что нечего тут из штанов выпрыгивать из-за ничего."
                 show kaori ang at cc
                 voice "audio/voice/E1/D2/S11/Kaori/30.ogg"
-                ki "How dare you! This is not {i}nothing{/i}. In fact--"
+                ki "Как смеешь ты! Это было не {i}ничего{/i}. По факту--"
                 show kaori ann at cc
-                "I raise a hand and cut her off before she can continue."
-                pf "In fact, you should put the past behind you. Because let's face it, you {i}need{/i} me."
+                "Я поднял руку и прервал её, прежде чем она продолжила."
+                pf "По факту, ты должна оставить прошлое позади. Потому что давай взглянем правде в лицо, тебе {i}нужен{/i} я."
                 show kaori ann b1 at cc with dissolve
-                "Her face is so red I can almost see the steam blowing out of her ears."
+                "Ее лицо было настолько красным, что я почти видел, как пар выходил из её ушей."
                 show kaori ang b1 at cc
                 show vein:
                     xoffset 720
@@ -508,34 +508,34 @@ label E1D2S11:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Kaori/31.ogg"
-                ki "I don't {i}need{/i} anyone, and I certainly don't need {i}you{/i}!"
+                ki "Мне {i}никто{/i} не нужен, несомненно мне не нужен {i}ты{/i}!"
                 show kaori ann at cc
-                pf "How many people do you have on your team again?"
+                pf "Ещё раз, сколько людей в вашей команде?"
                 show kaori dis at cc
-                "Her frown deepens and she crosses her arms but she doesn't answer."
-                pf "Exactly."
+                "Она нахмурилась и скрестила руки, но не ответила."
+                pf "Именно."
                 show kaori thi at cc
                 voice "audio/voice/E1/D2/S11/Kaori/32.ogg"
-                ki "So? We'll find someone."
+                ki "И? Мы найдём кого-нибудь."
                 show shou neu at r3
                 voice "audio/voice/E1/D2/S11/Shou/37.ogg"
-                ss "But Kaori, there's no one else."
-                "Shou had gotten so uncharacteristically quiet that I'd nearly forgotten about him. Even now, his voice was barely above a whisper."
+                ss "Но Каори, больше никого нет."
+                "Сё так нехарактерно тихо говорил, что я почти забыл о нем. Даже сейчас его голос был чуть выше шепота."
                 show kaori dis at cc
                 voice "audio/voice/E1/D2/S11/Kaori/33.ogg"
-                ki "We'll find someone."
+                ki "Мы найдём кого-нибудь."
                 show shou ner at r3
                 voice "audio/voice/E1/D2/S11/Shou/38.ogg"
-                ss "Can't you give him another chance?"
-                pf "I'm willing to put our disagreements aside and start with a clean slate. {w}Are you?"
+                ss "Разве ты не можешь дать ему еще один шанс?"
+                pf "Я готов отложить наши разногласия и начать с чистого листа. {w}А ты?"
                 show kaori ann at cc
-                "She pauses, then looks me straight in the eyes."
+                "Она сделала паузу, а потом посмотрела мне прямо в глаза."
                 stop music fadeout 3
                 voice "audio/voice/E1/D2/S11/Kaori/34.ogg"
-                ki "No."
+                ki "нет."
                 show shou neu at r3
                 voice "audio/voice/E1/D2/S11/Shou/39.ogg"
-                ss "Kaori--"
+                ss "Каори--"
                 show kaori ang at cc
                 show exclamation:
                     xoffset 720
@@ -543,20 +543,20 @@ label E1D2S11:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S11/Kaori/35.ogg"
-                ki "Shut up, Shou!"
+                ki "Заткнись, Сё!"
                 show mayu wor at l3
                 show kaori ann at cc
                 show shou neu at r3
                 with dissolve
-                pf "Whatever. Thanks anyway, Shou."
+                pf "Без разницы. В любом случае, спасибо Сё."
                 show shou ner at r3
                 voice "audio/voice/E1/D2/S11/Shou/40.ogg"
-                ss "Sure…"
+                ss "Конечно…"
                 hide mayu
                 hide kaori
                 hide shou
                 with Dissolve(2.5)
-                "I turn and walk away, but after a short distance, I glance back and see Shou and Kaori arguing. I'll figure something out tomorrow."
+                "Я развернулся и ушёл, но потом обернулся назад и увидел как Сё спорил с Каори. Завтра что-нибудь придумаю."
                 jump E1D2S12
     
     
