@@ -2,40 +2,40 @@ label E1D2S13:
     
     $renpy.pause(1)
     scene bg homekaito main dusk with Dissolve(2.5)
-    "As soon as I open the front door, I hear a clanging in the kitchen. {w}Nikki must be home. {w}Just as I predicted, she's stirring a pot, surrounded by a mess of appliances."
+    "Как только я открыл входную дверь, то услышал звон на кухне. {w}Должно быть Никки дома. {w}Как я и предполагал, она что-то помешивала в кастрюле, окружённая кучей приборов."
     play ambient "audio/ambience/Kitchen Cooking.ogg" fadein 1
     show nikki neu at cc with dissolve
-    pf "Hey, Nikki."
+    pf "Привет, Никки."
     show nikki cur at cc with dissolve
     show exclamation:
         xoffset 720
         yoffset 160
         xzoom .75
         yzoom .75
-    "She glances up in surprise."
+    "Она удивлённо посмотрела на меня."
     show nikki hap at cc
     play music "audio/music/Hanging Out (GAME VERSION).ogg" fadein 1
     voice "audio/voice/E1/D2/S13/Nikki/1.ogg"
-    sf "Hey! You're home early."
-    pf "Am I? It's right around dinner time. {w}What are you making?"
+    sf "Привет! Ты рано вернулся домой."
+    pf "Разве? Как раз к ужину. {w}Что готовишь?"
     show nikki smi at cc
     voice "audio/voice/E1/D2/S13/Nikki/2.ogg"
-    sf "Guess!"
-    "I try to peek into the pot but she hides it from me."
+    sf "Угадай!"
+    "Я попытался заглянуть в горшок, но она закрыла его от меня."
     show nikki mis at cc
     voice "audio/voice/E1/D2/S13/Nikki/3.ogg"
-    sf "No cheating!"
+    sf "Не жульничать!"
     
     menu:
-        "My nose knows.":
-            "I breathe in deeply and pause to sort the aromas lingering in the air. The dominant scent is of tomatoes, followed by meat--beef to be specific, but also a hint of celery… basil…"
-            pf "You're making bolognese!"
+        "Мой нос знает.":
+            "Я глубоко вздохнул, чтобы разобрать ароматы, витавшие в воздухе. Доминирующий аромат - помидоры, а за ним следует мясо - говядина, а также намек на сельдерей ... базилик…"
+            pf "Ты готовишь Болоньезе!"
             show nikki smi at cc with dissolve
-            "She laughs and shows me the simmering sauce in the pot."
+            "Она посмеялась и показала мне кипящий соус в кастрюле."
             voice "audio/voice/E1/D2/S13/Nikki/4.ogg"
-            sf "Good guess!"
-            pf "It was no guess. The Super Smeller knows."
-            "I solemnly tap my nose."
+            sf "Хорошая догадка!"
+            pf "Это не было догадкой. Супер Нюхач знает всё."
+            "Я торжественно стукнул по носу."
             show nikki ske at cc
             show drop:
                 xoffset 720
@@ -43,8 +43,8 @@ label E1D2S13:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D2/S13/Nikki/5.ogg"
-            sf "You're so weird. Who actually names their nose?"
-            pf "Laugh all you want now, but you'll be singing a different tune when the Super Smeller gets you out of danger."
+            sf "Ты такой странный. Кто вообще жаёт имя своему носу?"
+            pf "Смейся сколько хочешь, но ты запоёшь по-другому, когда Супер Нюхач спасёт тебя от опасности."
             show nikki cur at cc
             show question:
                 xoffset 720
@@ -52,100 +52,100 @@ label E1D2S13:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D2/S13/Nikki/6.ogg"
-            sf "And why would I be in danger?"
-            pf "I don't know. Maybe your enemies are planning a sneak attack against you."
+            sf "И почему я буду в опасности?"
+            pf "Я не знаю. Возможно, твои враги планируют напасть на тебя."
             show nikki smi at cc
-            "She laughs again."
+            "Она снова засмеялась."
             show nikki mis at cc
             voice "audio/voice/E1/D2/S13/Nikki/7.ogg"
-            sf "I don't have any enemies!"
-            pf "Just give it time."
+            sf "У меня нет врагов!"
+            pf "Просто подожди."
             voice "audio/voice/E1/D2/S13/Nikki/8.ogg"
-            sf "Rude! I am very likeable."
-            "She swats my arm, and it's my turn to laugh."
+            sf "Грубо! Я очень милая."
+            "Она шлёпнула меня по руке, и теперь моя очередь смеяться."
             show nikki neu at cc
     
-        "{color=#00ff00}{b}I already know what the answer is anyway.{/b}{/color}" if (MCStory == 3):
+        "{color=#00ff00}{b}Так или иначе, я уже знаю ответ.{/b}{/color}" if (MCStory == 3):
             jump E1D2S13_MCStory1
             
-        "I already know what the answer is anyway." if (MCStory != 3):
+        "Так или иначе, я уже знаю ответ." if (MCStory != 3):
             label E1D2S13_MCStory1:
-                pf "It's bolognese."
+                pf "Это Болоньезе."
                 show nikki cur at cc with dissolve
-                "Nikki blinks in surprise."
+                "Никки удивленно моргнула."
                 show question:
                     xoffset 720
                     yoffset 160
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S13/Nikki/9.ogg"
-                sf "How did you figure it out so quickly?"
-                pf "It's simple. First, you're using a stockpot, which means it's most likely a soup or a sauce."
-                pf "Second, you're wearing an apron, which means you're making something that is either messy or stains--or both."
-                pf "The cutting board has leftover slivers of different vegetables, and is still wet with freshly cut tomato juices and seeds. The knife is still stained with tomato, which means this must be a tomato-heavy sauce."
+                sf "Как ты так быстро выяснил это?"
+                pf "Всё просто.  Во-первых, ты используешь кастрюлю для медленной варки, а это означает то, что это, скорее всего, суп или соус."
+                pf "Во-вторых, на тебе фартук, а это значит, что ты готовишь что-то грязное или пачкающееся - или и то, и другое."
+                pf "На разделочной доске остатки разных овощей и все еще мокрая от свежесрезанного томатного сока и семян. Нож все ещё запачкан томатом, что значит, что это густой томатный соус."
                 show nikki sur at cc
-                pf "There's ground beef packaging in the trash, and considering the limited ingredients you'd be able to find in Japan, I figured the most likely dish you'd be making is bolognese."
+                pf "В мусорной корзине говядина, и, учитывая ограниченные ингредиенты, которые ты сможешь найти в Японии, я подумал, что наиболее вероятное блюдо, которое ты делаешь - болоньезе."
                 show drop:
                     xoffset 720
                     yoffset 160
                     xzoom .75
                     yzoom .75
-                "Nikki had frozen during my speech, and stares at me with wide eyes. As my words sinks in and she begins to thaw, she pouts."
+                "Никки застыла на время моей речи и смотрела на меня с широко открытыми глазами. Как только я закончил, она оттаяла, а затем надулась."
                 show nikki dis at cc with dissolve
                 voice "audio/voice/E1/D2/S13/Nikki/10.ogg"
-                sf "That's not fair! You still lose."
-                pf "What? Are you not making bolognese?"
+                sf "Это не честно! Ты все ещё проиграл."
+                pf "Что? Разве ты не делаешь болоньезе?"
                 show nikki thi at cc
                 voice "audio/voice/E1/D2/S13/Nikki/11.ogg"
-                sf "No, I am, but you didn't follow the rules and {i}guess{/i}. You did some weird robotic analysis thing!"
-                "I flash her a confident smirk."
-                pf "Nah, I'm just playing. I didn't really analyze the kitchen."
+                sf "нет, я делаю его, но ты не последовал правилам и {i}угадал{/i}. Ты провёл какой-то странный роботизированный анализ!"
+                "Я ослепил её уверенной улыбкой."
+                pf "Да не, Я просто дурачился. Я не могу в самом деле проанализировать кухню."
                 show nikki cur at cc
                 voice "audio/voice/E1/D2/S13/Nikki/12.ogg"
-                sf "Oh. Then how did you know?"
-                pf "I just smelled it. This house smells so good!"
+                sf "Ох. Тогда как ты узнал?"
+                pf "Я просто почуял его. В этом доме так хорошо пахнет!"
                 show nikki smi at cc
-                "Nikki giggles, and resumes stirring."
+                "Никки хихикнула, и продолжила готовку."
                 voice "audio/voice/E1/D2/S13/Nikki/13.ogg"
-                sf "Thanks."
+                sf "Спасибо."
                 show nikki neu at cc
     
-        "I didn't realise we were five years old again.":
+        "Я и не понял, что нам снова по пять лет.":
             stop music fadeout 3
-            pf "Just tell me."
+            pf "Просто скажи мне."
             show nikki smi at cc
             play music "audio/music/Baka! (GAME VERSION).ogg" fadein 1
             voice "audio/voice/E1/D2/S13/Nikki/14.ogg"
-            sf "No, guess! It's easy."
-            pf "If it's so easy then why won't you just tell me?"
+            sf "Нет, угадай! Это просто."
+            pf "Если это так просто, тогда почему просто не скажешь мне?"
             show nikki hap at cc
             voice "audio/voice/E1/D2/S13/Nikki/15.ogg"
-            sf "Because this way is more fun! C'mon, just one guess. You can smell it and figure it out."
-            pf "I hate guessing games."
+            sf "Потому что так будет веселее! Ну давай, всего разочек. Ты можешь почувствовать запах и понять."
+            pf "Я ненавижу игры с угадыванием."
             show nikki mis at cc
             voice "audio/voice/E1/D2/S13/Nikki/16.ogg"
-            sf "Just one guess!"
-            "I crane my neck towards the pot again, but she blocks me."
-            pf "Nikki--"
-            "I duck towards the other side, faking her out, and manage to peek into the pot."
+            sf "Всего один раз!"
+            "Я снова вытянул шею в сторону кастрюли, но она заблокировала меня."
+            pf "Никки--"
+            "Я быстро никлонил голову в другую сторону, обманув её и сумел заглянуть в кастрюлю."
             show nikki sur at cc
             voice "audio/voice/E1/D2/S13/Nikki/17.ogg"
-            sf "Hey!"
-            pf "It's bolognese."
+            sf "Эй!"
+            pf "Это болоньезе."
             show nikki dis at cc
             show storm:
                 xoffset 720
                 yoffset 160
                 xzoom .75
                 yzoom .75
-            "She pouts and goes back to stirring."
+            "Она надулась и вернулась к готовке."
             voice "audio/voice/E1/D2/S13/Nikki/18.ogg"
-            sf "You're no fun."
+            sf "Ты не весёлый."
             show nikki neu at cc
     
-        "I want my baby back, baby back, baby back, baby back…":
+        "Я хочу своб детку назад, детку назад, детку назад, детку назад…":
             stop music fadeout 3
-            pf "BBQ Sauce!"
+            pf "Соус барбекю!"
             show nikki ske at cc
             play music "audio/music/Baka! (GAME VERSION).ogg" fadein 1
             show drop:
@@ -154,12 +154,12 @@ label E1D2S13:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D2/S13/Nikki/19.ogg"
-            sf "Are you kidding me right now?"
-            pf "Pizza!"
+            sf "Ты сейчас шутишь?"
+            pf "Пицца!"
             show nikki dis at cc
             voice "audio/voice/E1/D2/S13/Nikki/20.ogg"
-            sf "No, you don't cook pizza in a pot."
-            pf "Okonomiyaki!"
+            sf "Нет, ты не можешь приготовить пиццу в кастрюле."
+            pf "Окономияки!"
             show nikki ann at cc
             show vein:
                 xoffset 720
@@ -167,12 +167,12 @@ label E1D2S13:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D2/S13/Nikki/21.ogg"
-            sf "Again, not something you cook in a pot."
-            pf "Suckling pig!"
+            sf "Снова, это не то, что ты можешь приготовить в кастрюле."
+            pf "Молочный поросёнок!"
             show nikki sur at cc
             voice "audio/voice/E1/D2/S13/Nikki/22.ogg"
-            sf "What--"
-            pf "Oden!"
+            sf "Что--"
+            pf "Одэн!"
             show nikki dis at cc
             show storm:
                 xoffset 720
@@ -180,12 +180,12 @@ label E1D2S13:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D2/S13/Nikki/23.ogg"
-            sf "No--"
-            pf "Shad Roe!"
+            sf "Нет--"
+            pf "Шад Ро!"
             show nikki ske at cc
             voice "audio/voice/E1/D2/S13/Nikki/24.ogg"
-            sf "How do you even know what Shad Roe is?"
-            pf "Fugu!"
+            sf "Ты вообще знаешь, что такое Шад Ро?"
+            pf "Фугу!"
             show nikki cur at cc
             show dots:
                 xoffset 720
@@ -193,32 +193,32 @@ label E1D2S13:
                 xzoom .75
                 yzoom .75
             $renpy.pause(2.5)
-            "She just looks at me."
+            "Она просто смотрела на меня."
             show nikki dis at cc
             voice "audio/voice/E1/D2/S13/Nikki/25.ogg"
             sf "Seriously?"
-            pf "... Sooooo, that's a no?"
+            pf "... Тааааааааак, это значит нет?"
             show nikki ske at cc
             voice "audio/voice/E1/D2/S13/Nikki/26.ogg"
-            sf "How exactly did you get into the most prestigious pilot program in the country?"
+            sf "Как именно ты попал в самую престижную программу пилотов в стране??"
             show nikki neu at cc
-            "I grin at her, and she grins back."
+            "Я посмеялся над ней, и она посмеялась в ответ."
     
     stop music fadeout 3
-    pf "I'm just glad you're the one cooking and not me. Everything you make is delicious! You really have a talent for cooking, you know?"
+    pf "Я просто рад, что готовишь миенно ты, а не я. Всё, что ты делаешь - вкусно! Ты знаешь, у тебя действительно есть талант повара!"
     show nikki mis at cc
     voice "audio/voice/E1/D2/S13/Nikki/27.ogg"
-    sf "Oh, shut up."
+    sf "О, заткнись."
     play music "audio/music/After a Long Day (GAME VERSION).ogg" fadein 1
-    "She tries to hold back her smile, but fails."
+    "Она пыталась сдержать улыбку, но провалилась."
     show nikki neu at cc
-    pf "Did you go shopping after school today? I didn't know Uncle Kaito kept all these ingredients at home."
+    pf "Ты ходила в магазин после школы? Я не знал, что дядя Кайто хранит все эти ингридиенты дома."
     voice "audio/voice/E1/D2/S13/Nikki/28.ogg"
-    sf "Yeah, I did. Sushi yesterday was so good, but I wanted something more hearty today, you know?"
+    sf "Да, я ходила. Вчерашние суши были очень хороши, но знаешь, сегодня я хотела что-то более здорового."
     "Hmm, to Nikki, \"hearty\" foods are \"comfort\" foods."
-    pf "Does that mean you had a bad day at school?"
+    pf "Это значит, что у тебя был сегодня плохой день в школе?"
     show nikki cur at cc with dissolve
-    "She blinks in surprise, then laughs."
+    "Она удивлённо моргнула, затем засмеялась."
     show nikki smi at cc
     show note:
         xoffset 720
@@ -226,35 +226,35 @@ label E1D2S13:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D2/S13/Nikki/29.ogg"
-    sf "Of course not! It was great. I met a lot of people at the club fair they held after school. There are so many cool clubs! Did you know they have a kendo club? You definitely wouldn't find that back home!"
+    sf "Конечно нет! Он был отличным. Я встретила много людей на ярмарке клубов, которую они провели после школы. Там так много крутых клубов! Ты знал, что у них есть клуб кэндо? Ты определённо не найдёшь такого дома!"
     show nikki hap at cc
     voice "audio/voice/E1/D2/S13/Nikki/29_1.ogg"
-    sf "I think I'm going to try out for their dance team, though, maybe run for student government."
-    pf "Wow, it sounds like you've had a pretty productive day."
+    sf "Я думаю попробовать клуб танцев, хотя, возможно пойду в студсовет."
+    pf "Вау, похоже у тебя был довольно насыщенный день."
     show nikki neu at cc
-    "She quickly checks the pasta and nods."
+    "Она быстро проверила пасту и кивнула."
     show nikki smi at cc
     voice "audio/voice/E1/D2/S13/Nikki/30.ogg"
-    sf "Definitely! I'm a little disappointed they don't have a cooking club, but that's okay. They offer a cooking class, which I'm taking. Soon, I'll be an expert in Japanese cuisine!"
-    pf "Maybe you can start a cooking club."
+    sf "Определённо! Я немного разочарована тем, что у них нет кулинарного клуба, но это нормально. Они предлагают класс кулинарии, который я возьму. Вскоре я буду экспертом в японской кухне!"
+    pf "Может, организуешь кулинарный клуб."
     show nikki hap at cc
     voice "audio/voice/E1/D2/S13/Nikki/31.ogg"
-    sf "Oooh, maybe!"
-    "I begin to set the table for three, when Nikki shakes her head."
+    sf "Ооооо, возможно!"
+    "Я начал накрывать стол на троих, когда Никки покачала головой."
     show nikki thi at cc
     voice "audio/voice/E1/D2/S13/Nikki/32.ogg"
-    sf "Didn't you see Uncle Kaito's text? He'll be home late tonight."
-    pf "I haven't been checking my phone."
-    "Soon the table is set, and both Nikki and I have a full portion of pasta in front of us."
+    sf "Ты не видел сообщение дяди Кайто? Он будет сегодня поздно."
+    pf "Я не проверял телефон."
+    "Вскоре стол был накрыт, и у нас с Никки была большая порция пасты перед нами."
     show nikki neu at cc
     voice "audio/voice/E1/D2/S13/Nikki/33.ogg"
-    sf "How was your first day?"
+    sf "Как прошёл твой первый день?"
     
     if (E1D2S11_JoinedTheTeam == 1) and (E1D2S3_MetKaoriWasNice == 1):
-        pf "My day was kind of weird. It started out horribly. {w}I almost ran over this girl on my way to school, but being the gentleman that I am--"
+        pf "Мой день был немного стрынным. Он начался ужасно. {w}Я чуть не сбил девушку по дороге в школу, но был джентельменом, каким и являюсь--"
         show nikki smi at cc
-        "Nikki snorts, and I pointedly ignore her."
-        pf "--I stopped to help her. I'm lucky I did that too because when I was looking for a team to join, the only one looking for members was hers."
+        "Никки фыркнула, и я проигнорировал её."
+        pf "--Я остановился помочь ей. Мне повезло, что я сделал это. Потому что когда я искал команду, единственным, кто искал членов, была она."
         show nikki ske at cc
         show question:
             xoffset 720
@@ -262,19 +262,19 @@ label E1D2S13:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S13/Nikki/34.ogg"
-        sf "So she let you join?"
-        pf "Yup."
+        sf "Так, она позволил тебе вступить?"
+        pf "Ага."
         show nikki mis at cc
         voice "audio/voice/E1/D2/S13/Nikki/35.ogg"
-        sf "Lucky you."
-        pf "That's what I said."
+        sf "Везунчик."
+        pf "Как я и сказал."
     
     elif (E1D2S11_JoinedTheTeam == 1) and (E1D2S3_MetKaoriWasRudeYesHelmet == 1):
-        pf "My day was kind of weird. It started out horribly. This crazy girl jumped out in front of my bike on my way to school, and then when I was looking for a team, the only team accepting members was {i}hers{/i}!"
+        pf "Мой день был довольно стрынным. Он начался ужасно. Эта безумная девушка выскочила перед моим мотоциклом по дороге в школу. А затем, когда я искал команду, единственная команда, принимавшая участников, была {i}её{/i}!"
         show nikki cur at cc
         voice "audio/voice/E1/D2/S13/Nikki/36.ogg"
-        sf "Oh man! Did she let you join?"
-        pf "Yeah, but only because she doesn't know I was the guy who almost ran her down."
+        sf "О чувак! Она позволила тебе присоединиться?"
+        pf "Да, но только потому, что она не знала, что я был тем, кто чуть не сбил её."
         show nikki sur at cc
         show shocked:
             xoffset 720
@@ -282,8 +282,8 @@ label E1D2S13:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S13/Nikki/37.ogg"
-        sf "You mean you didn't stop to help her?"
-        pf "No… Why would I waste my time arguing with someone who is obviously in the wrong? I just hope she doesn't figure out it was me. That'd be awkward."
+        sf "То есть, ты даже не остановился, чтобы помочь ей?"
+        pf "Нет… Зачем мне тратить время на споры с кем-то, кто явно ошибается? Я просто надеюсь, что она не выяснит, что это был я. Это будет неудобно."
         show nikki ske at cc
         show drop:
             xoffset 720
@@ -291,10 +291,10 @@ label E1D2S13:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S13/Nikki/38.ogg"
-        sf "Wooooow. You'd deserve whatever she throws at you."
+        sf "Ваааааау. Ты заслуживаешь того, что бы они ни сделала."
     
     elif (E1D2S11_JoinedTheTeam == 1) and (E1D2S3_EncounteredKaori == 0):
-        pf "It was alright. I managed to join a team, which was pretty lucky considering only one team was looking for members."
+        pf "Он был нормальным. Мне удалось вступить в команду, что было довольно удачно, учитывая, что только одна команда искала членов."
         show nikki hap at cc
         show note:
             xoffset 720
@@ -302,11 +302,11 @@ label E1D2S13:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S13/Nikki/39.ogg"
-        sf "That's good! What are your teammates like?"
-        pf "They're all pretty… distinct. One girl is slightly terrifying, another girl is so quiet I kind of forget she's there, and the guy who recruited me… well, he's a special snowflake."
+        sf "Это хорошо! Как твои товарищи по команде?"
+        pf "Они все довольно ... разные. Одна девушка слегка ужасающая. Другая девушка настолько тихая, что я забыл, что она там. И парень, который предложил меня… ну, он особый фрукт."
         show nikki mis at cc
         voice "audio/voice/E1/D2/S13/Nikki/40.ogg"
-        sf "I'm not sure I believe that {i}you're{/i} the most normal person there."
+        sf "Не уверена, что могу поверить в то, что {i}ты{/i} там самый нормальный человек."
     
     elif (E1D2S11_JoinedTheTeam == 0) and (E1D2S3_MetKaoriWasRudeNoHelmet == 1):
         pf "It could have been better. On my way into school, this dumb girl tried to cross the street and basically jumped in front of my bike. And the best part? She was a complete jerk to me when I stopped to check on her."
