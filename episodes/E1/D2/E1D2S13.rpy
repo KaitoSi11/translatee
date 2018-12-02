@@ -399,8 +399,8 @@ label E1D2S13:
     
     show nikki cur at cc
     voice "audio/voice/E1/D2/S13/Nikki/48.ogg"
-    sf "So, it sounds like finding a team today was super important."
-    pf "Oh, yeah, the qualifier is on Friday."
+    sf "Так, похоже найти команду сегодня было очень важно."
+    pf "Да, Квалификация в пятницу."
     show nikki sur at cc
     show frightful:
         xoffset 720
@@ -408,114 +408,114 @@ label E1D2S13:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D2/S13/Nikki/49.ogg"
-    sf "But that's in two days!"
-    pf "I know. Everyone else knew this in advance and formed teams over the summer."
+    sf "Но это через два дня!"
+    pf "Я знаю. Все остальные знали это заранее и сформировали команды в течение лета."
     show nikki wor at cc
     voice "audio/voice/E1/D2/S13/Nikki/50.ogg"
-    sf "Well, that's not really fair."
-    pf "Yeah, but it's fine."
+    sf "Ну, это не очень справедливо."
+    pf "Да, но всё в порядке."
     show nikki neu at cc
     
     if (E1D2S2_talkwithyuunayes == 1):
-        pf "In other news, I met Yuuna, this really nice girl, on the bus today."
+        pf "К другим новостям. Сегодня я встретил в автобусе очень симпатичную девушку, Юну."
         show nikki mis at cc
         voice "audio/voice/E1/D2/S13/Nikki/58.ogg"
-        sf "Ooooh, do you liiiiike her? Is she gonna be your giiirrrlllfriiiiend?"
-        pf "Oh shut up. She was just really helpful."
+        sf "Оооооооо, она нраааааааавится тебе? Она будет твоей деееееевууууушкооооой?"
+        pf "Ох, помолчи. Она просто очень мне помогла."
         show nikki smi at cc
         voice "audio/voice/E1/D2/S13/Nikki/59.ogg"
-        sf "Oh yeeaaaah?" 
+        sf "Воооооот каааааак?" 
     
     if (E1D2S2_YuunaComesWithYouPass == 1):
-        pf "She showed me the way to the administrative office."
+        pf "Она показала мне путь в офис администрации."
         show nikki mis at cc
         voice "audio/voice/E1/D2/S13/Nikki/60.ogg"
-        sf "Because you can't get there on your own?" 
+        sf "Потому что ты не мог туда сам дойти?" 
             
         if (E1D2S5_bribedforpass == 1) or (E1D2S5_flirtforpass == 1):
-            pf "I could have, or I could have spent more time with a friendly girl."
+            pf "Я мог бы. Или, я мог бы провести больше времени с дружелюбной девушкой."
             show nikki mis at cc
             voice "audio/voice/E1/D2/S13/Nikki/62.ogg"
-            sf "Of course you would choose the girl."
-            pf "You know me, always the charmer."
+            sf "Конечно ты выберешь девушку."
+            pf "Ты меня знаешь, я всегда обаятелен."
             show nikki smi at cc
             voice "audio/voice/E1/D2/S13/Nikki/63.ogg"
-            sf "Yea... Sure..." 
-            pf "Don't believe me? Well, guess who managed to snag a parking pass on charms alone."
+            sf "Ага... Конечно..." 
+            pf "Ты не веришь мне? Хорошо, угадай кто смог получить пропуск на парковку на одном обаянии."
             show nikki hap at cc
             voice "audio/voice/E1/D2/S13/Nikki/64.ogg"
-            sf "Yuuna?"
-            pf "Very funny."
+            sf "Юна?"
+            pf "Очень смешно."
             show nikki smi at cc
-            "Nikki laughs."
+            "Никки смеялась."
     
         elif (E1D2S5_bribedforpass == 0) and (E1D2S5_flirtforpass == 0):
-            pf "Well, it's a good thing she did because when the receptionist gave me a hard time, Yuuna stepped in and got me the parking pass."
+            pf "Ну, она сделала хорошую вещь, потому что когда меня мурыжил регистратор, Юна пошла и получила мне пропуск."
             show nikki smi at cc
             voice "audio/voice/E1/D2/S13/Nikki/61.ogg"
-            sf "You're right, she does sound helpful." 
+            sf "Ты прав, она звучит полезной." 
     
             
     if (E1D2S2_talkwithyuunayes == 1) and (E1D2S2_YuunaComesWithYouPass == 0):
-        pf "Yeah, she offered to help me if I needed anything. It's nice to have someone on campus willing to help."
+        pf "Да, Она предложила помочь, если мне что-то нужно. Приятно, что кто-то из кампуса готов помочь."
         show nikki mis at cc
         voice "audio/voice/E1/D2/S13/Nikki/65.ogg"
-        sf "She doesn't know what she got herself into!" 
+        sf "Она не знает во что себя втянула!" 
         
         if (E1D2S4_GoingToGetPassNoYuuna == 1):
             #This is a different variable than E1D2S2_YuunaComesWithYouPass. This one is if you did talk to yuuna, then left her, but went to get a pass on your own
-            pf "I probably should have asked her the way to the permit office. Although, I did find it eventually."
+            pf "Вероятно, мне следовало спросить у нее дорогу до офиса. Хотя, в конце концов, я сам нашёл."
             show nikki cur at cc
             voice "audio/voice/E1/D2/S13/Nikki/66.ogg"
-            sf "Did you get your pass?" 
+            sf "Ты получил пропуск?" 
     
             if (E1D2S5_gotbikepass == 1):
-                pf "Of course, I'm smooth like that. Who would say no to this face?"
+                pf "Конечно, я же очень приятный. Кто откажет такому лицу"
                 show nikki mis at cc
                 voice "audio/voice/E1/D2/S13/Nikki/67.ogg"
-                sf "I do, all the time."
+                sf "Я это делаю всё время."
     
             if (E1D2S5_gotbikepass == 0):
-                pf "No... The administrator was a serious ass. I have to fill out a bunch of forms online before I can get it."
+                pf "Нет... Администратор был серьёзной заназой в заднице. Я должен заполнить кучу форм онлайн, прежде чем я смогу получить."
                 show nikki ske at cc
                 voice "audio/voice/E1/D2/S13/Nikki/68.ogg"
-                sf "That's annoying."
+                sf "Это раздражает."
                 
     show nikki smi at cc
     voice "audio/voice/E1/D2/S13/Nikki/69.ogg"
-    sf "Sounds like you’ve had quite the day."
+    sf "Похоже, у тебя был тот ещё день."
     stop ambient fadeout 3
     scene black with fade
-    "The conversation continues and eventually lulls to a natural close. Soon both of our plates are polished clean."
+    "Беседа продолжалась, и в итоге подошла к естественному концу. Вскоре наши тарелки блестели от чистоты."
     play ambient "audio/ambience/Night Crickets.ogg" fadein 1
     scene bg homekaito main night with Dissolve(2.5)
     $renpy.pause(1)
-    pf "I am so full."
+    pf "Я так наелся."
     show nikki mis at cc with dissolve
     voice "audio/voice/E1/D2/S13/Nikki/70.ogg"
-    sf "Who told you to be such a pig?"
+    sf "Кто сказал тебе быть такой свиньёй"
     show nikki neu at cc
-    "I help her with clean-up."
-    pf "I think I'm going to relax for a bit, then go to bed early tonight."
+    "Я помог ей с помывкой посуды."
+    pf "Я думаю немного расслабиться, а затем пойти спать пораньше."
     show nikki smi at cc
     voice "audio/voice/E1/D2/S13/Nikki/71.ogg"
-    sf "Yeah, me too. Goodnight!"
-    pf "Night."
+    sf "Да, я тоже. Спокойной ночи!"
+    pf "Спокойной."
     hide nikki with dissolve
     stop music fadeout 3
     play sound "audio/sfx/Human/Going Upstairs (wood).ogg" fadein 1 fadeout 1
     scene black with fade
     $renpy.pause(1)
-    "We part ways and I head into my room."
+    "Мы разошлись, и я зашёл в свою комнату."
     $renpy.pause(1)
     scene bg homekaito myroom night with fade
     
     if (E1D2S5_gotbikepass == 0):
-        "It's too early to go to bed, so I'll start the process for getting a parking pass. {w}Who knows how long it'll take before they mail me one, and I'd like to get it sooner rather than later."
-        "I log into my weblink and find the documents to request a permit. {w}It takes me longer than I expected to fill out all of the paperwork, and it leaves me exhausted. {w}Crawling into bed, I close my eyes and soon fall asleep."
+        "Слишком рано ложиться спать, поэтому я начал процесс получения парковки. {w}Кто знает, сколько времени потребуется, прежде чем они отправят мне письмо, и я хотел бы получить его раньше, чем позже."
+        "Я залогинился на сайте и нашёл документы для запроса пропуска. {w}Заполнение документов заняло больше времени, чем я ожидал, и я устал. {w}Забравшись в постель, я закрыл глаза и вскоре уснул."
     
     else:
-        "It's too early to go to bed, but I'm mentally exhausted and don't feel up to doing much. {w}I browse the internet for a while, looking up nothing in particular, until my eyes feel heavy and I drift off to sleep."
+        "Слишком рано ложиться спать, но я мысленно истощён, и не чувствую, что смогу много сделать. {w}Я какое-то время сидел в интернете, ничего особо не выискивая, пока не почувствовал тяжесть глаз и пошёл спать."
     
     scene black with Dissolve(2.5)
     
