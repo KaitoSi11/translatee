@@ -1,23 +1,23 @@
 label E1D2S11:
     
     if (E1D2S9_AgreeJoinShouTeam == 0):
-        "With no other options, I look around the lounge for Shou. He'd mentioned that his team needed another member… Hopefully that's still the case."
+        "Оставшись без вариантов, я осмотрел зал в поисках Сё. He'd mentioned that his team needed another member… Hopefully that's still the case."
         play music "audio/music/Day Out (GAME VERSION).ogg" fadein 1
-        "I see him standing with two girls at the opposite end of the room. One girl, with bright red hair, stands to the side and talks quickly on her phone. The other girl with dark hair shuffles her feet while Shou chats animatedly to her." 
-        pf "Hey, Shou!" 
+        "Я заметил его стоящим с двумя девушками на противоположном конце комнаты. Первая девушка, с ярко-рыжими волосами, стояла в стороне и быстро разговаривала по телефону. Другая девушка с темными волосами шаркала ногой, пока Сё что-то оживлённо ей рассказывал." 
+        pf "Привет, Сё!" 
         show shou cur at cc with dissolve
-        "He turns towards me as I approach."
+        "Он повернулся ко мне как только я подошёл."
         show shou smi at cc
         voice "audio/voice/E1/D2/S11/Shou/1.ogg"
-        ss "Hey, broseph! What's up?" 
-        pf "I was just wondering if your offer was still open."
+        ss "Эй, братан! Как дела?" 
+        pf "Мне просто интересно, твоё предложение ещё в силе?"
         show shou hap at cc
         voice "audio/voice/E1/D2/S11/Shou/2.ogg"
-        ss "To join? Hell yeah! No luck finding another team?" 
-        pf "Nope. You were right about it being tough."
+        ss "Вступить к нам? Да, чёрт возьми! Не повезло найти другую команду?" 
+        pf "Нет. Ты был прав, что это будет трудно."
         show shou smi at cc
         voice "audio/voice/E1/D2/S11/Shou/3.ogg"
-        ss "Cool, well, here is the rest of the team."
+        ss "Круто. Хорошо, вот остальная часть команды."
         show kaori thi at r3 with dissolve
         show mayu ner at l3 with dissolve
         show shou hap at cc
@@ -31,16 +31,16 @@ label E1D2S11:
             yoffset 110
             xzoom .75
             yzoom .75
-        "He gestures towards the dark haired girl, who stares at her feet, while the redhead continues chatting on her phone." 
+        "Он жестом указал на тёмноволосую девушку, смотрящую себе под ноги, пока рыжая разговаривала по телефону." 
     
     elif (E1D2S9_AgreeJoinShouTeam == 1):
-        "Shou talks the entire way to the lounge. He's constantly interrupting himself and going off on tangents, so I only catch about half of what he's saying. We navigate the tunnels, and eventually, reach the exit. Shou opens the door and ushers me through with a small flourish."
+        "Сё болтал весь путь до зала. Он постоянно прерывал себя и уходио по касательным, поэтому я понял только половину того, что он говорил. Мы шли по туннелям, и в итоге, достигаем выхода. Сё открыл дверь и провёл меня внутрь немного махнув."
         play ambient "audio/ambience/Pilot Lounge.ogg"
         scene bg campus lounge day with fade
         play music "audio/music/Day Out (GAME VERSION).ogg" fadein 1
-        "The lounge is filled with groups of pilots. I guess everyone is catching up with their team. Shou squeezes between the groups, and I follow him towards the back corner of the room."
+        "Зал был заполнен группами пилотов. Полагаю, все пересекаются со своими командами тут. Сё протиснулся между командами, и я пошёл за ним в задний угол комнаты."
         show shou smi at cc with dissolve
-        "He pauses in front of two girls."
+        "Он остановился перед двумя девушками."
         show kaori thi at r3 with dissolve
         show mayu ner at l3 with dissolve
         show shou hap at cc
@@ -54,13 +54,13 @@ label E1D2S11:
             yoffset 110
             xzoom .75
             yzoom .75
-        "The one with dark hair stares at her feet as soon as she notices Shou, while the one with red hair continues chatting on her cellphone."
+        "Та, что с тёмными волосами, смотрела себе под ноги, как только заметила Сё, пока та, что с рыжими волосами разговаривала по мобильнику ."
     
     if (E1D2S4_MayuGaveDirections == 1):
-        "Hm, that girl with the dark hair looks familiar…"
+        "Хм, Хм, тёмноволосая девушка кажется мне знакомой……"
         show shou smi at cc
-        "Ah! Of course!"
-        pf "Oh hey, thanks for giving me directions to the hangar earlier."
+        "Ах! Ну конечно же!"
+        pf "Привет, спасибо что показала мне где ангар."
         show mayu cur at cc
         show shou smi at l3
         with dissolve
@@ -70,59 +70,59 @@ label E1D2S11:
             xzoom .75
             yzoom .75
         show mayu smi at cc with dissolve
-        "She looks up in surprise and gives me a small smile of recognition."
+        "Она удивлённо смотрела на меня и немного улыбнулась узнав."
         voice "audio/voice/E1/D2/S11/Mayu/1.ogg"
-        ma "I'm glad it helped."
-        pf "I hope I didn't cause you too much trouble."
+        ma "Рада помочь."
+        pf "Надеюсь, я не причинил тебе много проблем."
         show mayu ner at cc
-        "She lowers her head again and traces circles on the floor with her foot."
+        "Она снова опустила голову и снова водила ногой по кругу."
         voice "audio/voice/E1/D2/S11/Mayu/2.ogg"
-        ma "It was no trouble at all."
+        ma "Это вовсе не было проблемой."
         show shou cur at l3
         show question:
             xoffset 230
             yoffset 20
             xzoom .75
             yzoom .75
-        "Shou glances at me and back at the girl."
+        "Сё посмотрел на меня и на девушку."
         voice "audio/voice/E1/D2/S11/Shou/4.ogg"
-        ss "You know each other?"
-        pf "She helped me out with some directions today."
+        ss "Вы знаете друг друга?"
+        pf "Она мне немного помогла сегодня."
         show mayu smi at cc
         show shou hap at l3
-        "She nods, and Shou breaks into a huge grin."
+        "Она кивнула, и Сё широко заулыбался."
         voice "audio/voice/E1/D2/S11/Shou/5.ogg"
-        ss "You're already friends! That's awesome!"
-        pf "Not quite… I don't even know her name."
+        ss "Вы уже друзья! Это потрясающе!"
+        pf "Не особо… Я даже не знаю её имени."
         show mayu cur at cc
         show shou smi at l3
         voice "audio/voice/E1/D2/S11/Shou/6.ogg"
-        ss "Oh, well this is Mayu."
-        pf "Hello, I'm [pfirst]."
+        ss "Ох, хорошо, это Маю."
+        pf "Привет, Я [pfirst]."
         show mayu smi at cc with dissolve
-        "She bows."
+        "Она поклонилась."
         voice "audio/voice/E1/D2/S11/Mayu/3.ogg"
-        ma "Pleased to meet you."
+        ma "Приятно познакомиться."
     
     else:
-        "Shou motions towards the dark-haired girl."
+        "Сё указал на тёмноволосую девушку."
         show shou smi at cc
         voice "audio/voice/E1/D2/S11/Shou/7.ogg"
-        ss "This is Mayu. She's the coolest person on this team."
+        ss "Это Маю. Она самая крутая в этой команде."
         show shou mis at cc
         voice "audio/voice/E1/D2/S11/Shou/7_1.ogg"
-        ss "But..uh... don't tell Kaori I said that."
-        "He glances at the redhead, who isn't paying the slightest bit of attention to us."
+        ss "Но..эм... не говори Каори, что я это сказал."
+        "Он посмотрел на рыжую, которая не обращала на нас никакого внимания."
         show shou smi at l3
         show mayu ner b1 at cc
         with dissolve
-        "Mayu blushes deeply."
+        "Маю сильно покраснела."
         voice "audio/voice/E1/D2/S11/Mayu/4.ogg"
-        ma "That's not true."
-        pf "It's nice to meet you, Mayu. I'm [pfirst]."
+        ma "Это не правда."
+        pf "Приятно познакомиться Маю. Я [pfirst]."
         show mayu cur at cc
-        "I smile at her and hold out my hand. She wrinkles her brow in confusion, then gingerly shakes my hand… and continues to shake it."
-        pf "Um…"
+        "Я улыбнулся ей и протянул руку. Она подняла брови в замешательстве, затем осторожно пожала мою руку… и продолжала жать её."
+        pf "Эм…"
         show mayu ner b1 at cc with dissolve
         show shoBlush:
             xoffset 720
@@ -130,8 +130,8 @@ label E1D2S11:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D2/S11/Mayu/5.ogg"
-        ma "Sorry!"
-        "She immediately drops my hand and returns her gaze to floor."
+        ma "Извини!"
+        "Она тотчас же отпустила мою руку и продолжила смотреть в пол."
         
     show mayu neu at l3
     show shou smi at cc
