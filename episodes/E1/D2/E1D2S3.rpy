@@ -2,50 +2,50 @@ label E1D2S3:
     
     $renpy.pause(1)
     
-    "After parting with Nikki, I make my way to the garage. I can't believe I even considered the bus a possibility when my baby is waiting here for me!"
+    "Попрощавшись с Никки, я пошёл в гараж. Я не мог поверить, рассматривал возможность поездки на автобусе, когда моя малышка ждала меня здесь!"
     
     play sound "audio/sfx/Technology/Garage Door Open.ogg" fadein 1.0
     scene white with fade
     
-    "My heart pounds in anticipation as the garage door crawls open and bathes my pride and joy in a halo of soft light. The way the sun sparkles off the polished metal nearly brings tears to my eyes."
+    "Сердце билось в ожидании,пока дверь гаража открывалась и окутывала мою гордость и радость в ореол мягкого света. Слёза наворачиваются от того, как свет отражается от полированного металла."
     
-    "I tenderly caress the bike's smooth curves. We've been apart for so long, but now, we're finally reunited. {w}I'll never leave you again, I promise."
+    "Я нежно ласкал плавные изгибы мотоцикла. Нас надолго разлучили, но теперь мы, наконец, воссоединились. {w}Я больше никогда тебя не оставлю, обещаю."
     
-    pf "{i}Hup!{/i}"
+    pf "{i}Хоп!{/i}"
     
     
-    "Vaulting from the back of the bike, I drop into its seat with a soft thud. {w}Still as comfy as ever."
+    "Vaulting from the back of the bike, я сёл на мотоцикл и раздался мягкий глухой звук. {w}Как и всегда, удобно."
     
-    "My hands settle on the handles. As I go through the nuances of preparation, I get the feeling I'm forgetting something important... {w}Something that will protect my brain from becoming pavement pizza."
+    "Мои руки опирались на руль. Пока я подготавливался к отъезду, у меня возникло ощущение, что я забыл что-то важное... {w}Что-то что предотвратит превращение моих мозгов в пиццу на тротуаре."
     $ E1D2S3_mcwithhelmet = 0
     menu:
-        "Safety first!":
+        "безопасность превыше всего!":
             $ E1D2S3_mcwithhelmet = 1
-            "Only a fool wouldn't wear a helmet."
+            "Только дурак не наденет шлем."
             scene black with fade
             play sound "audio/sfx/Technology/Helmet HUD Power On.ogg"
-            "As it slips over my head, my vision momentarily darkens. Then the HUD illuminates my visor with digital scrolling text and numbers, sharing more information and applications than I need."  
+            "Как только я надел шлем, зрение моментально пропало. Потом включился интерфейс, освещая мой взор кучей текста и цифр, делясь болшей информацией и приложениями, чем мне нужно."  
             
-            "I remember reading about original helmets, which did nothing more than protect your head. I can't even imagine using such primitive technology. Now, even the most standard helmet includes a GPS, as well as speed monitors and music players." 
+            "Я читал об оригинальных шлемах, которые только могли защитить голову. Даже представить не могу такую примитивную технологию. Теперь, даже самый стандартный шлем имеет GPS, а так же спидометр и плеер." 
     
-        "Helmets are a good accessory.":
+        "Шлем - это хороший аксессуар.":
             $ E1D2S3_mcwithhelmet = 1
-            "The ladies will already know I'm a badass based on my bike alone, but a helmet covering my face adds a flavour of mystery, which chicks dig. They'll want to know: \"whose that sexy guy on that sexy bike?\" And when I take off my helmet and flash them my winning smile, the only thing I'll need to worry about is catching them as they swoon."
+            Девушки и так знают, что я крут, основываясь только на мотоцикле. Но шлем, закрывающий лицо, добавляет капельку загадочности, на что девушки клюют. Они все хотят знать: \"Кто этот сексуальный парень на не менее сексуальном байке?\" И когда я сниму шлем, и ослеплю их своей улыбкой, только и останется что ловить их, когда они будут падать в обморок."
             scene black with fade
             play sound "audio/sfx/Technology/Helmet HUD Power On.ogg"
-            "As the helmet slips over my head, my vision momentarily darkens. Then the HUD illuminates my visor with digital scrolling text and numbers, sharing more information and applications than I need."  
+            "Как только я надел шлем, зрение моментально пропало. Потом включился интерфейс, освещая мой взор кучей текста и цифр, делясь болшей информацией и приложениями, чем мне нужно."  
     
-            "I remember reading about original helmets, which did nothing more than protect your head. I can't even imagine using such primitive technology. Now, even the most standard helmet includes a GPS, as well as speed monitors and music players."
+            "Я читал об оригинальных шлемах, которые только могли защитить голову. Даже представить не могу такую примитивную технологию. Теперь, даже самый стандартный шлем имеет GPS, а так же спидометр и плеер."
     
-        "Psh, helmets are for wimps.":
-            "Yeah. Right. Like I'll be caught wearing one of those lame things."
+        "Пфф, шлемы для слабаков.":
+            "Да. Точняк. Как будто меня поймают за ношением этого отстоя."
     
     scene bg isokaze neighborhood day with fade
     #SFX: Bike starting up
     play sound "audio/sfx/Vehicles/Bike Ignition.ogg" fadeout 3
-    "I turn the key in the ignition. The roar of the motor sends a shiver down my spine. {w}Perfect."
+    "Я повернул ключ зажигания. Рёв мотора шлёт дрожь по спине. {w}Идеально."
     play sound "audio/sfx/Vehicles/Bike Revving.ogg"
-    "I rev the bike several times, enjoying the sound, before driving into the street."
+    "Я поддал газу несколько раз, наслаждаясь звуком, прежде чем выехать на улицу."
     play sound "audio/sfx/Vehicles/Bike driving off.ogg" fadein 3
     $renpy.pause(1)
     play music "audio/music/Open Road (GAME VERSION).ogg" fadein 1
@@ -53,14 +53,14 @@ label E1D2S3:
     scene bg travel openroad day with fade
     stop ambient fadeout 5
     $renpy.pause(1)
-    "This is the life. {w}Nothing beats the thrill of the open road."
+    "Вот это жизнь. {w}Ничто не сравнится с ощущением свободы на дороге."
     
     if (E1D2S3_mcwithhelmet == 0):
         play ambient "audio/ambience/Open Road No Helmet.ogg"
         $renpy.pause(1)
         $ persistent.gpix[1][0] = 1
         scene cg mc firstride nohelmet at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
-        "... The number of bugs I choke on ruins the effect just a tad, but this is the life I chose. {w}No regrets!"
+        "... Количество насекомых, собранных по пути, немного рушило эффект. Но я выбрал такую жизнь. {w}Я ни о чём не жалею!"
         $renpy.pause(1)
     
     elif (E1D2S3_mcwithhelmet == 1):
@@ -68,24 +68,24 @@ label E1D2S3:
         $renpy.pause(1)
         $ persistent.gpix[2][0] = 1
         scene cg mc firstride helmet at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
-        "I take full advantage of my helmet's capabilities. {w}With a glance, I can see how fast my vehicle is going and how fast the vehicles surrounding me are going. {w}There's even a feature that will alert me if I'm in danger of being hit."
+        "Я на полную использовал возможности шлема. {w}Взглянув, я мог видеть как быстро я ехал, и как быстро ехали машины мимо меня. {w}Тут даже есть функция, которая предупредит меня об опастисти столкновения."
     
-        "The speakers are embedded on the inside of my helmet, right next to my ears, providing optimal acoustics for music. {w}Some might argue that is a safety issue, but I have the sense to keep the volume low."
+        "Динамики, встроенные в шлем, обеспечивали оптимальную акустику. {w}Некоторые могут утверждать, что это вопрос безопасности. Но у меня есть привычка держать звук на минимуме."
         $renpy.pause(1)
     
-    "Traffic is in my favour and I make good progress."
+    "Трафик был на моей стороне, и я успешно ехал."
     
     scene bg campus intersection day with fade
     
-    "The stoplight ahead of me is green. Perfect. Hopefully it stays that way long enough for me to pass."
+    "Светофор впереди был зелёный. Идеально. Надеюсь, что продержится достаточно, чтобы я мог проехать."
     
     play sound "audio/sfx/Vehicles/Bike Accelerate.ogg"
     
-    "Stay green. Stay green. Staygreenstaygreenstaygreenstay--"
+    "Оставайся зелёный. Оставайся зелёный. Оставайся зелёныйОставайся зелёныйОставайся зелёныйОставайся зелёный--"
     
-    "No! Yellow."
+    "Нет! Жёлтый."
     
-    "I'm actually not {i}that{/i} far away. It'd be a close call, but I'm pretty sure I could still make it. I tighten my grip on the handles and then--"
+    "Вообще-то я был не {i}так уж{/i} и далеко. Это было бы на волоске, но я уверен что смог бы это сделать. Я сжал руль, а затем--"
     
     $ qtebase = 3
     $ qtetotal = qteath + qtebase
@@ -93,37 +93,37 @@ label E1D2S3:
     show screen timer_scr(place="E1D2S3_dontgunit")
     
     menu:
-        "Hit the brakes. It was a stupid idea.":
+        "Тормози. Это была плохая идея.":
             label E1D2S3_dontgunit:
                 $ renpy.hide_screen ("timer_scr")
-                "Actually, it's not as close as I thought. Not worth risking it."
+                "На самом деле, было не так близко, как я думал. Не стоит рисковать."
                 play sound "audio/sfx/Vehicles/Bike Screech.ogg"
-                "I squeeze the brakes and coast to a gradual stop at the now red light."
-                "Several ACE Academy students cross the street, chatting animatedly as they saunter past me. I drum my fingers, mildly impatient. Before long, the students have all crossed and the light reverts to green."
+                "Я сжал тормоз и потихоньку остановился на красный сигнал."
+                "Несколько учеников Академии ACE пересекали улицу, и оживлённо разговаривали, проходя мимо меня. Я слегка нетерпеливо барабанил пальцами. Вскоре все студенты перешли дорогу и светофор снова загорелся зелёным."
                 jump E1D2S7
     
-        "GUN IT!":
+        "ЖМИ, ЁКАРНЫЙ БАБАЙ!":
             $ renpy.hide_screen ("timer_scr")
-            "I can make it!"
+            "Я смогу!"
     
     play sound "audio/sfx/Vehicles/Bike Accelerate.ogg"
-    "I slam on the gas, which roars with renewed strength."
+    "Я выжал ручку газа, байк заревел с удвоенной силой."
     
-    "I'm almost home free! Just a little bit more and--"
+    "Я прочти проехал! Ещё чуть-чуть и--"
     
     $ E1D2S3_EncounteredKaori = 1
     voice "audio/voice/E1/D2/S3/Kaori/1.ogg"
-    ki "{b}Kyaa~!{/b}"
+    ki "{b}Кьяяяяя~!{/b}"
     
     scene white with fade
     stop ambient fadeout 3
     stop music fadeout 3
     
-    pf "{b}Whoa!{/b}"
+    pf "{b}Воах!{/b}"
     
     play sound "audio/sfx/Vehicles/Bike Screech.ogg"
     
-    "I see a flash of red hair out of the corner of my eye. Swerving to the side, I narrowly avoid a student. That was a close one!"
+    "Краем глаза я заметил красные волосы. Свернув в сторону, я едва увернулся от студента. Это было близко!"
     voice "audio/voice/E1/D2/S3/Kaori/2.ogg"
     ki "{i}Oof!{/i}"
     play sound "audio/sfx/Impacts/Kaori Falling Over.ogg"
@@ -134,74 +134,74 @@ label E1D2S3:
     $ persistent.gpix[24][0] = 1
     scene cg kaori intersection fall1 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
     play ambient "audio/ambience/Campus Road.ogg" fadein 1
-    "She topples backwards onto the ground as her belongings scatter across a good portion of the crossing."
+    "Она упала на землю, а её вещи разбросало по пешеходному переходу."
     scene cg kaori intersection fall2 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
-    "She blinks up at me in a daze."
+    "Она щурится на меня в оцепенении."
     scene cg kaori intersection fall3 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
-    "But that is quickly replaced with the scariest looking face I've ever seen. {w}Uh-oh."
+    "Но это быстро сменилось на самый страшный взгляд, который я когда-либо видел. {w}Ой-ой."
     
     play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 1
     
     menu:
-        "This is my fault. I should help her.":
+        "Это моя вина. Я должен помочь ей.":
     
             if (E1D2S3_mcwithhelmet == 0):
-                pf "Are you okay? Here, take my hand."
+                pf "Ты в порядке? Вот, возьми меня за руку."
     
             elif (E1D2S3_mcwithhelmet == 1):
                 $ E1D2S3_mctakeshelmetoff = 1
-                pf "Are you okay--"
+                pf "Ты в порядке--"
     
-                "The heat of her glare could melt my helmet. {w}Oh, right. The helmet. I probably sound like a muffled alien with this thing on."
+                "Жар от её взгляда мог расплавить шлем. {w}Точно, шлем. С эттой штукой я звуку как приглушённый пришелец."
     
-                "Let's try that again."
+                "Попробуем снова."
     
-                "I take off my helmet."
+                "Я снял шлем."
     
-                pf "Are you okay? Here, let me help."
+                pf "Ты в порядке? Позволь мне помочь."
     
             jump E1D2S6
     
-        "Watch it!":
-            "This crazy {i}pedestrian{/i} just jumped out of nowhere in front of my bike! Does she have a death wish?" 
+        "Смотри по сторонам!":
+            "Этот безумный {i}пешеход{/i} просто выпрыгнула из ниоткуда перед мотоциклом! Она что, смерти хочет?" 
     
             if (E1D2S3_mcwithhelmet == 1):
                 $ E1D2S3_mctakeshelmetoff = 1
-                "I pull off my helmet." 
+                "Я снял шлем." 
     
-            pf "Didn't anyone tell you to look both ways before crossing the street?"
+            pf "Разве тебе никто не говорил смотреть по сторонам, когда переходишь улицу?"
             
             scene cg kaori intersection fall4 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
     
-            "She stares up at me in shock. No wait--{w}that's anger. Yup. Definitely anger."
+            "Она в шоке смотрела на меня. Погоди-ка--{w}Это злоба. Ага. Определённо злоба."
             voice "audio/voice/E1/D2/S3/Kaori/3.ogg"
-            ki "Are you kidding me?! The light was red, you idiot!"
+            ki "Ты шутишь?! Идиот, светофор был красный!"
     
             menu:
-                "My bad. Are you ok?":
-                        "Okay, I guess it's maybe possible that light might have already turned red before I'd gotten to the intersection. I might have been a little harsh just now."
+                "Моя вина. Ты как, в порядке?":
+                        "Хорошо, возможно светофор переключился на красный, когда я выехал на перекрёсток. Возможно, я был немного груб сейчас."
     
-                        pf "Sorry, my bad. Here, are you alright?"
+                        pf "Извини, виноват. Вот, ты в порядке?"
                         jump E1D2S6
                                 
-                "I think someone is a little colourblind.":
-                    "I roll my eyes. Some people think that the world revolves around them and that they can do no wrong."
+                "Я думаю, что тут кто-то дальтоник.":
+                    "Я закатил глаза. Некоторые люди думают, что мир вращается вокруг них и они не могут ошибаться."
     
-                    pf "Are you colour blind? The light was green."
+                    pf "Ты дальтоник? Светофор был зелёный."
                     
                     scene cg kaori intersection fall3 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
     
-                    "She stares incredulously at me."
+                    "Она скептически смотрела на меня."
     
-                    "I'm not about to apologise for something that clearly wasn't my fault!"
+                    "Я не собираюсь извиняться за то, что явно не было моей ошибкой!"
                     
                     scene cg kaori intersection fall4 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
                     voice "audio/voice/E1/D2/S3/Kaori/4.ogg"
-                    ki "Are you..."
+                    ki "Ты..."
                     
                     scene bg campus intersection day with fade
     
-                    "She pauses as she hoists herself off the ground. After dusting her skirt, she stomps towards me and glares."
+                    "Она поднялась, отряхнула юбку, подошла ко мне и свирепо смотрела на меня."
                     
                     show kaori ang b1 at cc with dissolve
                     show vein:
@@ -210,56 +210,56 @@ label E1D2S3:
                         xzoom .75
                         yzoom .75
                     voice "audio/voice/E1/D2/S3/Kaori/5.ogg"
-                    ki "Are you really this stupid?! The light was red. RED. R-E-D. Do you know what that means? It means you STOP! How do you even have a license?!"
+                    ki "Ты правда так туп?! Светофор был красный. КРАСНЫЙ. К-Р-А-С-Н-Ы-Й. Ты знаешь, что это значит? Это значит, что ты должен ОСТАНОВИТЬСЯ! Как у тебя вообще есть водительские права!"
     
-                    "She seems certain that the light was red. Is it possible that she's right? {w}… {w}Haha! Me, wrong? Sometimes I crack myself up."
+                    "Кажется, она уверена, что свет был красным. Возможно ли, что она права? {w}… {w}Ха-ха! Я? Не прав? Иногда я превозхожу сам себя."
     
                     #honk honk
                     play sound "audio/sfx/Vehicles/A couple of honks.ogg"
-                    "I'm about to crush her with a witty retort when a car horn interrupts me."
-                    "Oh, right. I'm still on the road … and there is a scary number of cars behind me.  {w}And the lights have turned green again--see, I know what green looks like!" 
-                    pf "Look, I'd {i}love{/i} to stay and talk, but--"
+                    "Я собрался раздавить ее с остроумной репликой, когда гудок автомобиля прервал меня."
+                    "Ох, точно. Я все ещё на проезжей части … и позади меня большое количество машин.  {w}И светофор преключился на зелёный--видишь, я знаю как выглядит зеленый!" 
+                    pf "Слушай, я бы {i}с радостью{/i} остался и поговорил, но--"
     
                     #honk honk honk
                     play sound "audio/sfx/Vehicles/More harsher honks.ogg"
     
-                    "An angry orchestra of honks interrupt me again."
+                    "Оркестр сердитых гудков снова прервал меня."
     
-                    pf "Okay, okay! I'm going!"
+                    pf "Хорошо, хорошо! Я уезжаю!"
     
                     if (E1D2S3_mcwithhelmet == 0):
-                        "I offer the girl a look of sympathy, and quickly drive off."
+                        "Я сочувствующе посмотрел на девушку и быстро уехал."
     
                     if (E1D2S3_mcwithhelmet == 1):
-                        "I offer the girl a look of sympathy, before putting my helmet on and driving off."
+                        "Я сочувствующе посмотрел на девушку, прежде чем надел шлем и уехал."
                 
                     show kaori ann at cc
-                    "Even though this was all her fault, I can't help but feel a little sorry for her. With the number of cars on the road, she's going to have a hell of a time picking up all of her things."
+                    "Несмотря на то, что это была ее вина, я не могу ничего поделать, кроме как посочувствовать ей. С количеством машин на дороге, собирать все её вещи - просто ад."
                     
                     $ E1D2S3_MetKaoriWasRudeNoHelmet = 1
     
-                    "Oh well. What are the odds of us meeting again anyway?"
+                    "Ну хорошо. В любом случае, каковы шансы, что мы снова встретимся?"
                     stop music fadeout 3
                     scene black with fade
                     jump E1D2S7
                         
                         
-                "Seeya.":
+                "Покеда.":
                     $ E1D2S3_MetKaoriWasRudeNoHelmet = 1
                     jump E1D2S3_seeya
     
-        "Nope. I'm out of here.":
+        "Неее. Я сваливаю.":
             label E1D2S3_seeya:
                 $ E1D2S3_MetKaoriWasRudeNoHelmet = 1
-                "Yeah, no. It's probably best I get the hell out of here before things turn as sour as her face."
+                "Да, нет. Наверное, лучше я уберусь отсюда, прежде чем всё станет таким же кислым, как её лицо."
                 scene cg kaori intersection fall4 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0)
                 play sound "audio/sfx/Vehicles/Bike driving off.ogg"
-                "As soon as the light turns green, I speed out of there, making sure to give her a wide berth." 
-                "I doubt I'll run into her again anyway."
+                "Как только светофор загорелся зелёным, я ускорился, убедившись, что дал ей досточно свободного места." 
+                "Сомневаюсь, что снова на неё натолкнусь."
                 if (E1D2S3_mcwithhelmet == 1) and (E1D2S3_mctakeshelmetoff == 0):
                     $ E1D2S3_MetKaoriWasRudeNoHelmet = 0
                     $ E1D2S3_MetKaoriWasRudeYesHelmet = 1
-                    "Not that it would matter, considering she couldn't see my face. Thank god for helmets."
+                    "Не то чтобы это было важно, потому что она не могла видеть мое лицо. Хвала богу за то, что придумали шлемы."
                 stop music fadeout 3
                 scene black with fade
                 jump E1D2S7
