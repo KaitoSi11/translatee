@@ -91,18 +91,18 @@ label E1D2S2:
             xzoom .5
             yzoom .5
         voice "audio/voice/E1/D2/S2/Yuuna/6.ogg"
-        ym "I'm Yuuna, Yuuna Misaki. I'm studying PHPT."
+        ym "Я Юна, Юна Мисаки. я изучаю ЗПФТ."
         pf "\"PHPT\"?"
         voice "audio/voice/E1/D2/S2/Yuuna/7.ogg"
-        ym "Pilot Health and Physiotherapy."
+        ym "Здоровье пилотов и физиотерапия."
         stop music fadeout 3
         stop ambient fadeout 5
-        "Before I can ask anything else, the bus grinds to a stop."
+        "Прежде чем я успел спросить что-то ещё, автобус остановился."
     
         play sound "audio/sfx/Vehicles/Bus Chime.ogg"
         $renpy.pause(1)
         voice "audio/voice/E1/D2/S2/Bus Announcer/1.ogg"
-        "Bus Announcer" "ACE Academy."
+        "Диктор автобуса" "Академия ACE."
         
         scene black with fade
         scene white with fade
@@ -110,27 +110,27 @@ label E1D2S2:
         play ambient "audio/ambience/Campus.ogg" fadein 3
         scene bg campus main day with Dissolve(2)
     
-        "I hop off the bus and Yuuna follows suit. The roar of the departing bus does not dampen the student chatter. Yuuna pulls out her phone and checks her schedule."
+        "Я выпрыгнул из автобуса и Юна сделала то же самое. Шум уезжающего автобу не заглушаю болтовню студентов. Юна вытащила телефон и проверила расписание."
         
         play music "audio/music/Day Out (GAME VERSION).ogg" fadein 1
         show yuuna neu at cc with dissolve
         
         label E1D2S2_yuunaloop:
             menu:
-                "Ask where her class is.":
-                    pf "So, what's your first class?"
+                "Спросить где у неё урок.":
+                    pf "Так, какой твой первый урок?"
                     show yuuna smi at cc with dissolve
                     voice "audio/voice/E1/D2/S2/Yuuna/8.ogg"
-                    ym "Introduction to Psychology."
-                    pf "Psychology?"
+                    ym "Введение в психологию."
+                    pf "Психологию?"
                     
                     voice "audio/voice/E1/D2/S2/Yuuna/9.ogg"
-                    ym "Mental health is just as important as physical health. That class is--"
-                    "She points over her shoulder towards a towering building in the distance."
+                    ym "Психическое здоровье столь же важно, как и физическое. Урок проходит--"
+                    "Она указала через плечо на возвышающееся здание вдалеке."
                     voice "audio/voice/E1/D2/S2/Yuuna/10.ogg"
-                    ym "--all the way over there. What class do you have?"
-                    "I check my own phone."
-                    pf "Piloting 101."
+                    ym "--там. Какой у тебя урок?"
+                    "Я проверил телефон."
+                    pf "101 пилотный."
                     show yuuna sur at cc
                     show question:
                         xoffset 720
@@ -138,136 +138,136 @@ label E1D2S2:
                         xzoom .75
                         yzoom .75
                     voice "audio/voice/E1/D2/S2/Yuuna/11.ogg"
-                    ym "Oh, you're a first year?"
-                    pf "No, second. The credit wasn't accepted when I transferred."
+                    ym "Ох, так ты на первом году обучения?"
+                    pf "Нет, на втором. Однако меня не приняли на второй год, когда я перевёлся."
                     show yuuna smi at cc
                     voice "audio/voice/E1/D2/S2/Yuuna/12.ogg"
-                    ym "Oh, I see. Well, welcome to ACE Academy!"
+                    ym "Ох, понятно. Ну, добро пожаловать в Академию!"
                     
-                    pf "Heh, thanks!"
+                    pf "Хех, спасибо!"
                     show yuuna hap at cc
                     voice "audio/voice/E1/D2/S2/Yuuna/13.ogg"
-                    ym "Well, if there's anything you need help with or if you have any questions, feel free to ask. I pretty much know this campus inside-out."
+                    ym "Ну, если тебе нужна помощь, или есть вопросы - обращайся. Я довольно хорошо знаю кампус."
     
                     menu:
-                        "See if she knows how someone gets a parking permit.":
+                        "Посмотрим, знает ли она как получить разрешение на парковку.":
                             $ E1D2S2_YuunaComesWithYouPass = 1
-                            "A thought dawns on me."
-                            pf "Actually, do you know where I can get a parking permit?"
+                            "Меня посетила мысль."
+                            pf "Вообще-то, ты знаешь как получить разрешение на парковку?"
                             show yuuna smi at cc
                             voice "audio/voice/E1/D2/S2/Yuuna/14.ogg"
-                            ym "I do. I can take you there now, actually, since I have some time before class starts."
+                            ym "Да, знаю. Я могу отвести тебя туда, так как у меня еще есть время до урока."
     
-                            pf "Great, that helps a lot! Thanks."
+                            pf "Отлично, это мне очень поможет! Спасибо."
                             show yuuna hap at cc
                             voice "audio/voice/E1/D2/S2/Yuuna/15.ogg"
-                            ym "Of course! Follow me."
+                            ym "Конечно! Следуй за мной."
                             hide yuuna with dissolve
     
-                            "Yuuna weaves through the throng of students and it takes most of my concentration not to lose her."
-                            "I notice the number of students lounging around the front lawn. I assume those are the upper classmen--the ones who are used to university workings. The students with worried eyes, moving somewhere between a walk and a jog must be first years."
+                            "Юна вливается в толпу студентов, и большая чать сил уходит на то, чтобы не потерять её."
+                            "Я заметил студентов, бездельничающих у передней лужайки. Полагаю, они старшекурсники--уже привыкшие к учебным будням. Студенты с взволнованными глазами, с походкой где-то между ходьбой и бегом, должно быть первокурсники."
                             scene bg campus building day with fade
-                            "Eventually, we pause in front of a grand building… {w}which looks just like the ones we passed. I stare hard at it, trying to find a way to distinguish it from the others."
+                            "В итоге, мы остановились перед огромным зданием… {w}который выглядит так же, как и остальные. Я пристально смотрел на него, пытаясь найти способ отличить его от других."
                             show yuuna neu at cc with dissolve
-                            "Yuuna watches me."
+                            "Юна смотрела на меня."
     
                             voice "audio/voice/E1/D2/S2/Yuuna/16.ogg"
-                            ym "Is everything okay?"
+                            ym "Всё в порядке?"
     
-                            pf "Huh? Oh, yeah."
+                            pf "Что? А, да."
                             show yuuna smi at cc
                             voice "audio/voice/E1/D2/S2/Yuuna/17.ogg"
-                            ym "Then let's go inside."
+                            ym "Тогда пойдём внутрь."
     
-                            pf "Sure."
+                            pf "Конечно."
                             hide yuuna with dissolve
-                            "After sneaking one last look, I follow Yuuna inside."
+                            "Я ещё раз посмотрел на здание, а потом зашёл внуть вслед за Юной."
                             stop ambient fadeout 3
                             scene black with fade
-                            "She takes me through a series of hallways before pausing in front of a door marked \"Campus Administration\"."
-                            "We both reach for the door at the same time, but I'm faster."
-                            "She smiles as I hold the door for her."
+                            "Она провела меня через ряд коридоров, и остановилась перед дверью с табличной \"Администрация кампуса\"."
+                            "Мы одновременно дошли до двери, но я был быстрее."
+                            "Она улыбнулась, когда я держал для неё дверь."
                             voice "audio/voice/E1/D2/S2/Yuuna/18.ogg"
-                            ym "Oh! Thank you."
+                            ym "Ох! Спасибо."
                             stop music fadeout 3
                             scene bg campus office day with fade
                             play ambient "audio/ambience/Campus Office.ogg" fadein 1
-                            "What would have been a spacious office is instead crowded with irritated students. Only one person mans the desk and he does not look like someone who is particularly accommodating."
+                            "То, что должно быть просторным офисом в итоге заполнено раздражёнными учениками. Только один человек стоит за стойкой, и он не выглядит сговорчивым."
                             show yuuna smi at cc
-                            "Yuuna points to a row of chairs against the far wall."
+                            "Юуна указала на ряд стульев у дальней стены."
                             voice "audio/voice/E1/D2/S2/Yuuna/19.ogg"
-                            ym "I'll wait for you over there."
-                            pf "Thanks, hopefully this doesn't take too long. If it does, feel free to leave. I don't want you to be late."
+                            ym "Я подожду тебя там."
+                            pf "Спасибо, надеюсь, это не займет слишком много времени. Если займёт, то можешь уйти. Я не хочу, чтобы ты опоздала."
                             voice "audio/voice/E1/D2/S2/Yuuna/20.ogg"
-                            ym "Don't worry, I have some time."
+                            ym "Не волнуйся, у меня есть немного времени."
                             show yuuna hap at cc
-                            "She smiles reassuringly before heading over to the seats."
+                            "Она обнадёживающе улыбнулась, прежде чем отправиться к стульям."
                             hide yuuna with dissolve
-                            "I stand in line. {w}As I crane my neck to see the front of the line, I catch the scowl on the administrator's face. He shakes his head, but the student continues to argue with him."
-                            "This is going to take a while…"
+                            "Я встал в очередь. {w}Когда я поднял шею, чтобы увидеть, что впереди, то заметил хмурый взгляд на лице администратора. Он качал головой, но студент продолжал спорить с ним."
+                            "Это займёт время…"
                             jump E1D2S5
     
-                        "Head out on your own.":
-                            pf "Good to know, thank you. I think it may be best for me to do some exploring on my own, though."
+                        "Самому изучить место.":
+                            pf "Спасибо, буду знать. Я, думаю, будет лучше, если я сам погуляю и узнаю места."
                             show yuuna smi at cc
-                            "She nods in understanding."
+                            "Она понимающе кивнула."
                             voice "audio/voice/E1/D2/S2/Yuuna/21.ogg"
-                            ym "Sure. I guess I'll see you around, then?"
-                            pf "I hope so."
+                            ym "Конечно. Тогда, полагаю, ещё увидимся?"
+                            pf "Надеюсь."
                             hide yuuna with dissolve
-                            "She waves goodbye before I lose her in the crowd of students."
-                            "I check my phone and notice I still have about an hour before class begins. {w}Should I actually head to class early or should I explore a bit?"
+                            "Она помахала на прощанье, и я потерял её в толпе студентов."
+                            "Я проверил телефон и заметил, что у меня ещё есть око часа до начала занятий. {w}Пойти в класс пораньше, или погулять?"
                             jump E1D2S4
     
-                "I have to run.":
+                "Мне надо поторопиться.":
                     
-                    pf "I should probably head to class. I don't want to get lost on my first day." 
+                    pf "Я должен идти в класс. Не хочу потеряться в первый день." 
                     show yuuna smi at cc
-                    "She nods in understanding."
+                    "Она понимающе кивнула."
                     voice "audio/voice/E1/D2/S2/Yuuna/21.ogg"
-                    ym "Sure. I guess I'll see you around, then?"
-                    pf "I hope so."
+                    ym "Конечно. Тогда, полагаю, ещё увидимся?"
+                    pf "Надеюсь."
                     hide yuuna with dissolve
-                    "She waves goodbye before I lose her in the crowd of students."
-                    "I check my phone and notice I still have about an hour before class begins. {w}Should I actually head to class early or should I explore a bit?"
+                    "Она помахала на прощанье, и я потерял её в толпе студентов."
+                    "Я проверил телефон и заметил, что у меня ещё есть око часа до начала занятий. {w}Пойти в класс пораньше, или погулять?"
                     jump E1D2S4
     
-                "Sooo…" if (E1D2S2_yuunaloopback == 0):
+                "Таааак…" if (E1D2S2_yuunaloopback == 0):
                     $ E1D2S2_yuunaloopback = 1
-                    pf "Sooo…"
+                    pf "Таааак…"
                     show dots:
                         xoffset 720
                         yoffset 100
                         xzoom .75
                         yzoom .75
                     show yuuna thi at cc with dissolve
-                    "I look everywhere but at Yuuna. {w}She shifts awkwardly in her spot, fiddling with a piece of thread on her sleeve. {w}As the seconds tick by, the silence grows increasingly heavy."
+                    "Я смотрел куда угодно, но не на Юну. {w}Она неловко переминалась на месте, возившись с ниткой на рукаве. {w}Секунды шли, молчание становилось все более и более тяжёлым."
                     jump E1D2S2_yuunaloop
                     
     elif (E1D2S2_talkwithyuunayes == 0):
     
-        "She doesn't look like she wants to be bothered."
+        "Не похоже, что она хочет, чтобы ее беспокоили."
         scene bg travel bus day with fade
-        "I make my way to the back of the bus and am lucky enough to find a window seat. I sit down and watch the blur of trees go by."
+        "Я пробшёл в конец автобуса, и нашёл место у окна. Я сел, и смотрел как мимо проносились деревья."
     
         $renpy.pause(3)
         play sound "audio/sfx/Technology/Phone Vibration Once.ogg"
     
-        "My pocket vibrates."
-        "It's a reminder to check the email I had sent myself last night. {w}I'd collected all the information I needed for my first day and compiled it into one email for easy access."
-        "I scroll through and refresh myself on my class schedule and information. {w}When I click on a location, it pulls up a detailed map of the campus. This could come in handy."
-        "I spend the next few minutes studying the different parts of the campus. {w}A red pulsating light indicates the largest buildings, while the smaller ones flash yellow. {w}My classes don't seem to be too far from each other, which is fortunate. Now there's no way I'll get lost."
+        "Мой карман завибрировал."
+        "Это напоминание, чтобы проверить почту, отправленную самому себе вчера вечером. {w}Я собрал всю необходимую мне информацию, которая мне пригодится в первый день и сжал её в одно письмо для быстрого доступа."
+        "Я листал и напоминал себе информацию и расписание. {w}Когда я нажал на кнопку локации, он открыл мне подробную карту кампуса. Это пригодится."
+        "Следующие несколько минут я изучал разные места кампуса. {w}Красный пульсирующий свет указывает на самые большие здания, в то время как более мелкие вспыхивают желтыми. {w}Мои классы, кажется, не слишком далеки друг от друга, что очень удобно. Теперь я ни за что не потеряюсьь."
     
         "..."
     
-        "A hotdog stand? {w}I swear these exist on every campus. Although, it's kind of surprising to find one in a Japanese school… and that it's marked on the official map."
+        "Лавка хот-догов? {w}Клянусь, они есть в каждом кампусе. Однако, удивительно найти его в японской школе… и он отмечен на карте."
     
         play sound "audio/sfx/Vehicles/Bus Chime.ogg"
         $renpy.pause(1)
         voice "audio/voice/E1/D2/S2/Bus Announcer/1.ogg"
-        "Bus Announcer" "ACE Academy."
+        "диктор автобуса" "Академия ACE."
 
-        "I quickly gather my things and shuffle off the bus with the rest of the students."
+        "Я юыстро собрал вези и вышел из автобуса с остальными студентами."
         
         scene black with fade
         play sound "audio/sfx/Vehicles/Bus Door Open.ogg"
@@ -276,7 +276,7 @@ label E1D2S2:
         play ambient "audio/ambience/Campus.ogg" fadein 3
         scene bg campus main day with Dissolve(2)
     
-        "The first thing I notice is how clean and well-kept the campus is. {w}It's like walking into a brochure. The trees and hedges are neatly trimmed; not a single leaf is astray. The grass is mowed. Even the architecture shows off clean lines and designs. {w}I loved CINY, but it could have used a few tips on upkeep."
-        "I check the time. {w}I have about an hour before class starts. {w}Should I head to class early? The last thing I'd want is to be late to my first class. {w}On the other hand, sitting around in an empty classroom for an hour seems counterproductive. I could be spending that time checking out the different aspects of campus."
+        "Первое, что я заметил - это то, насколько чист и ухожен кампус. {w}Как в брошюре. Деревья и изгороди аккуратно отделаны; нет ни лишнего листочка. Трава скошена. Даже архитектура демонстрирует прямые линии и дизайн. {w}Я любил CINY, но он мог бы использовать несколько советов по поддержке чистоты."
+        "Я проверил время. {w}У меня был где-то час до занятий. {w}Пойти в класс пораньше? Последнее, что я хочу, это опаздывать на первый урок. {w}С другой стороны, сидеть в пустом классе в течение часа кажется контрпродуктивным. Я мог бы провести время, проверяя разные места кампуса."
     
         jump E1D2S4
