@@ -24,69 +24,69 @@ label E1D2S2:
         xzoom .5
         yzoom .5
     "Она пристально смотрела в окно и её осанка была неудобно прямой."
-    "Her uniform lacks teal stripes. {w}I guess she's not a pilot."
+    "На её форме не было тиановой маркировки. {w}Полагаю, она не пилот."
     
-    "She seems pretty cute, so I wonder why there's an empty seat beside her. {w}Maybe she's not that friendly?"
+    "Она была очень милой, так что мне было интересно, почему рядом с ней было свободное место. {w}Может, она не так дружелюбна?"
     
     menu:
-        "Meh, I'll take my chances. It'd be nice to know at least one person from ACE Academy.":
+        "Ладно, я попробую. было бы неплохо знать хоть одного человека из Академии.":
             $ E1D2S2_talkwithyuunayes = 1
     
-        "I'll find another spot.":
+        "Лучше найду другое место.":
             $ E1D2S2_talkwithyuunayes = 0
         
     if (E1D2S2_talkwithyuunayes == 1):
     
-        "I fall ungracefully into the seat beside her."
-        "We sit in silence as I muster the courage to speak with her. Eventually, she shifts uncomfortably under my gaze, and I clear my throat."
+        "Я неизящно сел рядом с ней."
+        "Мы сидели в тишине, пока я собирал мужество, чтобы поговорить с ней. В конце концов, она неудобно повернулась под моим взглядом, и я прочистил горло."
     
-        pf "Um, you go to ACE Academy too?"
+        pf "Хм, ты тоже едешь в Академию?"
         play music "audio/music/Yuuna Misaki (GAME VERSION).ogg" fadein 1
-        "I mentally slap myself for choosing such an idiotic question. Obviously she does. That was one of the first things I noticed. To my surprise, she smiles warmly at me."
+        "Я мысленно вдарил себя за бывор такого тупого вопроса. Очевидно же, что едет в Академию. Я же сразу это заметил. К моему удивлению, она тепло улыбнулась."
         scene cg yuuna bus meeting3 with dissolve:
             xzoom .5
             yzoom .5
         voice "audio/voice/E1/D2/S2/Yuuna/1.ogg"
-        ym "Yes, I do."
+        ym "Да."
     
-        "She gestures at my uniform."
+        "Она указала на мою форму."
         scene cg yuuna bus meeting2 with dissolve:
             xzoom .5
             yzoom .5
         voice "audio/voice/E1/D2/S2/Yuuna/2.ogg"
-        ym "You're in the pilot program? I've heard it's very competitive and difficult to get into."
+        ym "Ты в программе пилотов? Я слышала, что там большая конкуренция и туда сложно попасть."
     
         menu: 
-            "Yes.":
-                pf "Yes."
+            "Да.":
+                pf "Да."
                 voice "audio/voice/E1/D2/S2/Yuuna/3.ogg"
-                ym "… Yes you're in the pilot program? Or yes the program is very difficult to get into?"
-                pf "Uh… yes."
+                ym "… Да, ты в программе пилотов? Иди да, в эту программу сложно попасть?"
+                pf "Хм… Да."
                 voice "audio/voice/E1/D2/S2/Yuuna/4.ogg"
-                ym "Oh… um, okay."
+                ym "О… эм, хорошо."
                 scene cg yuuna bus meeting1 with dissolve:
                     xzoom .5
                     yzoom .5
-                "She waits politely for me to say more, but when I don't, she resumes her gaze out of the window. {w}Every once in a while I catch her glance sideways at me."
+                "Она вежливо ждала, что я скажу больше. Но я этого не сделал, и она снова повернулась к окну. {w}Время от времени я ловил её взгляд на мне."
     
-            "Nah, it was easy!":
-                "I wave a hand dismissively."
-                pf "I managed to get in without any trouble."
+            "Не, это было легко!":
+                "Я пренебрежительно махнул рукой."
+                pf "Я без проблем попал туда."
                 scene cg yuuna bus meeting3 with dissolve:
                     xzoom .5
                     yzoom .5
                 voice "audio/voice/E1/D2/S2/Yuuna/5.ogg"
-                ym "Oh, I see."
-                "Her smile seems strained."
+                ym "Ох, понятно."
+                "Её улыбка казалась натянутой."
     
-            "It just needs hard work.":
-                pf "I think anyone can make it as long as they try."
+            "Просто нужно усердно трудиться.":
+                pf "Я думаю, любой сможет поступить, пока пытается."
                 scene cg yuuna bus meeting3 with dissolve:
                     xzoom .5
                     yzoom .5
-                "She gives me a polite smile."
+                "Она вежливо улыбнулась мне."
     
-        pf "Right, I didn't catch which program you're in. Or your name, for that matter. I'm [pfull]."
+        pf "Точно, я не услышал, в какой ты программе. Или как тебя зовут, раз уж на то пошло. Меня зовут [pfull]."
         scene cg yuuna bus meeting3 with dissolve:
             xzoom .5
             yzoom .5
