@@ -2,23 +2,23 @@ label E1D2S6:
     
     
     
-    "I extend my hand toward her, but she swats it away."
+    "Я протянул ей руку, но она отбросила её."
     scene cg kaori intersection fall4 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
     voice "audio/voice/E1/D2/S6/Kaori/1.ogg"
-    ki "Don't touch me!"
+    ki "Не трогай меня!"
     
-    "She takes several deep breaths, then heaves herself unsteadily to her feet."
+    "Она сделала несколько глубоких вдохов, затем неуверенно подниялась на ноги."
     scene bg campus intersection day with fade
-    "Once she finds her footing, she dusts off her uniform. {w}Suddenly, she whirls on me." 
+    "Найдя точку опоры, она отряхнула форму. {w}Внезапно она повернулась ко мне." 
     show kaori ang at cc with dissolve
     voice "audio/voice/E1/D2/S6/Kaori/2.ogg"
-    ki "Are you blind?! You could have killed me!"
+    ki "Ты слепой?! Ты мог убить меня!"
     
-    pf "I'm really--"
+    pf "Мне очень--"
     voice "audio/voice/E1/D2/S6/Kaori/3.ogg"
-    ki "What were you thinking?! I swear, these days, any idiot can get a license."
+    ki "О чем ты думал?! Клянусь, в наши дни любой идиот пожет получить права."
     show kaori ann at cc with dissolve
-    "She gestures to her books strewn across the road."
+    "Она указала на книги, разбросанные по дороге."
     show vein:
         xoffset 720
         yoffset 110
@@ -26,50 +26,50 @@ label E1D2S6:
         yzoom .75
     show kaori ang at cc
     voice "audio/voice/E1/D2/S6/Kaori/4.ogg"
-    ki "Look! Look at what you've done!"
+    ki "Смотри! Видишь, что ты наделал!"
     
-    "It's not a pretty sight."
+    "Это не очень красиво."
     show kaori ann at cc with dissolve
-    "She runs her hands through her hair in growing frustration. Whenever I try to apologise, she interrupts me with another verbal beating."
+    "Она поправила руками волосы с растущим раздражением. Всякий раз, когда я пытался извиниться, она прерывала меня словесным избиением."
     
-    "She's a fiery one, that's for sure."
+    "Она вспыльчивая, это точно."
     
     menu:
-        "Apologise and offer to help gather her things.":
-            "I don't deserve this barrage of insults, but I can understand her anger and frustration. {w}I admit I'm in the wrong, so I'll bite my tongue and take the abuse." 
+        "Извиниться, и предложить помочь собрать вещи.":
+            "Я не заслуживал этого шквала оскорблений, но мог понять ее гнев и раздражение. {w}Я признал свою ошибку, как что прикусил язык и принял оскорбления." 
     
-            "She takes a breath and stoops to pick up her things. It'll take forever for her to gather all of this stuff by herself. {w}I wheel my bike to the side of the road and try to help her, but whenever I pick something up she snatches it out of my hands."
+            "Она вздохнула и наклонилась, чтобы собрать вещи. Самой собирать это всё займёт вечность. {w}Я отогнал мотоцикл к обочине, и попытался помочь ей. Но всякий раз, когда я что-то подбирал, она вырывала это из моих рук."
     
-            "I need to get her attention so I can make things right. I pick up a book, and before she can snatch it back, I offer it to her."
+            "Мне нужно привлечь ее внимание, чтобы всё исправить. Я взял книгу, и прежде чем она её вырвала, я предложил ее ей."
             show kaori ske at cc
             voice "audio/voice/E1/D2/S6/Kaori/5.ogg"
-            ki "Huh? Wha..."
+            ki "А? Чт..."
     
-            "Her gaze flicks back and forth from me to the book, her eyes narrowing the longer she does so."
+            "Её взгляд перемещался то на меня, то на книгу, и всё это вреся её глаза сужались."
             show kaori ann at cc
             voice "audio/voice/E1/D2/S6/Kaori/6.ogg"
-            ki "Why are you still here? Haven't you caused enough trouble?"
+            ki "Почему ты все ещё здесь? Недостаточно проблем устроил?"
     
-            "She steals the book out of my hands."
+            "Она крадет книгу из моих рук."
     
-            pf "Look, I'm really sorry."
+            pf "Слушай, мне очень жаль."
             show kaori dis at cc
-            "She folds her arms, the fire easing in her eyes."
+            "Она скрестила руки, огонь горел в её глазах."
     
-            pf "So, can I help you?"
+            pf "Так, могу я помочь тебе?"
     
-            "She shrugs, and drops the book I returned back into her bag."
+            "Она пожала плечами, и бросила книгу обратно в сумку."
             show kaori thi b1 at cc with dissolve
             voice "audio/voice/E1/D2/S6/Kaori/7.ogg"
-            ki "Whatever. Do what you want."
+            ki "Плевать. Делай что хочешь."
     
-            "I think that's her way of saying \"yes\"."
+            "Я думаю, так она говорит \"да\"."
     
-            "I jump right into gathering her fallen items. It's not long before we're done."
+            "Я принялся собирать упавшие вещи. Прошло немного времени, и мы закончили."
             show kaori neu at cc with dissolve
-            "She checks her bag."
+            "Она проверила сумку."
             voice "audio/voice/E1/D2/S6/Kaori/8.ogg"
-            ki "That looks like everything."
+            ki "Похоже тут всё."
             show dots:
                 xoffset 720
                 yoffset 110
@@ -78,25 +78,25 @@ label E1D2S6:
             $renpy.pause(1)
             show kaori thi at cc with dissolve
             $renpy.pause(1)
-            "An uncomfortable silence falls between us. {w}She gazes down at her feet for a moment." 
+            "Между нами возникла неловкая тишина. {w}На мгновение она посмотрела на ноги." 
     
-            "The previous hostility is gone. I mean, she still looks annoyed, but not in the \"I'm about to bludgeon you to death with my books and dump your body in the sewer\" kind of way."
+            "Предыдущая враждебность ушла. Я имею в виду, она все ещё раздражена, но не настолько, что \"Я собираюсь забить тебя насмерть книгами и свалить труп в канализацию\" в таком роде."
             show kaori dis at cc
             voice "audio/voice/E1/D2/S6/Kaori/9.ogg"
-            ki "Thanks... I guess. Even if this was all your fault to begin with."
+            ki "Спасибо... я полагаю. Хоть это и была изначально твоя вина."
     
-            "I rub the back of my head with a sheepish grin."
+            "Я почесал затылок с застенчивой усмешкой."
     
-            pf "No problem. And again, I really am sorry for all of this."
+            pf "Без проблем. И снова, мне очень жаль за всё это."
             show kaori ann at cc
             voice "audio/voice/E1/D2/S6/Kaori/10.ogg"
-            ki "Whatever. I'm going to be late if I stand around chatting to an idiot like you all day. Bye."
+            ki "Всё равно. Я опоздаю, если буду весь день говорить с идиотом как ты. Пока."
             hide kaori with dissolve
-            "She shoulders past me and marches away at a brisk pace. I soon lose her as she turns the corner."
+            "Она быстрым шагом прошла мимо меня. Вскоре я потерял её за поворотом."
     
-            "Well that was… something."
+            "Ну, это было… что-то."
             play sound "audio/sfx/Vehicles/Bike Ignition.ogg"
-            "I head back to my bike, confident that I did the right thing."
+            "Я вернулся к мотоциклу уверернный, что сделал всё правильно."
             
             stop music fadeout 3
             
@@ -104,21 +104,21 @@ label E1D2S6:
             
             jump E1D2S7
     
-        "Help her quickly so I don't lose too much time.":
-            "{i}Someone's{/i} got an attitude problem, but I'd be a complete jerk if I just left now."
+        "Быстро ей помогу и не потеряю время.":
+            "{i}У кого-то{/i} проблемы с манерами, но я был бы полным придурком, если бы не помог ей."
     
-            "I sigh. Let's get this over with so I can get to the academy on time."
+            "Я вздохнул. Давай быстро разберёмся с этим, чтобы успеть в академию."
     
-            "I reluctantly wheel my bike to the side, and begin to gather her fallen items. Thankfully, there isn't much, so it shouldn't take long..."
+            "Я неохотно отогнал мотоцикл в сторону, и начал собирать её вещи. К сачастью, тут не так много, так что это не должно занять много времени..."
             show kaori ske at cc with dissolve
-            "She yanks the items out of my hands."
+            "Она вырвала вещи у меня из рук."
     
-            "... Or maybe it will."
+            "... Или займёт."
             show kaori ang at cc
             voice "audio/voice/E1/D2/S6/Kaori/11.ogg"
-            ki "What are you doing?! I didn't ask for your help!"
+            ki "Что ты делаешь?! Я не просила твоей помощи!"
             show kaori ann at cc
-            "And the ringing in the my eardrums is back. {w}Wincing, I tilt my head away from her, and hope that my ears aren't bleeding."
+            "И шум в ушах вернулся. {w}Вздрогнув, I tilt my head away from her, and hope that my ears aren't bleeding."
     
             pf "Yeesh. Shouldn't you be thankful I'm taking the time to help you? We'll be done in seconds if you let me help. Come on."
             show kaori ang at cc with dissolve
