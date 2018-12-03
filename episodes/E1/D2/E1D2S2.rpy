@@ -110,7 +110,7 @@ label E1D2S2:
         play ambient "audio/ambience/Campus.ogg" fadein 3
         scene bg campus main day with Dissolve(2)
     
-        "Я выпрыгнул из автобуса и Юна сделала то же самое. Шум уезжающего автобу не заглушаю болтовню студентов. Юна вытащила телефон и проверила расписание."
+        "Я выпрыгнул из автобуса и Юна сделала то же самое. Шум уезжающего автобуса не заглушал болтовню студентов. Юна вытащила телефон и проверила расписание."
         
         play music "audio/music/Day Out (GAME VERSION).ogg" fadein 1
         show yuuna neu at cc with dissolve
@@ -192,7 +192,7 @@ label E1D2S2:
                             stop music fadeout 3
                             scene bg campus office day with fade
                             play ambient "audio/ambience/Campus Office.ogg" fadein 1
-                            "То, что должно быть просторным офисом в итоге заполнено раздражёнными учениками. Только один человек стоит за стойкой, и он не выглядит сговорчивым."
+                            "То, что должно быть просторным офисом в итоге заполнено раздражёнными учениками. Только один человек стоял за стойкой, и он не выглядел сговорчивым."
                             show yuuna smi at cc
                             "Юуна указала на ряд стульев у дальней стены."
                             voice "audio/voice/E1/D2/S2/Yuuna/19.ogg"
