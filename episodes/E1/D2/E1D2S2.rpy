@@ -3,19 +3,19 @@ label E1D2S2:
     play ambient "audio/ambience/Bus Stop.ogg" fadein 1
     scene bg isokaze neighborhood day with fade
     
-    "Cars whip by as I approach the bus shelter. {w}There are a few people waiting. I plunge my hands into my pocket and lean against the shelter to wait."
+    "Cars whip by когда я приближался к автобусной остановке. {w}Там было несколько человек, ожидавших автобус. Я убрал руки в карманы и присллонился к навесу на остановке в ожидании."
     
     play sound "audio/sfx/Vehicles/Bus Door Open.ogg"
-    "A sharp squeal of brakes announces the bus's arrival. A few people trickle off the bus, and I fumble in my bag for my ID."
+    "Резкий визг тормозов сообщил о прибытии автобуса. Несколько человек вышли из автобуса, и я искал в сумке свою ID карту."
     scene bg travel bus day with fade
     play sound [ "audio/sfx/Technology/ID Tap.ogg", "audio/sfx/Technology/ID Tap Success.ogg" ]
-    "As I enter, I tap my ID on the scanner, which responds with an affirmative beep."
+    "Я вошёл в автобус и прислонил ID карту к сканнеру. На нём появился подтверждающий сигнал."
     play sound "audio/sfx/Vehicles/Bus Door Open.ogg"
-    "Without waiting for me to find a seat, the bus jerks to a start, nearly knocking me over. There aren't too many free seats available, so I stumble unsteadily towards the back of the bus."
+    "Не дожидаясь, когда я найду свободное место, автобус тронулся, и моё тело чуть не обняло пол. Было не так много свободных мест, поэтому я неуверенно поплёлся в конец автобуса."
     stop ambient fadeout 5
     play ambient "audio/ambience/Bus.ogg" fadein 1
-    "As I glance around, I notice that a majority of passengers are wearing ACE Academy uniforms. That's comforting, I suppose."
-    "There's a free seat beside a girl my age."
+    "Оглядываясь, я заметил, что большинство пассажиров носило форму академии ACE. Это утешает, я полагаю."
+    "Здесь свободное место рядом с девушкой примерно моего возраста."
 
     $ persistent.gpix[61][0] = 1
     $ persistent.gpix[62][0] = 1
@@ -23,7 +23,7 @@ label E1D2S2:
     scene cg yuuna bus meeting1 with dissolve:
         xzoom .5
         yzoom .5
-    "She stares intently out of the window and sits with her back uncomfortably straight."
+    "Она пристально смотрела в окно и её осанка была неудобно прямой."
     "Her uniform lacks teal stripes. {w}I guess she's not a pilot."
     
     "She seems pretty cute, so I wonder why there's an empty seat beside her. {w}Maybe she's not that friendly?"
