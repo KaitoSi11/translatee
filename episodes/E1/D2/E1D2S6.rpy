@@ -118,9 +118,9 @@ label E1D2S6:
             voice "audio/voice/E1/D2/S6/Kaori/11.ogg"
             ki "Что ты делаешь?! Я не просила твоей помощи!"
             show kaori ann at cc
-            "И шум в ушах вернулся. {w}Вздрогнув, I tilt my head away from her, and hope that my ears aren't bleeding."
+            "И шум в ушах вернулся. {w}Вздрогнув, я отвернулся от неё, и надеялся, что мои уши не кровоточили."
     
-            pf "Yeesh. Shouldn't you be thankful I'm taking the time to help you? We'll be done in seconds if you let me help. Come on."
+            pf "Разве ты не должна быть благодарна за то, что я трачу время на помощь тебе? Мы справимся за секунду, если ты позволишь помочь. Давай же."
             show kaori ang at cc with dissolve
             show vein:
                 xoffset 720
@@ -128,27 +128,27 @@ label E1D2S6:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D2/S6/Kaori/12.ogg"
-            ki "No! Just leave it!"
+            ki "Нет! Не трогай ничего!"
             
-            "I'm going to be here all day if I argue with her. I step around her and grab her bag off the ground. Trying my best to ignore her verbal barrage of complaints and insults, I collect the remaining items."
+            "Я тут весь день проторчал, если бы спорил с ней. Я обошёл её, и взял сумку с земли. Пытаясь изо всех сил игнорировать шквал недовольства и оскорблений, я собрал оставшиеся предметы."
             show kaori ann at cc with dissolve
-            "I try to hand back her bag, but she snatches it out of my hands."
+            "Я попытался вернуть ей сумку, но она вырвала её у меня из рук."
     
-            "A \"thank you\" would be nice."
+            "\"Спасибо\" было бы не лишним."
     
-            pf "See? All there, and that took no time at all."
+            pf "Видишь? Всё здесь, и это пости не отняло времени."
             show kaori dis at cc
-            "She rummages inside her bag, ruining my neat packing job. Does she think I might have tried to steal something? I'm not {i}that{/i} bad."
+            "Она рылась в своей сумке, разрушив мои старания аккуратно сложить вещи. Она думала, что я что-то украл? Я не {i}настолько{/i} плохой."
     
-            "Content, she closes the bag back up and gives me a dull look. At least she's visibly less angry than before."
+            "Удовлетворённая, она закрыла сумку и хмуро посмотрела на меня. По крайней мере, она выглядит менее сердитой, чем раньше."
             voice "audio/voice/E1/D2/S6/Kaori/13.ogg"
-            ki "... Fine."
+            ki "... Хорошо."
             hide kaori with dissolve
-            "Without another word, she turns on her heel and heads in the direction of the academy."
+            "Без слов, она развернулась и ушла в сторону академии."
     
-            pf "... Still waiting on that \"thank you\"."
+            pf "... Всё ещё жду \"thank you\" за это."
     
-            "I trek back to my bike, feeling just a little bit more deaf than before."
+            "Я вернулся к мотоциклу, чувствуя себя немного более глухим, чем раньше."
             
             stop music fadeout 3
             
@@ -156,22 +156,22 @@ label E1D2S6:
             
             jump E1D2S7
     
-        "Whatever, I'm out.":
+        "Плевать, я сваливаю.":
             $ E1D2S3_MetKaoriWasRudeNoHelmet = 1
             
-            "This is going nowhere. She isn't injured, so I don't have any problem with leaving."
+            "Это никуда не приведёт. Она не ранена, так что не вижу смысла тут оставаться."
     
             if (E1D2S3_mcwithhelmet == 0):
                 play sound "audio/sfx/Vehicles/Bike Ignition.ogg"
-                "I start up my bike and sail past her, regretting ever stopping for someone as crazy as her in the first place."
+                "Я завёл мотоцикл и пролетел мимо неё, жалея, что вообще остановился ради кого-то сумасшедшего, как она."
                 stop ambient fadeout 3
                 play ambient "audio/ambience/Open Road No Helmet.ogg" fadein 1
     
             if (E1D2S3_mcwithhelmet == 1):
                 play sound "audio/sfx/Vehicles/Bike Ignition.ogg"
-                "I put my helmet back on and start the bike."
+                "Я одел шлем и завёл мотоцикл."
                 play sound "audio/sfx/Vehicles/Bike driving off.ogg" fadein 5 fadeout 5
-                "As I make my way past her, I think I hear muffled shouting behind me. I'm too far to make out what she says, which is probably for the best."
+                "Когда я проезал мимо неё, мне показалось, что я слышал приглушённый крик позади. Я был слишком далеко, чтобы разобрать, что она говорит, что, даже к лучшему."
                 stop ambient fadeout 3
                 play ambient "audio/ambience/Open Road Helmet.ogg" fadein 1
     
