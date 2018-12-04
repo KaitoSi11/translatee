@@ -23,7 +23,7 @@ label E1D2S5:
         "Подкупить его.":
             pf "Я надеялся, что этот процесс мог бы пройти быстрее."
             "Я наклонился и ослепил его самой очаровательной улыбкой."
-            pf "Вы кажетесь разумным человеком. Are you sure we couldn't come to some sort of… {i}arrangement{/i}?"
+            pf "Вы кажетесь разумным человеком. Вы уверены, что мы не можем… {i}договориться{/i}?"
             show storm:
                 xoffset 675
                 yoffset 25
@@ -32,39 +32,39 @@ label E1D2S5:
             $renpy.pause(1)
             "He narrows his eyes."
             voice "audio/voice/E1/D2/S5/Receptionist/5.ogg"
-            "Receptionist" "What exactly did you have in mind?"
+            "Секретарь" "Что именно ты предлагаешь?"
             menu:
-                "Offer a bribe of one credit.":
-                    "I scribble something down on a nearby leaflet and offer it face-down to the receptionist. He looks up at me, suspicion in his eyes. I nod twice with a confident smirk."
-                    pf "I'm sure you'll find the amount to be more than generous, my fine sir."
-                    "He cautiously flips the paper over…  and his expression falls flat."
+                "Предложить подкупить его деньгами (1).":
+                    "Я что-то написал в ближайшем листе и предложил его перевёрнутым секретарю. Он подозрительно посмотрел на меня. Я дважды кивнул с уверенной ухмылкой."
+                    pf "Я уверен, сумма более чем щедра, сэр."
+                    "Он осторожно перевернул бумагу…  и его выражение померкло."
                     voice "audio/voice/E1/D2/S5/Receptionist/6.ogg"
-                    "Receptionist" "This says {i}one{/i} credit."
-                    "I tap the tip of my nose twice and wink."
-                    "He crumples up the piece of paper and throws it into the recycling bin."
+                    "Секретарь" "Тут написано {i}один{/i} credit."
+                    "Я дважды коснулся своего носа и подмигнул."
+                    "Он смял лист и бросил его в мусорную корзину."
                     voice "audio/voice/E1/D2/S5/Receptionist/13.ogg"
-                    "Receptionist" "Next!"
+                    "Секретарь" "Следующий!"
     
                     menu:
-                        "Time to up the ante to {i}two{/i} credits!":
+                        "Время предложить {i}два{/i} credits!":
                             play music "audio/music/Baka! (GAME VERSION).ogg" fadein 2
-                            pf "Wait! Hold on. Look, you drive a hard bargain… but I'll play ball."
-                            "I scribble something down on another leaflet before sliding it over. He flips it, takes a quick glance, then slaps it onto the counter. Suddenly, he's on his feet, his eyes smouldering."
+                            pf "Стоп! Подождите-ка. Слушай, ты ведешь жесткую сделку… но я сыграю в эту игру."
+                            "Я что-то написал на другом листочке, прежде чем перевернул его. Он перевернул его, быстро взглянул, затем шлёпнул им по стойке. Внезапно он встал на ноги, его глаза были раскаленны."
                             show vein:
                                 xoffset 675
                                 yoffset 25
                                 xzoom .75
                                 yzoom .75
                             voice "audio/voice/E1/D2/S5/Receptionist/7.ogg"
-                            "Receptionist" "Get out!"
-                            "I hold up my hands."
-                            pf "Woah, calm down."
+                            "Секретарь" "Проваливай!"
+                            "Я поднял руки."
+                            pf "Воу, успокойся."
                             voice "audio/voice/E1/D2/S5/Receptionist/8.ogg"
-                            "Receptionist" "Don't tell me to calm down!"
-                            pf "You know what, I'm ceasing negotiations until such a time when you're more level-headed."
+                            "Секретарь" "Не говори мне успокоиться!"
+                            pf "Знаете что? Я прекращаю переговоры до тех пор, пока вы не будете более уравновешенным."
                             hide receptionist extra with dissolve
                             stop music fadeout 1
-                            "I casually slide away from the desk before he can respond. I can hear him fuming, while his colleagues try to calm him down. Geez, why's he so upset? I guess I'll just do the online form when I get home tonight."
+                            "Я спокойно отошёл от стойки, прежде чем он успел ответить. Я слышал его ярость, по коллеги успокаивали его. Боже, почему он так вспылил? Думаю, я просто заполню документы онлайн, дома вечером."
                             play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 1
                             if (E1D2S2_YuunaComesWithYouPass == 0):
                                 jump E1D2S5_NoYuunaJump
@@ -72,48 +72,48 @@ label E1D2S5:
                             elif (E1D2S2_YuunaComesWithYouPass == 1):
                                 jump E1D2S5_YesYuunaJump
     
-                        "Just offer up 50 credits.":
+                        "Просто предлоить ему 50 credits.":
                             jump E1D2S5OfferFifty
     
-                        "This is hopeless.":
+                        "Это безнадёжно.":
                             pf "Alright, whatever."
-                            "It's pointless to continue if he doesn't even appreciate one {i}whole{/i} credit. I'll just do the forms online."
+                            "Бесполезно продолжать, если он даже не ценит {i}целый{/i} й credit. Просто заполню документы онлайн."
                             hide receptionist extra with dissolve
-                            "I start to head out."
+                            "Я ушёл."
                             if (E1D2S2_YuunaComesWithYouPass == 0):
                                 jump E1D2S5_NoYuunaJump
     
                             elif (E1D2S2_YuunaComesWithYouPass == 1):
                                 jump E1D2S5_YesYuunaJump
     
-                "Offer a bribe of 50 credits.":
+                "Предложить взятку суммой 50 credits.":
                     label E1D2S5OfferFifty:
                         $ E1D2S5_offer50directly = 1
-                        "I scribble down the amount on a leaflet, and offer it to him face-down."
-                        "He peeks at the writing, then narrows his eyes at me, but I hold his gaze."
-                        pf "Take it or leave it."
+                        "Я набросал сумму на листе и предложил его ему перевёрнутым."
+                        "Он взглянул на письмо, потом нахмурился на меня, но выдержал его взгляд."
+                        pf "Либо бери, либо отказывайся."
     
             if (E1D2S5_offer50directly == 1):
-                "He nods."
+                "Он кивнул."
                 voice "audio/voice/E1/D2/S5/Receptionist/11.ogg"
-                "Receptionist" "Fine."
+                "Секретарь" "Хорошо."
     
             if (E1D2S5_offer50directly == 0):
-                "He continues to stare at me, his suspicion growing, but I refuse to back down. After a few seconds, he nods."
+                "Он продолжал смотреть на меня, его подозрение росло, но я отказывался сдаваться. Через несколько секунд он кивнул."
                 voice "audio/voice/E1/D2/S5/Receptionist/9.ogg"
-                "Receptionist" "That's more reasonable."
+                "Секретарь" "Это более приемлемо."
     
-            "He types on his computer, then slides open a drawer and slaps a plastic card onto the counter."
+            "Он что-то напечатал на компьютере, потом открыл ящик и положил пластиковую карточку на стойку."
     
             $ E1D2S5_bribedforpass = 1
             $ E1D2S5_gotbikepass = 1
             voice "audio/voice/E1/D2/S5/Receptionist/10.ogg"
-            "Receptionist" "Here is your permit. If you lose it you will be charged a fee for a replacement. Is there anything else I can help you with?"
-            pf "No, thank you."
+            "Секретарь" "Вот твой пропуск. Если потеряешь, то придётся платить за замену. Чем-то ещё могу помочь?"
+            pf "Нет, спасибо."
             voice "audio/voice/E1/D2/S5/Receptionist/13.ogg"
-            "Receptionist" "Next!"
+            "Секретарь" "Следующий!"
             hide receptionist extra with dissolve
-            "I tuck the permit into my wallet and move out of the way. That's one way to get things done."
+            "Я положил пропуск в кошелёк и направился к выходу. Это один способ добиваться цели."
             if (E1D2S2_YuunaComesWithYouPass == 0):
                 jump E1D2S5_NoYuunaJump
     
@@ -121,31 +121,31 @@ label E1D2S5:
                 jump E1D2S5_YesYuunaJump
     
     
-        "Who does he think he is?":
-            "I straighten up and glare at him."
-            pf "I don't think you heard me. I want a bike permit."
+        "Кем он себя возомнил?":
+            "Я выпрямился и посмотрел на него."
+            pf "Мне кажется, вы меня не услышали. Я хочу пропуск на парковку."
             voice "audio/voice/E1/D2/S5/Receptionist/12.ogg"
-            "Receptionist" "And I want to meet a pilot who isn't a self entitled sack of douche. It doesn't look like either of us is getting what we want."
-            "He looks behind me before I can even react."
+            "Секретарь" "А я хочу встретить пилота, который не будет самовлюблённым мудаком. Похоже, мы не получим то, чего хотим."
+            "Он посмотрел за меня прежде, чем я успел ответить."
             voice "audio/voice/E1/D2/S5/Receptionist/13.ogg"
-            "Receptionist" "Next!"
+            "Секретарь" "Следующий!"
     
             menu:
-                "He's really pissing me off.":
-                    "My hands curl into fists, and I bang one down on the counter."
-                    pf "Listen up, you smug little--"
+                "Он реально меня бесит.":
+                    "Я сжал руки в кулаки и ударил по стойке."
+                    pf "Слушай, ты самодовольный--"
                     voice "audio/voice/E1/D2/S5/Security/1.ogg"
-                    "Security" "Do we have a problem?"
+                    "Охрана" "Проблемы?"
                     show guard extra at l3 with dissolve
-                    "A burly guard looms over me. A scar runs across his eye and ends at his jawline."
-                    pf "Problem? No, of course not."
+                    "Надо мной навис крепкий охранник. На его лице был шрам, проходящий через глаз до подбородка."
+                    pf "Проблемы? Нет, конечно же нет."
     
-                    "The receptionist smirks in satisfaction, and looks at me while talking to the guard."
+                    "Секретать довольно узмыльнулся и смотрел на меня, пока разговаривал с охранником."
                     voice "audio/voice/E1/D2/S5/Receptionist/14.ogg"
-                    "Receptionist" "He was just leaving."
-                    "I continue to stare him down, until his smile falters and he breaks eye contact. A whisper of a smile plays at my lips."
-                    pf "Yeah, I was."
-                    "With the guard's icy glare burning my back, I nonchalantly walk away from the counter."
+                    "Секретарь" "Он как раз собирался уходить."
+                    "Я продолжал смотреть на него, пока он не перестал улыбаться и не отвёл глаза. Я легко улыбнулся."
+                    pf "Да, как раз собирался."
+                    "Под ледяным взглядом охранника, обжигающим спину, я беззаботно ушёл от стойки."
                     hide guard extra
                     hide receptionist extra
                     with dissolve
@@ -155,9 +155,9 @@ label E1D2S5:
                     elif (E1D2S2_YuunaComesWithYouPass == 1):
                         jump E1D2S5_YesYuunaJump
     
-                "Forget it, this is pointless.":
-                    pf "Whatever."
-                    "This guy is a jerk. I'll just have to do it online or come back later when someone more reasonable is manning the desk."
+                "Забудь, это бесполезно.":
+                    pf "Плевать."
+                    "Этот парень придурок. Я просто заполню документы онлайн, или приду потом, когда там будет сидеть более разумный человек."
                     hide receptionist extra with dissolve
                     if (E1D2S2_YuunaComesWithYouPass == 0):
                         jump E1D2S5_NoYuunaJump
@@ -166,8 +166,8 @@ label E1D2S5:
                         jump E1D2S5_YesYuunaJump
     
     
-        "Let's talk about this.":
-            pf "Soooo…"
+        "Давай поговорим об этом.":
+            pf "Таааааак…"
     
             "This is another one of those moments where I wish I had thought before speaking."
             "He waits for me to finish, but I can see the impatience building in his eyes. {w}It's now or never!"
@@ -186,7 +186,7 @@ label E1D2S5:
                     pf "Has anyone ever told you you have very pretty eyes?"
                     "His cheeks turn a faint pink, but his frown deepens as he looks behind me."
                     voice "audio/voice/E1/D2/S5/Receptionist/15.ogg"
-                    "Receptionist" "Look, I don't have time for this--"
+                    "Секретарь" "Слушай, у меня нет времени на это--"
     
                     "I step back in his line of sight. My grin widens and I wiggle my eyebrows."
     
@@ -197,7 +197,7 @@ label E1D2S5:
                         xzoom .75
                         yzoom .75
                     voice "audio/voice/E1/D2/S5/Receptionist/16.ogg"
-                    "Receptionist" "W-What?!"
+                    "Секретарь" "Ч-Что?!"
     
                     "His face flushes deep red and he opens and closes his mouth as if trying to find the right words to say."
     
@@ -210,7 +210,7 @@ label E1D2S5:
                         xzoom .75
                         yzoom .75
                     voice "audio/voice/E1/D2/S5/Receptionist/17.ogg"
-                    "Receptionist" "I--You!--What?--Why??--This--Here, just take it!"
+                    "Секретарь" "I--You!--What?--Why??--This--Here, just take it!"
     
                     $ E1D2S5_gotbikepass = 1
                     $ E1D2S5_flirtforpass = 1
@@ -237,11 +237,11 @@ label E1D2S5:
                         yzoom .75
                     "The man taps the desk with his finger."
                     voice "audio/voice/E1/D2/S5/Receptionist/18.ogg"
-                    "Receptionist" "There isn't. If you have an issue with this process, you can send a complaint online."
+                    "Секретарь" "There isn't. If you have an issue with this process, you can send a complaint online."
     
                     pf "It's just a bike pass."
                     voice "audio/voice/E1/D2/S5/Receptionist/19.ogg"
-                    "Receptionist" "I don't have time for this."
+                    "Секретарь" "I don't have time for this."
     
                     "He tries to look around me, but I block him."
     
@@ -254,7 +254,7 @@ label E1D2S5:
                         xzoom .75
                         yzoom .75
                     voice "audio/voice/E1/D2/S5/Receptionist/20.ogg"
-                    "Receptionist" "Nope. Next!"
+                    "Секретарь" "Nope. Next!"
                     hide receptionist extra with dissolve
                     "I sigh in resignation. There's no getting through to him, so I turn around and start to head out."
                     if (E1D2S2_YuunaComesWithYouPass == 0):
@@ -275,7 +275,7 @@ label E1D2S5:
                         yzoom .75
                     "I bury my face in my hands. {w}After a few seconds, I peek through my fingers. He looks at me with both irritation and confusion. I add another muffled sob for good measure, and he sighs."
                     voice "audio/voice/E1/D2/S5/Receptionist/21.ogg"
-                    "Receptionist" "And how could that have possibly happened?"
+                    "Секретарь" "And how could that have possibly happened?"
     
                     "I drop my hands, all signs of distress wiped clean from my face. He blinks in surprise, and narrows his eyes at my complete change in demeanor."
     
