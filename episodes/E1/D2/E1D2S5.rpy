@@ -169,28 +169,28 @@ label E1D2S5:
         "Давай поговорим об этом.":
             pf "Таааааак…"
     
-            "This is another one of those moments where I wish I had thought before speaking."
-            "He waits for me to finish, but I can see the impatience building in his eyes. {w}It's now or never!"
+            "Это ещё один из таких моментов, когда я хотел бы сначала думать, а потом говорить."
+            "Он ждал, пока я закончу, но я видел нетерпение в его глазах. {w}Сейчас или никтогда!"
     
             menu:
-                "Flirt with him.":
+                "Флиртовать.":
                     play music "audio/music/Baka! (GAME VERSION).ogg" fadein 2
-                    "I offer him my best \"come hither\" look. He instinctively leans away from me. Not exactly the reaction I was going for, but I can work with it."
+                    "Я посмотрел на него своим \"лучшим\" взглядом. Он инстинктивно отстранился от меня. Не совсем то, к чему я стремился, но работаем с чем есть."
                     show question:
                         xoffset 675
                         yoffset 25
                         xzoom .75
                         yzoom .75
-                    "I lock eyes with him and grin flirtatiously. He leans further back, confused."
+                    "Я посмотрел ему в глаза, и кокетливо усмехнулся. Он смущенно наклонился в другую сторону."
     
-                    pf "Has anyone ever told you you have very pretty eyes?"
-                    "His cheeks turn a faint pink, but his frown deepens as he looks behind me."
+                    pf "Кто-нибудь говорил тебе, что у тебя очень красивые глаза?"
+                    "Его щёки покраснели, но он нахмурился, когда посмотрел на очередь позади меня."
                     voice "audio/voice/E1/D2/S5/Receptionist/15.ogg"
                     "Секретарь" "Слушай, у меня нет времени на это--"
     
-                    "I step back in his line of sight. My grin widens and I wiggle my eyebrows."
+                    "Я чуть отошёл. Моя улыбка стала ещё шире, и я поиграл бровями."
     
-                    pf "Aw come on, cutie. Now you're just teasing me. Your voice… it's like angels singing."
+                    pf "Ой да ладно, милашка. Теперь ты просто дразнишь меня. У тебя просто… ангельский голос."
                     show shoBlush:
                         xoffset 675
                         yoffset 25
@@ -199,28 +199,28 @@ label E1D2S5:
                     voice "audio/voice/E1/D2/S5/Receptionist/16.ogg"
                     "Секретарь" "Ч-Что?!"
     
-                    "His face flushes deep red and he opens and closes his mouth as if trying to find the right words to say."
+                    "Его лицо покраснело, и рот двигался в немом ответе, словно пытался найти правильные слова."
     
-                    pf "You sure are adorable when you're all flustered."
+                    pf "Ты такой очаровательный, когда смущаешься."
     
-                    "I wink at him."
+                    "Я подмигнул ему."
                     show tsuBlush:
                         xoffset 675
                         yoffset 25
                         xzoom .75
                         yzoom .75
                     voice "audio/voice/E1/D2/S5/Receptionist/17.ogg"
-                    "Секретарь" "I--You!--What?--Why??--This--Here, just take it!"
+                    "Секретарь" "Я--Ты!--Что?--Почему??--Вот--Просто возьми это!"
     
                     $ E1D2S5_gotbikepass = 1
                     $ E1D2S5_flirtforpass = 1
-                    "He violently pulls open a drawer and flings a plastic card at me before slamming it shut. I take it with a playful smile."
+                    "Он яростно открыл ящик и бросил мне пластиковую карточку, прежде чем захлопнуть его. Игриво улыбаясь, я взял её."
     
-                    pf "Thank you."
+                    pf "Спасибо."
                     stop music fadeout 4
-                    "I wink and blow him a kiss, and he quickly looks down. I turn around and walk away as he grumbles to himself. {w}After a few seconds, he realizes there's still a line of students waiting."
+                    "Я подмигнул и послал воздушный поцелуй, и он быстро опустил взгляд. Я развернулся и ушёл пока он ворчал сам себе. {w}Через несколько секунд он понял, что очередь всё ещё ждала."
                     hide receptionist extra with dissolve
-                    "Yup, still got it."
+                    "Ага, всё-таки получил его."
                     play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 1
                     if (E1D2S2_YuunaComesWithYouPass == 0):
                         jump E1D2S5_NoYuunaJump
@@ -228,46 +228,46 @@ label E1D2S5:
                     elif (E1D2S2_YuunaComesWithYouPass == 1):
                         jump E1D2S5_YesYuunaJump
     
-                "Try and be reasonable.":
-                    pf "That's such a complicated process for something so simple. There must be an easier way."
+                "Попытаться вразумить.":
+                    pf "Это такой сложный процесс для чего-то такого простого. Должен же быть путь попроще."
                     show storm:
                         xoffset 675
                         yoffset 25
                         xzoom .75
                         yzoom .75
-                    "The man taps the desk with his finger."
+                    "Мужчина постукивал по столу пальцем."
                     voice "audio/voice/E1/D2/S5/Receptionist/18.ogg"
-                    "Секретарь" "There isn't. If you have an issue with this process, you can send a complaint online."
+                    "Секретарь" "Нет. Если у вас возникла проблема с этим процессом, вы можете отправить жалобу онлайн."
     
-                    pf "It's just a bike pass."
+                    pf "Это всего лишь пропуск на парковку."
                     voice "audio/voice/E1/D2/S5/Receptionist/19.ogg"
-                    "Секретарь" "I don't have time for this."
+                    "Секретарь" "У меня нет времени на это."
     
-                    "He tries to look around me, but I block him."
+                    "Он попытался посмотреть на толпу позади меня, но я заблокировал обзор."
     
-                    pf "Come on!"
+                    pf "Да ладно тебе!"
     
-                    "I hold his gaze. Just when I think he's about to give in, his expression hardens."
+                    "Я выдержал его взгляд. Только я подумал, что он собрался сдаться, его выражение ужесточилось."
                     show vein:
                         xoffset 675
                         yoffset 25
                         xzoom .75
                         yzoom .75
                     voice "audio/voice/E1/D2/S5/Receptionist/20.ogg"
-                    "Секретарь" "Nope. Next!"
+                    "Секретарь" "Нет. Следующий!"
                     hide receptionist extra with dissolve
-                    "I sigh in resignation. There's no getting through to him, so I turn around and start to head out."
+                    "Я вздохнул, сдавшись. До него не добраться, поэтому я развернулся и пошёл."
                     if (E1D2S2_YuunaComesWithYouPass == 0):
                         jump E1D2S5_NoYuunaJump
     
                     elif (E1D2S2_YuunaComesWithYouPass == 1):
                         jump E1D2S5_YesYuunaJump
     
-                "Make up an elaborate sob story.":
+                "Придумать грустную историю.":
                     play music "audio/music/Baka! (GAME VERSION).ogg" fadein 2
                     "I sniffle."
     
-                    pf "I… I lost my pass in the most horrible way…"
+                    pf "Я… Я потерял свой пропуск самым ужасным способом…"
                     show question:
                         xoffset 675
                         yoffset 25
@@ -564,21 +564,21 @@ label E1D2S5:
                     show yuuna hap at cc with dissolve
                     "She giggles and nods."
                     voice "audio/voice/E1/D2/S5/Yuuna/19.ogg"
-                    ym "Sure."
+                    ym "Конечно."
                     "I jog over to her and we exchange numbers."
                     show yuuna smi at cc
-                    pf "Thanks. See you on Friday!"
+                    pf "Спасибо. Увидимся в пятницу!"
                     voice "audio/voice/E1/D2/S5/Yuuna/20.ogg"
-                    ym "Okay, see you then."
+                    ym "Хорошо. Тогда, увидимся."
                     hide yuuna with dissolve
     
                 "Let it go.":
                     label E1D2S5_YuunaNoNumber:
                         $ renpy.hide_screen ("timer_scr")
                         "Let it go. {w}Let it go. {w}Can't ask for her number anymore."
-                        "She's already too far away. I'll talk to her on Friday."
+                        "Она уже слишком далеко. Поговорю с ней в пятницу."
                         
-        "I watch as she disappears around the corner."
+        "Я смотрел как она исчезла за углом."
     
     
     if (E1D2S2_YuunaComesWithYouPass == 0):
