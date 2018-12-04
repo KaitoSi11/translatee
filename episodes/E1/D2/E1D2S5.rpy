@@ -2,28 +2,28 @@ label E1D2S5:
 
     stop music fadeout 3
     voice "audio/voice/E1/D2/S5/Receptionist/1.ogg"
-    "Receptionist" "Next!"
+    "Секретать" "Следующий!"
     play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 1
-    "The line crawls at a steady pace, and after what seems like forever, I finally walk up to the counter." 
+    "Очередь спокойно ползёт, и вот наконец, когда вроде бы прошла вечность, я подошёл к стойке." 
     show receptionist extra at cc with dissolve
     pf "Hi, I need a parking pass for a motorcycle--"
     voice "audio/voice/E1/D2/S5/Receptionist/2.ogg"
-    "Receptionist" "You will have to fill out your request online, which you can access through your weblink. Approval takes about one to two weeks, and if approved a physical pass will be mailed to you."
-    "Before I can respond, he looks past me."
+    "Секретать" "Вам нужно заполнить запрос онлайн на сайте. Подтверждение занимает от одной до двух недель, и если его одобрят, то пропуск отправят вам по почте."
+    "Прежде чем я успел ответить, он посмотрел за меня."
     voice "audio/voice/E1/D2/S5/Receptionist/3.ogg"
-    "Receptionist" "Next!" 
-    pf "Hold on!"
-    "I plant a hand firmly on his desk."
+    "Секретать" "Следующий!" 
+    pf "Подожди-ка!"
+    "Я положил руки на стол."
     
-    "He scowls at me."
+    "Он сердито посмотрел на меня."
     voice "audio/voice/E1/D2/S5/Receptionist/4.ogg"
-    "Receptionist" "What?"
+    "Секретать" "Что?"
     
     menu:
-        "Bribe him.":
-            pf "I was hoping this process could go a little faster."
-            "I lean in close and flash my most charming smile."
-            pf "You seem like a reasonable man. Are you sure we couldn't come to some sort of… {i}arrangement{/i}?"
+        "Подкупить его.":
+            pf "Я надеялся, что этот процесс мог бы пройти быстрее."
+            "Я наклонился и ослепил его самой очаровательной улыбкой."
+            pf "Вы кажетесь разумным человеком. Are you sure we couldn't come to some sort of… {i}arrangement{/i}?"
             show storm:
                 xoffset 675
                 yoffset 25
