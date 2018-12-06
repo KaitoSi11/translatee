@@ -186,7 +186,7 @@ label E1D2S5:
                     pf "Кто-нибудь говорил тебе, что у тебя очень красивые глаза?"
                     "Его щёки покраснели, но он нахмурился, когда посмотрел на очередь позади меня."
                     voice "audio/voice/E1/D2/S5/Receptionist/15.ogg"
-                    "Секретарь" "Слушай, у меня нет времени на это--"
+                    "Администратор" "Слушай, у меня нет времени на это--"
     
                     "Я чуть отошёл. Моя улыбка стала ещё шире, и я поиграл бровями."
     
@@ -197,7 +197,7 @@ label E1D2S5:
                         xzoom .75
                         yzoom .75
                     voice "audio/voice/E1/D2/S5/Receptionist/16.ogg"
-                    "Секретарь" "Ч-Что?!"
+                    "Администратор" "Ч-Что?!"
     
                     "Его лицо покраснело, и рот двигался в немом ответе, словно пытался найти правильные слова."
     
@@ -210,7 +210,7 @@ label E1D2S5:
                         xzoom .75
                         yzoom .75
                     voice "audio/voice/E1/D2/S5/Receptionist/17.ogg"
-                    "Секретарь" "Я--Ты!--Что?--Почему??--Вот--Просто возьми это!"
+                    "Администратор" "Я--Ты!--Что?--Почему??--Вот--Просто возьми это!"
     
                     $ E1D2S5_gotbikepass = 1
                     $ E1D2S5_flirtforpass = 1
@@ -237,11 +237,11 @@ label E1D2S5:
                         yzoom .75
                     "Мужчина постукивал по столу пальцем."
                     voice "audio/voice/E1/D2/S5/Receptionist/18.ogg"
-                    "Секретарь" "Нет. Если у вас возникла проблема с этим процессом, вы можете отправить жалобу онлайн."
+                    "Администратор" "Нет. Если у вас возникла проблема с этим процессом, вы можете отправить жалобу онлайн."
     
                     pf "Это всего лишь пропуск на парковку."
                     voice "audio/voice/E1/D2/S5/Receptionist/19.ogg"
-                    "Секретарь" "У меня нет времени на это."
+                    "Администратор" "У меня нет времени на это."
     
                     "Он попытался посмотреть на толпу позади меня, но я заблокировал обзор."
     
@@ -254,7 +254,7 @@ label E1D2S5:
                         xzoom .75
                         yzoom .75
                     voice "audio/voice/E1/D2/S5/Receptionist/20.ogg"
-                    "Секретарь" "Нет. Следующий!"
+                    "Администратор" "Нет. Следующий!"
                     hide receptionist extra with dissolve
                     "Я вздохнул, сдавшись. До него не добраться, поэтому я развернулся и пошёл."
                     if (E1D2S2_YuunaComesWithYouPass == 0):
@@ -273,50 +273,50 @@ label E1D2S5:
                         yoffset 25
                         xzoom .75
                         yzoom .75
-                    "I bury my face in my hands. {w}After a few seconds, I peek through my fingers. He looks at me with both irritation and confusion. I add another muffled sob for good measure, and he sighs."
+                    "Я закрыл руками лицо. {w}Через несколько секунд я посмотрел сквозь пальцы. Он смотрел на меня как с раздражением, так и с замешательством. Я ещё раз приглушённо всхлипнул, и он вздохнул."
                     voice "audio/voice/E1/D2/S5/Receptionist/21.ogg"
-                    "Секретарь" "And how could that have possibly happened?"
+                    "Администратор" "Ну и как это могло произойти?"
     
-                    "I drop my hands, all signs of distress wiped clean from my face. He blinks in surprise, and narrows his eyes at my complete change in demeanor."
+                    "Я опустил руки, все признаки горя исчезли с лица. Он удивлённо моргнул и прищурился на полное изменение моего поведения."
     
-                    pf "Well… I was on my way to school, minding my own business, when all of a sudden everything became dark. While everyone's paused in their tracks, I keep walking. By the time I notice something's wrong, there's a spaceship right above me. A bright light shines down from the ship and everything turns blindingly white. Next thing I know, I'm inside the spaceship and surrounded by aliens."
+                    pf "Нуу… Я шёл в академию, думая о своём, когда всё вокруг потемнело. Пока все останавливились, я продолжал идти. К тому времени, когда я заметил, что что-то не так, надо мной был космический корабль. Из корабля светил яркий свет, и все стало ослепительно белым. Следующее, что я помнил - я внутри космического корабля и окружён инопланетянами."
                     show drop:
                         xoffset 675
                         yoffset 25
                         xzoom .75
                         yzoom .75
-                    pf "Somehow, we manage to communicate and understand each other. They take me around on their spaceship, showing me every single part of it. I actually got to meet every alien on board. They told me they came to Earth to strike a deal with our ruler so we could become allies. Apparently there's going to be an intergalactic war happening in the near future. I told them we don't have a ruler for our planet, and that each country has a different person in charge."
+                    pf "Как-то мы могли общаться и понимать друг друга. Они водили меня по кораблю, показывая каждую его часть. Вообще-то, мне удалось встретиться с каждым пришельцем на борту. Они сказали, что прилетели на Землю, чтобы заключить сделку с нашим правителем и стать союзниками. По всей видимости, в ближайшем будущем произойдет межгалактическая война. Я сказал им, что у Земли нет единого правителя, и разными странами управляют разные люди."
     
-                    pf "Somehow that devolved into a debate about which happened first, the chicken or the egg, until they finally admitted they actually didn't know what a chicken or egg was. I actually had to draw a picture for them, and I'm not the greatest artist, so they still don't know what they are--well they figured out what an egg is because that's kind of hard to mess up, even for me."
+                    pf "Каким-то образом это перешло в дебаты о том, что появилось сначала, курица или яйцо, пока они, наконец, не признались, что на самом деле они не знали, что такое курица или яйцо. На самом деле, мне пришлось нарисовать для них картину, и я не самый большой художник, поэтому они до сих пор не знают, что это такое - они выяснили, что такое яйцо, потому что это легко нарисовать, даже для меня."
     
-                    pf "Then I realized what time it was and told them I had to go to school or I would be late."
+                    pf "Тогда я понял который уже час и сказал им, что должен идти в академию, иначе бы опоздал."
                     show storm:
                         xoffset 675
                         yoffset 25
                         xzoom .75
                         yzoom .75
-                    pf "They wanted to exchange something as a memento and really wanted my brain, but I told them I needed it to survive. So they said they had the perfect solution. They brought out a probe, and even though I tried to fight it--well, I'd rather not get into it…" 
+                    pf "Они хотели обменять что-то в память о встрече, и хотели мой мозг. Но я сказал им, что он нужен мне для выживания. Поэтому они сказали, что у них идеальное решение. Они вывели зонд, и хотя я пытался бороться с ним--ну, я бы не хотел вдаваться в подробности…" 
     
-                    "I hang my head at my traumatising \"memory\", but peek at the administrator out of the corner of my eye. He stares, dumbfounded."
+                    "I hang my head at my traumatising \"памяти\", но взглянул на администратора краем глаза. Он смотрел, ошеломлённо."
     
-                    pf "Anyway, after that extremely uncomfortable and overly personal experience, I'm looking for a way to jump out of this ship without killing myself, when my bike pass falls out of my pocket, out of the ship, and into oblivion! Then everything went black and I found myself right in front of the school… {w}And now, here I am."
+                    pf "В любом случае, после этого крайне неудобного и чрезмерно личного опыта,я искал способ выбраться из корабля, не убив себя, когда мой пропуск на парковку выпал из кармана прямиком в небытие! Тогда всё ствло чёрным, и я оказался перед академией… {w}И вот теперь я тут."
                     show dots:
                         xoffset 675
                         yoffset 25
                         xzoom .75
                         yzoom .75
-                    "He closes his mouth and frowns."
+                    "Он закрыл рот и нахмурился."
                     voice "audio/voice/E1/D2/S5/Receptionist/22.ogg"
-                    "Receptionist" "... Are you done?"
+                    "Администратор" "... Ты закончил?"
     
-                    "I nod."
+                    "Я кивнул."
                     voice "audio/voice/E1/D2/S5/Receptionist/23.ogg"
-                    "Receptionist" "Great. Next!"
+                    "Администратор" "Отлично. Следующий!"
                     stop music fadeout 2.0
-                    "I stand there flabbergasted. How could my totally plausible story not impress him?"
-                    "Oh well. {w}This guy wouldn't know a good story even if he were a part of it."
+                    "Я стоял ошеломленный. Как моя вполне правдоподобная история не впечатлила его?"
+                    "Ну хорошо. {w}Этот парень не знал бы хорошей истории, даже если бы был её частью."
                     hide receptionist extra with dissolve
-                    "I turn around and head out."
+                    "Я развернулся и ушёл."
                     play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 1
                     if (E1D2S2_YuunaComesWithYouPass == 0):
                         jump E1D2S5_NoYuunaJump
@@ -324,15 +324,15 @@ label E1D2S5:
                     elif (E1D2S2_YuunaComesWithYouPass == 1):
                         jump E1D2S5_YesYuunaJump
     
-                "My dog ate it.":
+                "Моя собака сьела его.":
                     play music "audio/music/Baka! (GAME VERSION).ogg" fadein 2
-                    "Suddenly, my mind goes blank. I rub the back of my head with my hand, stalling for time."
+                    "Внезапно все мысли исчезли. Я почесал затылок, стараясь тянуть время."
     
-                    pf "I… Uh…"
+                    pf "Я… Эм…"
     
-                    "He narrows his eyes. As his gaze moves to the student behind me, I blurt out the first thing that comes to my mind." 
+                    "Он прищурился. Когда его взгляд начал двигаться к ученику позади меня, я выдал первое, что пришло в голову." 
     
-                    pf "My dog ate it!"
+                    pf "Моя собака сьела его!"
                     show dots:
                         xoffset 675
                         yoffset 25
@@ -340,29 +340,29 @@ label E1D2S5:
                         yzoom .75
                     $renpy.pause(2.5)
                     voice "audio/voice/E1/D2/S5/Receptionist/24.ogg"
-                    "Receptionist" "…Your dog ate your pass."
+                    "Администратор" "…Твоя собака сьела пропуск."
     
-                    pf "Um, yeah."
+                    pf "Эм, да."
                     voice "audio/voice/E1/D2/S5/Receptionist/25.ogg"
-                    "Receptionist" "Is it okay?"
+                    "Администратор" "Всё в порядке?"
     
-                    pf "Well, I assume not. It's in my dog."
+                    pf "Ну, я полагаю, нет. Он всё-таки в собаке."
                     voice "audio/voice/E1/D2/S5/Receptionist/26.ogg"
-                    "Receptionist" "Not the pass; your {i}dog{/i}. Is your dog okay?"
+                    "Администратор" "Я не про пропуск; а про твою {i}собаку{/i}. С ней всё в порядке?"
     
-                    pf "Oh, uh, yeah. Of course. My dog's fine."
+                    pf "А, эм, да. Конечно. Моя собака в порядке."
                     voice "audio/voice/E1/D2/S5/Receptionist/27.ogg"
-                    "Receptionist" "Good. Next!"
+                    "Администратор" "Хорошо. Следующий!"
     
-                    pf "Hey, wait a minute! What about my pass?"
+                    pf "Эй, подождите-ка! Что насчёт пропуска?"
                     voice "audio/voice/E1/D2/S5/Receptionist/28.ogg"
-                    "Receptionist" "Maybe your dog can give it back to you."
+                    "Администратор" "Может быть твоя собака вернёт его."
     
                     "The smile he flashes me doesn't reach his eyes." 
                     voice "audio/voice/E1/D2/S5/Receptionist/13.ogg"
-                    "Receptionist" "Next!" 
+                    "Администратор" "Следующий!" 
                     hide receptionist extra with dissolve
-                    "I sigh. Well, that didn't work. Defeated, I turn around and start to head out."
+                    "Я вздохнул. Ну, это не сработало. Побеждённый, я развернулся и начал уходить."
                     play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 1
                     if (E1D2S2_YuunaComesWithYouPass == 0):
                         jump E1D2S5_NoYuunaJump
@@ -375,207 +375,207 @@ label E1D2S5:
         label E1D2S5_YesYuunaJump:
             if (E1D2S5_gotbikepass == 0):
                 show yuuna smi at cc with dissolve
-                "Suddenly Yuuna is beside me. Her smile falters when she sees my face."
+                "Внезапно рядом со мной оказалась Юна. Её улыбка дрогнула, когда увидела моё лицо."
                 show yuuna neu at cc
                 voice "audio/voice/E1/D2/S5/Yuuna/1.ogg"
-                ym "Is everything okay?"
+                ym "Всё хорошо?"
     
-                "I shrug."
+                "Я пожал плечами."
     
-                pf "I wasn't able to get a pass."
+                pf "Я не смог получить пропуск."
                 show yuuna thi at cc
-                "She frowns. Her eyebrows knit delicately together."
+                "Она нахмурилась. Her eyebrows knit delicately together."
                 show yuuna neu at cc
                 voice "audio/voice/E1/D2/S5/Yuuna/2.ogg"
-                ym "Hmm… hold on."
+                ym "Хмм… Подожди."
                 hide yuuna with dissolve
-                "She walks straight to the desk, much to the dismay of the student in line. The man seems nervous by her approach."
+                "Она подошла к столу, к разочарованию студента в очереди. Секретать похоже нервничал из-за этого."
     
-                "I can't hear what she says, but he looks ashamed and withdraws the pass from a drawer. As she plucks the pass from his fingers, she thanks him with a slight bow of her head, which he returns."
+                "Я не слышал, что она говорила, но похоже было стыдно, и он вытащил пропуск из ящика. Как только она вырвала из его рук пропус, то поблагодарила лёгким кивком, который он вернул в ответ."
                 show yuuna smi at cc with dissolve
-                "Yuuna returns with a soft smile on her face and holds out the pass."
+                "Юна вернулась с лёгкой улыбкой и протянула пропуск."
                 voice "audio/voice/E1/D2/S5/Yuuna/3.ogg"
-                ym "Here you go."
+                ym "Ну вот."
     
-                "How on earth did she do that? Maybe she used magic. Or those hypnotic eyes of hers--"
+                "Как она это сделала? Может, использовала магию. Или она может гипнотизировать взглядом--"
                 
                 show yuuna ner at cc
                 voice "audio/voice/E1/D2/S5/Yuuna/4.ogg"
-                ym "Um…"
+                ym "Эм…"
     
-                "Right. The pass."
+                "Точно. Пропуск."
     
-                pf "Oh, yeah. Thanks."
+                pf "Ох, да. Спасибо."
                 
                 show yuuna smi at cc
     
                 $ E1D2S5_gotbikepass = 1
-                "She smiles."
+                "Она убылнулась."
                 voice "audio/voice/E1/D2/S5/Yuuna/5.ogg"
-                ym "No problem at all."
+                ym "Без проблем."
     
-                "I take it from her and put it in my wallet. We head out as another flood of students enter the office."
+                "Я взял пропуск из её рук и положил в кошелек. Мы вышли из офиса пока в него вливалась ещё одна толпа студентов."
                 
     
             elif (E1D2S5_gotbikepass == 1):
                 show yuuna smi at cc with dissolve
-                "Suddenly, I see Yuuna's smiling face."
+                "Внезапно, я увидел улыбающееся лицо Юны."
                 voice "audio/voice/E1/D2/S5/Yuuna/6.ogg"
-                ym "How did it go?"
+                ym "Как прошло?"
     
-                pf "I got the pass without any problems."
+                pf "Я без проблем получил пропуск."
                 show exclamation:
                     xoffset 720
                     yoffset 100
                     xzoom .75
                     yzoom .75
                 show yuuna sur at cc
-                "Her eyes grow wide."
+                "Её глаза широко раскрылись."
     
-                pf "What is it?"
+                pf "Что такое?"
                 show yuuna hap at cc
                 voice "audio/voice/E1/D2/S5/Yuuna/7.ogg"
-                ym "Oh, nothing. I'm just a little surprised you got the pass so easily. They usually push you to fill out the online form."
+                ym "Ох, ничего. Я просто немного удивлена, что ты так легко получил пропуск. Обычно они заставляют заполнять документы онлайн."
     
                 if (E1D2S5_bribedforpass == 1):
-                    pf "What can I say? I'm resourceful."
+                    pf Ну что я могу сказать? Я находчив."
                     show yuuna cur at cc
                     voice "audio/voice/E1/D2/S5/Yuuna/8.ogg"
-                    ym "Ah... Interesting."
+                    ym "Ах... Интересно."
     
                 elif (E1D2S5_flirtforpass == 1):
-                    "I wink at her."
-                    pf "I have a way with words."
+                    "Я подмигнул ей."
+                    pf "У меня есть словесный способ."
                     show yuuna cur at cc
                     voice "audio/voice/E1/D2/S5/Yuuna/9.ogg"
-                    ym "I see..."
+                    ym "Понятно..."
                     
                 show dots:
                     xoffset 720
                     yoffset 100
                     xzoom .75
                     yzoom .75
-                "She seems like she's unsure how to react."
+                "Кажется, она не уверена как отреогировать на это."
                 pf "Shall we get going?"
                 show yuuna smi at cc
-                "She nods. We head out as another flood of students enter the office."
+                "Она кивнула. Мы вышли из офиса пока в него вливалась ещё одна толпа студентов."
     
             stop music fadeout 3
             hide yuuna with dissolve
             scene bg campus building day with fade
             play ambient "audio/ambience/Campus.ogg" fadein 3
             
-            "There seem to be fewer students milling around outside and more hurrying towards classes. I check the time.Twenty-five minutes until class starts."
+            "Кажется уже меньше студентов толпилось вокруг, и больше спешило на занятия. Я проверил время.Двадцать пять минут до начала урока."
             play music "audio/music/Day Out (GAME VERSION).ogg" fadein 1
             show yuuna smi at cc
             voice "audio/voice/E1/D2/S5/Yuuna/10.ogg"
-            ym "Do you know where your first class is?"
+            ym "Ты знаешь, где твой урок?"
     
-            pf "Yeah, it's here."
+            pf Да, он тут."
     
-            "I show her the campus map on my phone. A small flashing light indicates where I need to be."
+            "Я показал ей карту кампуса на телефоне. Нельщая подсвеченная точка показывает, где я должен находиться."
             
             show yuuna hap at cc
             voice "audio/voice/E1/D2/S5/Yuuna/11.ogg"
-            ym "Oh, that's close by! I can walk there with you."
+            ym "О, это близко! Я могу пройтись с тобой."
     
-            pf "That would be great."
+            pf "Это было бы замечательно."
             
             scene bg campus main day with fade
             
-            "We head down one of the narrower paths. It leads straight to a regal-looking building with tall, arching windows. Only a few students are meandering about."
+            "Мы направились по одному из коротких путей. Он вёл прямо к царственному зданию с высокими, выгнутыми окнами. Лишь несколько студентов блуждали."
             show yuuna smi at cc with dissolve
             voice "audio/voice/E1/D2/S5/Yuuna/12.ogg"
-            ym "This is it."
+            ym "Вот и всё."
     
-            pf "Thanks, you've been a big help."
+            pf "Спасибо, ты очень помогла."
             show yuuna smi at cc
             voice "audio/voice/E1/D2/S5/Yuuna/13.ogg"
-            ym "It's no problem at all."
+            ym "Без проблем."
     
-            pf "And you're off to Psychology?"
+            pf "А ты идёшь на психологию?"
             voice "audio/voice/E1/D2/S5/Yuuna/14.ogg"
-            ym "Mhm."
+            ym "Уху."
     
-            pf "What other classes do you have this semester?"
+            pf "Какие ещё предметы у тебя в этом семестре?"
             
             show yuuna thi at cc
             voice "audio/voice/E1/D2/S5/Yuuna/15.ogg"
-            ym "Um..."
+            ym "Эм..."
     
-            "She pulls out her phone. I do the same, and we study each other's schedule."
+            "Она достала телефон. я сделал то же самое, и мы изучили расписание."
     
             show yuuna smi at cc
             voice "audio/voice/E1/D2/S5/Yuuna/16.ogg"
-            ym "Well, it looks like we have History of Robotics together on Friday."
+            ym "Ну, похоже в пятницу у нас совместная история робототехники."
     
-            pf "I guess that means we'll be seeing a lot more of each other."
+            pf "Полагаю, это означает, что мы будем видеться чаще."
             
             show yuuna hap at cc with dissolve
     
-            "We both exchange smiles."
+            "Мы оба улыбнулись."
     
-            "I notice the time on my phone. Fifteen minutes until class."
+            "Я заметил время на телефонк. Пятнадцать минут до занятий."
             
             show yuuna smi at cc
     
-            pf "My class is starting soon."
+            pf "Урок скоро начнётся."
     
-            "Yuuna peers at her phone before tucking it back into her pocket."
+            "Юна глянула на свой телефон, прежде чем положить его обратно в карман."
             
             show yuuna cur at cc
             voice "audio/voice/E1/D2/S5/Yuuna/17.ogg"
-            ym "Oh, right! I have to go or I'll be late. See you Friday?"
+            ym "Ох, точно! Я должна идти, или я опоздаю. Увидимся в пятницу?"
     
-            "I nod, and we go our separate ways."
+            "Я кивнул, и мы разошлись."
             hide yuuna with dissolve
-            "After a few steps, I realise I don't have any way to contact her apart from our Friday class. I turn around, but she's already a good distance away."
+            "Через несколько шагов, я понял, что у меня нет способа связаться с ней, кроме как на уроке в пятницу. Я развернулся, но она уже была довольно далеко."
     
             $ qtebase = 5
             $ qtetotal = qteintel + qtebase
             $ t_var = qtetotal
             show screen timer_scr(place="E1D2S5_YuunaNoNumber")
             menu:
-                "Ask for her phone number.":
+                "Спросить у неё номер телефона.":
                     $ renpy.hide_screen ("timer_scr")
                     $ E1D2S5_GotYuunasNumber = 1
-                    pf "Wait, Yuuna!"
+                    pf "Подожди, Юна!"
                     # maybe show her at a distance?
                     show yuuna cur at cc with dissolve:
                         xzoom -0.75
                         yzoom 0.75
-                    "She freezes."
+                    "Она замерла."
                     show question:
                         xoffset 720
                         yoffset 100
                         xzoom .5
                         yzoom .5
                     voice "audio/voice/E1/D2/S5/Yuuna/18.ogg"
-                    ym "Yes?"
-                    pf "Do you think I can get your number?"
+                    ym "Да?"
+                    pf "Как думаешь, могу я получить твой номер?"
                     show shoBlush:
                         xoffset 720
                         yoffset 100
                         xzoom .5
                         yzoom .5
                     show yuuna sur b1 at cc with dissolve
-                    "She seems surprised. Wait, that definitely didn't come out right."
-                    pf "Sorry, I mean, I might have a question or two while trying to navigate around ACE Academy and could use your help--that is, if you don't mind me bugging you."
+                    "Она выглядит удивлённой. Подожди, так определённо не получится."
+                    pf "Прости, я имел в виду, что у меня может пявиться несколько вопросов по академии, и ты могла бы помочь--конечно, если ты не возражаешь."
                     show yuuna hap at cc with dissolve
-                    "She giggles and nods."
+                    "Она хихикнула и кивнула."
                     voice "audio/voice/E1/D2/S5/Yuuna/19.ogg"
                     ym "Конечно."
-                    "I jog over to her and we exchange numbers."
+                    "Я подбежал к ней, и мы обменялись номерами."
                     show yuuna smi at cc
                     pf "Спасибо. Увидимся в пятницу!"
                     voice "audio/voice/E1/D2/S5/Yuuna/20.ogg"
                     ym "Хорошо. Тогда, увидимся."
                     hide yuuna with dissolve
     
-                "Let it go.":
+                "Забудь об этом.":
                     label E1D2S5_YuunaNoNumber:
                         $ renpy.hide_screen ("timer_scr")
-                        "Let it go. {w}Let it go. {w}Can't ask for her number anymore."
+                        "Забудь об этом. {w}Забудь об этом. {w}Ты уже не сможешь спросить её номер."
                         "Она уже слишком далеко. Поговорю с ней в пятницу."
                         
         "Я смотрел как она исчезла за углом."
@@ -584,7 +584,7 @@ label E1D2S5:
     if (E1D2S2_YuunaComesWithYouPass == 0):
         label E1D2S5_NoYuunaJump:
             scene bg campus building day with fade
-            "As I exit the administrative building, I check the time on my phone. Fifteen minutes left before my first class. I should start making my way there."
+            "Выйдя из административного здания, я проверил время. Пятнадцать минут до занятий. Надо бы уже пойти туда."
     
     
     jump E1D2S8
