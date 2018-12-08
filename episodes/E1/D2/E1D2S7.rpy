@@ -84,46 +84,46 @@ label E1D2S7:
     
                     "Практически дрожа от гнева, он встал так, чтобы его байк не было видно, возможно, он боялся, что я {i}действителньо{/i} замечу на нём скотч."
     
-                    "Он похрустел ппытке запугать меня."
+                    "Он похрустел пальцами в жалкой попытке запугать меня."
                     voice "audio/voice/E1/D2/S7/Ken/6.ogg"
-                    kt "You think you're hot shit? Well, you won't look so hot once I'm done with you."
+                    kt "Считаешь себя крутым? Ну, когда я с тобой закончу, ты так не будешь выглядеть."
     
-                    "He beckons for me to come forward, then raises his fists. I tighten my own fists in response."
+                    "Он жестом вызвал меня выйти вперед, затем поднял кулаки. Я сжал свои кулаки в ответ."
                     voice "audio/voice/E1/D2/S7/Ken/7.ogg"
-                    kt "Or are you too scared?"
+                    kt "Или ты слишком напуган?"
     
-                    "I laugh. Scared? Of a worm like him? In one smooth motion, I hop off my bike and saunter towards him."
+                    "Я засмеялся. Напуган? Червяком, вроде него? Плавным движением, Я спрыгнул с байка и медленно пошёл к нему."
                     $ E1D2S7_BullyFight = 1
     
-                "Tough luck, pal.":
-                    "I shrug before dismounting from my bike, but he cuts me off when I try to move past him."
+                "Не повезло, приятель.":
+                    "Я пожал плечами прежде чем слез с мотоцикла, но он остановил меня, когда я пытался пройти мимо него."
                     show question:
                         xoffset 675
                         yoffset 50
                         xzoom .75
                         yzoom .75
                     voice "audio/voice/E1/D2/S7/Ken/8.ogg"
-                    kt "You think you can just ignore me?"
+                    kt "Думаешь, можешь вот так игнорировать меня?"
     
-                    pf "I'm trying to, but you're not making it easy."
+                    pf "Я пытаюсь, но ты мешаешь."
                     show vein:
                         xoffset 675
                         yoffset 50
                         xzoom .75
                         yzoom .75
-                    "Judging by his deepening scowl and narrowed eyes, I can tell he won't be satisfied until one of us is bleeding on the ground. Great, first that crazy girl and now this douchebag. Today is just not my lucky day."
+                    "Судя по его углубляющейся злобе и прищуренным глазам, я могу сказать, что он не будет удовлетворен, пока один из нас не будет лежать в крови на земле. Отлично, сначала эта сумасшедшая девушка, а теперь этот придурок. Сегодня просто не мой день."
                     $ E1D2S7_BullyFight = 1
     
-            "The tension between us is palpable. I tighten my fists, fueling the fire in his eyes."
+            "Напряжение между нами ощутимо. Я сжал кулаки, разжигая огонь в его глазах."
     
-        "This spot still isn't mine.":
+        "Это место вмё ещё не моё.":
             $ E1D2S7_CleanMove = 1
-            "It's still not my spot to take. I'll find parking off-site. {w}Following the signs, I drive my bike past the rows of reserved spaces."
+            "Это все еще не мое место. Я найду место за пределами парковки. {w}Следуя указателям, я проехал мимо рядов зарезервированных мест."
             jump E1D2S7_FarParking
             
     if (E1D2S7_BullyFight == 1):
     
-        "He shifts into a fighting stance; his hands are up to protect his face.  He's definitely no stranger to violence. I better not underestimate him. I match his stance, and then--"
+        "Он переходит в боевую стойку; его руки подняты, чтобы защитить лицо. Он определенно не первый раз дрался. Лучше не стоит его недооценивать. Я соответствую его позиции, а затем--"
     
         $ qtebase = 3
         $ qtetotal = qteath + qtebase
@@ -135,191 +135,191 @@ label E1D2S7:
             "{color=#00ff00}{b}First Blood!{/b}{/color}" if (MCStory == 1):
                 jump E1D2S7_FirstBlood
         
-            "First Blood!" if (MCStory != 1):
+            "Первая кровь!" if (MCStory != 1):
                 label E1D2S7_FirstBlood:
                 $ renpy.hide_screen ("timer_scr")
-                "I slide forward and swing my leg low."
+                "Я подался вперёд и сделал нихкий замах ногой."
                 
-                "When his arm moves to block, I catch him off-guard with a roundhouse kick to the head."
+                "Когда его рука начала переходить в блок, я застал его врасплох ударом с разворота в голову."
                 play sound "audio/sfx/Human/Med_Punch.ogg"
-                "He flies backwards several feet before tumbling to a stop on the asphalt."
+                "Он пролетел несколько метров, прежде чем упал на асфальт."
                 hide bully3 extra with dissolve
-                "Taking my time, I bring my foot back in and take a deep breath."
-                "I stroll towards his crumpled body and poke him with a toe."
+                "Не спеша, я расслабился и вздохнул."
+                "Я подошёл к его телу и легко тронул ногой."
                 play sound "audio/sfx/Human/Poke Noise.ogg"
-                "He doesn't stir."
-                "Maybe I overestimated him. This guy was hardly worth the effort. Too bad."
+                "Он не шевелился."
+                "Возможно, я переоценил его. Хреново, этот парень едва стоил усилий."
     
-                "I didn't hit him {i}that{/i} hard, so I'm sure he'll be up in time for class… I think."
-                "Exhaling, I stride past his unconscious body, my parking spot safe."
+                "Я не {i}так{/i} сильно его ударил, так что к уроку оклимается… Я думал."
+                "Выдохнув, я спокойно прошёл мимо его бессознательного тела."
                 $ E1D2S7_BullyFightWin = 1
                 jump E1D2S8
     
-            "Try getting fancy...":
+            "Сделаем это красиво...":
                 $ renpy.hide_screen ("timer_scr")
-                "Heh, it's a good thing I took those five karate classes when I was ten. This loser doesn't stand a chance when he sees what I can do!"
+                "Хех. Хорошо, что я взял эти пять уроков каратэ, когда мне было десять лет. У этого неудачника не будет и шанса, когда он увидит, что я могу сделать!"
     
-                "When I see an opening, I prepare for an axe kick. Swinging my leg up high, I aim for the soft flesh between his neck and his collarbone, but when my leg gets up to about midriff level, it gets stuck."
+                "Увидев момент, я приготовился к пинку топором. Высоко подняв ногу, я стремился к мягкой плоти между его шеей и ключицей, но когда моя нога поднялась примерно до уровня середины живота, она застряла."
                 play sound "audio/sfx/Human/light_punch.ogg"
-                "My crotch shoots a painful warning, and I lose my balance, landing on my back."
+                "Моя промежность выдала болезненное предупреждение, и я , потеряв равновесие, упал на спину."
     
-                "I've made a terrible mistake. I forgot I'm not as flexible as ten-year-old me."
-                "The guy doubles over in laughter, and I grit my teeth, willing myself to push past the pain."
-                "Suddenly, a shadow falls on me. I recognise the guard uniform."
+                "Я сделал ужасную ошибку. Я забыл, что я не такой гибкий, как в десять лет."
+                "Парень согнулся от смеха, и я стиснул зубы, желая преодолеть боль."
+                "Внезапно наменя упала тень. Я узнал форму охранника."
                 show guard extra at r3 with dissolve:
                     xzoom -1
                 voice "audio/voice/E1/D2/S7/Guard/1.ogg"
-                gua "What are you doing on the ground?"
-                pf "Nothing. I just fell, that's all."
-                "The guard looks skeptical and glances at the other guy who nods in confirmation."
+                gua "Что ты делаешь на земле?"
+                pf "Ничего. Я просто упал."
+                "Охранник выглядел недоверчивым, и глянул на другого парня, который кивал в подтверждении."
                 voice "audio/voice/E1/D2/S7/Guard/2.ogg"
-                gua "Well, get the hell up then. What are you two doing hanging around in a parking lot anyway?"
-                "Wincing, I manage to get back on my feet."
-                pf "I just wanted to park my bike."
+                gua "Хорошо, тогда, чёрт возьми, поднимайся. Что вы двое делаете на парковке?"
+                "Морщась, мне удалось встать на ноги."
+                pf "Я просто хотел припарковать мотоцикл."
                 voice "audio/voice/E1/D2/S7/Ken/9.ogg"
-                kt "Yeah, but in {i}my{/i} spot!"
+                kt "Да, но на {i}моём{/i} месте!"
                 voice "audio/voice/E1/D2/S7/Guard/3.ogg"
-                gua "We can easily resolve this. Show me your parking passes."
-                "The jerk immediately hands his over. I can only sheepishly shake my head."
-                pf "I don't have one."
+                gua "Мы можем легко разрешить это. Покажите мне ваши пропуска."
+                "Этот придурок немедленно вытащил свой. Я мог только застенчиво помотать головой."
+                pf "У меня нет его."
                 voice "audio/voice/E1/D2/S7/Guard/4.ogg"
-                gua "Then you have no right parking here. Go move your bike to the visitor's lot."
+                gua "Тогда у тебя нет права парковаться здесь. Иди перепаркуй свой мотоцикл на гостевую парковку."
                 hide bully3 extra
                 hide guard extra
                 with dissolve
-                "Reluctantly, I wheel my bike away."
+                "Неохотно, я убрал свой байк."
                 jump E1D2S7_FarParking
     
-            "Wait...":
+            "Погоди...":
                 $ renpy.hide_screen ("timer_scr")
-                "I stay crouched with my fists up, waiting for him to make his move. But he doesn’t."
+                "Я стоял в стойке, ожидая, что он сделает первый ход."
     
-                "Instead he dances from foot to foot, tempting me to take a step towards him. I won't take the bait, though; I want him to hit first."
-                "He feigns a couple of attacks while I circle him warily."
+                "Вместо этого он {i}танцевал{/i} на месте, искушая меня сделать шаг к нему. Я не проглочу наживку; Я хочу, чтобы он ударил первым."
+                "Он сделал пару ложных атак, пока я осторожно обходил его."
                 voice "audio/voice/E1/D2/S7/Ken/10.ogg"
-                kt "What are you waiting for? C'mon!"
+                kt "Чего ты ждёшь? Давай!"
     
-                "I fake a kick, and grin when he flinches. He still doesn't attack, though. He just matches my circle." 
+                "Я сделал ложный пинок, и улыбнулся, когда он вздрогнул. Он не все ещё не атаковал. Просто следил за мной." 
                 voice "audio/voice/E1/D2/S7/Guard/5.ogg"
-                gua "Will one of you make the first move? You're wasting my time."
+                gua "Кто-нибудь из вас сделает первый шаг? Вы тратите моё время."
                 show guard extra at r3 with dissolve:
                     xzoom -1
-                "We both freeze and stare at the burly guard beside us. His arms are crossed over his chest, and his uniform strains around his muscles."
+                "Мы оба замерли и посмотрели на крепкого охранника рядом с нами. Его руки скрещены на груди, а униформа напрягала мышцы."
                 voice "audio/voice/E1/D2/S7/Guard/6.ogg"
-                gua "Well?"
-                "The other guy tries to sidestep around the guard but the guard's arm flies out and stops him." 
+                gua "Ну?"
+                "Другой парень попвтался обойти охранника, но он остановил его.." 
                 voice "audio/voice/E1/D2/S7/Guard/7.ogg"
-                gua "Show me your parking passes. Or we can deal with this in my office. Your choice."
-                "The guard gives us a hard look. I shake my head as the jerk next to me pulls out a bike pass."
+                gua "Покажите мне свои пропуска на парковку. Или мы можем разобраться с этим в моем офисе. Ваш выбор."
+                "Охранник пристально смотрел на нас. Я качал головой, когда придурок рядом со мной вытаскивал пропуск."
                 voice "audio/voice/E1/D2/S7/Ken/11.ogg"
-                kt "I’ve got mine right here."
-                "The guard examines it, then hands it back to the guy. He looks at me and points over his shoulder."
+                kt "Мой прямо тут."
+                "Охранник осмотрел его, а затем вернул парню. Он смотрел на меня и указал через плечо."
                 voice "audio/voice/E1/D2/S7/Guard/8.ogg"
-                gua "Get out of here and stop actually making me do my job. I'm supposed to be on a break right now."
+                gua "Убирайся отсюда и не заставляй меня делать свою работу. Я должен быть сейчас на перерыве."
                 hide guard extra with dissolve
-                "He turns and walks away, grumbling about bratty students. I move to grab my bike, and as I do, I catch the smug look on that jerks face."
+                "Он повернулся и ушёл, ворча о тупых учениках. Я пошёл к мотоциклу, и заметил самодовольный взгляд этого придурка."
                 hide bully3 extra with dissolve
-                "I say nothing as I wheel my bike from the parking spot and look for somewhere else to park." 
+                "Я ничего не сказад пока выезжал на байке для поиска другого места для парковки." 
                 jump E1D2S7_FarParking
     
-            "Play it safe!":
+            "Будем аккуратны!":
                 $ renpy.hide_screen ("timer_scr")
-                "The best offence is a good defence. I {i}want{/i} him to strike first. That way I can assess his skill and he'll tire himself out more quickly."
+                "Лучшее нападение - это хорошая защита. Я {i}хотел{/i}, чтобы он атаковал первым. Так я оценю его силы и он быстрее вымотается."
     
-                "I shift into a defensive stance and wait. Just as expected, he moves in."
+                "Я встал в защитную стойку и ждал. Как и ожидалось, он двинулся первым."
     
-                "He lunges and swings his leg towards my face."
+                "Он подавлся вперёд и замахнулся ногой по лицу."
                 play sound "audio/sfx/Human/light_punch.ogg"
-                "I deflect his attack. {w}Although his moves hold power, he lacks speed and agility, which fortunately for me, are my strengths." 
+                "Я отразил атаку. {w}Хотя его движения сильны, ему не хватает скорости и ловкости, которые, к счастью для меня, являются моими сильными сторонами." 
                 ##NEW SOUND NEEDED## - (put back in on 05/01/16, but should check if this is alright)
                 play sound [ "audio/sfx/Human/light_punch.ogg", "audio/sfx/Human/Med_Punch.ogg", "audio/sfx/Human/light_punch.ogg", "audio/sfx/Human/Med_Punch.ogg"  ]
-                "With a frustrated grunt, he strikes again, and again, each punch and kick growing more desperate than the last as he continually fails to hit his target."
+                "С разочарованным ворчанием он наносил новые и новые удары, каждый удар становился все более отчаянным, чем последний, поскольку он постоянно не мог поразить цель."
     
-                "Before long, his face burns red and he's gasping for breath. His attacks become more erratic, and half of them end up nowhere near me. Meanwhile, I've barely broken a sweat."
+                "Вскоре его лицо стало красным, и он задыхался. Его атаки стали более беспорядочными, и половина просто проходила мимо. Между тем, я едва вспотел."
                 show vein:
                     xoffset 675
                     yoffset 50
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D2/S7/Ken/12.ogg"
-                kt "Fight me already!"
+                kt "Сразись со мной уже!"
     
-                "I merely smirk at him. He roars with rage, and unsteadily throws another punch, which I easily evade. I wonder how long I can keep this up before he collapses from exhaustion."
+                "Я просто ухмыльнулся ему. Он взревел от ярости и неустойчиво нанёс еще один удар, от которого я легко уклонился. Интересно, как долго я смогу продолжать в том же духе, прежде чем он рухнет от истощения."
     
-                "Regardless, this has gone on long enough, and I've got better places to be. I think it's time to wrap things up."
+                "Тем не менее, это продолжалось достаточно долго, и я мог бы быть сейчас в месте получше. Думаю, пора менять ситуацию."
                 ##NEW SOUND NEEDED## - (put back in on 05/01/16, but should check if this is alright)
                 play sound "audio/sfx/Human/Med_Punch.ogg"
-                "When he strikes again, I block his fist with one arm."
+                "Когда он снова атаковал, я заблокировал её рукой."
                 play sound "audio/sfx/Human/Med_Punch.ogg"
-                "Then I lean in close and land my own punch straight to his solar plexus. {w}He chokes as the air is knocked out of him, but I don't stop."
+                "После этого я подался вперёд и ударил его в солнечное сплетение. {w}Он начал задыхаться, когда из него выбили воздух, но я не остановился."
                 play sound "audio/sfx/Human/light_punch.ogg"
-                "Bringing my knee into my chest, I catch him with a side kick, and he crumples to the ground."
+                "Подняв колено к груди, я словил его ударом сбоку, и он упал не землю."
                 hide bully3 extra with dissolve
-                "I wait for him to get up, and when he doesn't, I check my bike to make sure it's okay. Then I walk away."
+                "Я ждал, пока он встанет, и когда он этог оне сделал, я проверил свой байк, чтобы убедиться, что он в порядке. После, я ушёл."
     
-                "He'll be fine… And if not, someone will find him… eventually."
+                "Он будет в порядке… А если нет, то кто-нибудь найдёт его… в итоге."
                 $ E1D2S7_BullyFightWin = 1
                 jump E1D2S8
     
-            "Trip...": 
+            "Попытаемся...": 
                 $ renpy.hide_screen ("timer_scr")
-                "I swing my fist towards his face. He steps out of my way at the last minute, but I can't stop the forward momentum."
+                "Я замахнулся кулаком по лицу. Он отшёл в последний момент, но я не мог остановиться."
                 play sound "audio/sfx/Human/light_punch.ogg"
-                "I try to balance myself but my feet don't seem to work, and I tumble to the ground." 
+                "Я пытался балансировать, но ноги, похоже, не слушались, и я упал." 
     
-                "I look back up at the guy, who is folded over with laughter. Scrambling to my feet, I ready myself to hit him again, when a strong hand grips my shoulder." 
+                "Я посмотрел на парня, который заливался смехом. Поднявшись на ноги, я приготовился ударить его снова, когда крепкая рука схватила меня за плечо." 
                 show guard extra at r3 with dissolve:
                     xzoom -1
                 voice "audio/voice/E1/D2/S7/Guard/9.ogg"
-                gua "Alright, time to stop. This is just too painful to watch." 
-                "The other guy tries to keep a straight face, but every so often a laugh escapes him."
+                gua "Хорошо, пора остановиться. На это слишком больно смотреть." 
+                "Другой парень старается сохранять невозмутимый вид, но время от времени он не мог сдержать смех."
                 voice "audio/voice/E1/D2/S7/Guard/10.ogg"
-                gua "What are you laughing about?"
-                "He shuts up."
+                gua "Над чем смеёшься?"
+                "Он захлопнулся."
                 voice "audio/voice/E1/D2/S7/Guard/11.ogg"
-                gua "Both of you show me your parking passes."
-                "The jerk pulls out his pass and hands it to the guard. When the guard looks to me I can only shrug." 
-                pf "I don't have a pass."
+                gua "Вы, оба, покажите мне парковочный пропуск."
+                "Придурок вытащил свой пропуск и передал охраннику. Когда охранник посмотрел на меня, я мог только пожать плечами." 
+                pf "У меня нет пропуска."
                 voice "audio/voice/E1/D2/S7/Guard/12.ogg"
-                gua "So you were trying to fight over something that wasn't even yours? Get out of here." 
-                "He points a finger over his shoulder towards what I assume to be off campus parking." 
+                gua "Так ты пытался бороться за что-то, что даже не твое? Убирайся отсюда." 
+                "Он указал пальцем через плечо на то, что, как я предполагал, находится за пределами парковки кампуса." 
                 hide bully3 extra
                 hide guard extra
                 with dissolve
-                "I grab my bike and wheel it out of the spot, wishing I had a pass if only so I could make that guy look like the ass. I can faintly hear the guard scolding him as I head out, which makes me feel a little better… but only a little." 
+                "Я сел на байк и выехал, желая, чтобы у меня был пропуск. Тогда я бы мог выставить этого парня засранцем. Пока я выезжал, то слышал как охранник отчитывал парня, что делало меня немного счастливым… но только немного." 
                 jump E1D2S7_FarParking
     
     label E1D2S7_FightTImeout:
         $ renpy.hide_screen ("timer_scr")
-        "I freeze, and in that moment of hesitation, a fist collides with my stomach. I cringe, waiting for the inevitable second blow, but nothing happens."
+        "Я замер, и в этот момент сомнения кулак столкнулся с моим животом. Я съежился, ожидая неизбежного второго удара, но ничего не произошло."
         show guard extra at r3 with dissolve:
             xzoom -1
-        "A burly guard restrains the other guy."
+        "Крепкий охранник сдерживал парня."
         voice "audio/voice/E1/D2/S7/Guard/13.ogg"
-        gua "This is a parking lot, not a boxing ring."
+        gua "Это парковка, а не боксёрский ринг."
         show storm:
             xoffset 675
             yoffset 50
             xzoom .75
             yzoom .75
-        "The other guy continues to struggle in vain. Once he realises he can't escape, he calms down and the guard lets him go."
+        "Парень продолжал напрасно бороться. Когда он понял, что ничего не выйдет, он успокоился, и охранник отпустил его."
         voice "audio/voice/E1/D2/S7/Guard/14.ogg"
-        gua "Do either one of you even belong here? Where are your passes?"
+        gua "Кто-нибудь из вас вообще должен быть тут? Где ваши пропуска?"
         voice "audio/voice/E1/D2/S7/Ken/13.ogg"
-        kt "Here."
-        "The guard inspects his pass and nods, then looks expectantly at me."
+        kt "Вот."
+        "Охранние посмотрел на его пропуск и кивнул, потом посмотрел на меня."
         voice "audio/voice/E1/D2/S7/Guard/15.ogg"
-        gua "Well?"
-        pf "I don't have a pass…"
+        gua "Ну?"
+        pf "У меня нет пропуска…"
         voice "audio/voice/E1/D2/S7/Guard/16.ogg"
-        gua "Then get out of here."
+        gua "Тогда проваливай."
         hide bully3 extra
         hide guard extra
         with dissolve
-        "With my stomach twinging in pain, I begin to wheel out my bike. Behind me I can hear the guard yelling."
+        "С болью в животе я начал уезжать. Я мог слышать позади крик охранника."
         voice "audio/voice/E1/D2/S7/Guard/17.ogg"
-        gua "What are you smirking about? Park your vehicle and get out of here!"
-        "Suddenly, I don't feel so bad."
+        gua "Над чем ты ухмыляешь? Паркуйся и вали отсюда!"
+        "Внезапно, я не чувствовал себя так плохо."
         jump E1D2S7_FarParking
         
     label E1D2S7_FarParking:
@@ -327,12 +327,12 @@ label E1D2S7:
         $ E1D2S7_ParkedFar = 1
         stop music fadeout 3
         scene black with fade
-        "After what seems like an eternity, I finally find an empty, unmarked spot. I pull in, hop off the bike and glance back the way I came."
+        "Кажется, прошла вечность, но я наконец-то нашёл пустое, без всяких знаков, место. Я припарковался, спрыгнул с байка и оглянулся назад, как я добрался."
         stop ambient fadeout 3
         scene bg campus main day with fade
         play ambient "audio/ambience/Campus.ogg" fadein 1 fadeout 1
-        "My heart sinks at how small the grand buildings on campus look. This is not going to be a fun walk back."
-        "With no other option, I begin my long trek back to campus and make it back just in time to find my class."
+        "Сердце кровью обливалось, когда я видел насколько маленькими выглядели эти огромные здания кампуса. Это не будет весёлой прогулкой назад."
+        "Не имея другого выбора, я пошёл обратно в кампус и вернулся как раз вовремя, чтобы найти свой класс."
         
         
         jump E1D2S8
