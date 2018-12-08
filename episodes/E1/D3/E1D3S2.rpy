@@ -1,27 +1,27 @@
 label E1D3S2:
     scene bg isokaze neighborhood day with fade
     stop ambient fadeout 3
-    "At least it's a nice day to be waiting for the bus."
+    "По крайней мере, это хороший день, чтобы подождать автобус."
     play ambient "audio/ambience/Bus Stop.ogg" fadein 1
-    "The stop is a bit crowded. I lean up against the shelter as I wait."
+    "Остановка была немного переполнена. Я прислонился к павильону, ожидая."
     play sound "audio/sfx/Vehicles/Bus Door Open.ogg" fadein 1 fadeout 1
-    "The bus squeals to a halt in front of me only a few minutes after my arrival."
+    "Автобус остановился через несколько минут после моего прибытия."
     scene bg travel bus day with fade
     stop ambient fadeout 3
     play sound [ "audio/sfx/Technology/ID Tap.ogg", "audio/sfx/Technology/ID Tap Success.ogg" ]
-    "I follow the other passengers on, scan my ID, and search the rows for a free seat."
+    "Я последовал за другими пассажирами, приложил ID карту, и начал искать свободное место."
     play ambient "audio/ambience/Bus.ogg" fadein 1
     
     if (E1D2S2_talkwithyuunayes == 1):
-        "To my disappointment, Yuuna is nowhere in sight."
+        "К сожалению, Юну нигде не было видно."
     
-    "I settle into the first seat I find and grumble as a large man sits down beside me, crushing me against the window." 
-    "I can already imagine how enjoyable this ride will be."
+    "Я сел на первое попавшееся место, и ворчал, как только большой человек сел рядом со мной, прижимая меня к окну." 
+    "Я уже представил, насколько приятной будет эта поездка."
     scene black with fade
     $renpy.pause(2.5)
     play sound "audio/sfx/Vehicles/Bus Chime.ogg"
     scene bg travel bus day with fade
-    "Luckily it isn't a long ride and I'm at school before I can complain too much."
+    "К счастью, это была недолгая поездка, и я был в школе, прежде чем начал слишком много жаловаться."
     stop ambient fadeout 3
     play sound "audio/sfx/Vehicles/Bus Door Open.ogg"
     scene bg campus main day with fade
