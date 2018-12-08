@@ -4,35 +4,35 @@ label E1D2S7:
     scene bg campus parking day with Dissolve(2)
     play ambient "audio/ambience/Parking Lot.ogg" fadein 1
     
-    "After a fairly short trip, I arrive at the academy, and search for a parking spot."
+    "После довольно короткой поездки я приехал в академию и стал искать место для парковки."
     play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 1
-    "Every spot in this vast parking lot is taken by some form of vehicle. Apparently everyone else drove in today too.  Seriously. It seems like there's a vehicle here for every student."
+    "Каждое место на этой огромной парковке было занято каким-нибудь транспортом. Видимо, все остальные сегодня тоже приехали.  Серьёзно. Похоже, у каждого студента есть свой транспорт."
     
-    "I'm just about ready to give up when I see it. {w}A single free spot."
+    "Я был почти готов сдаться, когда увидел... {w}Свободное место."
     
-    "A wave of giddy emotion threatens to burst out of me. I can practically see a holy ray of light shining down on it, accompanied by an angelic choir."
+    "Волна головокружительных эмоций чуть не вырвалась из меня. Я практически мог видеть священный луч света, сияющий на нем, сопровождающийся пнгельским хором."
     
-    "I wheel my bike closer, then freeze. At the front of the space, staked into the ground, is a sign that states: \"Reserved Parking for Pass Holders Only\"."
+    "Я подъехал ближе, и потом замер. В передней части этого места на земле был знак: \"Парковка только для владельцев пропусков\"."
     
-    "Of course. Just my luck."
+    "Ну конечно. Как же мне везёт."
     
-    "With a groan, I start pulling my bike back. Guess I'd better..."
+    "Тяжело вздохнув, я начал отгонять мотоцикл назад. Полагаю, лучше..."
     
-    "Wait. Hold on."
+    "Подожди-ка."
     
-    "I glance around the parking lot again. It's completely devoid of life, which means…"
+    "Я снова оглядел парковку. Она полностью лишена жизни, что означает…"
     
     menu:
-        "There are no witnesses.":
-            "If no one sees me take this spot, then doesn't that mean I've done no wrong?"
+        "Нет свидетелей.":
+            "Если никто не видел, что я занял это место, значит, я не сделал ничего плохого?"
     
-            "Shrugging away any lingering doubt, I wheel the bike into the space. See? Nothing bad happened."
+            "Отбрасывая все сомнения, я поставил байк на свободное место. Видишь? Ничего плохого не случилось."
     
-            "Now, time to head to class--"
+            "Теперь, пора идти в класс--"
             
             stop music fadeout 3
             play sound "audio/sfx/Vehicles/Bike Revving.ogg" fadein 3 fadeout 3
-            "I turn around just in time to see another bike pull up beside me. Judging by the disheveled uniform, the guy is also a student, but the fierce scowl on his face convinces me he is not looking to make friends." 
+            "Я обернулся как раз вовремя. Ко мне подъехал другой мотоцикл. Судя по растрепанной форме, парень тоже студент, но яростный хмурый взгляд убеждал меня, что он не собирался заводить друзей." 
             
             play music "audio/music/Stress (GAME VERSION).ogg" fadein 3
             show bully3 extra at cc with dissolve
@@ -42,49 +42,49 @@ label E1D2S7:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D2/S7/Ken/1.ogg"
-            kt "Hey! What the hell do you think you're doing?!"
+            kt "Эй! Какого хрена ты делаешь?!"
             voice "audio/voice/E1/D2/S7/Ken/2.ogg"
-            kt "Get that eyesore out of my spot. Now!"
+            kt "Убери эту херню с моего места. Сейчас же!"
     
-            "With bared teeth, he points behind him with his thumb. Great. Out of all the people that who could have owned this spot, it had to be someone like {i}him{/i}."
+            "Оскалив зубы, он указал пальцем за собой. Отлично. Отлично. Из всех людей, которые могли бы владеть этим местом, это должен был быть кто-то вроде {i}него{/i}."
             voice "audio/voice/E1/D2/S7/Ken/3.ogg"
-            kt "Didn't you hear me? Move!"
+            kt "Ты не слышал меня? Вали!"
     
-            "He jumps off his bike and marches towards me."
+            "Он спрыгнул с байка и пошёл ко мне."
     
             menu:
-                "I'd rather not get into a fight on my first day.":
-                    pf "Alright, alright, give me a sec."
+                "Лучше не встрявать в драку в первый день.":
+                    pf "Хорошо, хорошо, дай секудку."
     
-                    "I reluctantly wheel the bike out of his spot."
+                    "Я неохотно убрал байк с места."
     
-                    "As much as it pains me to give up the parking spot, I get the feeling he's not one to shy away from a fight. Getting into a brawl on my first day would hardly do anything for my reputation."
-                    "Plus, it is {i}his{/i} space."
+                    "Как бы мне не было больно отказываться от этого места, я чувствовал, что он не из тех, кто избежит драки. Драка в первый день вряд ли что-то сделает с моей репутацией."
+                    "К тому же, это {i}его{/i} место."
                     voice "audio/voice/E1/D2/S7/Ken/4.ogg"
-                    kt "... Yeah, that's what I thought."
+                    kt "... Да, так я и думал."
                     hide bully3 extra with dissolve
-                    "He scoffs in disgust before wheeling in his bike."
-                    "I guess I better find parking elsewhere."
+                    "Он издевательские усмехнулся прежде чем сел на свой байк"
+                    "Полагаю, лучше найти другое место."
                     jump E1D2S7_FarParking
     
-                "\"Eyesore\"? Look who's talking!":
-                    pf "Please, and what exactly do you call that bucket of bolts over there?"
+                "\"Херню\"? Кто бы говорил!":
+                    pf "ПожалуйстаЮ будь так добр расскажи, что ты там назвал кучей болтов?"
     
-                    "His bike is hardly fit for the road. It's an ancient, rusted, deathtrap of a machine, which looks like it had been handed down from generation to generation, until it finally became his."
+                    "Его байк едва подходил для дорог. Это древняя, ржавая, смертельная ловушка, которая выглядела так, как будто она передавалась из поколения в поколение, пока наконец, не стала его."
                     voice "audio/voice/E1/D2/S7/Ken/5.ogg"
-                    kt "What did you just…?"
+                    kt "Что ты только что…?"
                     show vein:
                         xoffset 675
                         yoffset 50
                         xzoom .75
                         yzoom .75
-                    "His face turns red. Heh, looks like I touched a nerve."
+                    "Его лицо покраснело. Похоже, я задел за живое."
     
-                    pf "You heard me. It looks like that scrap is barely held together with duct tape."
+                    pf "Ты слышал. Похоже, что этот металлолом едва удерживается скотчем."
     
-                    "Practically shaking with anger, he positions himself so that his bike is obscured, maybe for fear of me {i}actually{/i} spotting duct tape on it."
+                    "Практически дрожа от гнева, он встал так, чтобы его байк не было видно, возможно, он боялся, что я {i}действителньо{/i} замечу на нём скотч."
     
-                    "He cracks his knuckles, a pathetic attempt at intimidation."
+                    "Он похрустел ппытке запугать меня."
                     voice "audio/voice/E1/D2/S7/Ken/6.ogg"
                     kt "You think you're hot shit? Well, you won't look so hot once I'm done with you."
     
