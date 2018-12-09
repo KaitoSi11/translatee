@@ -1,42 +1,42 @@
 label E1D3S4:
     
-    "I pull up the schedule on my phone and check my first class: GEAR Arsenal 201. {w}The building isn't too far away either."
+    "Я открыл на телефоне расписание и проверил первый урок: Арсенал GEAR 201. {w}Здание тоже не слишком далеко."
     scene bg campus building day with fade
     stop ambient fadeout 3
-    "I soon reach the building."
+    "Вскоре я достиг здания."
     scene bg campus auditorium day with fade
     play ambient "audio/ambience/Ace Academy Library.ogg" fadein 1
-    "The classroom is about half the size of the lecture hall for my Piloting 101 class. {w}For some reason, this is a comfort to me, probably because it reminds me of the class sizes at CINY."
+    "Класс был в два раза меньше, чем класс Пилотирования 101. {w}По какой-то причине, это утешало меня, возможно, потому что они напоминали классы в CINY."
     play music "audio/music/Light Tension (GAME VERSION).ogg" fadein 1
-    "I take a seat near the back of the room just as the professor enters."
+    "Я сел в конце класса как только зашёл профессор."
     show professorM2 extra at cc with dissolve
     voice "audio/voice/E1/D3/S4/Prof/1.ogg"
-    prof1m "Good morning, class. Welcome to GEAR Arsenal 201. I'm sure you're all tired of hearing the same welcome spiel so I won't even bother with it. Instead, we're going to dive straight into the material."
+    prof1m "Доброе утро, класс. Добро пожаловать на Арсенал GEAR 201. Я уверен, что вы все устали слышать один и те же приветственные речи, так что не буду докучать этим. Вместо этого мы погрузимся сразу в материал."
     voice "audio/voice/E1/D3/S4/Prof/2.ogg"
-    prof1m "Question: Who can name one of the leading companies in GEAR weapon manufacturing?"
+    prof1m "Вопрос: Кто может назвать одну из ведущих компаний по производству оружия GEAR??"
     
     menu:
         "Potato Shooter Incorporated.":
             pf "Potato Shooter Incorporated!"
-            "The class erupts into laughter."
+            "Класс залился смехом."
             show drop:
                 xoffset 675
                 yoffset 50
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D3/S4/Prof/3.ogg"
-            prof1m "Very funny. A real company would be Paragon Weaponry."
+            prof1m "Очень смешно. Настоящей компанией будет Paragon Weaponry."
     
         "{color=#00ff00}{b}Paragon Weaponry.{/b}{/color}" if (MCStory == 2):
             jump E1D3S4_MCStory1
         
         "Paragon Weaponry." if (MCStory != 2):
             label E1D3S4_MCStory1:
-            "Before I have a chance to answer, another student chimes in."
+            "Прежде чем я успел ответить, другой студент поднял руку."
             voice "audio/voice/E1/D3/S4/stu8m/2.ogg"
             stu8m "Vector Industries!"
             voice "audio/voice/E1/D3/S4/Prof/4.ogg"
-            prof1m "Sorry, incorrect."
+            prof1m "Прости, неправильно."
             pf "Paragon Weaponry."
             show note:
                 xoffset 675
@@ -44,25 +44,25 @@ label E1D3S4:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D3/S4/Prof/5.ogg"
-            prof1m "Very good!"
+            prof1m "Очень хорошо!"
             voice "audio/voice/E1/D3/S4/stu8m/3.ogg"
-            stu8m "Why isn't it Vector?"
+            stu8m "Почему не Vector?"
             voice "audio/voice/E1/D3/S4/Prof/6.ogg"
-            prof1m "Vector deals with thrusters and manoeuvrability whereas Paragon deals with weaponry… Hence the name \"Paragon Weaponry\"."
+            prof1m "Vector работает с двигателями и устройствами маневрирования, а Paragon - с оружием… Отсюда и название \"Paragon Weaponry\"."
     
         "Dasshu.":
             pf "Dasshu."
             voice "audio/voice/E1/D3/S4/Prof/7.ogg"
-            prof1m "That would be incorrect. Dasshu has only recently begun investing in the Cenorobotics field. However, their core business is still energy drinks. A correct answer would be Paragon Weaponry."
+            prof1m "Это неправильно. Dasshu только недавно начали инвестировать в сферу Cenorobotics. Однако, их основной бизнес по-прежнему энергетические напитки. Правильным ответом будет Paragon Weaponry."
     
         "Aludian Enterprises.":
             pf "Aludian Enterprises."
             voice "audio/voice/E1/D3/S4/Prof/8.ogg"
-            prof1m "Not quite. While Aludian Enterprises is certainly creating waves in the media, they are by no means a leading company. An example of an industry veteran would be Paragon Weaponry."
+            prof1m "Не совсем. Хотя Aludian Enterprises, безусловно, создает шум в СМИ, они ни в коем случае не являются лидирующей компанией. Примером ветерана индустрии может быть Paragon Weaponry."
     voice "audio/voice/E1/D3/S4/Prof/9.ogg"
-    prof1m "Their recent area of study has shown that..."
+    prof1m "Их недавняя область исследования показала, что..."
     
-    "He goes into the details of Paragon Weaponry's R&D and the future of beam weaponry for the remainder of class."
+    "Он углубился в детали исследований и разработок Paragon Weaponry и будущее лучевого оружия на оставшееся время урока."
     stop music fadeout 3
     $renpy.pause(1)
     scene black with fade
@@ -72,24 +72,24 @@ label E1D3S4:
     $renpy.pause(1)
     show professorM2 extra at cc with dissolve
     voice "audio/voice/E1/D3/S4/Prof/10.ogg"
-    prof1m "That's all the time we have for today. You'll find this week's readings and assignments on your weblink. Have a good day!"
+    prof1m "Вот и всё на сегодня. Чтения и задания этой недели вы найдете на своей веб-ссылке. Хорошего дня!"
     hide professorM2 extra with dissolve
     play sound "audio/sfx/Human/Class End.ogg"
-    "Students scramble to collect their things before hurrying out of the room. {w}I think I'll go back to the hangar. This class has inspired me to go have a proper look at my GEAR."
+    "Студенты поспешили собрать свои вещи, прежде чем уйти из класса. {w}Думаю, вернусь в ангар. Этот урок вдохновил меня пойти и хорогенько осмотреть свой GEAR."
     stop ambient fadeout 3
     scene black with fade
     play sound [ "audio/sfx/Technology/ID Tap.ogg", "audio/sfx/Technology/ID Tap Success.ogg" ]
     $renpy.pause(2.5)
     play ambient "audio/ambience/Hangar.ogg" fadein 1 fadeout 1
     #scene bg campus hangar day with dissolve
-    "I take the path through the Pilot's Lounge and follow the tunnels until I reach my GEAR."
+    "Я прошёл через зал пилотов и последовал по туннелям, пока не дошёл до GEAR."
     scene cg GEAR hangar first with fade
     play sound "audio/sfx/GEAR/GEAR Elevator.ogg"
     $renpy.pause(2.5)
-    "Pulling down the ladder beside my docking station, I climb up to the top, which is about level with the chest section of my robot."
+    "Опустив лестницу рядом с док-станцией, я поднялся наверх, примерно на уровень груди робота."
     scene black with fade
     play sound [ "audio/sfx/GEAR/GEAR Cockpit Open.ogg"]
-    "I unlock the chest cavity. With a mechanical roar, it splits open in separating panels, revealing a lowered seat. {w}I easily hop into the seat, and breathe in the comforting scent of metal and plastic. It faintly reminds me of new-car smell."
+    "Я открыл грудную клетку. С механическим рёвом, он открыл разделительные панели, показывая опускающееся сидение. {w}Я легко запрыгнул на него и вдохнул успокаивающий запах металла и пластика. Это слабо напоминало мне о запахе новой машины."
     $renpy.pause(1)
 
     $ persistent.gpix[4][0] = 1
@@ -99,13 +99,13 @@ label E1D3S4:
     $renpy.pause(1)
     play sound "audio/sfx/GEAR/GEAR Cockpit Close.ogg"
     stop ambient fadeout 3
-    "Once I'm settled, I trigger the closing sequence. As the chest panels return, my seat scoops me further into my GEAR until I'm nestled in the darkness of the cockpit."
+    "Как только я уселся, то запустил механизм закрытия. Когда грудные панели вернулись на место, сидение углубилось в GEAR пока я не приютился в темноте кабины."
     $renpy.pause(1)
     play sound "audio/sfx/GEAR/GEAR Boot Up 1.ogg"
     $renpy.pause(1.5)
     scene cg GEAR cockpit first2 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with Dissolve(1.5)
     $renpy.pause(1.5)
-    "I initiate the boot up sequence. The cockpit glows a faint red, then flickers into life, and I can't help but smile at the familiarity of it all. {w}The bright glow of the panels illuminate the interior until there isn't a trace of a shadow left. Statistics blink around me in a series of rapid numbers and diagrams."
+    "Я инициировал запуск. Кабина загорелась красным, затем замерцала, и я не мог сдержать улыбку от знакомых ощущений. {w}Яркое свечение панелей освещала интерьер до тех пор, пока не осталось ни следа тени. Статистика мерцала вокруг меня в виде серии быстрых чисел и диаграмм."
     $renpy.pause(1.5)
     play sound "audio/sfx/GEAR/GEAR Boot Up 2.ogg"
     $renpy.pause(1.5)
@@ -113,38 +113,38 @@ label E1D3S4:
     play ambient "audio/ambience/GEAR Cockpit.ogg" fadein 1 fadeout 1
     $renpy.pause(1)
     voice "audio/voice/E1/D3/S4/EagleAI/1.ogg"
-    GEARpf "Gear initialization sequencing complete."
+    GEARpf "Последовательность инициализации Gear завершена."
     
-    "The familiar voice of my GEAR feels like a warm welcome from an old friend."
+    "Знакомый голос GEAR чувствовался как приветствие старого друга."
     
-    pf "Eagle, please run a comprehensive check."
+    pf "Орел, пожалуйста, запусти комплексную проверку."
     
     voice "audio/voice/E1/D3/S4/EagleAI/2.ogg"
-    GEARpf "System in progress..."
+    GEARpf "Проверка запущена..."
     
-    "Nothing to do now but wait. {w}The lights along my display pulse with changing colours as the check progresses. It flows through warm colours: red, orange, yellow, before illuminating the cockpit with a bright green."
+    "Сейчас нечего делать, кроме как ждать. {w}Индикаторы вдоль дисплея пульсировали, меняя цвета по мере прохождения проверки. Оа протекала разными теплыми цветами: красным, оранжевым, желтым, прежде чем осветил кабину ярко-зеленым."
     $renpy.pause(1)
     voice "audio/voice/E1/D3/S4/EagleAI/3.ogg"
-    GEARpf "All system functions: normal."
+    GEARpf "Все системные функции: В норме."
     
     voice "audio/voice/E1/D3/S4/EagleAI/4.ogg"
-    GEARpf "Unknown docking station detected."
+    GEARpf "Обнаружена неизвестная док-станция."
     
-    pf "Register the current dock as home station."
+    pf "Зарегистрировать текущий док в качестве домашней станции."
     $renpy.pause(1)
     voice "audio/voice/E1/D3/S4/EagleAI/5.ogg"
-    GEARpf "Completed."
+    GEARpf "Завершено."
     
     voice "audio/voice/E1/D3/S4/EagleAI/6.ogg"
-    GEARpf "Recommendation: please update system calibration configuration."
+    GEARpf "Рекомендация: обновите конфигурацию системы калибровки."
     
-    "This is recommended all the time. Whenever we change locations, Eagle will request a recalibration of the system. Even the slightest difference in air pressure can trigger an inaccuracy."
+    "Это рекомендовалось всё время. Всякий раз, когда мы меняли местоположение, Орёл запрашивал повторную калибровку системы. Даже малейшая разница в давлении воздуха могла вызвать неточность."
     
-    "At least the process is easy. All I have to do is make sure I correctly follow sequential number order so Eagle can achieve the necessary internal calculations." 
+    "По крайней мере, процесс был прост. Все, что мне нужно было сделать, это убедиться, что я правильно следовал порядку последовательных номеров, чтобы Орёл мог выполнить необходимые внутренние вычисления." 
     
-    pf "Alright, start up the process."
+    pf "Хорошо, начинай процесс."
     voice "audio/voice/E1/D3/S4/EagleAI/7.ogg"
-    GEARpf "Calibration sequence initiating..."
+    GEARpf "Инициирую последовательность калибровки..."
     play sound "audio/sfx/GEAR/GEAR Virtual Training Simulator.ogg"
     # Let's set our variables so the game knows where we are at
     #$ firstCalibration = 0
@@ -167,68 +167,68 @@ label E1D3S4:
     #        GEARpf "Calibration successful."
     #        pf "Perfect."
   
-    "I give it a few minutes as Eagle automatically adjusts itself."
+    "Я дал ему несколько минут, так как Eagle автоматически настраивался."
     "..."
     "....."
     voice "audio/voice/E1/D3/S4/EagleAI/9.ogg"
-    GEARpf "Calibration successful."
-    pf "Perfect."  
+    GEARpf "Калибровка успешно завершена."
+    pf "Идеально."  
     
-    "Everything seems to be in order."
+    "Вроде всё в порядке."
     $renpy.pause(1)
     stop ambient fadeout 3
     scene cg GEAR cockpit first1 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
     $renpy.pause(1)
     play sound "audio/sfx/GEAR/GEAR Cockpit Open.ogg"
     $renpy.pause(1)
-    "After one last look, I shut down my GEAR and unlock the chest cavity again."
+    "Взглянув напоследок, я выключил GEAR и открыл грудную клетку."
     scene black with fade
     play ambient "audio/ambience/Hangar.ogg" fadein 1
     play sound "audio/sfx/GEAR/GEAR Cockpit Close.ogg"
-    "Once I hop out, the panels slide back in place, until I hear the faint click of them locking."
+    "Как только я выпрыгнул, панели начали закрываться пока я не услышал слабый щелчок."
     scene cg GEAR hangar first with fade
     if (E1D2S11_JoinedTheTeam == 0):
         play sound "audio/sfx/GEAR/GEAR Elevator.ogg"
-        "I use the elevator and make my way to the ground. {w}As I stand alone in the quiet of the empty hangar, I feel a twinge of homesickness."
+        "Я использлвал лифт и добрался до земли. {w}Когда я стоял один в тишине пустого ангара, то почувствовал приступ тоски по дому."
         play music "audio/music/Yuuna Misaki (GAME VERSION).ogg" fadein 1
-        "I expected ACE to be different from CINY, but I wasn't quite prepared for the reaction towards my GEAR. {w}It's no surprise that Japan's advancements in the field of Cenorobotics outweigh those of the States, but our machinery was built to last."
+        "Я ожидал, что ACE будет отличаться от CINY, но я был не совсем готов к реакции на мой GEAR. {w}Неудивительно, что достижения Японии в области Cenorobotics перевешивали достижения США, но наша техника создавалась для долгосрочной работы."
     
-        "My GEAR may not be the newest model or packed with the latest weaponry or accessories, but I'm confident in its ability to fight."
+        "Мой GEAR возможно, не самая новой модели, или не оснащён новейшим оружием или аксессуарами, но я уверен в его способности сражаться."
     
-        "A doubt wiggles into my train of thought. {w}Maybe it was a mistake to come here. I could have stayed at CINY. I was making high grades and had a group of friends I could rely on. I'd spend my afternoons practicing instead of sitting in a hangar... {w}just me and that weirdo from yesterday--"
+        "Сомнение закралось в ход мыслей. {w}Может быть, приехать сюда было ошибкой. Я мог бы остаться в CINY. У меня были высокие оценки, и группа друзей, на которых я мог положиться. Я проводил бы дни, практикуясь вместо того, чтобы сидеть в ангаре... {w}just me and that weirdo from yesterday--"
         stop music fadeout 3
-        "I do a double take as Shou walks steadily towards me."
+        "Я обернулся, пока Сё шёл ко мне."
     
     if (E1D2S11_JoinedTheTeam == 1):
         play sound "audio/sfx/GEAR/GEAR Elevator.ogg"
-        "As I turn towards the elevator, I spot Shou waving at me. I nimbly make my way down and stand beside him."
+        "Когда я повернулся к лифту, то увидел, как Сё махал мне рукой. Я проворно спустился вниз и встал рядом с ним."
         $renpy.pause(2.5)
         
     play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 1
     scene bg campus hangar day with fade
     show shou smi at cc with dissolve
     voice "audio/voice/E1/D3/S4/Shou/1.ogg"
-    ss "Mr. Broseph."
-    pf "Hey, how's it going?"
+    ss "Мистер братишка."
+    pf "Эй, как дела?"
     show shou hap at cc
     voice "audio/voice/E1/D3/S4/Shou/2.ogg"
-    ss "Good. Is this your \"go-to\" hangout place? This is the second time I've run into you here."
-    pf "Heh, I guess it's starting to be. What are you doing here?"
+    ss "Хорошо. Это твоё место \"отдыха\"? Второй раз наталкиваюсь на тебя здесь."
+    pf "Хех, я думаю, это начинает им быть. Что ты здесь делаешь?"
     stop music fadeout 3
     show shou mis at cc
     voice "audio/voice/E1/D3/S4/Shou/3.ogg"
-    ss "I just thought I'd pay a visit to my GEAR. It helps when I keep her company for a bit. Keeps her spirits up."
+    ss "Я думал нанести визит своей GEAR. Это помогает, когда я немного поддерживаю ей компанию. Поднимает ей настроение."
     
     menu:
-        "That's why I only go for male GEAR.":
+        "Вот почему я предпочитаю мужские GEAR.":
             play music "audio/music/Baka! (GAME VERSION).ogg" fadein 1
-            pf "This is just further proof that females of all types are high maintenance."
+            pf "Это еще одно доказательство того, что девушки всех типов требуют повышенного ухода."
             show shou cur at cc
-            "Shou blinks, then laughs."
+            "Сё поморгал, затем рассмеялся."
             show shou hap at cc with dissolve
             voice "audio/voice/E1/D3/S4/Shou/4.ogg"
-            ss "Tell me about it. I take it your GEAR is a \"he\" then?"
-            pf "I never really considered it to be either \"he\" or \"she\"."
+            ss "Расскажи-ка мне. Тогда, я так понимаю, твой GEAR \"он\"?"
+            pf "Я никогда не считал его \"им\" или \"ею\"."
             show shou mis at cc
             show bulb:
                 xoffset 720
@@ -236,27 +236,27 @@ label E1D3S4:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D3/S4/Shou/5.ogg"
-            ss "Ahh, so it's a \"ze\"!"
-            pf "Huh?"
+            ss "Ааа, так значит \"Зе\"!"
+            pf "Что?"
             show shou smi at cc
             voice "audio/voice/E1/D3/S4/Shou/6.ogg"
-            ss "You know, gender neutral."
-            pf "Oh, well, sort of. I just call it an \"it\"."
+            ss "Ты знаешь, нейтральный пол."
+            pf "Ну, вроде. Я просто называю \"оно\"."
             stop music fadeout 3
             show shou cur at cc
             voice "audio/voice/E1/D3/S4/Shou/7.ogg"
-            ss "Oh, that too."
+            ss "А, ну так тоже."
     
-        "Her? You mean a girl?":
+        "Ей? Ты имеешь в виду девушку?":
             play music "audio/music/Baka! (GAME VERSION).ogg" fadein 1
-            pf "Is there a girl you're keeping captive in your GEAR?"
+            pf "Есть девушка, которую ты держишь в плену в своём GEAR?"
             show shou hap at cc with dissolve
-            "Shou laughs."
+            "Сё засмеялся."
             voice "audio/voice/E1/D3/S4/Shou/8.ogg"
-            ss "If only… Unfortunately, no girl ever goes near my GEAR."
+            ss "Если бы… К сожалению, ни одна девушка не подходит к моему GEAR."
             show shou smi at cc
-            "He sighs wistfully, while I try very hard to keep a straight face."
-            pf "I'm so sorry."
+            "Он мечтательно вздохнул, а я изо всех сил старался сохранять невозмутимый вид."
+            pf "Мне жаль."
             stop music fadeout 3
             show shou sad at cc with dissolve
             show crying:
@@ -265,67 +265,67 @@ label E1D3S4:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D3/S4/Shou/9.ogg"
-            ss "Me too."
+            ss "Мне тоже."
     
-        "Inanimate objects don't have genders.":
+        "Неодушевлённые объекты не имеют пола.":
             play music "audio/music/Baka! (GAME VERSION).ogg" fadein 1
-            pf "Her?"
+            pf "Ей?"
             show shou smi at cc
             voice "audio/voice/E1/D3/S4/Shou/10.ogg"
-            ss "Yeah."
-            pf "... Your girlfriend?"
+            ss "Да."
+            pf "... Твоей девушке?"
             show shou hap at cc with dissolve
-            "Shou laughs."
+            "Сё засмеялся."
             voice "audio/voice/E1/D3/S4/Shou/11.ogg"
-            ss "No, my GEAR."
-            pf "Your GEAR is a \"she\"?"
+            ss "Нет, моему GEAR."
+            pf "Твой GEAR \"она\"?"
             show shou mis at cc
             voice "audio/voice/E1/D3/S4/Shou/12.ogg"
-            ss "Yeah! What's yours?"
-            pf "My GEAR."
+            ss "Да! А твой?"
+            pf "Мой GEAR."
             show shou smi at cc
             voice "audio/voice/E1/D3/S4/Shou/13.ogg"
-            ss "Right, a \"she\" or a \"he\"?"
-            pf "An \"it\"."
+            ss "Да, \"она\" \"он\"?"
+            pf "\"Оно\"."
             show shou cur at cc
             voice "audio/voice/E1/D3/S4/Shou/14.ogg"
-            ss "Ohhh."
+            ss "Оууу."
             show dots:
                 xoffset 720
                 yoffset 20
                 xzoom .75
                 yzoom .75
-            "He pauses."
+            "Он задумался."
             show shou smi at cc
             voice "audio/voice/E1/D3/S4/Shou/15.ogg"
-            ss "Well, thanks anyway."
-            pf "For what?"
+            ss "Ну, в любом случае, спасибо."
+            pf "За что?"
             show shou mis at cc
             voice "audio/voice/E1/D3/S4/Shou/16.ogg"
-            ss "For thinking it was possible for me to have a girlfriend."
+            ss "За мысль, что для меня возможно найти девушку."
             stop music fadeout 3
-            pf "Well, then."
+            pf "Хорошо, тогда."
             
     show shou smi at cc with dissolve
     play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 1
     voice "audio/voice/E1/D3/S4/Shou/17.ogg"
-    ss "So what were you doing here?"
-    pf "Just checking to make sure everything's working fine."
+    ss "Так что ты тут делал?"
+    pf "Просто проверял, что все работает нормально."
     show shou hap at cc
     voice "audio/voice/E1/D3/S4/Shou/18.ogg"
-    ss "And does it?"
-    pf "Yeah."
+    ss "И как, нормально?"
+    pf "Да."
     show shou cur at cc with dissolve
-    "He glances curiously at my GEAR."
+    "Он заинтересованно посмотрел на мой GEAR."
     show shou mis at cc
     voice "audio/voice/E1/D3/S4/Shou/19.ogg"
-    ss "How about a simulator match?"
-    "I shrug. It'd be nice to get a feel for how things are done at ACE."
-    pf "Sure."
+    ss "Как насчёт симуляци боя?"
+    "Я пожал плечами. Было бы неплохо почувствовать, как обстоят дела в ACE."
+    pf "Конечно."
     show shou smi at cc
     voice "audio/voice/E1/D3/S4/Shou/20.ogg"
-    ss "We can both use the basic robot program. That way, all accessories and weapons will be the same and it'll be based on skill alone."
-    pf "May the best man win."
+    ss "Мы оба можем использовать базовую программу роботов. Таким образом, все аксессуары и оружие будут одинаковыми и оно будет основываться только на навыках.."
+    pf "Пусть победит сильнейший."
     #show shou hap at cc with dissolve
     #hide shou with dissolve
     scene black with fade
@@ -333,7 +333,7 @@ label E1D3S4:
     $renpy.pause(2.5)
     #scene cg GEAR hangar first at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
     #$renpy.pause(2.5)
-    "He grins and races in the opposite direction. I see him pause by a green GEAR before I get back into my own."
+    "Он узмыльнулся и побежал в обратную сторону. Я видел, как он остановился у зелёного GEAR прежде чем я залез в свой."
     play sound "audio/sfx/GEAR/GEAR Cockpit Open.ogg"
     $renpy.pause(1.5)
     scene cg GEAR cockpit first1 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
@@ -350,10 +350,10 @@ label E1D3S4:
     play sound "audio/sfx/GEAR/GEAR Boot Up 2.ogg"
     #$renpy.pause(2.5)
     scene cg GEAR cockpit first3 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
-    "Once I'm settled in the cockpit, I switch on the open network configuration."
+    "Как только я сел в кабину, то включил конфигурацию открытой сети."
     stop music fadeout 3
     play sound "audio/sfx/GEAR/GEAR Virtual Training Simulator.ogg"
-    "Immediately, a request from Shou comes in, and I accept. After we're connected, we boot up our virtual training simulation program."
+    "Сразу же пришёл запрос от Сё, и я принял его. После подключения, мы загрузили программу виртуальной тренировки."
     stop ambient fadeout 3
     play music "audio/music/Rivals (GAME VERSION).ogg" fadein 1
     #Open up rapid mini-game part so the mechs and such appear but no QTE yet
@@ -371,56 +371,56 @@ label E1D3S4:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D3/S4/Shou/30.ogg"
-    ss "Oh! Very fancy. I haven't seen an American style GEAR up close before."
+    ss "Ох! очень забавно(модно). Я раньше не видел так близко американский GEAR."
     
-    pf "Mhm."
+    pf "Ага."
     
-    "I experiment with my GEAR controls and watch in amusement as it makes the same movements within the simulator."
-    "Simulators are freakishly accurate at emulating the real thing, but it still can't quite replicate the feeling of live matches. {w}You can't feel every impact or even the slightest shift in motion within a VTS."
+    "Я экспериментировал со своими элементами управления GEAR и наблюдал за тем, как он делал те же движения в симуляторе."
+    "Симуляторы необычайно точны в подражании реальным действиям, но они все еще не могли полностью воспроизвести ощущение живых матчей. {w}Ты не мог чувствовать каждый удар или даже малейший сдвиг в движении в  симуляторе матчей."
     voice "audio/voice/E1/D3/S4/Shou/31.ogg"
-    ss "As you can see, both of us are kitted with the same standard equipments. You have your energy shield for blocking, thrusters for movement, a ranged weapon, and a close combat weapon."
+    ss "Как видишь, у нас обоих одинаковое стандартное оборудование. У тебя есть энергетический щит для блокирования, двигатели для передвижения, оружие дальнего и ближнего боя.."
     
-    "I evaluate my GEAR and find all the components he mentioned."
+    "Я осмотрел свой GEAR и нашёл всё, что он упомянул."
     
-    pf "Any particular reason why we aren't playing from our personal arsenal?"
+    pf "Какая-то конкретная причина, почему мы не играем нашим личным оружием?"
     voice "audio/voice/E1/D3/S4/Shou/32.ogg"
-    ss "This will level the playing field. We'll have to win by skill alone."
+    ss "Это сровняет игровое поле. Придётся победить только своими умениями."
     
-    pf "Trying to see what I'm made of?"
+    pf "Пытаешься узнать из чего я сделан?"
     
-    "Shou just grins."
+    "Сё просто усмехнулся."
     voice "audio/voice/E1/D3/S4/Shou/33.ogg"
-    ss "Remember, you have to use the right tool at the right time. There's usually more than one right move you can make, but you have to think fast!"
+    ss "Помни, что ты должны использовать правильнное оружие в нужное время. Обычно ты можете сделать несколько шагов, но ты должен думать быстро!"
     
     menu:
-        "Alright, thanks!":
-            pf "So the trick is to just react accordingly."
+        "Хорошо, спасибо!":
+            pf "Так трюк в том, чтобы просто реагировать в соответствии с ситуацией."
             voice "audio/voice/E1/D3/S4/Shou/34.ogg"
-            ss "You got it!"
+            ss "Ты понялt!"
     
-        "This isn't my first time.":
-            pf "I'm no stranger to penetrating a GEAR with my beamblade."
-            "Shou snorts out a laugh."
+        "Это не первоё моё родео.":
+            pf "Мне не привыкать рубить GEAR своим клинком."
+            "Сё фыркнул от смеха."
             voice "audio/voice/E1/D3/S4/Shou/35.ogg"
-            ss "I hope you soften them up first with some shots."
-            "I can't stop the grin on my face."
+            ss "Я надеюсь, ты разбавишь обстановку несколькими выстрелами."
+            "Я не мог перестать улыбаться."
     
-        "Let's get on with it.":
-            pf "Why are we still talking? Can I shoot you yet?"
+        "Погнали уже.":
+            pf "Почему мы все ещё разговариваем? Я могу уже подстрелить тебя?"
             show note:
                 xoffset 1175
                 yoffset 50
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D3/S4/Shou/36.ogg"
-            ss "I'm loving the enthusiasm."
+            ss "Мне нравится энтузиазм."
     
-    #"Once the match starts, I'll have to react to his moves in a rapid succession until the battle is over. {w}Whatever the right move is, I'll have to play that out carefully. Accuracy is the key."
+    #"Как только матч начнется, мне придется быстро реагировать на его действия, пока битва не закончится. {w}Каким бы ни был правильный ход, мне придется тщательно обдумать это. Аккуратность - ключ к победе."
     voice "audio/voice/E1/D3/S4/Shou/37.ogg"
-    ss "Are you ready?"
-    pf "Yup."
+    ss "Ты готов?"
+    pf "Ага."
     voice "audio/voice/E1/D3/S4/Shou/38.ogg"
-    ss "Let's do this!"
+    ss "Тогда погнали!"
     
     
     
@@ -465,9 +465,9 @@ label E1D3S4:
  
 
 
-    "My hands fall naturally into place and grip the controls. I can't stop the smile that spreads across my face as my heart beats faster in anticipation."
-    "I've missed this."
-    "Eagle shifts into a fighting stance and holds out his gun, while Shou activates his thrusters and points his double guns at me."
+    "Мои руки легко встали на своим места и держали управление. Я не мог перестать улыбаться, так как моё сердце билось быстрее в ожидании боя."
+    "Я скучал по этому."
+    "Орёл перешёл в боевую стойку и держал пушку, пока Сё активировал свои двигатели и направил на меня двойные пистолеты."
 
 
 
@@ -477,14 +477,14 @@ label E1D3S4:
     $ t_var = qtetotal
     show screen timer_scr(place="E1C1E1_L1")
     menu:
-        "Dodge!":
+        "Отпрыгнуть!":
             jump E1C1E1_W1
 
-        "Slow…":
+        "Слишком медленно…":
             $ E1C1E1_C += 1
             jump E1C1E1_L1
 
-        "Evade!":
+        "Увернуться!":
             jump E1C1E1_W1
 
     label E1C1E1_L1:
@@ -505,8 +505,8 @@ label E1D3S4:
                 easeout .3 xoffset -75
                 
                 
-        "I'm too slow to react and can't move out of the way, but I raise my shields in the nick of time and absorb the hit."
-        "Still, my dashboard flashes in warning. I took way too much damage! I should try to minimize the hits I take… there's no way I can survive another full hit."
+        "Я слишком медленно среагировал и не смог увернуться, но поднял щит в самый последний момент и поглотил вытрел."
+        "Все же, приборная панель предупредительно замигала. Я принял слишком много урона! Нужно минимизировать попадания по себе… Я не переживу полный урон."
         jump E1COMBATCONVERGENCE1
 
     label E1C1E1_W1:
@@ -527,23 +527,23 @@ label E1D3S4:
 
         
         
-        "I dash out of the way and his attack misses its mark. I equip one of my guns and return fire. He dodges, but my shot still grazes him and he takes some damage."
+        "Я увернулся и его атака прошла мимо. Я достал пушку и выстрелил в ответ. Он увернулся, но выстрел всё равно задел его, так что получил немного урона."
         jump E1COMBATCONVERGENCE1
 
     label E1COMBATCONVERGENCE1:
-    "As I boost forward, Shou moves back to keep the distance between us. He shoots again, but his aim is not accurate and I weave away. With my gun in hand, I take aim…"
+    "Как только я ускорился вперёд, Сё отступил, чтобы сохранить дистанцию между нами. Он снова выстрелил, но его точность не хороша, так что я уклонился. Держа пушку я прицелился…"
 
     $ qtetotal = 5
     $ t_var = qtetotal
     show screen timer_scr(place="E1C1E1_L2")
     menu:
-        "Shoot!":
+        "Стрелять!":
             jump E1C1E1_W2
 
-        "Fire!":
+        "Палить!":
             jump E1C1E1_W2
 
-        "Miss…":
+        "Промахнуться…":
             $ E1C1E1_C += 1
             jump E1C1E1_L2
 
@@ -566,9 +566,9 @@ label E1D3S4:
                 easeout .3 xoffset -75
                 
                 
-        "My hand wavers and Shou easily dodges the shot, then fires back. I dash out of the way, but I'm not fast enough and I wince as I take another hit."
+        "Рука дрогнула, Сё легко увернулся, а затем выстрелил в ответ. Я отпрыгнул, но я был недостаточно быстр, и я вздрогнул, когда получил ещё один удар."
         if E1C1E1_C == 1:
-            "My shield sucks up energy as it absorbs each attack, and I'm in dangerously low territory now. I don't think I can withstand another hit like that."
+            "Щит потреблял энергию, когда поглощал удары, и теперь я на опасно низком уровне. Не думаю, что смогу поглотить ещё один удар"
             jump E1COMBATCONVERGENCE2
         if E1C1E1_C == 2:
         
@@ -576,7 +576,7 @@ label E1D3S4:
             show mc mech with dissolve:
                 xoffset -200
             
-            "My shields disappear as my GEAR goes dark."
+            "Щит исчез когда GEAR потемнел."
             jump E1D3S4_ShouPracticeComplete
 
     label E1C1E1_W2:
@@ -590,33 +590,33 @@ label E1D3S4:
         show shou blo at br, Shake(None, 1, dist=20):
         
         
-        "My aim is true and Shou's shield shimmers as it absorbs the shot. Judging by how deep of a shimmer, it looks like he took a significant amount of damage!"
+        "Моя точность хороша, и щит Сё замерцал, поглощая выстрел. Судя по глубине мерцания, похоже, он получил значительное количество урона!"
         jump E1COMBATCONVERGENCE2
 
 
     label E1COMBATCONVERGENCE2:
-    "Since Shou likes using ranged weapons, I better close the distance and force him into a melee battle! I boost forward..."
+    "Поскольку Сё любит использовать оружие дальнего боя, мне лучше сократить дистанцию и заставить его вступить в ближний бой! Я ускорился вперед..."
 
 
     $ qtetotal = 5
     $ t_var = qtetotal
     show screen timer_scr(place="E1C1E1_L3")
     menu:
-        "Miss…":
+        "Промах…":
             $ E1C1E1_C += 1
             jump E1C1E1_L3
 
-        "Slash!":
+        "Руби!":
             jump E1C1E1_W3
 
-        "Strike!":
+        "Кромсай!":
             jump E1C1E1_W3
 
-        "Trip…":
+        "Уловка…":
             $ E1C1E1_C += 1
             jump E1C1E1_L3
 
-        "Attack!":
+        "Атака!":
             jump E1C1E1_W3
 
     label E1C1E1_W3:
@@ -647,12 +647,12 @@ label E1D3S4:
                 easeout .3 xoffset 150
                 
  
-        "I switch to my sword mid-boost and swing the blade in a high arc. Shou tries to block with his guns and my sword lands on them with a loud crack."
-        "We struggle in a battle of wills, and sweat beads down my face. A loud roar escapes my lips as I channel my strength into my attack… and break through Shou's defense!"
+        "Я переключил меч на среднее ускорение и замахнулся им по высокой дуге. Сё попытался блокировать пистолетами, и меч ударился о них с громким треском."
+        "Мы боролись в битве воли, и капли пота падали на лицо. Громкий рёв вырвался с губ, когда я направил всю силу в атаку… И бробил защиту Сё!"
         
         play sound Depowered
         
-        "As my sword falls through, Shou's GEAR goes dark."
+        "Как только мой меч пробился, GEAR Сё потемнел."
         $ E1C1_WON = 1
         jump E1D3S4_ShouPracticeComplete
 
@@ -675,12 +675,12 @@ label E1D3S4:
                 easeout .3 xoffset -75
         
         
-        "I switch to my sword mid-boost and swing the blade in a high arc, but Shou fires at me as soon as I start to move. With my defenses down, I'm unprepared to block his shots and I take another hit to my shield!"
-        "My dashboard flashes in warning, but I try to ignore it and keep a clear head. When I'm within striking range of Shou, my sword flies to his side and connects with his shield."
+        "Я переключил меч на среднее ускорение и замахнулся им по высокой дуге, Но Сё выстрелил прежде, чем я успел двинуться. Я не был готов блокировать выстрелы и получил ещё удар по щиту!"
+        "Приборная панель предупредительно замигала, но я пытался игнорировать её и ясно мыслить. Когда я был в пределах досягаемости Сё, то сделал замах и ударил по щиту."
         
         play sound Depowered
         
-        "He parries with a close-range shot which I'm unable to block, and I'm ultimately depowered."
+        "Он парировал выстрелом в упор, который невозможно заблокировать, и теперь я полностью побеждён."
         jump E1D3S4_ShouPracticeComplete
 
 
@@ -702,25 +702,25 @@ label E1D3S4:
         play sound "audio/sfx/GEAR/GEAR Cockpit Open.ogg"
         $renpy.pause(1)
         play ambient "audio/ambience/Hangar.ogg" fadein 1
-        "With the match over, I shut down my GEAR and get back on the ground."
+        "Как только матч закончился, я выключил GEAR и спустился на землю."
         play sound "audio/sfx/GEAR/GEAR Cockpit Close.ogg"
         $renpy.pause(2.5)
         scene bg campus hangar day with fade
         play sound "audio/sfx/GEAR/GEAR Elevator.ogg"
         $renpy.pause(2.5)
-        "After a few minutes, Shou appears."
+        "Через пару минут показался Сё."
         show shou neu at cc with dissolve
         
     play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 1
     if (E1D2S11_JoinedTheTeam == 1):
         if E1C1_WON == 0:
-            pf "So, about that match--"
+            pf "Так, насчёт матча--"
             show shou mis at cc with dissolve
             voice "audio/voice/E1/D3/S4/Shou/39.ogg"
-            ss "It's all good, man. I'm sure you've been busy with the whole moving thing and all."
-            pf "Yeah, I'll have to be more focused for the next matches."
+            ss "Всё хорошо, чувак. Я уверен, ты был занят переездом и всё такое."
+            pf "Да, я буду более сосредоточен в следующих матчах."
             show shou smi at cc
-            "Shou nods."
+            "Сё кивнул."
     
         else:
             show shou hap at cc with dissolve
@@ -730,18 +730,18 @@ label E1D3S4:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D3/S4/Shou/46.ogg"
-            ss "Not bad! I knew I made a good choice with you. I've got a sixth sense for these things."
-            pf "Heh, thanks. You're not so bad yourself."
+            ss "Неплохо! Я знал, что сделал всё правильно, выбрав тебя. У меня шестое чувство на такие вещи."
+            pf "Хех, спасибо. Ты и сам был неплох."
     
     if (E1D2S11_JoinedTheTeam == 0):
         if E1C1_WON == 0:
-            pf "Well then."
+            pf "Ну что ж."
             show shou mis at cc with dissolve
             voice "audio/voice/E1/D3/S4/Shou/40.ogg"
-            ss "I think you just need to get into the swing of things."
-            pf "Yeah, probably. At least now that I know what to expect, I'll be able to handle myself better."
+            ss "Я думаю, тебе просто нужно вникнуть в суть вещкё."
+            pf "Да, определённо. По крайней мере, я теперь знаю чего ожидать, так что буду держаться лучше"
             show shou smi at cc
-            "Shou nods."
+            "Сё кивнул."
     
         else:
             show shou hap at cc with dissolve
@@ -751,109 +751,109 @@ label E1D3S4:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D3/S4/Shou/21.ogg"
-            ss "Not bad! You could definitely hold your own for the qualifiers."
-            pf "Thanks."
+            ss "Неплохо! Ты определённо сможешь продержаться на квалификации."
+            pf "Спасибо."
     
         show shou mis at cc
         voice "audio/voice/E1/D3/S4/Shou/22.ogg"
-        ss "How did team hunting go?"
+        ss "Как проходит поиск команды?"
     
         if (E1S2D10_AskedOtherTeams == 1):
-            pf "Not as well as I expected."
+            pf "Не так, как я ожидал."
             show shou sad at cc
             voice "audio/voice/E1/D3/S4/Shou/23.ogg"
-            ss "Bummer. Most teams come together over the summer so they're well prepared for the qualifier."
-            pf "Yeah, I think you mentioned that last time. Still, I thought there'd be either more new people who hadn't found a team, or more teams with missing members."
+            ss "Облом. Большинство команд собираются вместе летом, поэтому они хорошо подготовлены к отборочным."
+            pf "Да, мне кажется ты упоминал это в прошлый раз. Тем не менее, я думал, что будет больше новых людей, которые не нашли команду, или больше команд, которым не достаёт участника."
             show shou mis at cc
             voice "audio/voice/E1/D3/S4/Shou/24.ogg"
-            ss "Well, my offer still stands…"
+            ss "Ну, моё предложение все ещё открыто…"
     
         if (E1D2S3_MetKaoriWasRudeNoHelmet == 1) or (E1D2S11_ComingCleanAboutRunningOverKaori == 1):
-            pf "I actually haven't gotten a chance to talk to the other pilots yet."
+            pf "Вообще-то у меня ещё не было шанса поговорить с другими пилотами."
             show shou thi at cc with dissolve
             voice "audio/voice/E1/D3/S4/Shou/25.ogg"
-            ss "Ah, well, look, I know things with Kaori didn't exactly go smoothly, but the offer to join our team is still open."
-            pf "I'm pretty sure Kaori would have a heart attack if she found out I joined."
+            ss "А, ну, смотри, я знаю, что с Каори не всё прошло гладко, но предложение присоединиться к нашей команде все еще открыто."
+            pf "Я почти уверен, что у Каори случится сердечный приступ, если она узнает, что я присоединился."
             show shou smi at cc
             voice "audio/voice/E1/D3/S4/Shou/48.ogg"
-            ss "Kaori will understand that if she wants to participate in the qualifiers, you'll have to join. You joining benefits us as much as it benefits you."
+            ss "Каори поймет, что если хочет участвовать в отборочных турнирах, то тебе придется присоединиться. Твоё вступление выгодно нам так же, как и тебе."
     
-        "I don't have any other choice and the qualifier is tomorrow."
-        pf "Sure, I'll join."
+        "У меня нет другого выбора, и квалификация завтра."
+        pf "Конечно, я вступлю."
         show shou hap at cc with dissolve
-        "Shou breaks into his usual grin."
+        "Сё вернулся к своей обычной ухмылке."
         show note:
             xoffset 720
             yoffset 20
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D3/S4/Shou/26.ogg"
-        ss "Awesome! Trust me, this is going to be good!"
+        ss "Потрясающие! Поверь мне, это будет хорошо!"
     
         if (E1D2S3_MetKaoriWasRudeNoHelmet == 1) or (E1D2S11_ComingCleanAboutRunningOverKaori == 1):
-            pf "So you're sure Kaori will be okay with this?"
+            pf "Так ты уверен, что Каори примет это?"
             show shou smi at cc with dissolve
             "He smiles reassuringly."
             voice "audio/voice/E1/D3/S4/Shou/27.ogg"
-            ss "Don't worry, I'll talk to her."
+            ss "Не волнуйся, я поговорю с ней."
             
     show shou cur at cc
     voice "audio/voice/E1/D3/S4/Shou/28.ogg"
-    ss "Anyway, we'll want to meet up tomorrow before the qualifiers to practice, so what's your number?"
+    ss "В любом случае, мы хотим встретиться завтра перед квалификацией, так что скажи свой номер?"
     show shou smi at cc
-    "We quickly exchange numbers."
-    pf "So… I guess I should go and get some stuff done."
+    "Мы быстро обменялись номенами."
+    pf "Так… Полагаю, надо пойти и сделать кое-то."
     show shou hap at cc
     voice "audio/voice/E1/D3/S4/Shou/47.ogg"
-    ss "Yeah, me too. Well, I'll see you later then!"
+    ss "Да, мне тоже. Хорошо, тогда увидимся позже!"
     
     menu:
-        "Wait, let's play another match!":
-            pf "Shou, wait!"
+        "Погоди, давай сыграем ещё матч!":
+            pf "Сё, подожди!"
             show shou cur at cc with dissolve
             show question:
                 xoffset 720
                 yoffset 20
                 xzoom .75
                 yzoom .75
-            "He pauses, and looks at me curiously."
-            pf "How about a rematch?"
+            "Он остановился и удивлённо посмотрел на меня."
+            pf "Как насчёт реванша?"
             show shou mis at cc with dissolve
-            "He grins."
+            "Он ухмыльнулся."
             voice "audio/voice/E1/D3/S4/Shou/29.ogg"
-            ss "Hell yeah! Same rules as before?"
-            pf "Let's do it."
+            ss "Да, чёрт побери! Те же правила?"
+            pf "Погнали."
             hide shou with dissolve
-            "He runs back to his GEAR and I get back into mine."
+            "Он побежал к своему GEAR и я вернулся в свой."
             scene black with fade
             #fade to black
             $renpy.pause(2.5)
-            "After practicing for a while it was time to head our separate ways."
+            "После, потренировавшись, пришло время разойтись."
             stop music fadeout 3
             # fill in whatever needs to be here for S8
             $ E1D3S4_PlayedAnotherWithShou = 1
             jump E1D3S8
     
-        "I need to study.":
+        "Мне нужно учиться.":
             stop music fadeout 3
-            pf "Bye."
+            pf "Пока."
             hide shou with dissolve
-            "As I watch him leave, I decide to head to the library."
+            "Как только я проводил его взглядом, то направился в библиотеку."
             scene black with fade
             stop ambient fadeout 3
             $renpy.pause(1)
             scene bg campus library day with fade
             play ambient "audio/ambience/Ace Academy Library.ogg" fadein 1
-            "I've only gotten assignments for one class so far, but I don't want to fall behind. {w}Plus, if I get my work done now, then I can do whatever I want over the weekend."
+            "Я только получил задания для одного урока, но я не хочу отставать. {w}К тому же, если сделаю уроки сейчас, то в выходные смогу делать что захочу."
             jump E1D3S6
     
-        "The pilot's lounge always has something going on.":
-            pf "Bye."
+        "В зале пилотов всегда что-то происходит.":
+            pf "Пока."
             hide shou with dissolve
             stop ambient fadeout 3
             scene bg campus lounge day with fade
             play ambient "audio/ambience/Pilot Lounge.ogg" fadein 1
             play music "audio/music/Day Out (GAME VERSION).ogg" fadein 1
-            "I head back towards the pilot's lounge. So far, every time I've passed through the lounge it has been full of students. {w}I'm sure I'll either meet someone cool or find something interesting to do there."
+            "Я вернулся в зал пилотов. До сих пор каждый раз, когда я проходил через зал, он был полон студентов. {w}Я уверен, что я либо встречу кого-нибудь классного, либо найду что-нибудь интересное."
             $ E1D3S4_WentToThePilotsLounge = 1
             jump E1D3S5
