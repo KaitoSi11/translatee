@@ -1,123 +1,123 @@
 label E1D3S5:
     
-    "When I enter the lounge, I'm surprised to see a crowd surrounding the bar. I can't make out anything intelligible from the jumble of words and voices, but it must be something big based on the sheer level of excitement in the room."
+    "Когда я зашёл в зал, то с удивлением увидел толпу вокруг бара. Я не мог разобрать что-либо вразумительное из путаницы слов и голосов, но это должно быть что-то большое, основанное на явном уровне волнения в комнате."
     
     menu:
-        "What's going on?":
-            "I wander closer to the edge of the crowd and approach a pilot whose standing on her own."
+        "Что происходит?":
+            "Я подошёл ближе к краю толпы и встал рядом с пилотом, который стоял сам по себе."
             show studentF extra at cc with dissolve
-            pf "Hey."
-            "She responds without really seeing me."
+            pf "Привет."
+            "Она ответила, особо на смотря на меня."
             voice "audio/voice/E1/D3/S5/stu1f/stu1f_11.ogg"
-            stu1f "Hello."
-            "I jerk my head towards the crowd."
-            pf "What are all these people so excited about?"
+            stu1f "Привет."
+            "Я склонил голову к толпе."
+            pf "Чем все люди так восхищенны?"
             voice "audio/voice/E1/D3/S5/stu1f/stu1f_12.ogg"
-            stu1f "Akira's here."
-            pf "Who?"
-            "She turns towards me, and the frown on her face lessens when she notices my blond hair."
+            stu1f "Здесь Акира."
+            pf "Кто?"
+            "Она повернулась ко мне, и нахмурилась, когда она заметила мои светлые волосы."
             voice "audio/voice/E1/D3/S5/stu1f/stu1f_13.ogg"
-            stu1f "Ah, you must be the new transfer student."
-            pf "Um, yeah… Sorry, have we met?"
+            stu1f "Аа, ты должно быть переведённый новичок."
+            pf "Эм, да… Прости, мы раньше не виделись?"
             voice "audio/voice/E1/D3/S5/stu1f/stu1f_14.ogg"
-            stu1f "No, but it explains why you don't know who Akira is."
-            pf "Oh… Well, it seems like he's kind of a big deal."
+            stu1f "Нет, но это объясняет, почему ты не знаешь кто такой Акира."
+            pf "Ох… Ну, похоже он какая-то важная шишка."
             voice "audio/voice/E1/D3/S5/stu1f/stu1f_15.ogg"
-            stu1f "That's an understatement. He's the top pilot here at ACE."
-            pf "Really?"
+            stu1f "Это преуменьшение. Он лучший пилот в ACE."
+            pf "Правда"
             voice "audio/voice/E1/D3/S5/stu1f/stu1f_16.ogg"
-            stu1f "Yeah, I heard that in his first year here he was already placed in his team's starting lineup."
-            pf "As a first year?"
+            stu1f "Да, я слышала, что на первом году здесь он уже был в стартовом составе своей команды."
+            pf "Как первогодкаr?"
             voice "audio/voice/E1/D3/S5/stu1f/stu1f_17.ogg"
-            stu1f "Unreal, right? Now he's a third year and finally the team lead."
-            "I crane my neck, trying to spot him. I think I catch a flash of white hair, but it's hard to tell with all of the people."
-            pf "That's pretty impressive."
+            stu1f "Нереально, правда? Теперь он на третьем году и, наконец, лидер команды."
+            "Я вытянул шею, пытаясь заметить его. Показалось, что заметил локон седых волос, но это трудно сказать со всеми людьми, находящимися тут."
+            pf "Довольно впечатляюще."
             voice "audio/voice/E1/D3/S5/stu1f/stu1f_18.ogg"
-            stu1f "That's not even the half of it. Akira is one of the nicest guys around! He says \"hello\" to everyone he meets and actually tries to learn the names of his classmates. When he compliments you, he means it. Even though these GEAR matches can get very competitive, Akira treats all his opponents with respect."
-            "She sighs."
+            stu1f "Это даже не половина. Акира - один из самых хороших парней в мире! Он говорит \"привет\" всем, кого встречает, и пытается узнать имена своих одноклассников. Когда он делает тебе комплимент, он имеет в виду это. Несмотря на то, что матчи GEAR могут стать очень конкурентоспособными, Акира с уважением относится ко всем своим противникам."
+            "Она вздохнула."
             voice "audio/voice/E1/D3/S5/stu1f/stu1f_19.ogg"
-            stu1f "He's a great friend to have."
-            pf "Sounds like you know him pretty well."
-            "Her face turns pink."
+            stu1f "Он очень хорош как друг."
+            pf "Звучит так, как будто ты его хорошо знаешь."
+            "Её лицо порозовело."
             voice "audio/voice/E1/D3/S5/stu1f/stu1f_20.ogg"
-            stu1f "Oh, no, I've never actually met him."
+            stu1f "Ох, нет, на самом деле я никогда его не видела."
             stop music fadeout 15
             hide studentF extra with dissolve
     
-        "I bet it's a hot chick!":
-            "A few guys are scattered around the outskirts of the crowd. I sidle up next to a pilot whose staring hard at the mass of people."
+        "Уверен, это горячая цыпочка!":
+            "Несколько парней разбросаны по окраинам толпы. Я подхожу к пилоту, пристально смотрящему на людей."
             show studentM extra at cc with dissolve
-            pf "So, who's the babe over there?"
-            "I jerk my thumb towards the center of the crowd."
-            "The pilot turns to me and gives me a weird look. Then shrugs."
+            pf "Так, кто та малышка?"
+            "Я указал большим пальцем в центр толпы."
+            "Пилот поввернулся и странно посмотрел на меня. Потом пожал плечами."
             voice "audio/voice/E1/D3/S5/stu2m/13.ogg"
-            stu2m "Just Masato."
-            "Oooh, \"Masato\"... She sounds hot!"
-            pf "Seems like Masato's pretty popular."
+            stu2m "Просто Масато."
+            "Оооох, \"Масато\"... Звучит горячо!"
+            pf "Похоже Масато довольно популярна."
             voice "audio/voice/E1/D3/S5/stu2m/14.ogg"
-            stu2m "Yeah, well, if I were the top pilot at this school then I'd be popular too."
-            "Hot {i}and{/i} smart? {i}Dayum!{/i}"
-            pf "So how come you're not trying to get some of the action?"
-            "He shrugs again."
+            stu2m "Ага, если бы я был лучшим пилотом в школе, то был бы тоже популярен."
+            "Горяча {i}и{/i} умна? {i}Ууухх!{/i}"
+            pf "Так почему ты не пытаешься что-нибудь сделать?"
+            "Он снова пожал пречами."
             voice "audio/voice/E1/D3/S5/stu2m/15.ogg"
-            stu2m "I just can't compete."
-            pf "With what?"
-            "He gives me an incredulous look."
+            stu2m "Мне не сравниться."
+            pf "С чем?"
+            "Он скептически посмотрел на меня."
             voice "audio/voice/E1/D3/S5/stu2m/16.ogg"
-            stu2m "You know--Akira. He was on the starting lineup when he was just a first year."
-            "My eyes widen, which seems to encourage him."
+            stu2m "Ты знаешь--с Акирой. Он был в стартовом составе ещё на первом году обучения."
+            "Мои глаза округлились, что приободрило его."
             voice "audio/voice/E1/D3/S5/stu2m/17.ogg"
-            stu2m "Girls throw themselves at his feet, but he treats everyone like friends, and people just {i}like{/i} him."
-            "A silence falls between us."
-            pf "He?"
+            stu2m "Девушки бросаются к его ногам, но он относится ко всем как к друзьям, а люди просто {i}любят{/i} его."
+            "Тишина повисла между нами."
+            pf "Его?"
             voice "audio/voice/E1/D3/S5/stu2m/18.ogg"
-            stu2m "Yeah."
-            pf "You mean \"she\", right?"
-            "He frowns and gives me another weird look, then points."
+            stu2m "Ага."
+            pf "Ты имел в виду \"Её\", да?"
+            "Он нахмурился и снова посмотрел на меня, затем указал."
             voice "audio/voice/E1/D3/S5/stu2m/19.ogg"
-            stu2m "No, I mean \"he\"."
+            stu2m "Нет, я имел в виду \"его\"."
             stop music fadeout 15
             hide studentM extra with dissolve
     
-        "Are they giving out free food?!":
-            "I force my way through the throng of people, much to the dismay of those beside me. Regardless, I ignore their protests and continue to make my through until I hear the pilot beside me mention something about an \"Akira\"."
-            "That sounds suspiciously like a person and not enough like a food…"
-            "I turn towards the two girls I'd just overheard."
+        "Тут раздают бесплатную еду?!":
+            "Я пробивался сквозь толпу людей, тревожа их. Несмотря на это, я игнорировал их протесты и продолжал идти до конца, пока не услышал, как пилот рядом со мной упомянул что-то об \"Акире\"."
+            "Это звучит подозрительно, как про человека, не про еду…"
+            "Я повернулся к двум девушкам, которых только что услышал."
             show studentF extra at l2
             show studentF2 extra at r2
             with dissolve
-            pf "Hey."
+            pf "Привет."
             voice "audio/voice/E1/D3/S5/stu3f/Alexandria Bearden_stu3f_5.ogg"
-            stu3f "Um, hi?"
-            pf "What's an \"Akira\"?"
+            stu3f "Эм, привет?"
+            pf "Что за \"Акира\"?"
             voice "audio/voice/E1/D3/S5/stu3f/Alexandria Bearden_stu3f_6.ogg"
-            stu3f "I think you mean \"who\" is an Akira…"
-            "Oh. Well, there goes my chances for a free lunch. I could have really used an onigiri right now too."
-            pf "Okay, who's Akira?"
+            stu3f "Я думаю, ты имел в виду \"кто\" такой Акира…"
+            "Ох. Ну, вот и испарились мои шансы на бесплатный обед. Я мог бы сейчас заточить онигири."
+            pf "Хорошо, кто такой Акира?"
             voice "audio/voice/E1/D3/S5/stu3f/Alexandria Bearden_stu3f_7.ogg"
-            stu3f "How do you not know who he is? He's only the top pilot at ACE."
+            stu3f "Как ты не знаешь, кто он? Он лучший пилот в ACE."
             voice "audio/voice/E1/D3/S5/stu4f/stu4f_05.ogg"
-            stu4f "And so nice too."
+            stu4f "И милый."
             voice "audio/voice/E1/D3/S5/stu3f/Alexandria Bearden_stu3f_8.ogg"
-            stu3f "Yeah! He listens to you when you talk and treats everyone like they're important."
+            stu3f "Да! Он слушает тебя, когда ты говоришь, и относится ко всем так, как будто они важны."
             voice "audio/voice/E1/D3/S5/stu4f/stu4f_06.ogg"
-            stu4f "Plus, he's a total dreamboat."
-            "The first pilot blushes and her friend laughs."
-            pf "Right… but the qualifiers haven't happened yet. You mean from last year's rankings?"
+            stu4f "К тому же, он настоящий красавчик."
+            "Первый пилот покраснела, а ее подруга засмеялась."
+            pf "Точно… но отборочных еще не было. Вы имеете в виду прошлогодние рейтинги?"
             voice "audio/voice/E1/D3/S5/stu4f/stu4f_07.ogg"
-            stu4f "He's been a top pilot since his {i}first{/i} year here."
-            pf "Since first year?"
+            stu4f "Он был лучшим пилотом с {i}первого{/i} года обучения здесь."
+            pf "С первого года?"
             voice "audio/voice/E1/D3/S5/stu3f/Alexandria Bearden_stu3f_9.ogg"
-            stu3f "Yep. He was on his team's starting lineup."
-            pf "So, what year is he now?"
+            stu3f "Ага. он был в стартовом составе команды."
+            pf "Так, на каком он сейчас году?"
             voice "audio/voice/E1/D3/S5/stu4f/stu4f_08.ogg"
-            stu4f "Third year."
-            "They sigh wistfully."
-            "Suddenly the first student perks up and grabs her friend."
+            stu4f "TНа третьем."
+            "Они вздохнули с тоской."
+            "Внезапно первая ученица оживилась и схватила подругу."
             voice "audio/voice/E1/D3/S5/stu3f/Alexandria Bearden_stu3f_10.ogg"
-            stu3f "Oh! He just looked at me! Did you see that?"
+            stu3f "Ох! Он только что посмотрел на меня! Ты видела это?"
             voice "audio/voice/E1/D3/S5/stu4f/stu4f_09.ogg"
-            stu4f "W-What! Why didn't he notice me?"
+            stu4f "Ч-Что! Почему он не заметил меня?"
             stop music fadeout 15
             hide studentF extra
             hide studentF2 extra
@@ -125,17 +125,17 @@ label E1D3S5:
     
     $ E1D3S5_AkiraNoticedMe = 1
     show akira hap at cc with dissolve
-    "As if on cue, a path forms amid the throng of people, and a male pilot with white hair and kind eyes walks through."
+    "Как будто по сигналу, среди толпы людей образовалась тропа, и мужчина-пилот с белыми волосами и добрыми глазами шёл по ней.."
     show studentF extra at r3 with dissolve
     show studentF2 extra at l3 with dissolve
     show highschoolgirl extra at r2 with dissolve
     show highschoolgirl2 extra at l2 with dissolve
     show akira smi at cc with dissolve
-    "He's laughing with the group of girls surrounding him."
+    "Он смеялся с группой девушек, окружавших его."
     show akira mis at cc with Dissolve(2.5)
-    "Our eyes meet for a second, his calm smile still intact." 
+    "Наши глаза встретились на секунду, его спокойная улыбка все еще была нетронутой." 
     show akira hap at cc with dissolve
-    "That can't be right. {w}He must have recognised someone behind me and smiled at them."
+    "Этого не могло быть. {w}Должно быть, он узнал кого-то позади меня и улыбнулся им."
     hide akira with dissolve
     stop music fadeout 3
     hide studentF
@@ -143,9 +143,9 @@ label E1D3S5:
     hide highschoolgirl
     hide highschoolgirl2
     with dissolve
-    "Regardless, after the departure of Akira and his group, the lounge feels quieter even though it's still full of students. {w}Pilots turn back to whatever programs they were watching or order drinks at the bar. {w}Others return to the games they were originally playing."
+    "Несмотря на это, после ухода Акиры и его группы в зале стало тише, хотя в нем еще было много студентов. {w}Пилоты вернулись к просмотру программ, или заказу напитков в баре. {w}Другие вернулись к играм, в которые играли."
     
-    "I stand awkwardly on my own; I don't see anyone I recognise. {w}Everyone seems to be intent on their own thing, so I decide to head home. It's getting late anyway."
+    "Я неловко стою сам по себе; Я не видел никого знакомого. {w}Кажется, что каждый стремится к чему-то своему, поэтому я решил отправиться домой. Так или иначе уже поздно."
     stop ambient fadeout 3
     scene black with fade
     
