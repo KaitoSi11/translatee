@@ -1,45 +1,45 @@
 label E1D3S7:
     
     play music "audio/music/Day Out (GAME VERSION).ogg" fadein 1 fadeout 1
-    "I make my way to the reference shelves and start reviewing titles."
-    "What should I read?"
+    "Я подошёл к справочным полкам и начал просматривать названия."
+    "Что же прочитать?"
     
     menu: 
-        "Something about cores.":
-            "I grab {i}Understanding GEAR Cores{/i} and take it to one of the desks." 
-            "{i}GEARs are powered by a stored energy in the form of a \"core\", which manages all of the arsenal and mechanics of the robot. This includes: thruster output, shields, weapons, and other functions of the GEAR.{/i}"
-            "{i}Cores vary from engineer to engineer but are generally created following a procedure approved by in-use experience. They continue to change and develop as the industry grows.{/i}" 
-            "{i}Each Core has limited stored energy. Because of this, pilots are trained to be efficient. They learn to exercise restraint in order to avoid being left stranded in the middle of a battlefield due to energy depletion.{/i}" 
-            "{i}The core also self-regulates to ensure it doesn't overheat. Careful management of energy core is a key skill that pilots learn early in their careers.{/i}"
+        "Что-то о ядрах.":
+            "Я взял {i}Понимание ядра GEAR{/i} и отнёс за стол." 
+            "{i}GEARs приводятся в действие запасом энергии в виде \"ядра\", которое управляет всем арсеналом и механикой робота. Это включает в себя: мощность двигателя, щиты, оружие и другие функции GEAR.{/i}"
+            "{i}Ядра варьируются от инженера к инженеру, но, как правило, создаются в соответствии с процедурой, утвержденной опытом эксплуатации. Они продолжают меняться и развиваться по мере роста отрасли.{/i}" 
+            "{i}Каждое Ядро имеет ограниченный запас энергии. Из-за этого пилоты обучены быть эффективными. Они учатся проявлять сдержанность, чтобы не оказаться в центре битвы без энергии.{/i}" 
+            "{i}Ядро также саморегулируется, чтобы не перегреваться. Тщательное управление энергетическим ядром является ключевым навыком, который пилоты изучают в начале своей карьеры.{/i}"
     
-        "History. Time to nerd out!":
-            "I grab {i}History of GEAR{/i} and take it to one of the desks." 
-            "{i}GEARs were initially developed for military use, but overtime their function has evolved beyond the battlefield and into commercial use. It is now common to see GEAR used in construction, mining, ports, and other labor intensive industries.{/i}" 
-            "{i}The popularity of GEARs have expanded into recreational use by those of the public who can afford the purchase and maintenance of GEARs. This popularity has spawned new forms of entertainment. The most popular form being \"War Games\", which is played in stadiums and designated recreational facilities. In these \"War Games\", small squads of GEARs will compete and battle rival squads using non-lethal armaments.{/i}"
-            "{i}The prevalent use and popularity of GEARs has also created a new area of study called \"Cenorobotics\".{/i}"
-            "... That was all stuff I already knew…"
+        "Историю. Время занудства!":
+            "Я взял {i}Историю GEAR{/i} и отнёс за стол." 
+            "{i}GEARs были первоначально разработаны для военного использования, но со временем их функция развилась вне поля битвы и в коммерческих целях. В настоящее время принято видеть, что GEAR используется в строительстве, добыче полезных ископаемых, в портах и других трудоемких отраслях.{/i}" 
+            "{i}Популярность GEAR расширилась до рекреационного использования теми людьми, которые могут позволить себе покупку и обслуживание GEAR. Эта популярность породила новые формы развлечений. Самыми популярными являются \"Военные игры\", в которые играют на стадионах и в определённых развлекательных центрах. В этих \"Военых играх\", небольшие отряды GEAR соревнуются и сражаются с отрядами соперников с использованием несмертельного оружия.{/i}"
+            "{i}Широкое использование и популярность GEAR также создали новую область исследований под названием \"Cenorobotics\".{/i}"
+            "... Это всё я и так знал…"
     
-        "Military, because I'm a badass.":
-            "I can't decide between {i}Military GEAR{/i} and {i}The Evolution of GEAR Weaponry{/i}."
+        "Про военных, потому что я крут.":
+            "Я не мог выбрать между {i}Военными GEAR{/i} и {i}Эволюцией вооружения GEAR{/i}."
     
             menu: 
-                "Let's learn about weapons.": 
-                    "I grab {i}The Evolution of GEAR Weaponry{/i} and take it to one of the desks." 
-                    "{i}Civilian weapons have limiters to regulate the weaponry output and ensure the damages caused are non-lethal.{/i}"
-                    "{i}All weaponry and defense systems of a GEAR are powered by the core. A more efficient core can produce a more powerful shield and a deadlier shot.{/i}" 
-                    "{i}The superior mobility and intense firepower built into these mechanized suits have made them the ideal system for modern day use, replacing all previous conventional armored vehicles.{/i}" 
-                    "{i}Pilots learn to manage their weapons by making the appropriate use of their energy core. The trick is for pilots to maximize energy for weapon and shield usage while maintaining their overheating status.{/i}" 
-                    "Cool. Sounds like it's all about skill and core management." 
+                "Давай прочитаем про оружие.": 
+                    "Я взял {i}Эволюцию вооружения GEAR{/i} и отнёс за стол." 
+                    "{i}Гражданское оружие имеет ограничители мощности для обеспечения того, чтобы причиненный ущерб не являлся летальным.{/i}"
+                    "{i}Все системы вооружения и обороны GEAR работают с помощью ядра. Более эффективное ядро может дать более мощный щит и более смертоносный выстрел.{/i}" 
+                    "{i}Превосходная мобильность и интенсивная огневая мощь, встроенные в эти механизированные костюмы, сделали их идеальной системой для современного использования, заменив все предыдущие обычные бронированные машины.{/i}" 
+                    "{i}Пилоты учатся управлять своим оружием, правильно используя свое энергетическое ядро. Трюк в том, чтобы максимизировать энергию для использования оружия и щита, поддерживая их статус перегрева.{/i}" 
+                    "Здорово. Похоже, это все о навыках и управлении ядром." 
     
-                "I'd rather get a general background.":
-                    "I grab {i}Military GEAR{/i} and take it to one of the desks." 
-                    "{i}Military GEAR are mechanized suits with superior mobility and firepower. They have replaced all conventional armored ground vehicles.{/i}"
-                    "{i}A GEAR is controlled by its core, which manages all of the arsenal and mechanics of the robot. This includes: the thruster output, shields, weapons, and other functions of the GEAR, so core upkeep is essential when using Military GEAR.{/i}"
-                    "{i}Due to the prevalence of GEAR in society and the risk they pose to the public, police departments now have dedicated custom GEAR to apprehend misused or rogue civilian GEAR models.{/i}"
-                    "It's a good thing not everyone can access military GEAR." 
+                "Я предпочел бы получить общие знания.":
+                    "Я взял {i}Military GEAR{/i} и отнёс за стол." 
+                    "{i}Военные GEAR - это механизированные костюмы с превосходной мобильностью и огневой мощью. Они заменили все обычные бронированные наземные транспортные средства.{/i}"
+                    "{i}GEAR управляется ядром, которое управляет всем арсеналом и механикой робота. Это включает в себя: мощность двигателя, щиты, оружие и другие функции GEAR, поэтому уход за ядром крайне важен при использовании военного GEAR.{/i}"
+                    "{i}Из-за распространенности GEAR в обществе и риска, который они представляют, полицейские департаменты в настоящее время выделили специальные GEAR для задержания неправомерно используемых или мошеннических моделей гражданских GEAR.{/i}"
+                    "Это хорошо, что не каждый может получить доступ к военным GEAR." 
     
-        "Power Study!":
-            "I grab the closest book to me and sit at a table. Flipping it open, I start reading…" 
+        "Усиленная учёба!":
+            "Я взял ближайшую книгу и сел за стол. Открыв её, я начал читать…" 
     
             
     #fade to black
