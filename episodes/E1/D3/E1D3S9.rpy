@@ -2,17 +2,17 @@ label E1D3S9:
     
     $renpy.pause(1)
     scene bg homekaito main dusk with fade
-    "I enter the house and hear laughter coming from the kitchen."
+    "Я вошёл в дом и услышал смех, доносящийся из кухни."
     play ambient "audio/ambience/Kitchen Cooking.ogg" fadein 1
-    "I drop my bag on the floor and follow the sounds of my family and the delicious smells of dinner."
+    "Я опустил сумку на пол и последовал за звуками моей семьи и восхитительным запахом ужина."
     play music "audio/music/Hanging Out (GAME VERSION).ogg" fadein 1
-    pf "Hey." 
-    "I sit at the table and watch Nikki and Uncle Kaito move around the kitchen. They're wearing matching aprons." 
-    pf "Looking good, Uncle! That apron really suits you. It brings out your eyes."
+    pf "Привет." 
+    "Я сел за столом и наблюдал, как Никки и дядя Кайто ходили по кухне. На них были одинаковые фартуки." 
+    pf "Хорошо выглядишь, дядя! Этот фартук тебе действительно подходит. Подчёркивает глаза."
     hk "..."
     voice "audio/voice/E1/D3/S9/Kaito/6.ogg"
     hk "That's it! I'm done!" 
-    "He tears off the apron and tosses it aside."
+    "Он сорвал фартук и бросил его в сторону."
     show kaito dis at l2 with dissolve
     show storm:
         xoffset 365
@@ -20,8 +20,8 @@ label E1D3S9:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D3/S9/Kaito/7.ogg"
-    hk "You said I'd look cool."
-    "Nikki giggles and goes back to the food she's cooking."
+    hk "Ты сказала, что я выгляжу круто."
+    "Никки хихикнула и возвращается к готовке."
     show nikki hap at r2 with dissolve:
         xzoom -1
     show note:
@@ -30,46 +30,46 @@ label E1D3S9:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D3/S9/Nikki/1.ogg"
-    sf "You did look cool! Every lady loves a man who can cook." 
-    pf "And I love a lady who cooks for me!"
+    sf "Ты выглядел круто! Каждая дама любит мужчин, умеющих готовить." 
+    pf "А я люблю леди, которые готовят для меня!"
     show kaito hap at l2
     voice "audio/voice/E1/D3/S9/Kaito/8.ogg"
-    hk "Amen!"
+    hk "Аминь!"
     show nikki dis at r2
-    "Kaito sits beside me. We laugh as Nikki sticks her tongue out at us."
+    "Кайто сел рядом со мной. Мы смеялись, пока Никки показывала нам язык."
     voice "audio/voice/E1/D3/S9/Nikki/2.ogg"
-    sf "Men!" 
+    sf "Мужчины!" 
     show kaito smi at l2
-    pf "So what are we having?"
+    pf "Так что у нас на ужин?"
     show nikki smi at r2 with dissolve
     voice "audio/voice/E1/D3/S9/Nikki/3.ogg"
-    sf "Guess!" 
-    pf "Oh god, not this again."
+    sf "Угадай!" 
+    pf "О Боже, только не снова."
     show kaito hap at l2
-    "Kaito laughs."
+    "Кайто засмеялся."
     show nikki neu at r2
     voice "audio/voice/E1/D3/S9/Kaito/9.ogg"
-    hk "How was your day, bud?" 
-    pf "It was alright."
+    hk "Как прошел день, приятель?" 
+    pf "Он был нормальным."
     show kaito mis at l2
     voice "audio/voice/E1/D3/S9/Kaito/10.ogg"
-    hk "Yeah? What kind of shenanigans did you get up to?" 
-    pf "Nothing major. Had class this morning, checked out my GEAR after."
+    hk "Да? До каких проделок добрался?" 
+    pf "Ничего особенного. С утра были уроки, потом проверил свой GEAR."
     show kaito smi at l2
     
     if (E1D2S11_JoinedTheTeam == 0): #this means he joined the team today because if you joined yesterday, it be a 1 here
-        pf "I did manage to join a team though."
+        pf "Хотя мне удалось вступить в команду."
         show nikki cur at r2
-        "Nikki glances over her shoulder."
+        "Никки оглянулась."
         voice "audio/voice/E1/D3/S9/Nikki/4.ogg"
-        sf "You found one that would take you? Congrats, big bro!" 
-        pf "Yeah, same team from yesterday. I had no luck finding any others, but luckily, Shou offered to take me again today." 
+        sf "ты нашёл ту, которая примет тебя? Поздравляю, старший братец!" 
+        pf "Да, это была вчерашняя команда. Мне не повезло найти другую, но к счастью, Сё сегодня сноа предложил мне." 
     
         if (E1D2S3_MetKaoriWasRudeNoHelmet == 1) or (E1D2S11_ComingCleanAboutRunningOverKaori == 1):
             show nikki ner at r2
             voice "audio/voice/E1/D3/S9/Nikki/5.ogg"
-            sf "Hopefully that girl will be okay with it." 
-            pf "Shou didn't sound worried."
+            sf "Надеюсь, эта девушка смирится с этим." 
+            pf "Сё не казался взволнованным."
             show kaito cur at l2
             show nikki neu at r2
             show question:
@@ -78,8 +78,8 @@ label E1D3S9:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D3/S9/Kaito/11.ogg"
-            hk "Girl? I want to hear about this girl." 
-            pf "She's just a team member."
+            hk "Девушка? Хочу услышать об этой девушке." 
+            pf "Она просто член команды."
             show kaito mis at l2
             show drooling:
                 xoffset 365
@@ -87,8 +87,8 @@ label E1D3S9:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D3/S9/Kaito/12.ogg"
-            hk "For now... close quarters working on a team together... things can get... {i}heated{/i}." 
-            "With a fiery personality like Kaori's, I wouldn't be surprised if things got heated, although it wouldn't be in the way my uncle suggests."
+            hk "Пока что... работая вместе в команда... дела могут... {i}накалиться{/i}." 
+            "С такой пламенной личностью, как Каори, я не удивлюсь, если все накалится, хотя это не будет так, как предлагает дядя."
             show kaito smi at l2
     
         elif (E1D2S9_AgreeJoinShouTeam == 0):
@@ -99,17 +99,17 @@ label E1D3S9:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D3/S9/Nikki/6.ogg"
-            sf "Isn't that the team you turned down?" 
-            pf "Yeah, but I didn't have any other options. Besides, they've got a decent reputation. It's something to move forward for qualifiers at least."
+            sf "Разве это не команда, которую ты отверг?" 
+            pf "Да, но у меня не было других вариантов. Кроме того, у них достойная репутация. Сойдёт, по крайней мере для квалификации."
             show nikki thi at r2
             voice "audio/voice/E1/D3/S9/Nikki/7.ogg"
-            sf "Hmm." 
-            "Nikki turns back to the stove while Kaito claps me on the back."
+            sf "Хмм." 
+            "Никки повернулась к плите, а Кайто злопнул меня по спине."
             show kaito hap at l2
             show nikki neu at r2
             voice "audio/voice/E1/D3/S9/Kaito/13.ogg"
-            hk "Good job, kid! Who's on the team?" 
-            pf "Shou, myself, and a couple of girls."
+            hk "Хорошая работа, парень! Кто в команде?" 
+            pf "Сё, я, и пара девушек."
             show kaito cur at l2
             show question:
                 xoffset 365
@@ -117,31 +117,31 @@ label E1D3S9:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D3/S9/Kaito/14.ogg"
-            hk "Good looking girls?"
+            hk "Хорошо выглядящих девушек?"
             show nikki ang at r2
             voice "audio/voice/E1/D3/S9/Nikki/8.ogg"
-            sf "Uncle Kaito! Don't encourage him!"
+            sf "Дядя Кайто! Не поддерживайте его!"
             show nikki ann at r2
-            "I shrug."
+            "Я пожал плечами."
             show kaito mis at l2
-            "Kaito winks at me."
+            "Кайто подмигнул мне."
             voice "audio/voice/E1/D3/S9/Kaito/15.ogg"
-            hk "I knew you could make being here work for you."
+            hk "Я знал, что ты сможешь сделать пребывание здесь полезным для себя."
             show nikki dis at r2
-            pf "Thanks, I think."
+            pf "Спасибо, я думаю."
             show kaito smi at l2
             show nikki neu at r2
     
     elif (E1D2S11_JoinedTheTeam == 1):
-        pf "One of my teammates showed up and we had a practice simulation."
+        pf "Появился один из товарищей по команде, и у нас был тренировочный бой."
         show kaito hap at l2
         voice "audio/voice/E1/D3/S9/Kaito/16.ogg"
-        hk "Sounds fun." 
-        pf "It was. I think we'll make a good team."
+        hk "Звучит весело." 
+        pf "Так и было. Думаю, мы сделаем хорошую команду."
         show kaito smi at l2
         voice "audio/voice/E1/D3/S9/Kaito/17.ogg"
-        hk "Who else is on the team?" 
-        pf "Shou, myself, and a couple girls."
+        hk "Кто ещё в коменде?" 
+        pf "Сё, я, и пара девушек."
         show kaito cur at l2
         show question:
             xoffset 365
@@ -149,17 +149,17 @@ label E1D3S9:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D3/S9/Kaito/18.ogg"
-        hk "Good looking girls?" 
+        hk "Хорошо выглядящих девушек?" 
         "I shrug." 
-        pf "Yeah, I guess."
+        pf "Да, полагаю."
         show kaito mis at l2
-        "Kaito winks at me and I just shake my head."
+        "Кайто подмигнул мне и я просто кивнул."
     
     if (E1D3S1_BikeImpounded == 1):
         show nikki cur at r2
         voice "audio/voice/E1/D3/S9/Nikki/9.ogg"
-        sf "And you got your bike back?" 
-        pf "Yeah, thank god. At least I won't have to deal with the bus anymore."
+        sf "И ты вернул свой байк?" 
+        pf "Да, слава Богу. По крайней мере, мне больше не придется ездить на автобусе."
         show nikki hap at r2
         show bulb:
             xoffset 1050
@@ -167,8 +167,8 @@ label E1D3S9:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D3/S9/Nikki/10.ogg"
-        sf "Me too!" 
-        pf "Keep dreaming."
+        sf "Мне  тоже!" 
+        pf "Мечтай дальше."
         show kaito ske at l2
         show nikki neu at r2
         show exclamation:
@@ -177,48 +177,48 @@ label E1D3S9:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D3/S9/Kaito/19.ogg"
-        hk "Whoa, whoa. What happened to your bike?"
+        hk "Воу, воу. Что случилось с твоим байком?"
         show nikki mis at r2
         voice "audio/voice/E1/D3/S9/Nikki/11.ogg"
-        sf "He somehow managed to park it in the wrong place and got it impounded."
+        sf "Он каким-то образом припарковался не в том месте, и его конфисковали."
         show kaito cur at l2
         voice "audio/voice/E1/D3/S9/Kaito/20.ogg"
-        hk "Really? How did you manage to do that?"
-        pf "Eh... Long story."
+        hk "Правда? Как ты так умудрился"
+        pf "Эх... Долгая история."
         show nikki smi at r2
         voice "audio/voice/E1/D3/S9/Nikki/12.ogg"
-        sf "Let's be honest, it was obvious you were going to do something dumb on your first day."
-        pf "H-Hey!"
+        sf "Давайте будем честными, очевидно, что ты собирался сделать что-то глупое в первый день."
+        pf "Э-Эй!"
         show kaito hap at l2
         show nikki mis at r2
-        "Uncle Kaito laughs. Nikki shoots me a playful smirk."
+        "Дядя Кайто смеялся. Никки игриво ухмыльнулась мне."
         
     show nikki neu at r2
-    "Nikki places full plates in front of us, then removes her apron and join us at the table."
+    "Никки поставила перед нами полные тарелки, затем сняла фартук и села к нам за столом."
     show kaito neu at l2
     voice "audio/voice/E1/D3/S9/Kaito/21.ogg"
-    hk "What else did you get up to today?" 
+    hk "Что ещё делал сегодня?" 
     
     if (E1D3S4_PlayedAnotherWithShou == 1):
-        pf "Mostly just practiced with Shou, my new teammate."
+        pf "В основном только тренировался с Сё, новым товарищем по команде."
         show kaito cur at l2
         voice "audio/voice/E1/D3/S9/Kaito/22.ogg"
-        hk "Is he any good?" 
-        pf "Yeah, I think we'll be a good fit, but I guess we'll find out tomorrow at the qualifiers if that's true."
+        hk "Он хорош?" 
+        pf "Да, я думаю, что мы подходим, но полагаю, что узнаем это завтра на отборочных, правда ли это."
     
     elif (E1D3S6_WentLibraryYuuna == 1):
-        pf "I got some study time in the library and ran into one of my friends."
+        pf "Я пошёл позаниматься в библиотеку и столкнулся с одним другом."
         show nikki mis at r2
         voice "audio/voice/E1/D3/S9/Nikki/13.ogg"
-        sf "Ooooh, was it that giiiiiirl?" 
-        pf "Shut up, Nikki! {w}How did you even know that?!"
+        sf "Оооооо, это была та деееевуууушкааа?" 
+        pf "Замолчи Никки! {w}Как ты вообще узнала это?!"
         show nikki smi at r2
         voice "audio/voice/E1/D3/S9/Nikki/14.ogg"
-        sf "I didn't, but thanks for sharing!"
+        sf "Я и не знала, но спасибо что поделился!"
         show kaito hap at l2
         voice "audio/voice/E1/D3/S9/Kaito/23.ogg"
-        hk "Another girl? Sounds like you're getting all the ladies." 
-        pf "It's not like that. She helped me out yesterday, that's all."
+        hk "Ещё одна девушка? Похоже ты получаешь всех дам." 
+        pf "Не то что бы. Она просто помогла мне вчера."
         show kaito mis at l2
         show drooling:
             xoffset 365
@@ -226,62 +226,62 @@ label E1D3S9:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D3/S9/Kaito/24.ogg"
-        hk "Right, \"helped\"."
+        hk "Точно, \"помогла\"."
         show nikki mis at r2
-        "Uncle Kaito and Nikki exchange a smile. {w}At least I know for sure these two are related." 
+        "Дядя Кайто и Никки обменялись улыбками. {w}По крайней мере, я точно знаю, что они родственники." 
     
     elif (E1D3S6_WentLibraryStudied == 1):
-        pf "I got a chance to catch up on some of my work, so that's good."
+        pf "У меня был шанс наверстать упущенное, так что всё хорошо."
         show kaito smi at l2
         voice "audio/voice/E1/D3/S9/Kaito/25.ogg"
-        hk "Proud of you, kid. Glad you're staying on top of your studies."
+        hk "Горжусь тобой, парень. Рад, что ты продолжаешь усердно заниматься."
         show nikki hap at r2
         voice "audio/voice/E1/D3/S9/Nikki/15.ogg"
-        sf "Are you going to be a teacher's pet with all your studying?" 
-        pf "I'm sorry, who's in the top Cenorobotics school in Japan?"
+        sf "Ты собираешься быть любимчиком учителя со всей этой учёбой?" 
+        pf "Извини, но кто в лучшей школе Cenorobotics Японии?"
         show nikki ske at r2
         voice "audio/voice/E1/D3/S9/Nikki/16.ogg"
-        sf "Oh, now you're just gloating."
+        sf "О, теперь ты просто злорадствуешь."
         show kaito hap at l2
         show nikki dis at r2
-        "Kaito lets out a hearty laugh."
+        "Кайто рассмеялся."
         voice "audio/voice/E1/D3/S9/Kaito/26.ogg"
-        hk "He's got you there, kiddo."
+        hk "Тут он тебя подловил, детка."
         show nikki wor at r2
         voice "audio/voice/E1/D3/S9/Nikki/17.ogg"
-        sf "No fair! You guys are ganging up on me."
+        sf "Нечестно! Вы, парни, набрасываетесь на меня."
     
     elif (E1D3S4_WentToThePilotsLounge == 1):
-        pf "I hung out at the pilot's lounge for a bit."
+        pf "Я немного поболтался в зале пилотов."
         show kaito smi at l2
         voice "audio/voice/E1/D3/S9/Kaito/27.ogg"
-        hk "That sounds cool." 
-        pf "Yeah it was. I actually learned a lot about this guy named Akira. He's the top tier pilot in the program."
+        hk "Звучит круто." 
+        pf "Да, так и было. Я многое узнал о парне по имени Акира. Он пилот высшего уровня в программе."
         show nikki sur at r2 with dissolve
         voice "audio/voice/E1/D3/S9/Nikki/18.ogg"
-        sf "So he's your rival?"
-        pf "Rival?"
+        sf "Так он твой соперник?"
+        pf "Соперник?"
         show nikki hap at r2
         voice "audio/voice/E1/D3/S9/Nikki/19.ogg"
-        sf "Yeah, these types of stories always needs a villainous rival!"
-        pf "Uhm, well, he's actually a pretty nice guy. Well-liked."
+        sf "Да, такие истории всегда нуждаются в сопернике злодее.!"
+        pf "Хм, ну, на самом деле он хороший парень. Всем нравится."
         show nikki mis at r2
         voice "audio/voice/E1/D3/S9/Nikki/20.ogg"
-        sf "Really? Is he cute?" 
-        pf "Uh, how should I know?"
+        sf Правда? Он милый?" 
+        pf "Откуда мне знать?"
         show nikki cur at r2
         voice "audio/voice/E1/D3/S9/Nikki/21.ogg"
-        sf "Did the girls think he was cute?" 
-        pf "... I guess so?"
+        sf "Девушки думают, что он милый?" 
+        pf "... Поладаю, да?"
         show nikki hap at r2
-        "Nikki beams."
+        "Никки засияла."
         show nikki mis at r2
         voice "audio/voice/E1/D3/S9/Nikki/22.ogg"
-        sf "Accomplished, polite, and cute. You could learn a thing from him."
-        pf "What's that suppose to mean?!"
+        sf "Опытный, вежливый и милый. Ты мог бы чему-то научиться у него."
+        pf "Что это значит?!"
         show nikki smi at r2
         voice "audio/voice/E1/D3/S9/Nikki/23.ogg"
-        sf "Hehe! Nothing."
+        sf "Хехе! Ничего."
         
     $renpy.pause(1)
     stop ambient fadeout 3
@@ -294,49 +294,49 @@ label E1D3S9:
     show kaito smi at l2 with dissolve
     show nikki cur at r2 with dissolve:
         xzoom -1
-    "Kaito cleans his plate, then rests a hand on his stomach and lets out a loud belch. Nikki and I blink at him."
+    "Kaito вычистил свою тарелку, затем положил руку на живот и громко рыгнул. Я с Никки посмотрели на него."
     show kaito mis at l2
     voice "audio/voice/E1/D3/S9/Kaito/28.ogg"
-    hk "I was simply complimenting the chef!" 
-    pf "I should do the same."
+    hk "Я просто похвалил шеф-повара!" 
+    pf "Я сделаю тоже самое."
     show nikki win at r2
-    "I open my mouth to burp, but Nikki squeals in protest." 
+    "Я открыл рот, чтобы рыгнуть, но Никки вскрикнула в знак протеста." 
     show crying:
         xoffset 1050
         yoffset 160
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D3/S9/Nikki/24.ogg"
-    sf "Please don't! I'd rather not have them."
+    sf "Пожалуйста, не надо! Я бы предпочел не иметь их."
     show kaito hap at l2
     show nikki neu at r2
-    "Kaito and I laugh as Nikki clears the table. Then Kaito rests a hand on my shoulder."
+    "Кайто и я смеялись, когда Никки убирала тарелки со стола. Затем Кайто положил руку мне на плечо."
     show kaito smi at l2
     voice "audio/voice/E1/D3/S9/Kaito/1.ogg"
-    hk "Sounds like you’ve had quite the day, bud."
-    pf "It'll get easier once I'm in the swing of things."
+    hk "Похоже, у тебя был тот ещё день, приятель."
+    pf "будет легче, когда я вольюсь в ритм."
     voice "audio/voice/E1/D3/S9/Kaito/2.ogg"
-    hk "Of course."
+    hk "Конечно."
     show kaito hap at l2
     voice "audio/voice/E1/D3/S9/Kaito/2_1.ogg"
-    hk "Want to watch a movie or something before you two head to bed?"
+    hk "Хотите посмотреть фильм или что-то, прежде чем оба отправитесь спать?"
     show nikki hap at r2
-    "I almost say yes, but a long yawn escapes my mouth." 
-    pf "I'm pretty fried. I think I might go review some notes then get to bed early. I've got qualifiers tomorrow."
+    "Я почти согласился, но из меня вырвался долгий зевок." 
+    pf "Я довольно устал. Думаю, пойду посмотрю некоторые заметки и лягу спать пораньше. У меня завтра квалификация."
     show kaito smi at l2
     voice "audio/voice/E1/D3/S9/Kaito/3.ogg"
-    hk "That's fair. Nikki?"
+    hk "Это честно. Никки?"
     show nikki neu at r2
     voice "audio/voice/E1/D3/S9/Nikki/25.ogg"
-    sf "I'll join you once I'm done cleaning."
+    sf "Я присоединюсь к тебе, когда закончу с уборкой."
     show kaito hap at l2
     voice "audio/voice/E1/D3/S9/Kaito/4.ogg"
-    hk "I'll help you."
+    hk "Я помогу тебе."
     show nikki smi at r2
     voice "audio/voice/E1/D3/S9/Nikki/26.ogg"
-    sf "Thanks!" 
+    sf "Спасибо!" 
     show kaito smi at l2
-    "I stand up and Kaito and Nikki both wave."
+    "Я встаю, и Кайто и Никки помахали мне."
     show kaito hap at l2
     show nikki hap at r2
     with dissolve
@@ -346,27 +346,27 @@ label E1D3S9:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D3/S9/Nikki/27.ogg"
-    sf "Goodnight!"
+    sf "Спокойной ночи!"
     show note:
         xoffset 365
         yoffset 5
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D3/S9/Kaito/5.ogg"
-    hk "Goodnight!"
+    hk "Спокойной ночи!"
     hide kaito
     hide nikki
     with dissolve
     play sound "audio/sfx/Human/Going Upstairs (wood).ogg" fadein 1 fadeout 1
     $renpy.pause(1)
     scene black with fade
-    "I wave back and head to my room."
+    "Я помахал в ответ и пошёл в комнату."
     $renpy.pause(1)
     scene bg homekaito myroom night with Dissolve(2.5)
-    "In my room, I crawl into bed and grab my tablet to review my notes from today's class. {w}I'm only part way through when my eyes grow heavy and I can't read any longer. {w}I flick off the light and close my eyes."
+    "В комнате я забрался в кровать и взял планшет, чтобы просмотреть заметки с сегодняшнего урока. {w}Я только успел прочитать часть их, когда глаза стали тяжёлыми, и я не мог продолжать. {w}Я выключил свет и закрыл глаза."
     stop music fadeout 3
     scene black with fade
-    "As I drift to sleep, I dream of tomorrow's qualifiers." 
+    "Пока я засыпал, то думал о завтрашней квалификамии." 
     
     
     jump E1D4S1
