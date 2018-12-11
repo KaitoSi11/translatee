@@ -4,179 +4,179 @@ label E1D3S8:
     if (E1D3S1_BikeDrove == 1):
         $renpy.pause(1)
         play sound "audio/sfx/Vehicles/Bike Ignition.ogg" fadein 1 fadeout 1
-        "I head to the parking lot and grab my bike. {w}Then I head home."
+        "Я пошёл на парковку и взял мотоцикл. {w}После поехал домой."
         play sound "audio/sfx/Vehicles/Bike driving off.ogg" fadein 1 fadeout 1
         $renpy.pause(2.5)
         jump E1D3S9
     
     elif (E1D3S1_BusRide == 1):
         play sound "audio/sfx/Vehicles/Bus Door Open.ogg" fadein 1 fadeout 1
-        "I wait impatiently for the bus. When it pulls up, I climb on and grab an aisle seat."
-        "As the bus moves on, I dream of my beautiful bike the entire way home."
+        "Я с нетерпением ждал автобуса. Когда он подъехал, я зашёл в него и сел на ближайшее сидение."
+        "Когда автобус тронулся, я уже мечтал о своем прекрасном мотоцикле всю дорогу домой."
         $renpy.pause(1.0)
         jump E1D3S9
     
     elif (E1D3S1_BikeImpounded == 1):
         play ambient "audio/ambience/Campus.ogg" fadein 1 fadeout 1
         scene bg campus main day with fade
-        "The thought of riding the bus back home turns my stomach. If only I had my bike--"
-        "I quickly check the time. Still a couple hours before closing. I can make it to the impound in time to get my bike back."
+        "Мысль о поездке на автобусе домой заставляет желудок скручиваться. Если бы у меня был мой мотоцикл--"
+        "Я быстро проверил время. Еще было несколько часов до закрытия. Я мог успеть забрать свой байк обратно."
         stop ambient fadeout 3
         $renpy.pause(1)
         play ambient "audio/ambience/Parking Lot.ogg" fadein 1 fadeout 1
         scene bg campus parking day with fade
-        "I hustle to the parking lot and head straight for the security building. The same guard from before yawns as he watches a series of cameras. He glances at me as I approach and grunts in recognition."
+        "Я поторопился к парковке и направился прямо к зданию охраны. Тот же самый охранник зевал, смотря камеры. Он смотрел на меня, когда я подошёл, и хрюкнул в знак признания."
         play music "audio/music/Sneaking About (GAME VERSION).ogg" fadein 1 fadeout 1
         show guard extra at cc with dissolve
         voice "audio/voice/E1/D3/S8/Guard/1.ogg"
-        gua "Illegal parker. You're back."
-        pf "Yeah… I'd like to pick up my bike."
-        "He nods."
+        gua "Нелегальный парковщик. Ты вернулся."
+        pf "Да… Я хотел бы забрать свой байк."
+        "Он кивнул."
         voice "audio/voice/E1/D3/S8/Guard/2.ogg"
-        gua "100 credits."
+        gua "100 кредитов."
     
         menu:
-            "Have my arm and leg while you're at it.":
-                pf "That's extortion! There's no way it can cost this much!"
+            "Это грабёж.":
+                pf "Это вымогательство! Это не может так дорого стоить!"
                 voice "audio/voice/E1/D3/S8/Guard/3.ogg"
-                gua "That's how much it costs."
-                pf "But my bike was only in the lot for one night!"
+                gua "Вот столько это и стоит."
+                pf "Но мой байк был всего одну ночь на парковке!"
                 voice "audio/voice/E1/D3/S8/Guard/4.ogg"
-                gua "Do you want your vehicle or not?"
-                pf "Fine."
-                "I clench my jaw but wire the credits anyway."
+                gua "Ты хочешь его или нет?"
+                pf "Хорошо."
+                "Я стиснул зубы, но отдал кредиты."
     
-            "I'll give you 50 credits.":
-                "I wire over 50 credits."
+            "Я дам тебе 50 кредитов.":
+                "Я переслал 50 кредитов."
                 play sound "audio/sfx/Technology/Payment Beep Failure.ogg"
-                "His computer beeps in recognition of the transaction. The guard glances at the screen, then scowls."
+                "Его коипьютер издал сигнал завершения транзакции. Охранник посмотрел на экран, затем нахмурился."
                 show dots:
                     xoffset 675
                     yoffset 50
                     xzoom .75
                     yzoom .75
-                "I smirk at him."
-                pf "Keep the change."
+                "Я ухмыльнулся."
+                pf "Сдачи не надо."
                 voice "audio/voice/E1/D3/S8/Guard/5.ogg"
-                gua "What kind of crap is this? It's 100 credits."
-                pf "Yeah, and I sent over the credits."
+                gua "Что это за хрень? Нужно 100 кредитов."
+                pf "Да, и я отправил кредиты."
                 voice "audio/voice/E1/D3/S8/Guard/6.ogg"
-                gua "But you still owe another 50 credits."
-                pf "Such a generous tip and you still want more?"
+                gua "Но ты все ещё должен 50 кредитов."
+                pf "Это такая щедрая плата, и ты хочешь ещё больше?"
                 show vein:
                     xoffset 675
                     yoffset 50
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D3/S8/Guard/7.ogg"
-                gua "I don't have time for your games."
-                "He starts to turn away from me, when I wire over another 50 credits."
-                pf "Geez, loosen up."
+                gua "У меня нет времени на твои игры."
+                "Он начал отворачиваться от меня, когда я переслал ещё 50 кредитов."
+                pf "Боже, расслабься."
     
-            "Just pay it.":
-                "Let's just get this over with. I grumble to myself, but wire over the credits."
+            "Просто заплатить.":
+                "Давай просто покончим с этим. Я ворчал под нос, но переслал кредиты."
     
         play sound "audio/sfx/Technology/Payment Beep Success.ogg"
-        "His computer beeps once the transaction has been approved and prints out a receipt. He offers it for me to sign, and I do."
+        "После подтверждения транзакции его компьютер издал звуковой сигнал и распечатал квитанцию. Он передал её мне подписать, что я и сделал."
         voice "audio/voice/E1/D3/S8/Guard/8.ogg"
-        gua "You've got to go to the lot."
-        pf "The lot?"
+        gua "Теперь тебе надо идти на стоянку."
+        pf "Стоянку?"
         voice "audio/voice/E1/D3/S8/Guard/9.ogg"
-        gua "It's past the off-campus parking. There's a metal fence surrounding it. Even you won't be able to miss it."
-        "He smirks at me, and I try not to show my irritation."
-        pf "Thanks."
-        "I turn to leave, but he stops me."
+        gua "Это мимо парковки вне кампуса. Вокруг него металлический забор. Даже ты не сможешь пропустить его."
+        "Он ухмыльнулся, и я старался не показывать свое раздражение."
+        pf "Спасибо."
+        "Я развернулся, но он остановил меня."
         show question:
             xoffset 675
             yoffset 50
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D3/S8/Guard/10.ogg"
-        gua "Aren't you forgetting something?"
-        pf "What?"
+        gua "Ничего не забыл?"
+        pf "Что?"
         voice "audio/voice/E1/D3/S8/Guard/11.ogg"
-        gua "The passcodes."
-        "He hands me a copy of the receipt. There are two series of numbers scribbled on there."
+        gua "Пароли."
+        "Он вручил мне копию квитанции. Там написано две серии чисел."
         pf "Oh, right."
-        "He points to one code, then the other."
+        "Он указал на один пароль, а затем на другой."
         voice "audio/voice/E1/D3/S8/Guard/12.ogg"
-        gua "Type this code to get into the impound, and type this code into the lock on your bike."
-        pf "Got it, thanks."
+        gua "Введи этот пароль, чтобы попасть на штрафстоянку, а этот - чтобы разблокировать замок на своём байке."
+        pf "Понял, спасибо."
         stop music fadeout 3
         hide guard extra with dissolve
         scene bg campus impound day closed with fade
-        "I leave quickly and head in the direction of the lot. Once I get closer, I can easily spot the fence. There's an electronic lock on the gate."
+        "Я быстро ухожу и направляюсь на стоянку. Подойдя ближе, я легко заметил забор. На воротах был электронный замок."
         ##NEW SOUND NEEDED##play sound "audio/sfx/Technology/Passcode Entry.ogg"
-        "As I type in the passcode for the impound, I glance around, checking if there's a guard here, but I'm all alone."
+        "Пока я вводил пароль для доступа на стоянку, я оглянулся, проверяя, есть ли тут охранник. Но я был один."
         ##NEW SOUND NEEDED##play sound "audio/sfx/Impacts/Impound Gate Open.ogg"
         scene bg campus impound day with Dissolve(2.5)
-        "The gate opens with a sharp screech, temporarily cutting a rift in the otherwise silent air, and I walk in."
+        "Ворота открылись с резким визгом, временно разрывая тишину, и я зашёл."
         
-        "There are very few vehicles in the lot and I almost immediately spot my bike."
+        "Там было мало транспорта, и я быстро заметил свой байк."
         ##NEW SOUND NEEDED##play sound "audio/sfx/Technology/Wheel Lock - Locking.ogg" fadeout 5
-        "There's a wheel lock on my back tire, and I type the second code into the side panel. {w}It flashes green and unlocks with an echoing click."
+        "На колесе был блокиратор, и я ввёл второй пароль на боковой панели. {w}Он загорелся зелёным и разблокировался с гулким щелчком."
         play music "audio/music/A Bad Feeling (GAME VERSION).ogg" fadein 1
-        "I eagerly wheel my bike out of the lock and back towards the gate. {w}As I head out of the impound, I walk straight into the bully from yesterday, who is flanked on either side with two equally mean looking guys."
+        "Я нетерпеливо освободил свой байк и вернулся к воротам. {w}Выйдя со стоянки я наткнулся на вчерашнего хулигана с которым было два подло выглядящих парня."
         show bully3 extra at cc with dissolve
         show bully extra at l3 with dissolve
         show bully2 extra at r3 with dissolve:
             xzoom -1
             
         menu:
-            "Where the hell did you come from?!":
-                "I move my bike to the side before returning to face them."
-                pf "What are you doing here?"
+            "Откуда, чёрт возьми, вы появились?!":
+                "Я поставил байк в сторону, прежде чем повернулся лицом к нему."
+                pf "Что вы тут делаете?"
                 voice "audio/voice/E1/D3/S8/Ken/1.ogg"
-                kt "We've been waiting for you."
-                pf "... You mean you've been here this whole time?"
+                kt "Тебя ждали."
+                pf "... Ты имеешь в виду, что были тут всё это время?"
                 show vein:
                     xoffset 675
                     yoffset 50
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D3/S8/Ken/2.ogg"
-                kt "Shut up!"
-                "He motions for his friends, who slowly surround me. They loom over me and crack their knuckles ominously."
-                pf "Three on one? The odds are still in my favour…"
+                kt "Завались!"
+                "Он что-то показал своим друзьям, которые меня окружали. Они нависли надо мной и зловеще хрустели костяшками пальцев."
+                pf "Три на одного? Шансы все еще в мою пользу…"
     
-            "Come at me, bro.":
-                "I move my bike to the side before returning to face them. I roll my neck and crack my knuckles, then grin."
-                pf "Didn't get enough the first time, I see. You ready to get your ass whooped again?"
+            "Иди сюда, братан.":
+                "Я поставил байк в сторону, прежче чем повернулся к ним. Я повращал шеей и похрустел костяшками пальцев. затем усмехнулся."
+                pf "Понятно, не хватило в первый раз. Готовы, чтобы вам снова надрали задцины?"
                 show vein:
                     xoffset 675
                     yoffset 50
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D3/S8/Ken/3.ogg"
-                kt "Tch, you won't be so smug once we're done with you."
-                "He motions for his friends, who slowly surround me. They loom over me, and crack their knuckles ominously."
-                pf "Well this should be entertaining."
+                kt "Ты не будешь таким самодовольным, когда мы закончим с тобой."
+                "Он что-то показал своим друзьям, которые меня окружали. Они нависли надо мной и зловеще хрустели костяшками пальцев."
+                pf "Ну, это должно быть интересно."
     
-            "Pretend they aren't there and push past them.":
-                "I barely even glance at them, and when the two friends try to block my path, I wheel my bike over the toes of the nearest guy. He yelps in pain and grabs his feet, while the other guy stoops to help him."
+            "Притвориться, что их нет, и пройти мимо.":
+                "Я едва глянул на них, и когда два друга попытались преградить мне путь, я переезал на байке пальцы ближайшего парня. Он взвизгнул от боли и схватился за ноги, в то время как другой парень наклонился, чтобы помочь ему."
                 show question:
                     xoffset 675
                     yoffset 50
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D3/S8/Ken/4.ogg"
-                kt "What the hell do you think you're doing?!"
-                pf "Going home."
+                kt "Какого чёрта ты делаешь?!"
+                pf "Еду домой."
                 show vein:
                     xoffset 675
                     yoffset 50
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D3/S8/Ken/5.ogg"
-                kt "We're not finished here!"
-                "He puts his hands on my bike to stop me."
-                "I freeze. {w}A small twitch escapes me."
-                "I calmly hop down from my bike and wheel it to the side. Then I walk straight up to the bully and punch him squarely in the jaw."
+                kt "Мы ещё не закончили тут!"
+                "Он положил руки на байк,чтобы остановить меня."
+                "Я замер. {w}A small twitch escapes me."
+                "Я спокойно спрыгнул с байка и повернулся к нему. После, я подошёл к хулигану и ударил его в челюсть."
                 play sound "audio/sfx/Human/Med_Punch.ogg"
-                pf "Touch my bike again…"
-                "He staggers back but catches himself before he falls. He rubs his jaw, and his face flushes red."
+                pf "Ещё раз тронешь мой байк…"
+                "Он отступил назад, но собрался, прежде чем упасть. Он потёр челюсть, и его лицо вспыхнуло яростью."
     
-        "He swings at me, and I--"
+        "Он качнулся на меня и я--"
         
         $ qtebase = 2
         $ qtetotal = qteath + qtebase
@@ -184,67 +184,67 @@ label E1D3S8:
         show screen timer_scr(place="E1D3S8_QTEFreeze")
     
         menu: 
-            "Freeze...":
+            "Замер...":
                 $ renpy.hide_screen ("timer_scr")
                 label E1D3S8_QTEFreeze:
                     play sound "audio/sfx/Human/light_Punch.ogg"
-                    "My legs become rooted to the ground as his fist connects with my stomach."
+                    "Мои ноги приковались к земле, когда его кулак упёрся мне в живот."
                     play sound "audio/sfx/Human/light_punch.ogg"
-                    "I gasp for air as I try to ignore the throbbing pain in my belly and kick him in the ribs."
+                    "Я задыхался, пытаясь не замечать пульсирующую боль в животе и ударил его по ребрам."
                     play sound "audio/sfx/Human/Med_Punch.ogg"
-                    "He doubles over, but one of his friends hits me in the back."
-                    "A sharp pain renders me temporarily immobile, but I manage to dive out of the way as the two lackeys charge at me. {w}They try to avoid each other, causing one of them to run face-first into the gate. {w}He clutches his face, the blood pouring from his nose."
+                    "Он могнулся пополам, но один из его друзей ударил меня в спину."
+                    "Острая боль сдала меня временно неподвижным, но мне удалось уйти с пути, когда два лакея бежали на меня. {w}Они старались избегать друг друга, что в итоге заставило одного из них влететь лицом в ворота. {w}Он прикрыл лицо, кровь лилась из носа."
     
-            "Trip...":
+            "Трюк...":
                 $ renpy.hide_screen ("timer_scr")
-                "I try to move out of the way, but lose my footing."
+                "Я попытался увернуться, но потерял равновесие."
                 play sound "audio/sfx/Human/Med_Punch.ogg"
-                "He jabs me in the chest, knocking the wind out of me, while one of his lackeys kicks me in the knee."
+                "Он ударил меня в грудь, выбив из меня воздух, в то время как один из его лакеев пнул меня в колено."
                 play sound "audio/sfx/Human/light_punch.ogg"
-                "My leg gives out and I stumble."
-                "The second friend tries to kick my ribs, but I twist away in the nick of time. I swipe his legs out from beneath him, and he falls on his back. His head hits the ground with a sickening thump."
+                "Моя нога сдаёт и я упал."
+                "Второй друг попытался ударить меня по ребрам, но я выкрутился в самый последний момент. Я с делал ему подсечку, и он упал на спину. Его голова приземлилась на землю с отвратительным ударом."
     
             "{color=#00ff00}{b}Dodge!{/b}{/color}" if (MCStory == 1):
                 jump E1D3S8_MCStory1
             
-            "Dodge!" if (MCStory != 1):
+            "Увернуться!" if (MCStory != 1):
                 label E1D3S8_MCStory1:
                 $ renpy.hide_screen ("timer_scr")
                 play sound "audio/sfx/Human/light_punch.ogg"
-                "I easily evade his punch, and barely block a punch from his friend. The other assailant charges me, and at the last second, I step out of the way. {w}He skids to a halt, and while he's off-balance, I push him. He collides with the gate with a sickening crack. I stay light on my feet, while the other two circle me."
+                "Я легко уклонился от его удара и едва заблокировал удар его друга. Другой нападавший бежит на меня, и я в последнюю секунду отхожу с его пути. {w}Он остановился, и пока терял равновесие, я толкнул его. Он с отврптительным треском влетает в ворота. Я я легко остался на ногах, в то время как два других окружили меня."
         
-        "The bully glares at me, his face contorted with rage. His leg comes steadily closer to my face, when suddenly, somebody comes between us."
+        "Хулиган смотрел на меня, его лицо было искажено яростью. Его нога неуклонно приближалась к моему лицу, когда вдруг кто-то встал между нами."
         hide bully extra
         hide bully2 extra
         hide bully3 extra
         with dissolve
-        "He screams and falls to the ground as the new figure pushes his leg against the joint. {w}One friend charges the newcomer, who blocks him with impossible speed."
+        "Он крикнул и упал на землю, когда новая фигура толкнула его в сустав ноги. {w}Один друг полез на новенького, но он заблокировал его с невероятной скоростью."
         ##NEW SOUND NEEDED#
         play sound [ "audio/sfx/Human/Med_Punch.ogg", "audio/sfx/Human/light_punch.ogg", "audio/sfx/Human/Med_Punch.ogg", "audio/sfx/Human/light_punch.ogg", "audio/sfx/Human/Med_Punch.ogg", "audio/sfx/Human/light_punch.ogg", "audio/sfx/Human/Med_Punch.ogg" ]
-        "He strikes with precision, and pelts the friend with a flurry of punches. {w}The final fist to the jaw brings the attacker to his knees."
+        "Он бил точно и осыпал друга градом ударов. {w}Последний удар в челюсть заставил атакующего встать на колени."
         
-        pf "Look out!"
-        "The newcomer turns just in time to block the bully from striking him in the back of the head. {w}Instead, he twists the bully's arm so he holds him in a wristlock. The bully yelps in pain and immediately freezes."
+        pf "Берегись!"
+        "Новичок повернулся как раз вовремя, чтобы предотвратить удар по затылку. {w}Вместо этого он повернул руку хулигана, чтобы удержать его в захвате. Хулиган взвизгнул от боли и сразу же замер."
         voice "audio/voice/E1/D3/S8/Ken/6.ogg"
-        kt "Ugh! Let go of me!"
-        "He looks up, and suddenly the colour drains from his face."
+        kt "Тьфу! Отпусти меня!"
+        "Он смотрит вверх, и внезапно цвет имчез с его лица."
         voice "audio/voice/E1/D3/S8/Akira/1.ogg"
-        am "Only if you promise to leave this guy alone."
+        am "Только если ты пообещаешь оставить этого парня в покое."
         show akira ang at cc with dissolve
-        "His friends unsteadily climb to their feet and slowly back away."
+        "Его друзья неуверенно поднялись на ноги и медленно отступили."
         voice "audio/voice/E1/D3/S8/Bully1/1.ogg"
-        Bully1 "Shit, is that Akira?"
+        Bully1 "Дерьмо, это Акира?"
         show akira ann at cc
         voice "audio/voice/E1/D3/S8/Bully2/1.ogg"
-        Bully2 "Looks like it."
+        Bully2 "Похож на него."
         voice "audio/voice/E1/D3/S8/Bully1/2.ogg"
-        Bully1 "There's no way I'm getting tangled with him!"
+        Bully1 "Невозможно, чтобы я дрался с ним!"
     
-        "The bully speaks through gritted teeth."
+        "Хулиган говорил сквозь стиснутые зубы."
         voice "audio/voice/E1/D3/S8/Ken/7.ogg"
-        kt "Yes, okay, got it."
+        kt "Да, хорошо, я понял."
         stop music fadeout 3
-        "The newcomer lets go, and the bully scrambles out of his reach. {w}He collects his friends and leaves quickly."
+        "Новичок отпустил его, и хулиган выбрался из зоны его досягаемости. {w}Он собрал друзкй и быстро ушёл."
         scene black with fade
         $renpy.pause(1)
         scene bg campus impound dusk with fade
@@ -258,51 +258,51 @@ label E1D3S8:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D3/S8/Akira/2.ogg"
-        am "Are you okay?"
+        am "Ты в порядке?"
     
         if (E1D3S5_AkiraNoticedMe == 1):
-            "I take a good look at the guy. That white hair looks really familiar…"
+            "Я хорошенько взглянул на парня. Эти белые волосы выгляели действительно знакомыми…"
             show akira smi at cc with dissolve
-            "He smiles at me, and the realization strikes me like lightning."
-            pf "You're Akira!"
+            "Он улыбается, и осознание пораило меня, словно молния."
+            pf "Ты же Акира!"
             show akira hap at cc
             voice "audio/voice/E1/D3/S8/Akira/3.ogg"
-            am "Yup, and you're the new transfer student, right?"
-            "I blink in surprise."
-            pf "Oh, you've heard of me?"
+            am "Да, а ты новый переведённый ученик, верно?"
+            "Я удивлённо моргнул."
+            pf "О, ты слышал обо мне?"
             show akira thi at cc
             voice "audio/voice/E1/D3/S8/Akira/4.ogg"
-            am "Sort of. I've heard about the \"American GEAR\"."
-            pf "Ah…"
+            am "Отчасти. Я слышал о \"Американском GEAR\"."
+            pf "Ааа…"
     
         else:
-            pf "Yeah, thanks for helping me out."
-            "I notice the teal stripes on his uniform. Guess he's a pilot too."
+            pf "Ага, спасибо что помог мне."
+            "Я заметил бирюзовые полосы на его форме. Полагаю, он тоже пилот."
             show akira hap at cc with dissolve
             voice "audio/voice/E1/D3/S8/Akira/5.ogg"
-            am "No problem. I know about those guys and they're never up to any good."
+            am "Без проблем. Я знаю об этих парнях, и они никогда не делают ничего хорошего."
             show akira smi at cc
             voice "audio/voice/E1/D3/S8/Akira/5_01.ogg"
-            am "I'm Akira."
-            pf "I'm [pfirst]."
+            am "Я Акира."
+            pf "Я [pfirst]."
             show akira hap at cc
             voice "audio/voice/E1/D3/S8/Akira/6.ogg"
-            am "Nice to meet you. I only wish it had been under happier circumstances."
-            pf "Heh, yeah."
+            am "Рад познакомиться. Я только хотел бы, чтобы это было при более счастливых обстоятельствах."
+            pf "Хех, ага."
     
         show akira neu at cc
-        pf "I hope I don't sound rude, but what exactly are you doing here?"
-        "He holds up a similar receipt to mine."
+        pf "Надеюсь, я не звучу грубо, но что именно ты здесь делаешь?"
+        "Он держит аналогичную моей квитанцию."
         show akira hap at cc with dissolve
         voice "audio/voice/E1/D3/S8/Akira/7.ogg"
-        am "Picking up my bike."
+        am "Забираю свой байк."
         show akira smi at cc
-        pf "Did you park illegally too or something?"
+        pf "Ты нелегально припарковался, или что?"
         show akira hap at cc
-        "He laughs."
+        "Он засмеялся."
         voice "audio/voice/E1/D3/S8/Akira/8.ogg"
-        am "No, I actually have a parking pass."
-        pf "Really? Then what's your bike doing in here?"
+        am "Нет, у меня вообще-то есть парковочный пропуск."
+        pf "Правда? Тогда что твой байк тут делает?"
         show akira thi at cc
         show drop:
             xoffset 720
@@ -310,28 +310,28 @@ label E1D3S8:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D3/S8/Akira/9.ogg"
-        am "It's kind of a long story, but you know that surly guard in the lot? He's had it out for me ever since I was a first year. I accidentally parked in a reserved spot without a pass… and it turned out to be \"his\" spot."
-        pf "Oh no…"
+        am "Это довольно долгая история, но ты знаешь того грубого охранника? Он всегда был таким по отношению ко мне, ещё с моего первого года обучения. Я случайно припарковался в зарезервированном месте без пропуска… и это оказалось \"его\" местом."
+        pf "О нет…"
         show akira smi at cc
         voice "audio/voice/E1/D3/S8/Akira/10.ogg"
-        am "Yeah. He's never forgiven me for it. So every so often he claims there was a mix up in the system or something and my bike ends up in here." 
-        pf "And you let him get away with it?"
+        am "Да уж. Он так и не простил меня за это. Поэтому он очень часто утверждает, что в системе произошла путаница или что-то в этом роде, и мой мотоцикл оказался здесь." 
+        pf "И ты позволил этому сойти с рук?"
         show akira hap at cc
-        "He laughs again."
+        "Он снова засмеялся."
         voice "audio/voice/E1/D3/S8/Akira/11.ogg"
-        am "I'm sure this unusual system glitch will be investigated at some point."
+        am "Я уверен, что этот необычный сбой системы будет исследован в какой-то момент."
         show akira cur at cc
         voice "audio/voice/E1/D3/S8/Akira/12.ogg"
-        am "Anyway, you okay?"
-        pf "Yeah, I'll be fine, thanks. And you?"
+        am "В любом случае, ты в порядке?"
+        pf "Да, я буду в порядке. А ты?"
         show akira smi at cc
         voice "audio/voice/E1/D3/S8/Akira/13.ogg"
-        am "I'm fine."
+        am "В порядке."
         voice "audio/voice/E1/D3/S8/Akira/14.ogg"
-        am "I better get my bike and head home."
-        "I nod, and hop on my own bike."
+        am "Лучше возьму мотоцикл и отправлюсь домой."
+        "Я кивнул и запрыгнул на свой байк."
         play sound "audio/sfx/Vehicles/Bike Ignition.ogg" fadeout 3
-        pf "Thanks again for stepping in. I owe you one."
+        pf "Ещё раз спасибо за то, что вступился. Я твой должник."
         show akira mis at cc
         show note:
             xoffset 720
@@ -339,13 +339,13 @@ label E1D3S8:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D3/S8/Akira/15.ogg"
-        am "Don't worry about it. I'm sure I'll be seeing you around."
-        pf "Yeah, see you around."
+        am "Не волнуйся. Я уверен, что ещё увижу тебя."
+        pf "Ага, увидимся."
         hide akira with dissolve
-        "He waves and soon disappears among the cars."
+        "Он помахал и вскоре исчез среди машин."
         play sound "audio/sfx/Vehicles/Bike Revving.ogg"
         stop music fadeout 3
-        "I rev my engine, feeling the familiar rush of adrenaline, and drive out of the lot."
+        "Я завёл двигатель, чувствуя знакомый прилив адреналина и выехал с парковки."
         stop ambient fadeout 3
         play sound "audio/sfx/Vehicles/Bike driving off.ogg"
         $renpy.pause(1)
