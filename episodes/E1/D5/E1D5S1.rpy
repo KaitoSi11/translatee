@@ -7,55 +7,55 @@ $renpy.pause(1.5)
 
 scene bg homekaito myroom day with fade
 
-"The soft chirping of birds gradually awaken me from my slumber. My muscles scream as I push myself up in bed. It looks like being out of live matches for a while has taken its toll. Still, the pain is a reminder of a well played battle, which is comforting."
+"Нежное щебетание птиц постепенно пробудило меня от моего сна. Мои мышцы завопили, когда я попытался поднятся. Похоже, что из-за матчей какое-то время тело будет болеть. Тем не менее, боль - это напоминание о хорошей  битве, что расслабляло."
 
 pf "9:00 AM."
 
-"With a yawn, I crawl out of bed and ready myself for the day."
+"Зевая, я вылез из постели и приготовился ко дню."
 
 stop ambient fadeout 2.0
 scene black with fade
 $renpy.pause(.5)
 scene bg homekaito main day with fade
 
-"I head downstairs expecting to see Nikki."
+"Я спустился вниз, ожидая увидеть Никки."
 
-pf "Hey--"
+pf "Привет--"
 
-"No ones here. Weird. I pull out my phone and see a text message from her."
+"Никого не было. Странно. Я вытащил телефон и увидел сообщение от неё."
 
-"{i}Hey! I'm going out with some friends for breakfast and then shopping. I was going to tell you in person but you were still sleeping by the time I was heading out, lazybones. =3={/i}"
-"{i}Kaito also said he's heading out to an emergency meeting. I know how useless you are when it comes to breakfast, so open the fridge and check the second row. TTYL! ^w^{/i}"
+"{i}Хэй!Я собираюсь позавтракать вместе со своими друзьями,а затем пройтись по магазинам. Я хотела сказать тебе лично, но ты спал когда я собиралась уходить, Соня. =3={/i}"
+"{i}Кайто также сказал, что направляется на экстренное совещание. Я знаю, как ты бесполезен, когда дело доходит до готовки, поэтому открой холодильник и проверь второй ряд. Поговорим позже! ^w^{/i}"
 
-pf "Useless?! Grrr..."
+pf "Бесполезен?! Грррр..."
 
-"Opening the fridge, I'm greeted with the most delicious-looking egg salad sandwich I've ever seen."
+"Открыв холодильник, меня встретил самый вкусновыглядящий сэндвич с яичным салатом, который я когда-либо видел."
 
-pf "Damnit Nikki, always making it impossible to stay mad at you."
+pf "Чёрт, Никки. Всегда делает так, что невозможно на неё злиться."
 
-"I bring the sandwich to the table along with a poured glass of juice. I wonder what I should do today…"
+"Я взял сендвич и сок, и сел за стол. Интересно, что бы сделать сегодня…"
 
 
 label E1D5S1_WeekendChoiceSelection:
 
 menu:
-    #"Practice on my own.":
+    #"Заниматься самостоятельно.":
     #    $ E1D5S1_EventAlone = 1
     #    jump E1D5S2
         
-    "Work on the history project with Yuuna.":
+    "Работать над проектом по истории вместе с Юной.":
         $ E1D5S1_EventYuuna = 1
         jump E1D5S3
         
-    "Ask Kaori about team strategies.":
+    "Спросить Каори о командной стратегии.":
         $ E1D5S1_EventKaori = 1
         jump E1D5S4
         
-    "Hang out with Shou." if (E1D5S6_MayuNoThanksLoop == 0):
+    "Прогулятся с Сё." if (E1D5S6_MayuNoThanksLoop == 0):
         $ E1D5S1_EventShou = 1
         jump E1D5S5
         
-    "See what Mayu is up to." if (E1D5S6_MayuNoThanksLoop == 0):
+    "Посмотреть,как поживает Маю." if (E1D5S6_MayuNoThanksLoop == 0):
         $ E1D5S1_EventMayu = 1
         jump E1D5S6
         
