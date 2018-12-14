@@ -5,18 +5,18 @@ label E1D4S2:
     scene bg campus hangar day with fade
     play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 1
     if (E1D2S11_JoinedTheTeam == 1):
-        "By the time I arrive at the hangar, the team is already waiting by Shou's GEAR."
+        "К тому времени, как я пришёл в ангар, команда уже ждала у GEAR'а Сё."
         show mayu smi at l3 with dissolve
         show kaori ann at r3 with dissolve:
             xzoom -1
         show shou neu at cc with dissolve
-        "Mayu is the first to notice me and gives me a small wave. {w}Kaori and Shou seem to be arguing about something, but Shou silences her when I arrive." 
+        "Маю первая заметила меня и легонько помахала. {w}Каори и Сё похоже о чём-то спорили, но Сё заткнул её, когда я пришёл." 
         show shou smi at cc
-        pf "Hey guys."
+        pf "Привет парни."
         show kaori neu at r3
-        "Kaori glances at me and nods."
+        "Каори глянула на меня и кивнула."
         voice "audio/voice/E1/D4/S2/Kaori/1.ogg"
-        ki "At least you aren't late." 
+        ki "По крайней мере ты не опоздал." 
         show shou hap at cc
         show exclamation:
             xoffset 720
@@ -24,28 +24,28 @@ label E1D4S2:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D4/S2/Shou/1.ogg"
-        ss "Broseph, you made it!"
+        ss "Братишка, ты сделал это!"
     
         menu:
-            "I came as soon as I could!":
-                pf "I left as soon as I got your text. Big news, right?"
+            "Я пришёл так быстро, как смог!":
+                pf "Я ушел, как только получил твоё сообщение. Большие новости, верно?"
                 show shou mis at cc
                 voice "audio/voice/E1/D4/S2/Shou/2.ogg"
-                ss "Yeah! We got our assigned time slot."
-                pf "When is it?" 
+                ss "Ага! Мы получили назначенное время."
+                pf "И когда это?" 
                 show kaori thi at r3
                 voice "audio/voice/E1/D4/S2/Kaori/2.ogg"
-                ki "Later. Right now, we need to practice."
-                pf "Understood." 
+                ki "Позже. Прямо сейчас нам нужно практиковаться."
+                pf "Понятно." 
     
-            "Eyyo!":
-                pf "Of course, anything for my favourite teammate."
+            "Йоооу!":
+                pf "Конечно, всё что угодно для моего любимого товарища."
                 show shou cur with dissolve
-                "Shou points to himself."
+                "Сё указал на себя."
                 voice "audio/voice/E1/D4/S2/Shou/3.ogg"
-                ss "That's me, right?"
-                "I grin."
-                pf "I'll let you guys decide."
+                ss "Это же я, да?"
+                "Я ухмыльнулся."
+                pf "Я позволю вам самим решить."
                 show kaori thi at r3 with dissolve
                 show dots:
                     xoffset 1175
@@ -58,39 +58,39 @@ label E1D4S2:
                     yoffset 135
                     xzoom .75
                     yzoom .75
-                "Kaori rolls her eyes. Mayu seems confused."
+                "Каори закатила глаза. Маю выглядела смущённой."
                 show shou smi at cc
-                pf "So now that I'm here, let's get this match underway."
+                pf "Раз я здесь, давайте начнём матч."
                 show kaori dis at r3
                 voice "audio/voice/E1/D4/S2/Kaori/3.ogg"
-                ki "The match is later, right now we need to practice."
+                ki "Матч будет позже, сейчас нужно практиковаться."
                 show mayu smi at l3
-                "I nod."
+                "Я кивнул."
     
-            "It wasn't really a choice.":
-                pf "Yeah, I got your text. When's the match?" 
+            "Выбора особо не было.":
+                pf "Да, я получил сообщение. Когда матч?" 
                 show kaori thi at r3
                 voice "audio/voice/E1/D4/S2/Kaori/4.ogg"
-                ki "Later today. I wanted to get some practice in first." 
-                "I nod."
+                ki "Позже сегодня. Я хотела сначала попрактиковаться." 
+                "Я кивнул."
     
         show kaori mis at r3
         voice "audio/voice/E1/D4/S2/Kaori/5.ogg"
-        ki "Alright, head to your GEARs and turn on your simulators. Let's see what we're working with."
+        ki "Хорошо, идите в свои GEARs включи симуляторы. Посмотрим, с чем мы работаем."
                 
     elif (E1D2S3_MetKaoriWasRudeNoHelmet == 1) or (E1D2S11_ComingCleanAboutRunningOverKaori == 1):
         show shou smi at cc with dissolve
-        "I group with Shou at the hangar before we meet up with the rest of the team."
+        "Я встретился с Сё прежде, чем мы встретимся с остальной командой."
         show mayu neu at l3 with dissolve
         show kaori neu at r3 with dissolve:
             xzoom -1
         show shou hap at cc with dissolve
         "Shou smiles sheepishly as we turn to meet the girls."
         voice "audio/voice/E1/D4/S2/Shou/18.ogg"
-        ss "Um, hey, Kaori… So, remember when I said I found a fourth team member?"
+        ss "Эм, привет Каори… Помнишь, я говорил, что нашёл четвёртого члена команды?"
         show mayu cur at l3
         show kaori sur at r3 with dissolve
-        "Kaori points at me." 
+        "Каори указала на меня." 
         show kaori ang at r3 with dissolve
         show vein:
             xoffset 1175
@@ -98,7 +98,7 @@ label E1D4S2:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D4/S2/Kaori/16.ogg"
-        ki "No way. Not this guy. I thought you'd actually found someone useful."
+        ki "Ни за что. Не этот парень. Я думал, что ты действительно нашёл кого-то полезного."
         show mayu wor at l3
         show kaori ann at r3
         show shou sur at cc
@@ -108,39 +108,39 @@ label E1D4S2:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D4/S2/Shou/19.ogg"
-        ss "He is useful!" 
+        ss "Он полезен!" 
         voice "audio/voice/E1/D4/S2/Kaori/17.ogg"
-        ki "No."
+        ki "Нет."
         show shou ner at cc
         voice "audio/voice/E1/D4/S2/Shou/20.ogg"
-        ss "He's useful in that he'll be the reason they let us participate in the qualifiers."
+        ss "Он полезен тем, что он будет причиной, по которой они позволят нам участвовать в отборочных."
         show mayu neu at l3
         show kaori dis at r3 with dissolve
-        "Kaori glares at him and says nothing."
+        "Каори посмотрела на него и ничего не сказала."
         voice "audio/voice/E1/D4/S2/Kaori/18.ogg"
-        ki "We'll find someone else." 
+        ki "Мы найдём другого." 
         show mayu wor at l3 with dissolve
         voice "audio/voice/E1/D4/S2/Mayu/3.ogg"
-        ma "There isn't anyone else." 
+        ma "Больше никого нет." 
         show kaori neu at r3
         show shou cur at cc
-        "Shou and Kaori turn towards Mayu. She quickly lowers her eyes."
+        "Сё и Каори повернулись к Маю. Она быстро опустила глаза."
         show mayu ner at l3
         voice "audio/voice/E1/D4/S2/Mayu/4.ogg"
-        ma "If there were, we would have found them already…"
+        ma "Если бы были, мы бы уже нашли…"
         show shou smi at cc
         voice "audio/voice/E1/D4/S2/Shou/21.ogg"
-        ss "Truer words have never been spoken, my friend."
+        ss "Никогда не слышал более справедливых слов, подруга."
         show mayu smi at l3 with dissolve
         show kaori ann at r3 with dissolve
-        "She grins shyly, but Kaori crosses her arms defiantly."
+        "Она застенчиво усмехнулась, но Каори демонстративно скрестила руки"
     
         menu: 
-            "Apologise.": 
-                pf "I'm really sorry for how we met, but I know I'll be a good addition to the team." 
+            "Извиниться.": 
+                pf "Мне очень жаль за то, как мы встретились, но я знаю, что буду хорошим дополнением к команде." 
                 show shou hap at cc
                 voice "audio/voice/E1/D4/S2/Shou/22.ogg"
-                ss "See, he's a good guy!"
+                ss "Видишь, он хороший парень!"
                 show kaori dis at r3
                 show storm:
                     xoffset 1175
@@ -148,23 +148,23 @@ label E1D4S2:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S2/Kaori/19.ogg"
-                ki "If he were such a good guy he'd follow traffic laws." 
+                ki "Если бы он был таким хорошим парнем, он бы следовал правилам дорожного движения." 
                 show shou smi at cc
                 voice "audio/voice/E1/D4/S2/Shou/23.ogg"
-                ss "I'm sure he usually does."
-                pf "It was an accident, and one that I regret."
+                ss "Я уверен, что он обычно так и делает."
+                pf "Это был несчастный случай, и я сожалею об этом."
                 show shou neu at cc
                 voice "audio/voice/E1/D4/S2/Shou/24.ogg"
-                ss "Look, he's already apologised, and we need another team member. Do you want to fight in the qualifiers or not?"
-                "Kaori pauses."
+                ss "Послушай, он уже извинился, и нам нужен еще один член команды. Хочешь участвовать в отборочных или нет?"
+                "Каори задумалась."
                 show kaori neu with dissolve
                 voice "audio/voice/E1/D4/S2/Kaori/21.ogg"
-                ki "Fine, but you better do what you're told."
+                ki "Хорошо, но тебе лучше делать то, что тебе говорят."
                 show shou smi at cc
-                pf "Deal."
+                pf "По рукам."
     
-            "Trust me, I'm the only guy you need.": 
-                pf "Listen to Shou, I'm exactly what you need." 
+            "Поверь мне, я единственный парень, который тебе нужен.": 
+                pf "Слушай Сё, я именно то, что тебе нужно." 
                 show kaori ske at r3
                 show question:
                     xoffset 1175
@@ -172,13 +172,13 @@ label E1D4S2:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S2/Kaori/20.ogg"
-                ki "And how would you know what I need?" 
-                "I shoot her a dazzling smile." 
+                ki "И как ты узнаешь, что мне нужно?" 
+                "Я ослепительно улыбнулся ей." 
                 show mayu ner b1 at l3 with dissolve
                 show shou ner with dissolve
-                pf "I know what every woman needs."
+                pf "Я знаю, что нужно каждой женщине."
                 show kaori dis at r3
-                "Shou nudges me."
+                "Сё легко толкнул меня."
                 show shou wor at cc
                 show frightful:
                     xoffset 720
@@ -186,41 +186,41 @@ label E1D4S2:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S2/Shou/25.ogg"
-                ss "You're playing with fire, bro." 
-                pf "I don't mind being burned, especially by a redhead." 
+                ss "Ты играешь с огнём, бро." 
+                pf "Я не против сгореть, особенно рыжеволосой." 
                 show kaori ann at r3 with dissolve
-                "Kaori stares at me coldly."
+                "Каори холодно смотрела на меня."
                 voice "audio/voice/E1/D4/S2/Kaori/22.ogg"
-                ki "No, absolutely not."
+                ki "Нет, абсолютно нет."
                 show mayu wor at l3
                 show shou neu at cc
                 voice "audio/voice/E1/D4/S2/Shou/26.ogg"
-                ss "Kaori, come on, he's the only person left. Do you want to take part in the qualifiers or not?"
-                "Kaori pauses."
+                ss "Да ладно, Каори, он единственный оставшийся человек. Ты хочешь участвовать в отборочных, или нет?"
+                "Каори задумалась."
                 show kaori dis at r3
                 voice "audio/voice/E1/D4/S2/Kaori/23.ogg"
-                ki "Fine! Just don't mess up."
+                ki "Ладно! Просто не напортачь."
                 show mayu neu at l3
                 show shou smi at cc
-                pf "I never do."
+                pf "Никогда."
     
-            "You need me.": 
-                pf "We both want the same thing. I can help you get it." 
+            "Вам нужен я.": 
+                pf "Мы оба хотим одно и то же. Я могу помочь вам получить это." 
                 show kaori dis at r3
                 voice "audio/voice/E1/D4/S2/Kaori/24.ogg"
-                ki "I don't need you."
+                ki "Ты мне не нужен."
                 show mayu wor at l3
-                pf "Yes, you do."
+                pf "Ага, как скажешь."
                 show shou neu at cc
                 voice "audio/voice/E1/D4/S2/Shou/27.ogg"
-                ss "He's right, Kaori." 
+                ss "Он прав, Каори." 
                 show kaori ann at r3
                 show storm:
                     xoffset 1175
                     yoffset 110
                     xzoom .75
                     yzoom .75
-                "Kaori shoots Shou a deadly glare." 
+                "Каори смотрит на Сё смертельным взглядом." 
                 show shou ske with dissolve
                 show question:
                     xoffset 720
@@ -228,18 +228,18 @@ label E1D4S2:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S2/Shou/28.ogg"
-                ss "Do you want to participate in the qualifiers or not? If you don't accept him, we may as well go home now."
-                "She never loses her scowl, but nods reluctantly."
+                ss "Ты хочешь участвовать в отборочных, или нет? Если ты не примешь его, мы все можем спокойно пойти домой."
+                "Она не теряла хмурый вид, но неохотно кивнула."
                 show kaori dis at r3 with dissolve
                 voice "audio/voice/E1/D4/S2/Kaori/25.ogg"
-                ki "Fine you can join, but this doesn't change anything."
+                ki "Хорошо, ты можешь вступить. Но это ничего не меняет."
                 show mayu neu at l3
                 show shou smi at cc
-                pf "Fine." 
+                pf "Хорошо." 
     
         show shou hap with dissolve
         voice "audio/voice/E1/D4/S2/Shou/29.ogg"
-        ss "Alright! Now we're talking." 
+        ss "Ладно! Вот это уже другое дело." 
         show mayu cur at l3 with dissolve
         show dots:
             xoffset 230
@@ -252,25 +252,25 @@ label E1D4S2:
             yoffset 110
             xzoom .75
             yzoom .75
-        "All three of us stare silently at him." 
+        "Мы трое молча смотрели на него." 
         show shou cur with dissolve
         voice "audio/voice/E1/D4/S2/Shou/30.ogg"
-        ss "Or not."
+        ss "Или нет."
         show mayu smi at l3
         show kaori thi at r3
         voice "audio/voice/E1/D4/S2/Kaori/26.ogg"
-        ki "Stop wasting time, Shou! We need to practice."
-        pf "What about the qualifier?"
+        ki "Хватит тратить время, Сё! Нам нужно практиковаться."
+        pf "Что насчёт отборочных?"
         show shou smi at cc
         voice "audio/voice/E1/D4/S2/Shou/31.ogg"
-        ss "That's later."
+        ss "Об этом позже."
         show kaori mis at r3
         voice "audio/voice/E1/D4/S2/Kaori/27.ogg"
-        ki "We need to see what you've got. Hurry up and get in your GEAR so we can start a simulation."
+        ki "Нам нужно посмотреть на что ты годишься. Поторопись и залеазй в свой GEAR, чтобы мы начали симуляцию."
         
         
     elif (E1D2S11_JoinedTheTeam == 0) and (E1S2D10_AskedOtherTeams == 1):
-        "Shou is inside the hangar, eyeing his GEAR with a broad smile. {w}He glances over his shoulder and waves at me." 
+        "Сё был внутри ангара, Смотрел на свой GEAR широко улыбаясь. {w}Он посмотрел через плечо и помахал мне." 
         show shou hap at cc with dissolve
         show exclamation:
             xoffset 720
@@ -278,27 +278,27 @@ label E1D4S2:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D4/S2/Shou/4.ogg"
-        ss "Hey bro!"
-        pf "Hey! Where is everybody?" 
+        ss "Привет бро!"
+        pf "Привет! Где все?" 
         show shou smi at cc
         voice "audio/voice/E1/D4/S2/Shou/5.ogg"
-        ss "They'll be here soon. They're not as fast as you." 
+        ss "Скоро будут. Они не такие быстрые, как ты." 
     
         menu: 
-            "I wasn't far.":
-                pf "I was just finishing up class not far from here."
+            "Я был недалеко.":
+                pf "У меня просто были уроки недалеко отсюда."
                 show shou mis at cc
                 voice "audio/voice/E1/D4/S2/Shou/6.ogg"
-                ss "Cool, the girls should be here soon." 
+                ss "Круто, девоски скоро прибудут." 
     
-            "It's a gift." :
-                pf "What can I say? I'm skilled at many things."
+            "Это дар." :
+                pf "Что могу сказать? Я много в чём хорош."
                 show shou mis at cc
                 voice "audio/voice/E1/D4/S2/Shou/7.ogg"
-                ss "Oh yeah, like what?" 
-                pf "Maybe if you're lucky, you'll find out." 
+                ss "Да, и в чём же?" 
+                pf "Возможно, если тебе повезёт, то выяснишь." 
                 show shou hap at cc
-                "Shou laughs."
+                "Сё засмеялся."
                 show shou mis at cc
                 show note:
                     xoffset 720
@@ -306,16 +306,16 @@ label E1D4S2:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S2/Shou/8.ogg"
-                ss "Luckily the ladies didn't hear that."
+                ss "К счастью девушки этого не слышали."
     
-            "I'm ready for the qualifiers.":
-                pf "When's the match?"
+            "Я готов к отборочным.":
+                pf "Когда матч?"
                 show shou mis at cc
                 voice "audio/voice/E1/D4/S2/Shou/9.ogg"
-                ss "Whoa, someone's eager. Let's wait for the rest of the team though, so we can talk about it together." 
-                pf "Okay." 
+                ss "Вау, кто-то нетерпелив. Давайте подождем остальную часть команды, чтобы мы могли поговорить об этом вместе." 
+                pf "Окей." 
     
-        pf "Have you spoken to the rest of the team yet?" 
+        pf "ты уже говорил с остальной частью команды?" 
         show shou thi at cc with dissolve
         show drop:
             xoffset 720
@@ -323,23 +323,23 @@ label E1D4S2:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D4/S2/Shou/10.ogg"
-        ss "So, about that--"
-        "Suddenly, we hear a voice behind us."
+        ss "Ну, насчёт этого--"
+        "Внезапно, мы услышали голос позади нас."
         show mayu neu at l3 with dissolve
         show kaori neu at r3 with dissolve:
             xzoom -1
         show shou neu at cc
         voice "audio/voice/E1/D4/S2/Kaori/6.ogg"
-        ki "Shou, is this the new teammate you were talking about?" 
+        ki "Сё, это новый член команды, о котором ты говорил?" 
         show kaori ske at r3 with dissolve
-        "She gives me a once over, then sighs."
+        "Она взглянула на меня, затем вздохнула."
         voice "audio/voice/E1/D4/S2/Kaori/7.ogg"
-        ki "I suppose you'll do."
+        ki "Полагаю, ты подойдёшь."
         show shou mis at cc
-        pf "Thanks?"
+        pf "Спасибо?"
         show mayu smi at l3
         voice "audio/voice/E1/D4/S2/Shou/11.ogg"
-        ss "See? I told you you'd like him!"
+        ss "Видишь? Я говорил, что он тебе понравится!"
         show kaori thi at r3
         show drop:
             xoffset 1175
@@ -347,9 +347,9 @@ label E1D4S2:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D4/S2/Kaori/8.ogg"
-        ki "It's not like we're swimming in offers."
+        ki "Не то чтобы мы купались в предложениях."
         show shou hap at cc
-        "Shou ignores her and claps me on the back."
+        "Сё игнорировал её ихлопнул меня по спине."
         show kaori neu at r3
         show note:
             xoffset 720
@@ -357,55 +357,55 @@ label E1D4S2:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D4/S2/Shou/12.ogg"
-        ss "Welcome aboard, broseph!"
-        "He points to the dark haired girl, who gives me a small smile."
+        ss "Добро пожаловать на борт, братишка!"
+        "Он указывает на темноволосую девушку, которая слегка улыбалась мне."
         show shou smi at cc
         voice "audio/voice/E1/D4/S2/Shou/13.ogg"
-        ss "This is Mayu. The last member on our team."
+        ss "Это Маю. Последний член нашей команды."
     
         if (E1D2S4_MayuGaveDirections == 1):
-            "She looks familiar…"
-            pf "Oh yeah! You're that pilot who gave me directions."
+            "Она выглядит знакомо…"
+            pf "Точно! ты же пилот, которая показала мне направление."
             show mayu hap b1 at l3 with dissolve
             show regBlush:
                 xoffset 230
                 yoffset 135
                 xzoom .75
                 yzoom .75
-            "She nods, and her smile broadens."
+            "Она кивнула, и её улыбка расширилась."
             voice "audio/voice/E1/D4/S2/Mayu/1.ogg"
-            ma "It seems like they helped." 
+            ma "Похоже это очень помогло." 
             show mayu smi at l3 with dissolve
-            pf "They did, thanks again."
+            pf "Да, ещё раз спасибо."
     
         else:
-            "She nods."
+            "Она кивнула."
             voice "audio/voice/E1/D4/S2/Mayu/2.ogg"
-            ma "Glad to have you on our team."
+            ma "Рада что ты в нашей команде."
     
-        pf "Thanks! So, now what?"
+        pf "Спасибо! Так, что теперь?"
         show kaori mis at r3
         voice "audio/voice/E1/D4/S2/Kaori/9.ogg"
-        ki "Now we practice."
+        ki "Теперь мы практикуемся."
         show mayu neu at l3
     
         menu: 
-            "What about the match?":
-                pf "Isn't it time for the qualifiers?"
+            "Что насчёт матча?":
+                pf "Разве уже не время отборочных?"
                 show kaori neu at r3
                 voice "audio/voice/E1/D4/S2/Kaori/10.ogg"
-                ki "No, that's later today, and we have to test your skill level first." 
-                pf "Got it."
+                ki "Нет, сегодня позже, и мы должны сначала проверить твои умения." 
+                pf "Понятно."
     
-            "Take the lead!": 
-                pf "Excellent! I'll show you some of my moves." 
+            "Взять инициативу!": 
+                pf "Отлично! Я покажу вам парочку своих движений." 
                 show kaori dis at r3
                 voice "audio/voice/E1/D4/S2/Kaori/11.ogg"
-                ki "No, you'll stay back." 
-                pf "If you like… I can work from behind." 
+                ki "Нет, ты будешь позади." 
+                pf "Раз так хочешь… Я могу работать позади." 
                 show shou hap at cc with dissolve
                 voice "audio/voice/E1/D4/S2/Shou/14.ogg"
-                "Shou snorts."
+                "Сё фыркнул."
                 show mayu cur b1 at l3
                 show kaori ann at r3
                 show question:
@@ -419,32 +419,32 @@ label E1D4S2:
                     yoffset 110
                     xzoom .75
                     yzoom .75
-                ki "What?!"
+                ki "Что?!"
                 show shou smi at cc
                 voice "audio/voice/E1/D4/S2/Shou/15.ogg"
-                ss "Nothing."
+                ss "Ничего."
                 show mayu neu at l3
                 show kaori neu at r3
     
-            "I don't want to waste time.":
-                pf "When's our qualifier?"
+            "Не хочк тратить время.":
+                pf "Когда наши отборочные?"
                 voice "audio/voice/E1/D4/S2/Shou/16.ogg"
-                ss "Later today." 
-                pf "How late?"
+                ss "Сегодня позже." 
+                pf "Насколько позже?"
                 show kaori neu at r3
                 voice "audio/voice/E1/D4/S2/Kaori/13.ogg"
-                ki "Late enough that we have time to practice. I need to assess your skill level so I know what we're working with."
-                pf "Fine."
+                ki "Достаточно поздно, чтобы у нас было время попрактиковаться. Мне нужно оценить твои умения, чтобы я знала, с чем мы работаем."
+                pf "Хорошо."
     
         show shou hap at cc with dissolve
-        "Shou glances at all of us, then breaks into a wide grin." 
+        "Сё посмотрел на нас всех, затем широко улыбнулся." 
         voice "audio/voice/E1/D4/S2/Shou/17.ogg"
-        ss "Alright, we're in business! Let's do this."
+        ss "Отлично, мы в деле! Сделаем это."
         show mayu smi at l3
         show kaori thi at r3
-        "Mayu hides a smile while Kaori rolls her eyes."
+        "Маю прятала улыбку, а Каори закатила глаза."
         voice "audio/voice/E1/D4/S2/Kaori/14.ogg"
-        ki "Quit wasting time. Let's get into our GEAR and start a simulation."
+        ki "Хватит тратить время. Залезайте в свои GEAR и начинайте симуляцию."
         
     
     jump E1D4S3
