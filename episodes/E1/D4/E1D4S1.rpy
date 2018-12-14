@@ -5,39 +5,39 @@ label E1D4S1:
     play ambient "audio/ambience/Morning.ogg" fadein 1
     $renpy.pause(2.5)
     play sound [ "audio/sfx/Technology/Phone Alarm.ogg", "audio/sfx/Technology/Phone Alarm.ogg", "audio/sfx/Technology/Phone Alarm.ogg" ]
-    "Per usual, I'm awoken by the blare of my alarm, but today I don't hesitate to get out of bed."
+    "Как обычно, я был разбужен рёвом своего будильника, но сегодня я не колеблясь встал с постели."
     ##NEW SOUND NEEDED##play sound "audio/sfx/Human/light_punch.ogg" fadeout 1
     scene bg homekaito myroom day with fade
-    "I have a really busy day ahead of me and can't afford to lounge around."
+    "У меня сегодня очень напряжённый день и я не могу позволить себе околачиваться."
     play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 1
     stop sound fadeout 3.0
-    "I get dressed and head downstairs. As I pass Nikki's room, I notice her door is open and her room is empty. {w}She must be in the kitchen."
+    "Я оделся и спустился вниз. Проходя мимо комнаты Никки, я заметил, что её дверь открыта, а в комнате пусто.. {w}Должно быть, она на кухне."
 
     scene bg homekaito main day with fade
     
-    "When I reach the kitchen, no one is there. {w}Uncle Kaito is always gone before I wake up, but usually Nikki is around."
-    "There must be something going on at her school today which is why she left early."
+    "Дойдя до кухни, я обнаружил, что никого нет. {w}Дядя Кайто как всегда ушел прежде, чем я проснулся, но обычно Никки находилась дома."
+    "Наверное что-то происходит в её школе сегодня и именно поэтому она ушла рано."
     
-    "I fix myself a quick breakfast and scarf it down. {w}Then I hop on my bike and head to school."
+    "Я сварганил себе завтрак и проглотил его. {w}Затем я запрыгнул на свой байк и напраился в академию."
     stop ambient fadeout 3
     scene black with fade
     $renpy.pause(1)
     
-    "Once I reach campus, I navigate to my class easily. {w}Hey! I'm getting used to this place."
+    "Достигнув кампуса, я с лёгкостью дошёл до своего класса. {w}Эй! А я привык к этому месту."
     
     scene bg campus auditorium day with fade
     play ambient "audio/ambience/Ace Academy Library.ogg" fadein 1
     $renpy.pause(1)
     
     if (E1D2S2_talkwithyuunayes == 1):
-        "As soon as I walk into class, I spot Yuuna seated in the front corner of the room."
-        "The desk beside her is empty so I head over. When I get close, I notice a bag on the chair."
-        pf "Hey, anyone sitting here?"
+        "Зайдя в класс, я заметил Юну, сидящую в передней части класса."
+        "Стол рядом с ней был пуст, поэтому я подошёл к ней. Приблизившись, я заметил чью-то сумку на стуле."
+        pf "Привет, хдесь не занято?"
         
         show yuuna smi at cc with dissolve
         
         if (E1D2S2_YuunaComesWithYouPass == 1): #She knows your schedule if you've gone this far with her
-            "She smiles when she notices me and removes the bag."
+            "Она улыбнулась, когда заметив меня и убрала сумку."
             show yuuna hap at cc
             show note:
                 xoffset 720
@@ -45,14 +45,14 @@ label E1D4S1:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S1/Yuuna/1.ogg"
-            ym "No, I was saving it for you."
+            ym "Нет, я придержала место для тебя."
         
         else:
-            "She smiles shaking her head and removes the bag."
+            "Она улыбнулась качая головой и убрала сумку."
         
         show yuuna smi at cc
-        "My smile matches hers as I plop down beside her."
-        pf "Thanks!"
+        "Я улыбнулся ей в ответ, пока садился."
+        pf "Спасибо!"
         show yuuna smi b1 at cc with dissolve
         show regBlush:
             xoffset 720
@@ -60,31 +60,31 @@ label E1D4S1:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D4/S1/Yuuna/2.ogg"
-        ym "No problem."
-        pf "So, what do you think the professor will be like?"
+        ym "Без проблем."
+        pf "Что ты думаешь о нашем преподавателе?"
         show yuuna cur at cc with dissolve
         voice "audio/voice/E1/D4/S1/Yuuna/3.ogg"
-        ym "I've heard she's pretty good. She's tough but fair."
-        pf "That sounds promising."
+        ym "Я слышала, что она очень хороша. Она строгая, но честная."
+        pf "Звучит многообещающе."
         hide yuuna with dissolve
-        "Before she can respond, the professor enters the room and heads straight for the front desk."
+        "Прежде чем она успела ответить, профессор вошла в комнату и направилась прямо к доске."
     
     else:
-        "The classroom is mostly full by the time I arrive, and all of the seats in the back are taken."
-        "I spot an empty seat close to the window by the front of the room."
+        "К тому времени когда я пришёл в кабинет, я замечаю, что он в основном заполнен и все сиденья сзади заняты."
+        "Я приметил пустое место рядом с окном в передней части класса."
         show yuuna neu at cc with dissolve
-        "As I sit down, the girl beside me, with bright pink hair, glances briefly in my direction."
+        "Когда я сел, девушка рядом со мной, с ярко-розовыми волосами, ненадолго заострила на мне внимание."
         hide yuuna with dissolve
-        "A few minutes later, the professor enters the room and heads straight for the front desk."
+        "Через несколько минут профессор вошла в комнату и направилась прямо к доске."
     
     show professorF extra at cc with dissolve
     stop music fadeout 3
     voice "audio/voice/E1/D4/S1/Professor/1.ogg"
-    prof2f "Welcome to History 201. Today we'll be covering…"
+    prof2f "Добро пожаловать в класс Истории 201. Сегодня мы будем освещать…"
     
     scene black with fade
     $renpy.pause(1)
-    "The lesson lasts a while but the material is not bad."
+    "Прошло не так много времени, а материал был не плох."
     $renpy.pause(2.5)
     scene bg campus auditorium day with fade
     
@@ -93,11 +93,11 @@ label E1D4S1:
     show professorF extra at cc with dissolve
     
     voice "audio/voice/E1/D4/S1/Professor/2.ogg"
-    prof2f "We only have a few minutes before class ends, but your first assignment will be a group project on a case study of your choice. Since it's the first day of class, I'll be assigning your partners."
+    prof2f "У нас осталось всего несколько минут до окончания занятий, ваше первое задание будет групповым проектом по тематическому исследованию на ваш выбор. Поскольку это первый день занятий, я буду назначать вам партнеров."
     play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 1
-    "She points to pairs of students sitting next to each other. {w}Finally, she reaches me."
+    "Она объединяла студентов, сидящих рядом друг с другом. {w}Наконец, она дошла и до меня."
     voice "audio/voice/E1/D4/S1/Professor/3.ogg"
-    prof2f "You and you are partners."
+    prof2f "Ты и ты отвечаете за работу вместе."
     hide professorF extra with dissolve
     show yuuna cur at cc with dissolve
     show exclamation:
@@ -107,277 +107,277 @@ label E1D4S1:
         yzoom .75
     
     if (E1D2S2_talkwithyuunayes == 1):
-        "She points to Yuuna and I."
+        "Она указала на Юну и меня."
         show yuuna smi at cc with dissolve
-        "We glance at each other and grin. {w}Working with her should be fun."
+        "Мы посмотрели друг на друга и усмехнулись. {w}Работа с ней обещает быть веселой."
     
     else:
-        "She points to me and the pink-haired girl beside me."
+        "Она указала на меня и розоволосую девушку рядом со мной."
         show yuuna smi at cc with dissolve
-        "We look at each other and she gives me a friendly smile. {w}She seems nice enough."
+        "Мы посмотрели друг на друга, и она дружески улыбнулась. {w}Она казалась достаточно милой."
         
     show yuuna neu at cc
     voice "audio/voice/E1/D4/S1/Professor/4.ogg"
-    prof2f "Your project will be due next week. Class dismissed!"
+    prof2f "Ваш проект должен быть закончен к следующей неделе. Класс, вы свободны!"
     play sound "audio/sfx/Human/Class End.ogg" fadeout 1
-    "The classroom is abuzz with the shuffle of students. {w}I turn towards my partner."
+    "Класс загудел и пришёл в движение. {w}Я повернулся к своей партнёрше."
     
     if (E1D2S2_talkwithyuunayes == 1):
-        pf "I'm looking forward to working with you."
+        pf "Я с нетерпением жду совместной работы с тобой."
         show yuuna hap at cc with dissolve
-        "She beams."
+        "Она засияла."
         voice "audio/voice/E1/D4/S1/Yuuna/4.ogg"
-        ym "Same here. What do you think our topic should be?"
+        ym "Я тоже. Как ты думаешь, какую нам выбрать тему?"
     
     else:
-        pf "Hi, I'm [pfirst]."
+        pf "Привет, я [pfirst]."
         show yuuna smi at cc
-        "She smiles warmly."
+        "Она тепло улыбнулась."
         voice "audio/voice/E1/D4/S1/Yuuna/5.ogg"
-        ym "I'm Yuuna. Pleased to meet you."
+        ym "Я Юна. Рада познакомиться с тобой."
         show yuuna cur at cc
-        "Her eyes flick to my stripes."
+        "Ее глаза скользили по моим полосам на одежде."
         voice "audio/voice/E1/D4/S1/Yuuna/6.ogg"
-        ym "You must be new."
-        pf "Yeah, how did you know?"
+        ym "Ты должно быть новенький."
+        pf "Да, как ты узнала?"
         show yuuna smi at cc
         voice "audio/voice/E1/D4/S1/Yuuna/7.ogg"
-        ym "I tend to know most of the pilots here."
-        "Although her uniform fits her like a glove, it is severely lacking in stripes."
-        pf "You aren't a pilot, are you?"
+        ym "Я, как правило, знаю большинство пилотов здесь."
+        "Хоть ей и шла та форма что сейчас на ней, она лишена тех же полос что и у меня."
+        pf "Ты не пилот, не так ли?"
         show yuuna hap at cc
-        "She laughs lightly."
+        "Она слегка смеялась."
         voice "audio/voice/E1/D4/S1/Yuuna/8.ogg"
-        ym "No, I've just worked with a lot of them. I'm a Pilot Health and Physiotherapy student."
+        ym "Нет, я просто работаю со многими из пилотов. Я студентка физиотерапии и здравоохранения пилотов."
         show yuuna smi at cc
         pf "That's a mouthful."
         show yuuna hap at cc
-        "She laughs again."
+        "Она снова смеялась."
         voice "audio/voice/E1/D4/S1/Yuuna/9.ogg"
-        ym "Yeah, PHPT for short."
+        ym "Да, ФиЗП для краткости."
         show yuuna smi at cc
         voice "audio/voice/E1/D4/S1/Yuuna/10.ogg"
-        ym "Anyway, what do you think our topic should be?"
+        ym "Но вернёмся к делу, как ты думаешь, какую нам выбрать тему?"
         
     show yuuna neu at cc
     pf "Hm…"
     
     menu:
-        "\"Pioneering Pilots\".":
+        "\"Пионеры-пилоты\".":
             $ E1D4S1_Pioneer = 1
-            pf "What if we focused on the pilots who essentially made piloting what it is today possible?"
-            "Wait--she's not a pilot..."
-            pf "Of course, if you don't want to focus on pilots we don't have to."
+            pf "Что, если мы сфокусируемся на пилотах, которые, в буквальном смысле, создали пилотирование таким, каким мы его видем сейчас?"
+            "Минутку--она же не пилот..."
+            pf "Конечно, если ты не хочешь выбирать эту тему, то нам не обязательно писать именно о них."
             show yuuna smi at cc
             voice "audio/voice/E1/D4/S1/Yuuna/11.ogg"
-            ym "I don't mind. After all, what I'm studying is still relevant to pilots. It's a good idea. We can even begin with the early pilots who helped develop the first militarized GEAR."
-            pf "My thoughts exactly."
+            ym "Я не против. В конце концов, то, что я изучаю, по-прежнему связано с пилотами. Это хорошая идея. Мы можем даже начать с ранних пилотов, которые помогли разработать первый военизированный GEAR."
+            pf "Я думаю о том же."
     
-        "The evolution of GEARs.":
-            pf "What if we focused on GEARs throughout the ages?"
+        "Эволюция GEAR.":
+            pf "Что, если мы сосредоточимся на GEAR'ах прошлых лет?"
             show yuuna smi at cc
             voice "audio/voice/E1/D4/S1/Yuuna/12.ogg"
-            ym "Good idea! We can begin with the military prototypes and gradually show how the same technology has changed and developed into the commercial and entertainment vessels we use today."
-            pf "Sounds like a solid plan to me."
+            ym "Отличная идея! Мы можем начать с военных прототипов и постепенно показать, как одна и та же технология изменилась и превратилась в коммерческие и развлекательные механизмы, которые мы используем сегодня."
+            pf "Звучит как план."
     
         "{color=#00ff00}{b}The psychology of Cenorobotics.{/b}{/color}" if (MCStory == 3):
             jump E1D4S1_MCStory1
     
-        "The psychology of Cenorobotics." if (MCStory != 3):
+        "Психология Cenorobotics." if (MCStory != 3):
             label E1D4S1_MCStory1:
-            pf "What if we focused more on the psychological impact of the development and growth of Cenorobotics as a field?"
+            pf "Что, если мы сосредоточимся на психологическом воздействии развития и роста Cenorobotics как области?"
             show yuuna cur at cc with dissolve
             $renpy.pause(1)
             show yuuna hap at cc with dissolve
-            "Her face lights up."
+            "Ее лицо озарилось."
             show note:
                 xoffset 720
                 yoffset 100
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S1/Yuuna/13.ogg"
-            ym "Absolutely! This could also delve into social impact and how society is adapting to the growth of this field, such as the development of new specialities--like studies in pilot health."
-            pf "That should be right up your alley."
+            ym "Абсолютно! Это также может повлиять на социальное воздействие и на то, как общество адаптируется к росту в этой области, например, к разработке новых специальностей, таких как исследования в области здравоохранения пилотов."
+            pf "Это должно быть по твоей части."
             show yuuna smi at cc
             voice "audio/voice/E1/D4/S1/Yuuna/14.ogg"
-            ym "What about you? Are you okay with that?"
-            pf "It sounds interesting to me too."
+            ym "Что насчёт тебя? Тебя устраивает?"
+            pf "Это звучит для меня интересно."
     
-        "I don't know. It's all the same to me.":
+        "Не знаю. Для меня это одно и тоже.":
             #Yuuna doesn't like this answer much
-            pf "The topic doesn't matter to me. Anything would be fine."
+            pf "Тема не имеет для меня значения. Всё будет хорошо."
             show yuuna ner at cc with dissolve
             voice "audio/voice/E1/D4/S1/Yuuna/15.ogg"
-            ym "Oh."
-            pf "What about you? You have a topic you want to do?"
+            ym "Ох."
+            pf "Что насчёт тебя? Есть инетересующая тебя тема?"
             show yuuna thi at cc
             voice "audio/voice/E1/D4/S1/Yuuna/16.ogg"
-            ym "Well--"
+            ym "Ну--"
             show dots:
                 xoffset 720
                 yoffset 100
                 xzoom .75
                 yzoom .75
-            "She pauses, then shakes her head."
+            "Она остановилась, затем покачала головой."
             show yuuna neu at cc
             voice "audio/voice/E1/D4/S1/Yuuna/17.ogg"
-            ym "Never mind. We don't have to decide right now. Let's think about it and discuss it later."
-            pf "Are you sure? It seems like you have an idea in mind."
+            ym "Ничего. Нам не нужно решать прямо сейчас. Давай подумаем об этом и обсудим это позже."
+            pf "Ты уверена? Похоже у тебя есть идея."
             show yuuna smi at cc
             voice "audio/voice/E1/D4/S1/Yuuna/18.ogg"
-            ym "Sort of. Maybe we could focus on the movement for greater awareness in making pilot health and safety a key social concern, which would also inevitably highlight some of the common dangers and misuses of GEARs."
-            "I shrug."
-            pf "Sounds good to me."
+            ym "Вроде. Возможно, мы могли бы сосредоточиться на движении за повышение осведомлённости, чтобы сделать здоровье и безопасность пилота ключевой социальной проблемой, что также неизбежно высветит некоторые из общих опасностей и неправильного использования GEAR."
+            "Я пожал плечами."
+            pf "Звучит неплохо."
             
     stop ambient fadeout 3
     show yuuna hap at cc with dissolve
-    "Yuuna smiles."
+    "Юна улыбнулась."
     voice "audio/voice/E1/D4/S1/Yuuna/19.ogg"
-    ym "It sounds like we have our topic."
-    pf "Yeah, I'm feeling good about this."
+    ym "Похоже, у нас есть тема."
+    pf "Да, у меня хорошее чувство насчёт этого."
     show yuuna smi at cc
     voice "audio/voice/E1/D4/S1/Yuuna/20.ogg"
-    ym "Me too. We're going to have a great project."
-    "By this time, most of the class has already caught up with their partners and left the room. {w}We should probably do the same. There might be another class that needs this room."
+    ym "У меня тоже. У нас будет отличный проект."
+    "К этому времени большая часть класса уже объединилась со своими партнёрами и покинула комнату. {w}Мы може должны идти. Возможно, там другой класс, которому нужна эта комната."
     
     if (E1D2S5_GotYuunasNumber == 1):
-        pf "Cool, so I should probably head out, but I'm sure I'll see you again soon."
+        pf "Круто, так что я, наверное, должен идти, но я уверен, что скоро увидимся."
         show yuuna hap at cc
         voice "audio/voice/E1/D4/S1/Yuuna/21.ogg"
-        ym "Sure, let me know when you're free to work on the project."
-        pf "Will do."
+        ym "Конечно, дай знать, когда сможешь работать над проектом."
+        pf "Сделаю."
         show yuuna smi at cc
-        "She smiles as we both gather our things."
+        "Она улыбнулась, пока мы оба собирали вещи."
     
     else:
-        pf "Anyway, we should probably get going."
+        pf "В любом случае, мы должны идти."
         voice "audio/voice/E1/D4/S1/Yuuna/22.ogg"
-        ym "Yeah, you're right."
-        "I begin to gather my things when Yuuna interrupts me."
+        ym "Да, ты прав."
+        "Я начал собирать вещи, когда Юна прервала меня."
         show yuuna cur with dissolve
         voice "audio/voice/E1/D4/S1/Yuuna/23.ogg"
-        ym "Wait, may I have your number?"
+        ym "Подожди, могу я узнать твой номер?"
     
         menu:
-            "Did a girl just ask me for my number?":
-                pf "What?"
+            "Девушка чтолько что спросила мой номер?":
+                pf "Что?"
                 show yuuna smi at cc
                 voice "audio/voice/E1/D4/S1/Yuuna/24.ogg"
-                ym "Would you like to exchange numbers?"
-                "Is this real life? I surreptitiously pinch myself and try not to flinch from the pain. {w}Definitely not a dream."
+                ym "Хочешь обменяться номерами?"
+                "Это реальность? Я скрытно ущипнул себя, стараясь не крикнуть от боли. {w}Определённо не сон."
                 show yuuna sur b1 at cc with dissolve
                 show shoBlush:
                     xoffset 720
                     yoffset 100
                     xzoom .75
                     yzoom .75
-                "Yuuna blushes under my continued gaze."
+                "Юуна краснела под моим постоянным взглядом."
                 voice "audio/voice/E1/D4/S1/Yuuna/25.ogg"
-                ym "F-For the project!"
-                pf "Oh, right, the project that we're working on together."
+                ym "Д-Для проекта!"
+                pf "А, точно, проект, над которым мы вместе работаем."
                 show yuuna smi b1 at cc with dissolve
                 voice "audio/voice/E1/D4/S1/Yuuna/26.ogg"
-                ym "Yes."
-                "I knew it was too good to be true."
-                pf "Sure."
+                ym "Да."
+                "Я знал, что это слишком хорошо, чтобы быть правдой."
+                pf "Конечно."
                 show yuuna smi at cc with dissolve
-                "She smiles."
+                "Она улыбнулась."
     
-            "*Smirk*":
-                "No lady can resist my boyish charm! I flash her a winning smile."
-                pf "For you? Of course."
+            "*Ухмыльнуться*":
+                "Ни одна леди не может устоять перед моим мужским очарованием! Я озарил её победной улыбкой."
+                pf "Для тебя? Конечно."
                 show yuuna cur b1 at cc with dissolve
-                "Yuuna blushes."
+                "Юна покраснела."
                 voice "audio/voice/E1/D4/S1/Yuuna/27.ogg"
-                ym "It's just so we can work on the project."
-                pf "Mmhm… for the project."
-                "I wink at her."
-                pf "I get it."
+                ym "Просто так мы сможем работать над проектом."
+                pf "Ммммм… над проектом."
+                "Я подмигнул ей."
+                pf "Я понял."
                 show yuuna smi b1 at cc
                 show regBlush:
                     xoffset 720
                     yoffset 100
                     xzoom .75
                     yzoom .75
-                "She blinks and gives me a hesitant smile."
+                "Она моргнула и нерешительно улыбнулась."
     
-            "Why does she want to know?":
-                pf "What?"
+            "Зачем ей знать?":
+                pf "Что?"
                 show yuuna smi at cc
                 voice "audio/voice/E1/D4/S1/Yuuna/28.ogg"
-                ym "Um, would you like to exchange numbers?"
-                "I narrow my eyes."
-                pf "Why?"
+                ym "Эм, хочешь обменяться номерами?"
+                "Я нахмурился."
+                pf "Зачем?"
                 show yuuna cur b1 at cc with dissolve
-                "Her cheeks steadily turn red."
+                "Её щёки краснели."
                 show shoBlush:
                     xoffset 720
                     yoffset 100
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S1/Yuuna/25.ogg"
-                ym "For the project!"
-                pf "Oh… Sure."
+                ym "Для проекта!"
+                pf "О… Конечно."
                 show yuuna smi b1 at cc
-                "She smiles."
+                "Она улыбнулась."
     
-            "Give my number.":
+            "Дать свой номер.":
                 pf "867-5309."
                 show yuuna ske at cc with dissolve
-                "Yuuna blinks and furrows her brow."
+                "Юна моргала и морщила лоб."
                 show question:
                     xoffset 720
                     yoffset 100
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S1/Yuuna/30.ogg"
-                ym "Um, aren't you missing some numbers?"
+                ym "Хм, ты не пропустил некоторые цифры?"
                 show yuuna thi at cc
-                "She gives me a strange look."
+                "Она странно посмотрела на меня."
                 voice "audio/voice/E1/D4/S1/Yuuna/31.ogg"
-                ym "If you don't want to give me your number I'll understand."
-                pf "Sorry! That was an old American number. Let me give you my new number."
+                ym "Если ты не хочешь дать свой номер, я пойму."
+                pf "Прости! Это был старый номер. Позволь дать тебе новый номер."
                 show yuuna cur at cc
                 voice "audio/voice/E1/D4/S1/Yuuna/32.ogg"
-                ym "Oh, okay, sure."
+                ym "Да, ладно, конечно."
     
         show yuuna smi with dissolve
-        "We quickly exchange numbers and gather our things." 
+        "Мы быстро обменялись номерами и собрали вещи." 
     
     scene black with fade
     $renpy.pause(1)
     play sound "audio/sfx/Technology/Phone Vibration Once.ogg" fadein 1 fadeout 1
     $renpy.pause(1)
     
-    "My phone vibrates as we leave the classroom. {w}I glance at her, wondering if she already sent me a text, but she doesn't have her phone out."
-    "When I pull up my phone, I see an unread message from Shou."
-    "{i}Big news Broseph! We are in first phase of qualifier matches. Team is meeting at the hangar.{/i}"
+    "Когда мы вышли из класса мой телефон завибрировал. {w}Я глянул на неё, интересуясь, вдруг она уже прислала мне сообщение, но у неё в руках не было телефона."
+    "Когда я вытащил телефон, то увидел сообщение от Сё."
+    "{i}Большие новости, братишка! Мы находимся на первом этапе квалификационных матчей. Команда встречается в ангаре.{/i}"
     
     if (E1D2S11_JoinedTheTeam == 1):
-        "Having my first official team meeting should be interesting. {w}Although I feel a couple of flutters in my stomach, I'm more excited than nervous to see everyone."
+        "Первая официальная встреча команты должна быть интересной. {w}Хотя я чувствую пару трепетаний в животе, я был более взволнован, чем нервничал увидеть всех."
     
     elif (E1D2S3_MetKaoriWasRudeNoHelmet == 1):
-        "My stomach twists into a tight knot. I wonder how Kaori will react when she sees me. {w}I hope Shou knows what he's doing..."
+        "Мой живот скручивался в тугой узел. Интересно, как Каори отреагирует, когда увидит меня. {w}Надеюсь, Сё знает, что делает..."
         
     elif (E1D2S11_JoinedTheTeam == 0) and (E1S2D10_AskedOtherTeams == 1):
-        "I wonder how the others are. {w}I suppose I'll be meeting everyone soon enough."
+        "Интересно, как там другие. {w}Полагаю, что скоро встречу всех."
         
     play ambient "audio/ambience/Campus.ogg" fadein 1
     scene bg campus building day with fade
     
-    "Once we're outside, Yuuna turns towards me."
+    "Ка только мы вышли на улицу, Юна повернулась ко мне."
     
     show yuuna smi at cc with dissolve
     voice "audio/voice/E1/D4/S1/Yuuna/33.ogg"
-    ym "Do you have any more classes today?"
-    pf "No, but I'm headed for the hangar. I've got to meet my team before the qualifiers."
-    "She nods."
+    ym "У тебя есть ещё занятия сегодня?"
+    pf "Нет, но я иду в ангар. Нужно встретиться с командой перед квалификацией."
+    "Она кивнула."
     show yuuna hap at cc
     voice "audio/voice/E1/D4/S1/Yuuna/34.ogg"
-    ym "Good luck!"
-    pf "Thanks!"
+    ym "Удачи!"
+    pf "Спасибо!"
     hide yuuna with dissolve
-    "We wave and head our separate ways."
+    "Мы помахали друг другу и разошлись."
     
     stop music fadeout 3.0
     scene black with fade
