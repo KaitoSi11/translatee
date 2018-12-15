@@ -1,67 +1,67 @@
 label E1D5S6:
 
-"I wonder what Mayu is up to."
+"Интересно, что делает Маю."
 play sound "audio/sfx/Technology/Phone Dial.ogg"
-"I dial her number..."
+"Я набрал её номер..."
 play sound "audio/sfx/Technology/Phone Answer.ogg"
-"...and she answers almost immediately."
+"...и она почти сразу ответила."
 voice "audio/voice/E1/D5/S6/Mayu/1.ogg"
-ma "Hello?"
-pf "Uh, hi. It's [pfirst]."
+ma "Алло?"
+pf "О, привет, это [pfirst]."
 voice "audio/voice/E1/D5/S6/Mayu/2.ogg"
-ma "Oh, hi."
-pf "Hi."
+ma "Ох, привет."
+pf "Привет."
 voice "audio/voice/E1/D5/S6/Mayu/3.ogg"
-ma "...Hi."
-"We pause."
+ma "...Привет."
+"Мы замолкли."
 
 stop music fadeout 3.0
 menu:
-    "... I didn't think this through.":
-        pf "... So, uh… How are you?"
+    "... Об этом я не думал.":
+        pf "... Так, эм… Как ты?"
         voice "audio/voice/E1/D5/S6/Mayu/4.ogg"
-        ma "Good, thank you, and you?"
-        pf "Good, good."
+        ma "Хорошо, спасибо, а ты?"
+        pf "Хорошо, хорошо."
         voice "audio/voice/E1/D5/S6/Mayu/5.ogg"
         ma "..."
-        "I can practically hear her confusion."
+        "Я практически слышал её замешательство."
         voice "audio/voice/E1/D5/S6/Mayu/6.ogg"
-        ma "Um... are you looking for Shou?"
-        pf "Uh, well--"
+        ma "Эм... ты ищешь Сё?"
+        pf "А, ну--"
         play music "audio/music/Isnt This Nice (GAME VERSION).ogg" fadein 3.0
-        "I'm interrupted by a clamouring in the background and can make out a muffled Shou."
+        "Меня прервал шум на заднем плане, и я мог разобрать приглушённый голос Сё."
         voice "audio/voice/E1/D5/S6/Shou/4.ogg"
-        ss "Me? Is it for me?"
-        "His voice becomes clear."
+        ss "Меня? Это меня?"
+        "Его голос стал разборчивым."
         voice "audio/voice/E1/D5/S6/Shou/5.ogg"
-        ss "Sup, broseph!"
-        pf "Oh hey, Shou. Are you and Mayu hanging out?"
+        ss "Как оно, братан!"
+        pf "О, привет Сё. Гуляешь с Маю?"
         voice "audio/voice/E1/D5/S6/Shou/6.ogg"
-        ss "Yeah, we're just at the cafe getting our nom on. Come join us!"
+        ss "Да, мы прост оперекусываем в кафешке. Присоединяйся к нам!"
 
         menu:
-            "No, thanks.":
+            "Не, спасибо.":
                 $ E1D5S1_EventMayu = 0
                 $ E1D5S6_MayuNoThanksLoop = 1
-                pf "It sounds like you two are having a good time and I don't want to intrude."
+                pf "Похоже, вы оба хорошо проводите время, не хочу навязываться."
                 voice "audio/voice/E1/D5/S6/Shou/7.ogg"
-                ss "You won't intrude!"
-                pf "Thanks, but I'll pass. Maybe another time."
+                ss "Ты не навязываешься!"
+                pf "Сппсибо, но я откажусь. Может, в другой раз."
                 voice "audio/voice/E1/D5/S6/Shou/8.ogg"
-                ss "Okay, talk to you later!"
+                ss "Хорошо, поговорим позже!"
                 stop music fadeout 5.0
-                pf "Bye."
-                "Well, that didn't work out. I wonder if anyone else is free."
+                pf "Пока."
+                "Ну, это не сработало. Интересно, свободен ли кто-нибудь еще."
                 jump E1D5S1_WeekendChoiceSelection
 
-            "Sure!":
-                pf "You don't mind?"
+            "Конечно!":
+                pf "Ты не возражаешь?"
                 voice "audio/voice/E1/D5/S6/Shou/9.ogg"
-                ss "No way! The more the merrier!"
-                pf "Cool, I'll be right over."
+                ss "Конечно нет! Чем больше, тем лучше!"
+                pf "Круто, я скоро буду."
                 voice "audio/voice/E1/D5/S6/Shou/10.ogg"
-                ss "See you soon!"
-                "We hang up, and I head to my bike."
+                ss "Увилимся!"
+                "Я положил трубку и пошёл к мотоциклу."
                 stop music fadeout 3.0
                 stop ambient fadeout 3.0
                 scene black with fade
