@@ -1,18 +1,18 @@
 label E1D4S3:
      
-    pf "Wait, before we go, how exactly do these matches work?"
+    pf "Подожди, прежде чем мы пойдём, как эти матчи работают?"
     show kaori neu at r3
     voice "audio/voice/E1/D4/S3/Kaori/1.ogg"
-    ki "It's based on how many points you accumulate. We'll be competing against pre-programmed AI GEARs--"
+    ki "Это зависит от того, сколько очков ты получил. Мы будем соревноваться с запрограммированными ИИ GEAR--"
     show shou mis at cc
     voice "audio/voice/E1/D4/S3/Shou/1.ogg"
-    ss "Who are like boss-level difficult to beat."
+    ss "Как босс, которого сложно победить."
     voice "audio/voice/E1/D4/S3/Kaori/3.ogg"
-    ki "--and our score is calculated by how many we beat, along with how well we fought overall. So things like accuracy, how many hits we take, tactics, teamwork--those are all added up."
-    pf "So how many points are all of those things worth?"
+    ki "--и наш счет рассчитывается так - сколько мы победили, и как хорошо мы сражались в целом. Такие вещи, как точность, сколько ударов мы берем, тактика, командная работа - все это складывается."
+    pf "Так сколько очков всё это стоит?"
     show shou hap at cc
     voice "audio/voice/E1/D4/S3/Shou/3.ogg"
-    ss "They don't share with us the exact breakdown, but everyone knows that defeating the AI gives you a buttload of points!"
+    ss "Они не делятся точными числами, но все знают, что победа над ИИ даёт дофига очков!"
     show kaori ann at r3
     show exclamation:
         xoffset 1175
@@ -20,9 +20,9 @@ label E1D4S3:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S3/Kaori/5.ogg"
-    ki "Now hurry up and get in your GEAR! We really need to practice before it's our turn."
+    ki "Теперь поторопись и садись в свой GEAR! Нам действительно нужно практиковаться перед нашим выходом."
     hide kaori with dissolve
-    "She turns on her heel, and the rest of us disperse."
+    "Она развернулась и мы разошлись."
     
     stop music fadeout 3
     scene black with fade
@@ -43,60 +43,60 @@ label E1D4S3:
     play sound "audio/sfx/GEAR/GEAR Boot Up 2.ogg"
     $renpy.pause(2.5)
     scene cg GEAR cockpit first3 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
-    "After reaching my GEAR, I boot up the simulation."
+    "Забравшись в свой GEAR, я запустил симуляцию."
     play sound "audio/sfx/GEAR/GEAR Virtual Training Simulator.ogg"
     #NOT COMPLETE YET, will need to figure out of this text is happening in the simulator or during the battle screen
-    # "I vote in the cockpit" - Austin
+    # "Я проголосовал в кабине" - Austin
     
-    "The usual stats float across my screen, but something about them seems off."
-    "Kaori's voice comes through the com."
+    "Обычные статистические данные всплывали на экране, но что-то в них казалось странным."
+    "Голос Каори донёсся через коммуникатор."
     voice "audio/voice/E1/D4/S3/Kaori/2.ogg"
-    ki "Where are your weapons?"
-    pf "I don't know. Let me see if it's something in the settings."
+    ki "Где твоё оружие?"
+    pf "Я не знаю. Глянем, есть ли что-то в настройках."
     voice "audio/voice/E1/D4/S3/Kaori/4.ogg"
-    ki "Why didn't you do a comprehensive check on your GEAR?"
-    pf "I did. It doesn't scan weaponry since it's not part of the mech's core function."
+    ki "Почему ты не провёл полную проверку своего GEAR?"
+    pf "Я провёл. Он не сканирует оружие, так как оно не является основной частью функций меха."
     voice "audio/voice/E1/D4/S3/Kaori/6.ogg"
-    ki "Your \"combat\" GEAR doesn't have weaponry set as a core function during checks?"
-    "I've never run into this issue before, although she does make a good point. {w}I try every setting combination I can think of, but my weapons still aren't registering." 
+    ki "У твоего \"боевого\" GEAR нет оружия, установленного в качестве основной функции во время проверок?"
+    "Я никогда не сталкивался с этой проблемой раньше, хотя она тут и права. {w}Я пробовал каждую комбинацию настроек, о которой только мог подумать, но мое оружие все еще не регистрировалось." 
     voice "audio/voice/E1/D4/S3/Shou/4.ogg"
-    ss "Try waiting a minute. Sometimes there's a lag while your GEAR warms up."
-    pf "There shouldn't be lag."
-    "We wait anyway. {w}After a few minutes, it's clear my weapons aren't going to show up."
-    pf "I don't know what's going on."
+    ss "Попробуй подождать минуту. Иногда GEAR лагает, когда прогревается."
+    pf "Тут не должно быть лагов."
+    "Мы всё равно подождали. {w}Через несколько минут было ясно, что мое оружие не собиралось показываться."
+    pf "Я не знаю, что происходит."
     voice "audio/voice/E1/D4/S3/Kaori/10.ogg"
-    ki "Do you even have weapons?"
-    pf "Of course I do!"
+    ki "У тебя вообще есть оружие?"
+    pf "Конечно есть!"
     voice "audio/voice/E1/D4/S3/Kaori/11.ogg"
-    ki "Then where are they?"
-    "Suddenly, Mayu's soft voice cuts through."
+    ki "Тогда где оно?"
+    "Внезапно слышится тихий голос Маю."
     voice "audio/voice/E1/D4/S3/Mayu/1.ogg"
-    ma "Maybe they're still being processed at customs. I've heard that GEAR and their accessories are processed separately." 
+    ma "Возможно, они все ещё обрабатываются на таможне. Я слышала, что GEAR и их аксессуары обрабатываются отдельно." 
     voice "audio/voice/E1/D4/S3/Shou/5.ogg"
-    ss "That makes sense."
-    pf "How long will that take to process?"
+    ss "В этом есть смысл."
+    pf "Как долго проходит это?"
     voice "audio/voice/E1/D4/S3/Mayu/2.ogg"
-    ma "I-I don't know."
+    ma "Я-Я не знаю."
     voice "audio/voice/E1/D4/S3/Kaori/12.ogg"
-    ki "Too long! We need those weapons now."
+    ki "Слишком долго! Нам нужно это оружие прямо сейчас."
     voice "audio/voice/E1/D4/S3/Shou/6.ogg"
-    ss "Don't worry, it'll be okay." 
+    ss "Не волнуйся, всё будет в порядке." 
     voice "audio/voice/E1/D4/S3/Kaori/13.ogg"
-    ki "No, it won't! How will he fight without weapons?" 
-    pf "I'll figure something out. Let's just start the match. We're running out of time."
+    ki "Нет, не будет! Как он будет сражаться без оружия?" 
+    pf "Я что-нибудь придумаю. Давай просто наснём матч. У нас не так много времени."
     voice "audio/voice/E1/D4/S3/Kaori/14.ogg"
-    ki "Fine." 
+    ki "Хорошо." 
     
     #Transition to "game world"
     stop ambient fadeout 3
     
     #show all mechs for the first time
     voice "audio/voice/E1/D4/S4/Kaori/1.ogg"
-    ki "Everyone ready?"
+    ki "Все готовы?"
     
-    "Everyone's comm relay blinks green in affirmation."
+    "Все коммуникаторы мигнули зелёным цветом в подтверждение."
     voice "audio/voice/E1/D4/S4/Kaori/2.ogg"
-    ki "Alright, let's start!"
+    ki "Хорошо, начнём!"
     
     
     
@@ -186,7 +186,7 @@ label E1D4S3:
         
         
         
-    "We all get into position and square off to take on the AIs. My closest enemy charges me with its sword raised!"
+    "Мы все встали на свои позиции и встали в боевую стойку напротив ИИ. Мой ближайший враг бежал на меня с парными мечами!"
     
     
     #$renpy.pause(1)
@@ -225,13 +225,13 @@ label E1D4S3:
     $ t_var = qtetotal
     show screen timer_scr(place="E1D4S3_L1")
     menu:
-        "Juke!":
+        "Танцуй!":
             jump E1D4S3_W1
 
-        "Slow…":
+        "Медленно…":
             jump E1D4S3_L1
 
-        "Dodge!":
+        "Уворачивайся!":
             jump E1D4S3_W1
 
     label E1D4S3_W1:
@@ -256,8 +256,8 @@ label E1D4S3:
             parallel:
                 easeout .5 xoffset -150
         
-        "I barely manage to sidestep out of the way!"
-        "This does not bode well…"
+        "Я едва успел уйти в сторону!"
+        "Это не сулило ничего хорошего…"
         jump E1D4S3_COMBATCONVER1
 
     label E1D4S3_L1:
@@ -286,27 +286,27 @@ label E1D4S3:
                 easeout .3 xoffset -150
                 
                 
-        "I'm unprepared for the attacked and fumble to bring up my shields. The AI swings its sword and strikes me on the shoulder."
-        "Eagle's dashboard goes wild by beeping and flashing warnings as my energy level plummets."
-        "I can't let my guard down again. Another hit like that and I am done for!"
+        "Я не был готов к нападению и пытался поднять щит. ИИ взмахнул мечом и ударил меня в плечо."
+        "Приборная панель Орла сходила с ума от звуковых сигналов и предупреждений, когда мой уровень энергии падал."
+        "Нельзя пропустить ещё один удар, или мне придёт конец!"
         jump E1D4S3_COMBATCONVER1
 
 
     label E1D4S3_COMBATCONVER1:
-    "I retaliate with an uppercut and a punch to the solar plexus, which does some damage but nowhere near the crushing blow I received. The AI shakes off my attack and immediately swings again."
+    "Я ответил апперкотом и ударом в солнечное сплетение, которые нанесли некоторый урон, но рядом не стояло с сокрушительным ударом, который я получил. ИИ прервал мою атаку и снова напал."
 
 
     $ qtetotal = 5
     $ t_var = qtetotal
     show screen timer_scr(place="E1D4S3_L2")
     menu:
-        "Freeze…":
+        "Замер…":
             jump E1D4S3_L2
 
-        "Defend!":
+        "Защищаться!":
             jump E1D4S3_W2
 
-        "Block!":
+        "Блокировать!":
             jump E1D4S3_W2
 
     label E1D4S3_W2:
@@ -333,15 +333,15 @@ label E1D4S3:
             parallel:
                 easeout .3 xoffset -100
                 
-        "I raise one arm in defense as its sword sends another wave of shimmers over my shield. Using my free hand I jab the AI in the side."
-        "Just as before, Eagle takes an alarming amount of damage while my attack on the AI barely fazes it."
+        "Я поднял руку чтобы защититься, так как его меч снова бил по моему щиту. Свободной рукой я ударил ИИ в бок."
+        "Как и прежде, Орёл получил тревожное количество урона, в то время как ИИ едва ли почувствовал мою атаку."
         $ E1D4S3_FakeFightWin = 1
         jump E1D4S3_TeamPracticeComplete
 
     label E1D4S3_L2:
         $ renpy.hide_screen ("timer_scr")
-        "As the AI's sword connects, Eagle protests with a series of beeps and flashes warning me of dangerously low energy levels."
-        "I barely have a moment to register the warnings before the AI swings at me again!"
+        "ИИ нанёс удар мечом, и Орёл запротестовал серией звуковых сигналов и вспышек, предупреждающих меня об опасно низких уровнях энергии."
+        "У меня едва хватало времени, чтобы зарегистрировать предупреждения, прежде чем ИИ снова замахнулся!"
         jump E1D4S3_TeamPracticeComplete
          
      
@@ -369,11 +369,11 @@ label E1D4S3:
             play sound "audio/sfx/GEAR Combat/Depower.ogg"
             hide mc with dissolve
             $renpy.pause(1.0)
-            "Well, that was a bust. I was destroyed. In my defense, that was a pretty hopeless matchup since I was unarmed."
+            "Ну, это был провал. Меня уничтожили. В свою защиту могу сказать, что это был безнадёжный матч, так как у меня не было оружия."
     
         if E1D4S3_FakeFightWin == 1:
             #IF you do well
-            "I dodge and block most attacks. However, I can't return attacks and can only defend."
+            "Я уклонялся и блокировал большинство атак. Однако я не мог контратаковать - только защищаться."
             show aiM att behind mc:
                 easeout .35 xoffset -600
             $renpy.pause(.15)
@@ -386,19 +386,19 @@ label E1D4S3:
             play sound "audio/sfx/GEAR Combat/Depower.ogg"
             hide mc with dissolve
             $renpy.pause(1.0)
-            "With my energy core gradually depleted, it doesn't take much for the AI GEAR to wipe me out."
+            "Когда моё ядро постепенно истощилось, Ии GEAR не потребовалось много усилий, чтобы уничтожить меня."
             
         
         #fade to finished simulation
         scene black with fade
         #scene cg GEAR cockpit first3 at Zoom((1920, 1080), (0, 0, 3840, 2160), (0, 0, 3840, 2160), 0) with dissolve
-        "Without a fourth teammate, my team barely manages to win."
+        "Без четвёртого участника моей команде едва удалось победить."
     
     stop music fadeout 3
     scene black with fade
     
     play sound "audio/sfx/GEAR/GEAR Cockpit Open.ogg" fadein 1
-    "We all shut off the simulator and climb out of our GEAR."
+    "Мы выключили симулятор и вылезли из своих GEAR."
     play music "audio/music/Stress (GAME VERSION).ogg" fadein 3
     play ambient "audio/ambience/Hangar.ogg" fadein 1
     $renpy.pause(1)
@@ -413,7 +413,7 @@ label E1D4S3:
         xoffset 75
     with dissolve
     $renpy.pause(.5)
-    "I start to head back towards the team, but they all get to me first."
+    "Я начал идти к команде, но они добрались до меня первыми."
     show kaori ang with dissolve
     show vein:
         xoffset 720
@@ -421,21 +421,21 @@ label E1D4S3:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S3/Kaori/15.ogg"
-    ki "We can't play a match like that! We hardly scored any points." 
+    ki "Мы не можем так играть матч!Мы едва набрали хоть какие-то очки." 
     show kaori ann with dissolve
     voice "audio/voice/E1/D4/S3/Shou/7.ogg"
-    ss "Don't worry, Kaori. I'm sure he'll have his equipment soon." 
+    ss "Не волнуйся, Каори. Я уверен, он скоро получит своё оборудование." 
     voice "audio/voice/E1/D4/S3/Kaori/16.ogg"
-    ki "Not soon enough! The match is today."
+    ki "Недостаточно скоро! Матч сегодня."
     show kaori dis
     voice "audio/voice/E1/D4/S3/Kaori/16_1.ogg"
-    ki "Maybe he shouldn't compete. We can tell them we have four team members, but one of our GEARs is in no condition to fight."
+    ki "Может он не должен участвовать. Мы можем сказать им, что у нас четыре члена команды, но один из наших GEARs не в состоянии сражаться."
     show mayu dis with dissolve
-    "Mayu looks at her determinedly."
+    "Маю решительно посмотрела на неё."
     voice "audio/voice/E1/D4/S3/Mayu/3.ogg"
-    ma "No, he has to. It's the only way." 
+    ma "Нет. он должен. Это единственный способ." 
     show mayu neu with dissolve
-    "Shou looks apologetically at me."
+    "Сё извиняющеся смотрел на меня."
     show shou thi with dissolve
     show drop:
         xoffset 1250
@@ -443,20 +443,20 @@ label E1D4S3:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S3/Shou/8.ogg"
-    ss "Look, maybe you should just hang back. Without weapons the AIs will ruin you." 
-    pf "I can still help us gain points." 
+    ss "Слушай, может тебе просто держаться сзади. Без оружия ИИ просто погубит тебя." 
+    pf "Я все ещё могу помочь нам набрать очки." 
     show kaori neu
     voice "audio/voice/E1/D4/S3/Kaori/17.ogg"
-    ki "No, Shou is right. You have to hang back. That will maximize our qualifier points, which is what's important right now." 
+    ki "Нет, Сё прав. Тебе нужно держаться позади. Это увеличит наши очки, что сейчас важно." 
     show shou cur with dissolve
-    "Shou stares in shock."
+    "Сё смотрел в шоке."
     show shocked:
         xoffset 1250
         yoffset 20
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S3/Shou/9.ogg"
-    ss "Did you just agree with me?" 
+    ss "Ты только что согласилась со мной?" 
     show kaori ann
     show exclamation:
         xoffset 720
@@ -464,14 +464,14 @@ label E1D4S3:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S3/Kaori/18.ogg"
-    ki "Not now, Shou!" 
+    ki "Не сейчас, Сё!" 
     show shou smi
     voice "audio/voice/E1/D4/S3/Shou/10.ogg"
-    ss "You never agree with me!" 
+    ss "Ты никогда не соглашалась со мной!" 
     voice "audio/voice/E1/D4/S3/Kaori/19.ogg"
-    ki "Idiot! Why do you keep saying that?" 
+    ki "Идиот! Почему ты продолжаешь говорить это?" 
     
-    "Just then, a group of engineers come toward us."
+    "В этот момент группа инженеров подошла к нам."
     hide shou
     hide mayu
     hide kaori
@@ -487,7 +487,7 @@ label E1D4S3:
         xoffset 125
     with dissolve
     voice "audio/voice/E1/D4/S3/Engineer/1.ogg"
-    eng1 "What are your GEARs still doing here?"
+    eng1 "Что ваши GEARs все ещё стоят тут?"
     show shou cur
     show question:
         xoffset 1250
@@ -495,23 +495,23 @@ label E1D4S3:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S3/Shou/11.ogg"
-    ss "Say what?"
+    ss "Что?"
     voice "audio/voice/E1/D4/S3/Engineer/2.ogg"
-    eng1 "They've got to be prepped for the next match."
+    eng1 "Они должны быть готовы к следующему матчу."
     show kaori neu
     voice "audio/voice/E1/D4/S3/Kaori/20.ogg"
-    ki "That means we're next. Let's go."
-    pf "What about our GEARs?"
+    ki "Это значит, что мы следующие. Пойдём."
+    pf "Что насчёт наших GEARs?"
     voice "audio/voice/E1/D4/S3/Kaori/21.ogg"
-    ki "The engineers will handle it."
+    ki "Инженеры позаботятся об этом."
     
     stop music fadeout 3.0
     stop ambient fadeout 3.0
     scene black with fade
     
-    "They engineers disperse towards our GEARs. My team splits up to head to the locker rooms"
-    "We quickly change into our combat uniforms. Luckily, I'd kept my old one from the States."
-    "I follow Shou into the precombat room, which was a small room connecting the locker room and arena."
+    "Инженеры пошли к нашим GEAR. Моя команда разделилась и направилась к раздевалкам."
+    "Мы быстро переоделись в боевую форму. К счастью, я сохранил старую из Штатов"
+    "Я следовал за Сё в предбоевую комнату, которая была маленькой комнатой, соединяющей раздевалку и арену."
     
     
     
@@ -528,7 +528,7 @@ label E1D4S3:
     
     
     
-    "The space feels cramped. Couches line the walls and a round table is in the center."
+    "Пространство казалось тесным. Диваны у стен, а в центре круглый стол."
     
     
     show kaori neu at cc:
@@ -538,13 +538,13 @@ label E1D4S3:
         xzoom -1
     with dissolve
     
-    "I barely have time to take in the room when Kaori and Mayu walk in dressed in equally skin-tight suits, which hug their every curve."
+    "Едва я успел войти в комнату, когда Каори и Маю вошли в обтягивающих костюмах, подчёркивающих их формы."
     
     
     menu:
-        "So sleek!":
+        "Так изящно!":
             play music "audio/music/Baka! (GAME VERSION).ogg" fadein 3
-            pf "Your suits are so cool!"
+            pf "Ваши костюмы круты!"
             show kaori ske 
             show mayu cur
             with dissolve
@@ -558,16 +558,16 @@ label E1D4S3:
                 yoffset 135
                 xzoom .75
                 yzoom .75
-            "Kaori gives me a strange look. Mayu looks a little surprised."
+            "Каори странно на меня смотрела. Маю выглядела немного удивленной."
             show mayu smi with dissolve
             voice "audio/voice/E1/D4/S3/Mayu/5.ogg"
-            ma "Um, thank you?"
-            pf "No problem. You two look great!"
+            ma "Эм, спасибо?"
+            pf "Без проблем. Вы обе отлично выглядите!"
             show kaori dis with dissolve
-            "Kaori narrows her eyes."
+            "Каори нахмурилась."
             voice "audio/voice/E1/D4/S3/Kaori/23.ogg"
-            ki "Okay…"
-            "While most pilot suits don't differ much from each other, the Japanese models always have a more \"aerodynamic\" feel to them. This is the first time I've had a chance to see the suits up close and--"
+            ki "Хорошо…"
+            "Хотя большинство костюмов пилотов мало чем отличались друг от друга, японские модели всегда имели более \"аэродинамичный\" вид. Впервые мне удалось увидеть эти костюмы вблизи--"
             show kaori ang
             show shou cur
             with dissolve
@@ -578,11 +578,11 @@ label E1D4S3:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S3/Kaori/24.ogg"
-            ki "Stop staring!!"
+            ki "Хватит пялиться!!"
             show kaori dis
-            pf "Wha…?"
+            pf "Чт…?"
             show mayu sur b1 with dissolve
-            "Mayu's eyes widen, and she crosses her arms over her chest."
+            "Глаза Маю округлились и она скрестила руки на груди."
             show mayu ner b1
             show shoBlush:
                 xoffset 1375
@@ -590,42 +590,42 @@ label E1D4S3:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S3/Mayu/6.ogg"
-            ma "I didn't think you were like that."
-            pf "No, I just meant those suits look good on you."
+            ma "Я не думала, что ты такой."
+            pf "Нет, я просто хотел сказать, что эти костюмы хорошо смотрятся на вас."
             show kaori ann
             voice "audio/voice/E1/D4/S3/Kaori/25.ogg"
-            ki "We got what you meant! And we don't appreciate your staring!"
+            ki "Мы поняли, что ты имел в виду! И мы не ценим то, что ты пялишься!"
             show storm:
                 xoffset 920
                 yoffset 110
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S3/Kaori/25_01.ogg"
-            ki "Come on, Mayu. Let's go before he says something else he regrets."
+            ki "Давай, Маю. Пойдем, прежде чем он скажет что-то еще, о чём пожалеет."
             hide kaori
             hide mayu
             with dissolve
-            "She pulls Mayu close to her and the two of them head to the table."
+            "Она притянула Маю к себе, и они направились к столу.."
             hide shou with dissolve
             show shou mis at cc with dissolve
             $renpy.pause(.5)
             stop music fadeout 5
             show shou mis
             voice "audio/voice/E1/D4/S3/Shou/12.ogg"
-            ss "Rookie move, broseph."
-            pf "No, seriously, I wasn't looking at them like that."
-            pf "Wait, that didn't really come out right."
+            ss "Ты дилетант, братишка."
+            pf "Нет, серьезно, я не смотрел на них так."
+            pf "Погоди, это действительно не так получилось."
             "Shou just shakes his head."
             show shou cur
             voice "audio/voice/E1/D4/S3/Shou/13.ogg"
-            ss "Everyone's got to wear these suits. You're making it weird."
+            ss "Каждый должен носить эти костюмы. Ты делаешь это странным."
             hide shou with dissolve
-            "He follows them to the table."
+            "Он пошёл к ним за стол."
     
-        "Me likey.":
+        "Мне нравится.":
             $ E1D4S3_Stare = 1
             play music "audio/music/Baka! (GAME VERSION).ogg" fadein 3
-            "Their uniforms leave nothing to the imagination. I eagerly watch the girls as they approach. Have I just died and gone to heaven?"
+            "Их форма ничего не оставляла для воображения. Я с нетерпением наблюдал за девушками, когда они подходили. Я только что умер и попал на небеса?"
             show mayu cur
             show question:
                 xoffset 1375
@@ -633,7 +633,7 @@ label E1D4S3:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S3/Mayu/7.ogg"
-            ma "Hello?"
+            ma "Привет?"
             "..."
             show shou cur
             show mayu cur
@@ -646,22 +646,22 @@ label E1D4S3:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S3/Kaori/26.ogg"
-            ki "HEY!"
+            ki "ЭЙ!"
             show kaori ann
-            "Kaori's angry eyes snap me out of my reverie. Her hands are on her hips."
+            "Сердитые взгляд Каори вывел меня из задумчивости. Её руки были на бёдрах."
             show vein:
                 xoffset 920
                 yoffset 110
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S3/Kaori/27.ogg"
-            ki "What do you think you're doing?"
-            pf "I was just admiring your incredibly effective and intelligent distraction tactic."
-            "Shou and the girls stare blankly at me."
+            ki "Что ты делаешь?"
+            pf "Я просто восхищался вашей невероятно эффективной и умной тактикой отвлечения."
+            "Сё и девушки просто смотрели на меня."
             show kaori ske
             voice "audio/voice/E1/D4/S3/Kaori/28.ogg"
-            ki "What?"
-            pf "With you wearing these uniforms, the other team will be so distracted that they'll forget about the battle and give us the advantage."
+            ki "Что?"
+            pf "С такой формой, другая команда будет настолько отвлечена, что забудет о битве и даст нам преимущество."
             show mayu sur b1
             show kaori ann
             show shou smi
@@ -671,18 +671,18 @@ label E1D4S3:
                 yoffset 135
                 xzoom .75
                 yzoom .75
-            "Mayu brings up her arms to hide her chest, mortified. Kaori glares at me, and crosses her arms."
+            "Маю подняла руки, чтобы спрятать грудь. Каори смотрела на меня и скрестила руки."
             show mayu ner b1 with dissolve
             voice "audio/voice/E1/D4/S3/Kaori/29.ogg"
-            ki "How would the opposing team see us when we're {i}inside{/i} a giant robot?"
-            pf "Uh…"
+            ki "Как другая команда увидит нас, когда мы будем {i}внутри{/i} гигантского робота?"
+            pf "Ох…"
             show kaori dis
             voice "audio/voice/E1/D4/S3/Kaori/30.ogg"
-            ki "Exactly. These suits are for functional purposes, nothing more. Don't be a pervert!"
+            ki "Именно. Эти костюмы для функциональных целей, не более того. Не будь извращенцем!"
             hide kaori
             hide mayu
             with dissolve
-            "After scolding me, Kaori and Mayu circle the table."
+            "Отругав меня, Каори и Маю пошли к столу."
             hide shou with dissolve
             show shou mis at cc with dissolve
             $renpy.pause(.5)
@@ -690,7 +690,7 @@ label E1D4S3:
             show shou mis
             "Shou shakes his head."
             voice "audio/voice/E1/D4/S3/Shou/14.ogg"
-            ss "That was an amateur mistake, broseph."
+            ss "Это была любительская ошибка, братан."
             show shou hap
             show drooling:
                 xoffset 720
@@ -698,35 +698,35 @@ label E1D4S3:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S3/Shou/15.ogg"
-            ss "You've got to \"sneak a peek\" my man. Can't be so obvious about it."
+            ss "Ты должен \"засматриваться\" чувак. Но не так очевидно."
             hide shou with dissolve
-            "He claps me on the back after imparting his words of wisdom, then joins the girls at the table." 
+            "После этих слов мудрости он хлопнул меня по плечу, затем присоединяется к девушкам за столом." 
     
-        "No comment.":
-            "We're all wearing pretty similar suits. I'm not a fan of how the material clings, but at least it provides ample movement and shock absorption, which I suppose is the point of them."
+        "Без комментариев.":
+            "Мы все в одинаковых костюмах. Я не фанат того, как материал облегает, но, по крайней мере, он обеспечивает достаточное движение и поглощение ударов, что, я полагаю, их цель."
             hide kaori
             hide shou
             hide mayu
             with dissolve
-            "The girls head directly to the table, and Shou joins them there."
+            "Девушки пошли прямо за стол, и Сё присоединился к ним."
     
-        "Shou's care package drop zone appears to be flatlined.":
+        "Точка сброса посылок Сё выглядит без признаков жизни.":
             hide kaori
             hide mayu
             with dissolve
-            "The girls ignore us and head straight for the table."
+            "Девушки проигнорировали нас и пошли сразу к столу."
             show shou neu at cc with dissolve
             play music "audio/music/Baka! (GAME VERSION).ogg" fadein 3
-            "They aren't the only ones with a tight uniform. Shou's is pretty tight too. In fact..."
-            pf "Uh, Shou."
+            "Они не единственные с тесной формой. Сё тоже довольно тесно. По факту..."
+            pf "Эм, Сё."
             show question:
                 xoffset 720
                 yoffset 20
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S3/Shou/16.ogg"
-            ss "What's up, broseph?"
-            pf "Nothing, I was just wondering if you're feeling okay."
+            ss "Что такое, братан?"
+            pf "Ничего. Мне просто интересно, ты в порядке."
             show shou hap
             show note:
                 xoffset 720
@@ -734,26 +734,26 @@ label E1D4S3:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S3/Shou/17.ogg"
-            ss "Never better! Why?"
-            pf "You sure you don't feel like something's missing?"
+            ss "Лучше не бывает! А что?"
+            pf "Ты уверен, что нет чувства, что чего-то не хватает?"
             show shou cur
-            "His smile is replaced with confusion."
+            "Его улыбка сменилась растерянностью."
             voice "audio/voice/E1/D4/S3/Shou/18.ogg"
-            ss "No… Should I be?"
-            pf "Well, your fly is undone right now."
+            ss "Нет… Почему должлен?"
+            pf "Ну, твоя ширинка расстёгнута."
             show shou sur with dissolve
             show exclamation:
                 xoffset 720
                 yoffset 20
                 xzoom .75
                 yzoom .75
-            "Startled, Shou glances down."
+            "Вздрогнув, Сё посмотрел вниз."
             stop music fadeout 5
             show shou cur
             voice "audio/voice/E1/D4/S3/Shou/19.ogg"
-            ss "There's no zipper down there."
-            pf "It looks like there's pretty much {i}nothing{/i} down there."
-            "Shou turns his back to me."
+            ss "Там внизу нет молнии."
+            pf "Похоже, там почти {i}ничего{/i} нет."
+            "Сё снова взглянул на меня."
             show shou sur b1 with dissolve
             show drop:
                 xoffset 720
@@ -761,14 +761,14 @@ label E1D4S3:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S3/Shou/20.ogg"
-            ss "Eyes up top, man! You don't violate another broseph like that..."
+            ss "Глаза вверх, чувак! Ты не должен осквернять другого братана вот так..."
             hide shou with dissolve
-            "Before I can react, Shou has already left and joined the girls at the table."
+            "Прежде чем я успел ответить, Сё ушёл и присоединился к девушкам за столом."
     
     
-    "As I approach the table, Kaori hits a button on the side, which brings up a hologram of the arena battlefield."
+    "Подойдя к столу, Каори нажала на кнопку сбоку, которая вызвала голограмму поля битвы на арене."
     play music "audio/music/Light Tension (GAME VERSION).ogg" fadein 1
-    "Four impressive GEAR pop up on the right side of the field, and four smaller GEAR populate the other side."
+    "Четыре GEAR побольше, появились на правой стороне поля, а четыре GEAR поменьше - на другой стороне."
     show kaori neu at r3:
         xzoom -1
         xoffset 200
@@ -778,48 +778,48 @@ label E1D4S3:
         xoffset -300
     with dissolve
     $renpy.pause(.5)
-    "Kaori points to the right."
+    "Каори показала на правую сторону."
     voice "audio/voice/E1/D4/S3/Kaori/31.ogg"
-    ki "These are the enemy AI GEAR we'll be battling."
-    "She points to the other side."
+    ki "Это вражеские ИИ GEAR, с которыми мы будем сражаться."
+    "Она показала на другую сторону."
     voice "audio/voice/E1/D4/S3/Kaori/32.ogg"
-    ki "This is us."
+    ki "Это мы."
     voice "audio/voice/E1/D4/S3/Kaori/33.ogg"
-    ki "The AIs are programmed to be a challenge, so it's important that we stick to the plan and work together to take them out."
+    ki "ИИ запрограммированы, чтобы быть сложными, поэтому важно, чтобы мы придерживались плана и работали вместе, чтобы побить их."
     show mayu dis
-    "Mayu speaks up, her expression solemn." 
+    "Маю торжественно говорит." 
     voice "audio/voice/E1/D4/S3/Mayu/8.ogg"
-    ma "The GEARs we are facing against are specifically engineered for ACE Academy qualifier matches. They change yearly to make sure they can't be beat using a systematic approach."
+    ma "GEARs, с которыми мы стокнёмся, специально разработаны для квалификационных матчей академии ACE. Они меняются ежегодно, чтобы быть уверенным, что их нельзя победить, используя системный подход."
     
-    "With a quick flick of her fingers, Mayu zooms into the AI GEAR holograph. Statistics on the AI's battle armaments and parts pop up beside the GEARs."
+    "Легким движением пальцев Маю увеличила голограммы ИИ GEAR. Статистика боевого вооружения и частей ИИ всплыла рядом с GEARs."
     voice "audio/voice/E1/D4/S3/Mayu/9.ogg"
-    ma "It looks like we have two Class A close combat and two Class A long range support GEARs."
-    "Kaori nods. Reaching her hand into the holographic field, she shuffles our GEARs into position on the map."
+    ma "Похоже мы имеем два GEAR ближнего боя класса А, and two Class A long range support GEAR."
+    "Каори кивнула. Протянув руку в голографическое поле, она перенесла наши GEAR на позицию на карте."
     show kaori thi
     voice "audio/voice/E1/D4/S3/Kaori/34.ogg"
-    ki "Knowing all of that, Shou and I will blitz the melee GEARs to give Mayu some breathing room. She will focus on suppressive fire on their backline. That should give us enough time to finish off the two GEAR and engage for the remaining ones."
-    "Mayu and Shou both nod in agreement. Kaori pulls the last GEAR towards the back edge of the map, then looks pointedly at me."
+    ki "Зная всё это, мы с Сё пазобьём GEAR ближнего боя, чтобы дать Маю пространство. Она сфокусируется на подавлении огня задней линии. Это должно дать нам достаточно времени, чтобы прикончить два GEAR и заняться оставшимеся."
+    "Маю и Сё кивнули. Каори перенесла последний GEAR к заднему краю карты, затем многозначительно посмотрела на меня."
     show kaori neu
     show mayu neu
     voice "audio/voice/E1/D4/S3/Kaori/35.ogg"
-    ki "This is where you will be. Don't get yourself killed."
-    "I look at her flatly, but I don't dispute her."
-    "The map flashes red and the door to the arena slides open."
+    ki "Вот где ты будешь. Не дай убить себя."
+    "Я уныло посмотрел на неё, но спорить не стал."
+    "Карта замигала красным, и дверь на арену открылась."
     show shou smi
-    "Shou's face lights up in excitement and he practically leaps towards the door."
+    "Лицо Сё озарилось азартом, и он практически прыгнул к двери."
     voice "audio/voice/E1/D4/S3/Shou/21.ogg"
-    ss "That's our cue to get out there."
+    ss "Это наш сигнал к выходу."
     voice "audio/voice/E1/D4/S3/Kaori/36.ogg"
-    ki "Does everyone understand the plan?"
-    "We all nod."
+    ki "Все поняли план?"
+    "Все кивнули."
     voice "audio/voice/E1/D4/S3/Kaori/37.ogg"
-    ki "Okay, then let's go."
+    ki "Хорошо, тогда пошли."
     
     stop music fadeout 3.0
     stop ambient fadeout 3.0
     scene black with fade
     
-    "Taking a deep breath, I follow Shou and the rest of my team to our readied GEARs."
+    "Глубоко вздохнув, я последовал за Сё и остальными к нашим GEAR."
     
     
     jump E1D4S4
