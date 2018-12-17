@@ -2,7 +2,7 @@ label E1D4S6:
     
     scene bg homekaito main dusk with fade
     play music "audio/music/Hanging Out (GAME VERSION).ogg" fadein 1
-    "Both Uncle Kaito and Nikki are lounging on the couch when I get home. I plop down in a nearby chair."
+    "Дядя Кайто и Никки бездельничали на диване, когда я вернулся домой. Я плюхнулся на соседнее кресло."
     show kaito smi at l2
     show nikki hap at r2:
         xzoom -1
@@ -13,49 +13,49 @@ label E1D4S6:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S6/Nikki/1.ogg"
-    sf "You're finally home! I was getting worried."
-    pf "Sorry, the qualifiers ran later than I expected."
+    sf "Ты наконец-то дома! Я уже волновалась."
+    pf "Прости, квалификация была позже, чем ожиладось."
     show nikki neu at r2
     voice "audio/voice/E1/D4/S6/Kaito/2.ogg"
-    hk "That's right! Today was the big day. How'd it go?"
+    hk "Точно! Сегодня был важный день. Как всё прошло?"
     
     menu:
-        "We scored big!":
-            pf "It was hard, but I'm confident we got a high score!"
+        "Мы набрали много очков!":
+            pf "Было трудно, но я уверен, что мы набрали высокий балл!"
             show kaito hap at l2
             show nikki hap at r2
             with dissolve
-            "Nikki jumps out of her seat to hug me, while Uncle Kaito grins from ear to ear."
+            "Никки спрыгнула со своего места, чтобы обнять меня, в то время как клыбка дяди Кайто была от уха до уха."
             show heart:
                 xoffset 1050
                 yoffset 160
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S6/Nikki/2.ogg"
-            sf "Yay! I never doubted you for a second."
+            sf "Ура! Я ни на секунду не сомневалась в тебе."
             show note:
                 xoffset 365
                 yoffset 5
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S6/Kaito/3.ogg"
-            hk "Proud of you, kid! I knew you could do it."
+            hk "Горжусь тобой, парень! Я знал, что ты сможешь сделать это."
             show nikki neu at r2
-            pf "Thanks, guys."
+            pf "Спасибо вам."
             show kaito smi at l2
     
-        "Please, it's me.":
-            pf "It was just against AI GEAR... not even a challenge."
+        "Пожалуйста, это же я.":
+            pf "Мы просто были против ИИ GEAR... это даже не испытание."
             show kaito mis at l2
-            "Uncle Kaito fists bumps me."
+            "Дядя Кайто легко бьёт меня кулаком."
             show note:
                 xoffset 365
                 yoffset 5
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S6/Kaito/4.ogg"
-            hk "That's how we do it!"
-            "Nikki rolls her eyes but laughs anyway."
+            hk "Вот как мы это делаем!"
+            "Никки закатила глаза, но все равно смеялась."
             show nikki smi at r2
             show heart:
                 xoffset 1050
@@ -63,12 +63,12 @@ label E1D4S6:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S6/Nikki/3.ogg"
-            sf "You guys are so lame, but still, congrats! That's a big achievement."
-            pf "Thanks, guys."
+            sf "Вы парни такие отстойные, но всё равно поздравляю! Это большое достижение."
+            pf "Спасибо вам."
             show kaito smi at l2
     
-        "It could have gone better.":
-            pf "We did alright…"
+        "Могло быть лучше.":
+            pf "Мы нормально справились…"
             show nikki hap at r2
             show heart:
                 xoffset 1050
@@ -76,12 +76,12 @@ label E1D4S6:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S6/Nikki/4.ogg"
-            sf "That's awesome! Congratulations!"
+            sf "Это отлично! Поздравляю!"
             show kaito cur at l2
             voice "audio/voice/E1/D4/S6/Kaito/5.ogg"
-            hk "That's good, isn't it?"
+            hk "Это хорошо, не так ли?"
             show nikki neu at r2
-            pf "Yeah."
+            pf "Ага."
             show kaito ske at l2
             show question:
                 xoffset 365
@@ -89,10 +89,10 @@ label E1D4S6:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S6/Kaito/6.ogg"
-            hk "So why don't you seem happy about it?"
-            pf "I feel like it was more to do with luck than skill."
+            hk "Тогда почему ты не рад этому?"
+            pf "Я чувствую, что это была больше удача, чем наши умения."
             show nikki sad at r2
-            "Nikki frowns."
+            "Никки нахмурилась."
             show kaito neu at l2
             show drop:
                 xoffset 1050
@@ -100,28 +100,28 @@ label E1D4S6:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S6/Nikki/5.ogg"
-            sf "Why do you think that? Did you fight hard?"
-            pf "Yeah."
+            sf "Почему ты так думаешь? Ты сражался изо всех сил?"
+            pf "Ага."
             voice "audio/voice/E1/D4/S6/Kaito/7.ogg"
-            hk "Did your team fight hard?"
-            pf "Well, yeah."
+            hk "Твоя команда сражалась изо всех сил?"
+            pf "Ну, да."
             show nikki neu at r2
             voice "audio/voice/E1/D4/S6/Nikki/6.ogg"
-            sf "Then you're being too hard on yourself."
+            sf "Тогда ты просто накручиваешь себя."
             show kaito smi at l2
             voice "audio/voice/E1/D4/S6/Kaito/8.ogg"
-            hk "Your sister's right. Sounds like a fair win to me."
-            pf "I suppose you're right."
+            hk "Твоя сестра права. По мне так звучит как честная победа."
+            pf "Полагаю, вы правы."
 
     voice "audio/voice/E1/D4/S6/Kaito/9.ogg"
-    hk "So, I guess your team was happy they brought you on, weren't they?"
+    hk "Итак, я полагаю, твоя команда была счастлива, что взяла тебя, не так ли?"
     
     if (E1D4S4_FollowMatchPlan == 0):
-        pf "Sort of."
+        pf "Типа того."
         show nikki cur at r2
         voice "audio/voice/E1/D4/S6/Nikki/7.ogg"
-        sf "What does that mean?"
-        pf "My weapons are missing because they haven't cleared customs yet, so the team wanted me to just hang around in the back and keep out of the way."
+        sf "Что это значит?"
+        pf "Мое оружие отсутствовало, потому что оно еще не прошло таможню, поэтому команда хотела, чтобы я просто торчал сзади и держался подальше."
         show kaito cur at l2
         show nikki ske at r2
         show storm:
@@ -130,30 +130,30 @@ label E1D4S6:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D4/S6/Nikki/8.ogg"
-        sf "That doesn't seem very team-like of them."
-        pf "Exactly! I'm a participant, not a spectator! So I participated. When the match started I darted out and took out two AIs on my own."
+        sf "Не очень-то похоже на команду."
+        pf "Именно! Я участник, а не наблюдатель! Вот я и участвовал. Когда матч начался, я вышел и самостоятельно выбил двух ИИ."
         show kaito hap at l2
         show nikki smi at r2
-        "Nikki grins excitedly and Kaito laughs."
+        "Никки азартно ухмыльнулась, а Кайто смеялся."
         voice "audio/voice/E1/D4/S6/Kaito/10.ogg"
-        hk "Sounds about right."
+        hk "Похоже на правду."
         show nikki neu at r2
-        pf "At first, Kaori was super pissed that I didn't follow her orders, but they all ended up just being really curious about my core."
+        pf "Поначалу Каори сильно бесилась, что я не последовал её приказу, но потом они просто заинтересовались моим ядром."
     
     else:
-        pf "Absolutely! Because my weapons haven't cleared through customs they asked me to stay out of the way."
+        pf "Абсолютно! Из-за того, что мое оружие не прошло таможню, они попросили меня держаться подальше."
         show kaito cur at l2
         show nikki wor at r2
-        "Nikki pouts."
+        "Никки надулась."
         voice "audio/voice/E1/D4/S6/Nikki/9.ogg"
-        sf "That doesn't seem fair."
-        pf "It's alright. I understood, so I held back. They did really well and took out two of the AIs before they were struck down. Then I managed to take out the other two, much to the surprise of everyone."
+        sf "Это не честно."
+        pf "Все нормально. Я понял, поэтому сдержался. Они очень хорошо справились и разбили двух ИИ до того, как их выбили. Тогда, к большому удивлению всех, мне удалось вывезти двух других."
         show kaito hap at l2
-        "Uncle Kaito laughs."
+        "Дядя Кайто засмеялся."
         voice "audio/voice/E1/D4/S6/Kaito/11.ogg"
-        hk "That's my boy!"
+        hk "Это мой мальчик!"
         show nikki neu at r2
-        pf "But afterwards was kind of strange. Everyone was really interested in my core."
+        pf "Но потом было немного странно. Все заинтересовались моим ядром."
         
     show kaito cur at l2
     show question:
@@ -162,8 +162,8 @@ label E1D4S6:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S6/Kaito/12.ogg"
-    hk "What's wrong with your core?"
-    pf "I don't know."
+    hk "Что не так с твоим ядром?"
+    pf "Я не знаю."
     show nikki cur at r2
     show question:
         xoffset 1050
@@ -171,14 +171,14 @@ label E1D4S6:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S6/Nikki/10.ogg"
-    sf "Did you ever notice anything weird about it back at CINY?"
-    pf "No…"
+    sf "Ты заметил что-то странное, когда был в CINY?"
+    pf "Нет…"
     show kaito ner at l2
     show nikki smi at r2
     voice "audio/voice/E1/D4/S6/Nikki/11.ogg"
-    sf "Then I wouldn't worry about it."
+    sf "Тогда я бы не волновалась об этом."
     stop music fadeout 3
-    pf "Yeah, I guess you're right."
+    pf "Полагаю, ты права."
     $renpy.pause(1)
     scene black with fade
     $renpy.pause(2.5)
@@ -188,25 +188,25 @@ label E1D4S6:
     show kaito neu at l2
     show nikki neu at r2
     with dissolve
-    "Uncle Kaito stands and stretches."
+    "Дядя Кайто встал и потянулся."
     voice "audio/voice/E1/D4/S6/Kaito/13.ogg"
-    hk "I'm going to grab a drink. You want some food? We left you a plate."
-    pf "Yeah, that'd be great!"
-    "I begin to stand when Kaito stops me."
+    hk "Пойду возьму попить. Хочешь поесть? Мы оставили тебе тарелку."
+    pf "Да, было бы отлично!"
+    "Я начал вставать, когда Кайто остановил меня."
     show kaito smi at l2
     voice "audio/voice/E1/D4/S6/Kaito/14.ogg"
-    hk "I'll get it."
-    pf "Thanks."
+    hk "Я принесу её."
+    pf "Спасибо."
     hide kaito with dissolve
-    "I turn to Nikki."
-    pf "So, how was your day?"
+    "Я повернулся к Никки."
+    pf "Ну, как прошёл твой день?"
     show nikki hap at r2 with dissolve
     voice "audio/voice/E1/D4/S6/Nikki/12.ogg"
-    sf "Pretty good. Did I tell you that I auditioned for the dance team? Well, I got in!"
-    pf "That's great, Nikki!"
+    sf "Довольно хорошо. Я говорила тебе, что я проходила прослушивание в танцевальную команду? Я прошла!"
+    pf "Это отлично, Никки!"
     show nikki smi at r2
     voice "audio/voice/E1/D4/S6/Nikki/13.ogg"
-    sf "I'm really excited about it! But I'm a little worried 'cause... I haven't danced since--"
+    sf "Я очень восхищена этим! Но я немного волнуюсь, потому что... я не танцевала с тех пор--"
     stop music fadeout 3
     show nikki ner at r2 with dissolve
     $renpy.pause(1)
@@ -217,42 +217,42 @@ label E1D4S6:
         yoffset 160
         xzoom .75
         yzoom .75
-    "Her voice chokes up and she glances away."
-    pf "I know. And they would be so proud that you're doing it again."
+    "Её голос затих и она отвернулась."
+    pf "Я знаю. И они бы гордились тем, что ты снова начала заниматься этим."
     show nikki smi at r2 with dissolve
-    "She smiles sadly."
+    "Она печально улыбнулась."
     voice "audio/voice/E1/D4/S6/Nikki/14.ogg"
-    sf "It feels weird knowing they won't be there to watch any of my competitions. Mom never missed a show. And remember how Dad used to make a poster with my name, and he'd wave it around like an idiot?"
-    "I can't help but laugh at the memory."
+    sf "Это странное чувство, зная, что их не будет рядом, чтобы посмотреть мои соревнования. Мама никогда не пропускала шоу. И помнишь, как папа делал плакат с моим именем, и размахивал им как идиот?"
+    "Не мог ничего поделать, кроме как посмеяться над воспоминаниями."
     show nikki ner b1 at r2 with dissolve
     voice "audio/voice/E1/D4/S6/Nikki/15.ogg"
-    sf "Ugh, I remember being {i}so{/i} embarrassed."
-    pf "Yeah, you used to tell him the wrong dates for your competitions hoping he wouldn't show up."
+    sf "Ах, помню, что была {i}так{/i} смущена."
+    pf "Ага, ты говорила ему неправильные даты соревнований, надеясь, что он не появится."
     show nikki smi b1 at r2
     voice "audio/voice/E1/D4/S6/Nikki/16.ogg"
-    sf "I know, but he always did! He'd wave that poster and cheer louder than anyone else and all I could think about was how I wanted to crawl into a hole and die."
+    sf "Я знаю, но он всегда появлялся! Он махал этим плакатом и кричал громче всех, и всё, о чем я могла думать, как я хотела заползти в яму и умереть."
     show nikki sad at r2
     voice "audio/voice/E1/D4/S6/Nikki/17.ogg"
-    sf "But I think about it now and… I would give anything to see one of his posters again--"
+    sf "Но я думаю об этом сейчас… Я бы всё отдала, лишь бы снова увидеть один из его постеров--"
     show nikki win at r2
-    "Her voice cracks and she rubs her eyes. I scoot closer and wrap my arms around her."
+    "Её голос дрогнул, и она протёрла глаза. Я подошёл ближе и обнял её."
     voice "audio/voice/E1/D4/S6/Nikki/18.ogg"
-    sf "I'm sorry."
+    sf "Мне жаль."
     show nikki sad at r2
-    pf "I miss them too. But hey, you've still got me."
+    pf "Я тоже скучаю по ним. Но слушай, у тебя все ещё есть я."
     voice "audio/voice/E1/D4/S6/Kaito/15.ogg"
-    hk "And lucky for you, I'm an expert poster maker."
+    hk "И к счастью для тебя, Я эксперт в делании постеров."
     show kaito smi at l2 with dissolve
     show nikki cur at r2
-    "We both glance up at Uncle Kaito as he sets the plate of food down in front of me. Nikki lets out a weak laugh."
+    "Мы смотрели на дядю Кайто, пока он ставил передо мной тарелку. Никки слабо посмеялась."
     show nikki smi at r2
     voice "audio/voice/E1/D4/S6/Nikki/19.ogg"
-    sf "You've got some tough shoes to fill."
+    sf "Тебе трудно будет влезть в эту шкуру."
     show kaito mis at l2
     voice "audio/voice/E1/D4/S6/Kaito/16.ogg"
-    hk "I'm up for the challenge."
+    hk "Я готов принять вызов."
     show nikki neu at r2
-    "She smiles, and wipes at her eyes one last time."
+    "Она улыбнулась и снова вытерла глаза."
     stop music fadeout 3
     show heart:
         xoffset 1050
@@ -260,13 +260,13 @@ label E1D4S6:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S6/Nikki/20.ogg"
-    sf "Thanks, guys."
+    sf "Спасибо, ребята."
     show kaito hap at l2
-    "Uncle Kaito smiles back."
+    "Дядя Кайто улыбнулся в ответ."
     play music "audio/music/After a Long Day (GAME VERSION).ogg" fadein 1
     voice "audio/voice/E1/D4/S6/Kaito/17.ogg"
-    hk "So, movie night tonight?"
-    pf "I'm game."
+    hk "Так, ночной просмотр кино?"
+    pf "Я в игре."
     show nikki hap at r2
     show note:
         xoffset 1050
@@ -274,7 +274,7 @@ label E1D4S6:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S6/Nikki/21.ogg"
-    sf "Me too!"
+    sf "Я тоже!"
     show kaito smi at l2
     show note:
         xoffset 365
@@ -282,14 +282,14 @@ label E1D4S6:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S6/Kaito/18.ogg"
-    hk "Great, what do we feel like watching?"
+    hk "Отлично, что хотите посмотреть?"
     show nikki neu at r2
     
     label E1D4S6_MovieChoiceLoop:
     
         menu:
             "{i}The GEARfather{/i}":
-                pf "An aging patriarch of the black market GEAR syndicate transfers control of his empire to his reluctant son."
+                pf "Стареющий патриарх черного рынка Синдикат GEAR передает контроль над империей своему сопротивляющемуся сыну."
                 show kaito hap at l2
                 show exclamation:
                     xoffset 365
@@ -297,32 +297,32 @@ label E1D4S6:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Kaito/19.ogg"
-                hk "Alright! You can never get too much Don Gearleone."
-                pf "That's what I'm saying!"
+                hk "Хорошо! Слишком много Дона Гирлеоне не бывает."
+                pf "Об этом я и говорю!"
                 show nikki cur at r2
                 voice "audio/voice/E1/D4/S6/Nikki/22.ogg"
-                sf "I've never seen this movie before."
+                sf "Я раньше не видела этот фильм."
                 show kaito sur at l2 with dissolve
-                "Both Uncle Kaito and I shout in disbelief."
+                "Я с дядей Кайто крикнули, не веря."
                 show shocked:
                     xoffset 365
                     yoffset 5
                     xzoom .75
                     yzoom .75
                 #player and Hitoshi Kaito line should be together 
-                "Both of us" "What?!"
+                "Мы оба" "Что?!"
                 show kaito mis at l2
                 voice "audio/voice/E1/D4/S6/Kaito/21.ogg"
-                hk "\"I'll make him a cogwheel he can't refuse\"."
+                hk "\"Я предложу ему шестерню, от которой он не сможет отказаться\"."
                 show nikki thi at r2
-                "Nikki shakes her head."
+                "Никки качала головой."
                 show kaito ske at l2
                 voice "audio/voice/E1/D4/S6/Nikki/23.ogg"
-                sf "Errr... Nope."
-                pf "Okay, we have to watch it now."
+                sf "Э-э-э... Нет."
+                pf "Хорошо, мы посмотрим его сейчас."
         
             "{i}The Sixth GEAR{/i}":
-                pf "A young boy is haunted by a dark secret: he is visited by ruined GEAR."
+                pf "Маленького мальчика преследует тёмная тайна: его посещает разрушенный GEAR."
                 show nikki win at r2
                 show crying:
                     xoffset 1050
@@ -330,12 +330,12 @@ label E1D4S6:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Nikki/24.ogg"
-                sf "Ughhh, nooo we are not watching this movie AGAIN."
-                pf "C'mon, it's a classic!"
+                sf "Нуууууу, мы же не собираемся СНОВА смотреть этот фильм."
+                pf "Да ладно, это же классика!"
                 show kaito mis at l2
                 voice "audio/voice/E1/D4/S6/Kaito/22.ogg"
-                hk "\"I see dead GEARs\"."
-                pf "Ha! See? Uncle Kaito gets it."
+                hk "\"Я вижу мёртвые GEARs\"."
+                pf "Ха! Видишь? Дядя Кайто втянулся в это."
                 show nikki dis at r2
                 show storm:
                     xoffset 1050
@@ -343,15 +343,15 @@ label E1D4S6:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Nikki/25.ogg"
-                sf "Fine, fine. I can tell when I'm outvoted, but next time, I get to pick the movie."
+                sf "Ладно ладно. Я могу понять, когда перевес голосов против, но в следующий раз я выберу фильм."
                 show kaito smi at l2
                 voice "audio/voice/E1/D4/S6/Kaito/23.ogg"
-                hk "That's only fair."
+                hk "Это честно."
                 show nikki mis at r2
-                "Nikki wears a mischievous grin. Uh oh, what did we just agree to?"
+                "Никки озорно улыбнулась. О-оу, на что мы только что согласились?"
         
             "{i}The Lord of the GEARs{/i}":
-                pf "A short-pilot and his companions set out on a journey to destroy the One GEAR."
+                pf "Низкорослый пилот и его спутники отправились в путешествие, чтобы уничтожить GEAR всевластия."
                 show nikki hap at r2
                 show exclamation:
                     xoffset 1050
@@ -359,31 +359,31 @@ label E1D4S6:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Nikki/26.ogg"
-                sf "Ooooh, yes! Aragear is soooo dreamy!"
-                pf "He's a badass."
+                sf "Ооооо, да! Арагир такой восхитительный!"
+                pf "Он крут."
                 show kaito mis at l2
                 voice "audio/voice/E1/D4/S6/Kaito/24.ogg"
-                hk "Come on, this movie is so much more than just Aragear. \"One GEAR to rule them all, One GEAR to find them; One GEAR to bring them all and in the darkness bind them\"."
+                hk "Да ладно, этот фильм глубже, чем просто про Арагира. \"GEAR всевластия, чтобы управлять всеми. GEAR всевластия, чтобы найти их; GEAR всевластия, чтобы привести их всех и свяжать в темноте\"."
                 show nikki smi at r2
-                "Nikki bursts out laughing."
+                "Никки залилась смехом."
                 voice "audio/voice/E1/D4/S6/Nikki/27.ogg"
-                sf "Oh my god, Uncle, you're a nerd!?"
+                sf "О Боже, дядя, ты задрот!?"
                 show kaito hap at l2
-                "He grins."
+                "Он ухмыльнулся."
                 show note:
                     xoffset 365
                     yoffset 5
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Kaito/25.ogg"
-                hk "Guilty as charged."
+                hk "Виновен по всем статьям."
         
             "{i}Raiders of the Lost GEAR{/i}":
-                pf "A renowned archeologist is recruited to find the GEAR of the covenant."
+                pf "Известный археолог нанят, чтобы найте GEAR завета."
                 show kaito ske at l2
-                "Uncle Kaito looks lost."
+                "Дядя Кайто похоже не понял."
                 voice "audio/voice/E1/D4/S6/Kaito/26.ogg"
-                hk "Not sure I've seen this one, bud."
+                hk "Не уверен, что видел это, приятель."
                 show nikki cur at r2
                 show shocked:
                     xoffset 1050
@@ -391,8 +391,8 @@ label E1D4S6:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Nikki/28.ogg"
-                sf "Really, Uncle Kaito? It's really popular in America."
-                pf "Yeah! \"The Bible speaks of the GEAR leveling mountains and laying waste in entire regions. An army that carries the GEAR before it... is invincible\"."
+                sf "Правда, дядя Кайто? Он довольно популярен в Америке."
+                pf "Ага! \"Библия говорит, что GEAR выравнивает горы и опустошает целые регионы. Армия несущая такой GEAR... непобедима\"."
                 show kaito neu at l2
                 show drop:
                     xoffset 365
@@ -400,13 +400,13 @@ label E1D4S6:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Kaito/27.ogg"
-                hk "Nope, doesn't ring a bell."
+                hk "Нет, ни о чём не говорит."
                 show nikki smi at r2
                 voice "audio/voice/E1/D4/S6/Nikki/29.ogg"
-                sf "Ooh, we should watch this then."
+                sf "О, тогда мы должны его посмотреть."
         
             "{i}The Hunger GEARs{/i}":
-                pf "Catniece Neverdeen voluntarily takes her younger sister's place in the Hunger GEARs, a televised fight to the death in which teenagers are chosen at random to compete."
+                pf "Катнис Невердин добровольно занимает место своей младшей сестры в Голодных GEARs, телевизионном бою на смерть, в котором подростки выбираются случайным образом."
                 show nikki hap at r2
                 show exclamation:
                     xoffset 1050
@@ -414,53 +414,53 @@ label E1D4S6:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Nikki/30.ogg"
-                sf "I love this movie! I never pegged you as someone who like it though."
-                pf "Are you kidding? \"May the cogs be ever in your favour\"."
+                sf "Я люблю этот фильм! Я никогда не относила тебя к тем, кому это нравится."
+                pf "Ты шутишь? \"Пусть шестерни всегда крутятся в твою сторону\"."
                 show nikki smi at r2
                 voice "audio/voice/E1/D4/S6/Nikki/31.ogg"
-                sf "Yes!"
-                pf "What do you think, Uncle?"
+                sf "Да!"
+                pf "Что думаешьЮ дядя?"
                 show kaito hap at l2
-                "Uncle Kaito smiles at us."
+                "Дядя Кайто улыбался нам."
                 voice "audio/voice/E1/D4/S6/Kaito/28.ogg"
-                hk "Sure, why not?"
+                hk "Конечно, почему бы и нет?"
         
-            "{i}Jurassic GEAR{/i}":
-                pf "During a preview tour, a theme park suffers a major power breakdown that allows its cloned dino-GEAR exhibits to run amok."
+            "{i}GEAR юрского периода{/i}":
+                pf "Во время осмотра, тематический парк подвергся отключению питания, что позволило его клонированным экспонатам dino-GEAR разгуляться."
                 show kaito mis at l2
                 voice "audio/voice/E1/D4/S6/Kaito/29.ogg"
-                hk "I'm always up to watch some dinosaurs terrorize people."
+                hk "Я всегда готов посмотреть, как динозавры терроризируют людей."
                 show nikki hap at r2
                 voice "audio/voice/E1/D4/S6/Nikki/32.ogg"
-                sf "\"Hold onto your butts\"!"
+                sf "\"Держите ваши задницы\"!"
                 show kaito cur at l2 with dissolve
                 show dots:
                     xoffset 365
                     yoffset 5
                     xzoom .75
                     yzoom .75
-                "We both stare at her."
+                "Мы посмотрели на неё."
                 show nikki mis at r2
                 voice "audio/voice/E1/D4/S6/Nikki/33.ogg"
-                sf "What? It's a quote from the movie."
-                pf "Still a bit unexpected."
+                sf "Что? Это фраза из фильма."
+                pf "Все ещё немного неожиданно."
                 show kaito neu at l2
                 voice "audio/voice/E1/D4/S6/Kaito/30.ogg"
-                hk "Just a bit."
+                hk "Совсем чуть-чуть."
         
             "{i}Snakes on a GEAR{/i}":
-                pf "A military pilot takes on a GEAR full of deadly and poisonous snakes, which were deliberately released to kill him and stop him from testifying against a mob boss."
+                pf "Военный пилот получает GEAR полный смертоносных и ядовитых змей, которые были преднамеренно выпущены, чтобы убить его и помешать ему давать показания против босса мафии."
                 show nikki ske at r2
                 voice "audio/voice/E1/D4/S6/Nikki/34.ogg"
-                sf "This movie was kind of dumb."
-                pf "Are you kidding? Jamuel L. Sackson was such a badass! \"I have had it with these mother--\""
+                sf "Этот фильм был довольно тупым."
+                pf "Шутишь? Джамуэль Л. Сэксон был крут! \"Я уже имел дело с этими сукиными--\""
                 show kaito mis at l2
                 voice "audio/voice/E1/D4/S6/Kaito/31.ogg"
-                hk "We get it."
-                pf "You guys don't like this movie?"
+                hk "Мы поняли."
+                pf "Вам не нравится этот фильм?"
                 show kaito neu at l2
                 voice "audio/voice/E1/D4/S6/Kaito/32.ogg"
-                hk "It's alright. Are you sure it's appropriate for Nikki?"
+                hk "Он нормальный. Ты уверен, что он подходит для Никки?"
                 show nikki ann at r2
                 show vein:
                     xoffset 1050
@@ -468,27 +468,27 @@ label E1D4S6:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Nikki/35.ogg"
-                sf "I'm not a little kid!"
+                sf "Я не маленький ребёнок!"
                 show kaito hap at l2
-                "Uncle Kaito puts his hands up in defeat."
+                "Дядя Кайто поднял руки."
                 show drop:
                     xoffset 365
                     yoffset 5
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Kaito/33.ogg"
-                hk "I'm sorry!"
+                hk "Мне жаль!"
                 show nikki smi at r2
-                "Nikki grins."
+                "Никки ухмыльнулась."
                 voice "audio/voice/E1/D4/S6/Nikki/36.ogg"
-                sf "Anyway, I've seen it before. I'll watch it if we have to."
+                sf "Во всяком случае, я уже его видела. Я посмотрю, если придётся."
                 show kaito smi at l2
                 voice "audio/voice/E1/D4/S6/Kaito/34.ogg"
-                hk "Okay, well, it's up to you then, bud."
-                pf "I say we're watching it."
+                hk "Хорошо, тебе решать, приятель."
+                pf "Мы смотрим его."
         
             "{i}I, Cenorobot{/i}":
-                pf "A technophobic pilot investigates a GEAR that may have been wrecked by a fellow GEAR, which leads to a larger threat to humanity."
+                pf "Пилот технофоб исследует GEAR, который мог быть разбит дружественным GEAR, что приводит к большей угрозе для человечества."
                 show kaito mis at l2
                 show exclamation:
                     xoffset 365
@@ -496,12 +496,12 @@ label E1D4S6:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Kaito/35.ogg"
-                hk "Great choice! A powerful movie. \"Human beings have dreams. Even dogs have dreams, but you, you are just a machine. An imitation of life. Can a GEAR write a symphony? Can a GEAR turn a... canvas into a beautiful masterpiece\"?"
+                hk "Отличный выбор! Сильный фильм. \"У людей есть мечты. Даже собаки имеют мечты, но ты, ты просто машина. Имитация жизни. Может ли GEAR написать симфонию? Может GEAR превратить... холст в красивый шедевр\"?"
                 show nikki mis at r2
                 voice "audio/voice/E1/D4/S6/Nikki/37.ogg"
-                sf "\"Can you\"?"
+                sf "\"Можешь\"?"
                 show kaito smi at l2
-                pf "Haha, Nikki, you like this movie too?"
+                pf "Хаха, Никки, тебе тоже нравится этто фильм?"
                 show nikki hap at r2
                 show exclamation:
                     xoffset 1050
@@ -509,22 +509,22 @@ label E1D4S6:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Nikki/38.ogg"
-                sf "Of course! What's not to like?"
+                sf "Конечно! Почему его не любить?"
         
-            "{i}Fifty Shades of GEAR{/i}" if (E1D4S6_FiftyShadesLoopback == 0):
+            "{i}Пятьдесят оттенков GEAR{/i}" if (E1D4S6_FiftyShadesLoopback == 0):
                 $ E1D4S6_FiftyShadesLoopback = 1
-                pf "Literature student Anesthesia Iron's life changes forever when she meets a powerful, rich billionaire GEAR tycoon. I heard it's got some steamy scenes--"
-                "I regret it as soon as the words leave my mouth. What possessed me to request this movie?"
+                pf "Жизнь студентки литератулы Анастасии Айрон навсегда меняется, когда она встречает могущественного, богатого магната GEAR. Слышал, там есть пара горячих сцен--"
+                "Я пожалел сразу, как только сказал об этом. Что вообще попудило меня попросить этто фильм?"
                 show kaito ske at l2
                 show nikki ske at r2
-                "Uncle Kaito gives me a strange look."
+                "Дядя Кайто странно посмотрел на меня."
                 show drop:
                     xoffset 365
                     yoffset 5
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Kaito/37.ogg"
-                hk "I'm going to have to decline this one."
+                hk "Мне придётся отклонить это."
                 show nikki ner at r2
                 show drop:
                     xoffset 1050
@@ -532,37 +532,37 @@ label E1D4S6:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Nikki/39.ogg"
-                sf "No offense, but this is probably the last movie I'd ever want to watch with family."
-                pf "Yeah, you're right, I'm not sure what I was thinking."
+                sf "Без обид, но это, наверное, последний фильм, который я бы хотела посмотреть с семьей."
+                pf "Да, вы правы, не знаю, о чём я думал."
                 jump E1D4S6_MovieChoiceLoop
         
-            "Anything with Ceonardo DiLaprio!":
+            "Что-нибудь с Сеонардо ДиЛаприо!":
                 ### NOTE - new as of Ep4 release
                 $ E1D4S6_Ceonardo = 1
-                pf "Let's watch a Ceonardo DiLaprio movie."
+                pf "Давайте посмотрим фильм с Сеонардо ДиЛаприо."
                 show nikki mis at r2
                 voice "audio/voice/E1/D4/S6/Nikki/40.ogg"
-                sf "You are weirdly obsessed with him, you know that?"
-                pf "No, he's just a really talented actor."
+                sf "Ты странно одержим им, ты знаешь об этом?"
+                pf "Нет, просто он очень талантливый актёр."
                 show nikki smi at r2
                 voice "audio/voice/E1/D4/S6/Nikki/41.ogg"
-                sf "Mmhm, sure, a \"talented\" actor who hasn't won a Moscar yet."
-                pf "How dare you! Everyone knows the Moscars are rigged!"
-                "Uncle Kaito nods."
+                sf "Ага, конечно, \"талантливый\" актёр, у которого все ещё нет Москара."
+                pf "Как ты смеешь! Все знают, что Москары сфальсифицированы!"
+                "Дядя Кайто кивнул."
                 show kaito mis at l2
                 voice "audio/voice/E1/D4/S6/Kaito/38.ogg"
-                hk "To be fair, he {i}should{/i} have won at least two by now."
+                hk "Если честно, он {i}должен был{/i} выйграть по крайней мере уже два."
                 show nikki mis at r2
-                sf "Oh no, you too, Uncle Kaito?"
+                sf "О нет, ты тоже, дядя Кайто?"
                 show kaito hap at l2
-                "He just laughs."
+                "Он засмеялся."
                 show bulb:
                     xoffset 365
                     yoffset 5
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Kaito/39.ogg"
-                hk "So, Ceonardo DiLaprio… How about {i}The GEAR of Wall Street{/i}?"
+                hk "Так, Сеонардо ДиЛаприо… Как насчёт {i}GEAR с Уолл стрит{/i}?"
                 show nikki hap at r2
                 show bulb:
                     xoffset 1050
@@ -570,13 +570,13 @@ label E1D4S6:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S6/Nikki/42.ogg"
-                sf "We should watch {i}Jomeo and Ruliet{/i}! He was so good in that!"
+                sf "Мы должны посмотреть {i}Жомео и Рульетту{/i}! Там он был хорош!"
                 
                 label E1D4S6_MovieChoiceLoopCeonardo:
                     menu:
-                        "{i}GEAR of Wall Street{/i} with Nikki?!" if (E1D4S6_CeonardoLoopback == 0):
+                        "{i}GEAR с Уолл стрит{/i} с Никки?!" if (E1D4S6_CeonardoLoopback == 0):
                             $ E1D4S6_CeonardoLoopback = 1
-                            pf "Actually, I'm not sure that's the best choice, Uncle."
+                            pf "На самом деле, я не уверен, что это лучший выбор, дядя."
                             show kaito neu at l2 with dissolve
                             show dots:
                                 xoffset 365
@@ -590,11 +590,11 @@ label E1D4S6:
                                 yoffset 160
                                 xzoom .75
                                 yzoom .75
-                            "He looks thoughtfully at Nikki, then nods. Nikki appears confused but goes with it."
+                            "Он задумчиво смотрел на Никки, затем кивнул. Никки казалась растерянной, но смирилась с этим."
                             jump E1D4S6_MovieChoiceLoopCeonardo
             
-                        "Let's watch {i}Jomeo and Ruliet{/i}.":
-                            pf "We can watch {i}Jomeo and Ruliet{/i}."
+                        "Давайте посмотрим {i}Жомео и Рульетту{/i}.":
+                            pf "Мы можем посмотреть {i}Жомео и Рульетту{/i}."
                             show nikki smi at r2
                             show note:
                                 xoffset 1050
@@ -602,13 +602,13 @@ label E1D4S6:
                                 xzoom .75
                                 yzoom .75
                             voice "audio/voice/E1/D4/S6/Nikki/44.ogg"
-                            sf "Yay!"
+                            sf "Ура!"
                             show kaito smi at l2
                             voice "audio/voice/E1/D4/S6/Kaito/40.ogg"
-                            hk "It is one of his best movies."
+                            hk "Это один из его лучших фильмов."
             
-                        "I don't like either of these choices.":
-                            pf "I'm not feeling either of those tonight. Let's watch {i}GEARception{/i}."
+                        "Мне не нравится ни то, ни другое.":
+                            pf "Я не очень хочу смотреть эти два. Давайте лучше посмотрим {i}GEARception{/i}."
                             show kaito cur at l2
                             show exclamation:
                                 xoffset 365
@@ -616,18 +616,18 @@ label E1D4S6:
                                 xzoom .75
                                 yzoom .75
                             voice "audio/voice/E1/D4/S6/Kaito/41.ogg"
-                            hk "Oh! That's a good one!"
+                            hk "О! Этот хорош!"
                             show nikki thi at r2
                             voice "audio/voice/E1/D4/S6/Nikki/45.ogg"
-                            sf "I hate the ending. Did it stop spinning or not?"
+                            sf "Я ненавижу конец. Он перестал вращаться или нет?"
                             show kaito smi at l2
                             voice "audio/voice/E1/D4/S6/Kaito/1.ogg"
-                            hk "No way, that would ruin it."
+                            hk "Ни за что, это бы всё испортило."
                 
-    pf "Anyway, I'll go find the movie so we can watch."
+    pf "В любом случае, я пойду найду фильм."
     #fade to black
     scene black with fade
     stop music fadeout 3
-    "We enjoy the cinematic experience late into the night--a great ending to a great day."
+    "Мы наслаждались кинематографическим опытом до поздней ночиt--отличный конец хорошего дня."
     
     jump E1D5S1
