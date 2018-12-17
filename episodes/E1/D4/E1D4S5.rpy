@@ -5,32 +5,32 @@ label E1D4S5:
     show shou hap at cc with dissolve
     if (E1D4S4_FollowMatchPlan == 1):
         play music "audio/music/Isokaze (GAME VERSION).ogg" fadein 1
-        "Outside of the arena, Shou claps me on the back, nearly knocking me off balance. Even Mayu offers me a handshake. Kaori trails behind, looking unusually thoughtful." 
+        "За ареной Сё похлоапл меня по спине, чуть не выбив из равновесия. Даже Маю пожала мне руку. Каори стояла позади, выглядя необычайно задумчивой." 
         voice "audio/voice/E1/D4/S5/Shou/2.ogg"
         show note:
             xoffset 720
             yoffset 20
             xzoom .75
             yzoom .75
-        ss "That was amazing! You totally saved us back there, broseph!" 
-        pf "Thanks!"
+        ss "Это юыло удивительно! Ты там полностью нас спас, братан!" 
+        pf "Спасибо!"
         show kaori thi at r3
         show mayu smi at l3
         voice "audio/voice/E1/D4/S5/Kaori/1.ogg"
-        ki "You did okay, but only because we helped you so much."
+        ki "Ты был хорош, но только потому, что мы сильно тебе помогли."
         show shou mis at cc
         voice "audio/voice/E1/D4/S5/Shou/3.ogg"
-        ss "Are you kidding? Between the three of us, we took down two. He took down two on his own. You have to admit that is more than \"okay\"."
+        ss "Ты шутишь? Мы трое выбили двух. Он выбил двоих в соло. Ты должна признать, что он был более чем \"хорош\"."
         show kaori neu at r3
         voice "audio/voice/E1/D4/S5/Kaori/2.ogg"
-        ki "At least you followed the plan." 
+        ki "По крайней мере ты придерживался плана." 
     
         menu: 
-            "Of course I did." :
-                pf "That's what we agreed upon."
+            "Конечно придерживался." :
+                pf "Мы ведь договорились об этом ранее."
                 show kaori mis at r3
                 voice "audio/voice/E1/D4/S5/Kaori/3.ogg"
-                ki "Well, now we know you can follow directions. That's more than I can say for Shou."
+                ki "Ну, теперь мы знаем, что ты можешь следовать указаниям. Это более чем я могу сказать для Сё."
                 show shou thi at cc
                 show drop:
                     xoffset 720
@@ -38,15 +38,15 @@ label E1D4S5:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S5/Shou/4.ogg"
-                ss "Hey!"
+                ss "Эй!"
     
-            "It's because I'm sensitive to your needs." :
-                pf "That's what you wanted, wasn't it?"
+            "Это потому что я чувствителен к твоим потребностям." :
+                pf "Это ведь то, чего ты хотела, не так ли?"
                 show kaori ske at r3
                 voice "audio/voice/E1/D4/S5/Kaori/4.ogg"
-                ki "Well, yeah."
-                "I grin."
-                pf "See? I know what women want."
+                ki "Ну, да."
+                "Я ухмыльнулся."
+                pf "Видишь? Я знаю, чего хотят девушки."
                 show kaori dis at r3
                 show mayu cur at l3
                 show shou hap at cc
@@ -55,30 +55,30 @@ label E1D4S5:
                     yoffset 110
                     xzoom .75
                     yzoom .75
-                "Kaori crosses her arms, clearly not amused, but Shou laughs."
+                "Каори скрестила руки, показывая что её не позабавило, хотя Сё смеялся."
     
-            "It was a stupid plan." :
-                pf "We could have done better if I wasn't sidelined from the start."
+            "Это был тупой план." :
+                pf "Мы бы справились лучше, если бы я не был в стороне в самого начала."
                 show kaori dis at r3
-                "Kaori scowls."
+                "Каори нахмурилась."
                 voice "audio/voice/E1/D4/S5/Kaori/5.ogg"
-                ki "Are you seriously going to say that--"
+                ki "ты серьёзно хочешь сказать, что--"
                 show mayu wor at l3
                 show shou neu at cc
                 voice "audio/voice/E1/D4/S5/Shou/5.ogg"
-                ss "Let's not start, guys. We can't change what's already been done."
+                ss "Давайте не начинать. Мы не можем изменить то, что уже сделано."
                 show kaori ann at r3
-                "Kaori crosses her arms."
+                "Каори скрестила руки."
                 
         voice "audio/voice/E1/D4/S5/Kaori/6.ogg"
-        ki "We still would have scored better if you were properly equipped."
+        ki "Мы могли выступить лучше, если бы ты был должным образом экипирован."
         show shou smi at cc
         voice "audio/voice/E1/D4/S5/Shou/6.ogg"
-        ss "I'm not worried about that anymore."
+        ss "Я больше не беспокоюсь об этом."
         show kaori dis at r3
         show mayu neu at l3
         voice "audio/voice/E1/D4/S5/Kaori/7.ogg"
-        ki "Why not?"
+        ki "Почему нет?"
         show shou hap at cc
         show shiny:
             xoffset 720
@@ -86,24 +86,24 @@ label E1D4S5:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D4/S5/Shou/7.ogg"
-        ss "Because he's got that amazing core thing!"
+        ss "Потому что у нег оесть это удивительное ядро!"
         voice "audio/voice/E1/D4/S5/Mayu/1.ogg"
-        ma "If it's alright for me to ask, how did you do that?"
+        ma "Могу ли я спросить, как ты это сделал?"
         stop music fadeout 3
     else:
         show kaori ann at r3
-        "As soon as we are out of the arena, Kaori whirls on me, a fierce scowl on her face."
+        "Как только мы вышли с арены Каори повернулась ко мне с яростным выражением на лице."
         show kaori ang
         voice "audio/voice/E1/D4/S5/Kaori/8.ogg"
-        ki "What the hell were you thinking?"
+        ki "О чём, чёрт возьми, ты думал?"
         show kaori ann
         show mayu wor at l3
         show shou ner at cc
         play music "audio/music/Next Time (GAME VERSION).ogg" fadein 1
     
         menu:
-            "I did what I thought was best.":
-                pf "I was thinking that I could help us score big."
+            "Я делал то, что слитал нужным.":
+                pf "Я думал, что помогу вам заработать побольше очков."
                 show kaori ang at r3
                 show vein:
                     xoffset 1175
@@ -111,15 +111,15 @@ label E1D4S5:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S5/Kaori/9.ogg"
-                ki "Are you insane? Because of you and your recklessness, Shou and Mayu were taken out!"
+                ki "Ты с ума сошёл? Из-за твоего безрассудства Сё и Маю были выбиты!"
                 show kaori ann at r3
                 show shou wor at cc
-                pf "I knew there was some risk involved, but I couldn't sit back and do nothing. I took a chance and it paid off. We must have scored high for taking out all the AIs!"
+                pf "Я знал, что будет какой-то риск, но я не мог сидеть сложа руки. Я выбрал шанс, и он окупился. Мы должны набрать самый высокий балл за уничтожение всех ИИ!"
                 show kaori dis at r3
-                "Kaori's scowl deepens."
+                "Каори сильнее нахмурилась."
     
-            "You're welcome.":
-                pf "That I was going to take us to the top."
+            "Всегда пожалуйста.":
+                pf "О том, чтобы поднять нас на самыю вершину."
                 show kaori ang at r3
                 show exclamation:
                     xoffset 1175
@@ -127,13 +127,13 @@ label E1D4S5:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S5/Kaori/10.ogg"
-                ki "You jeopardised the entire team!"
+                ki "Ты подставил под угрозу всю команду!"
                 show kaori ann at r3
                 show shou wor at cc
-                pf "Okay, I'm sorry that I single-handedly took out two AIs and granted us a huge point boost."
+                pf "Да, да, мне жаль, что я в одиночку выбил двух ИИ и дал нам огромный прирост очков."
                 show kaori ang at r3
                 voice "audio/voice/E1/D4/S5/Kaori/11.ogg"
-                ki "That's not the point!"
+                ki "Делл не в этом!"
                 show kaori ann at r3
                 pf "Actually, that is the point. Pun intended."
                 "Kaori looks dangerously close to bursting a blood vessel."
@@ -144,7 +144,7 @@ label E1D4S5:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S5/Kaori/12.ogg"
-                ki "Arrrghh! Why you--"
+                ki "Арррргх! Почему ты--"
     
             "Nobody puts me in a corner!":
                 pf "This was my fight too and I wasn't going to miss it."
