@@ -102,7 +102,7 @@ label E1D4S5:
         play music "audio/music/Next Time (GAME VERSION).ogg" fadein 1
     
         menu:
-            "Я делал то, что слитал нужным.":
+            "Я делал то, что считал нужным.":
                 pf "Я думал, что помогу вам заработать побольше очков."
                 show kaori ang at r3
                 show vein:
@@ -133,9 +133,9 @@ label E1D4S5:
                 pf "Да, да, мне жаль, что я в одиночку выбил двух ИИ и дал нам огромный прирост очков."
                 show kaori ang at r3
                 voice "audio/voice/E1/D4/S5/Kaori/11.ogg"
-                ki "Делл не в этом!"
+                ki "Дело не в этом!"
                 show kaori ann at r3
-                pf "Actually, that is the point. Pun intended."
+                pf "Вообще-то, как раз-таки в этом. Pun intended."
                 "Kaori looks dangerously close to bursting a blood vessel."
                 show kaori ang at r3
                 show vein:
@@ -146,8 +146,8 @@ label E1D4S5:
                 voice "audio/voice/E1/D4/S5/Kaori/12.ogg"
                 ki "Арррргх! Почему ты--"
     
-            "Nobody puts me in a corner!":
-                pf "This was my fight too and I wasn't going to miss it."
+            "Никто не загонял меня в рамки!":
+                pf "Это так же был и мой бой, я не собирался пропускать его."
                 show kaori ang at r3
                 show vein:
                     xoffset 1175
@@ -155,10 +155,10 @@ label E1D4S5:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S5/Kaori/13.ogg"
-                ki "Do you even hear yourself right now? This fight wasn't about just you. It was about all of us!"
+                ki "Ты вообще слышишь себя сейчас? Этот бой был не только твой. Он был наш!"
                 show kaori ann at r3
                 show shou wor at cc
-                pf "And we took out all the enemy GEARs, didn't we? So what's the problem?"
+                pf "И мы выбили все вражеские GEAR, не так ли? Так в чём проблема?"
                 show kaori ang at r3
                 show exclamation:
                     xoffset 1175
@@ -166,32 +166,32 @@ label E1D4S5:
                     xzoom .75
                     yzoom .75
                 voice "audio/voice/E1/D4/S5/Kaori/14.ogg"
-                ki "The problem is that you put the rest of us in danger!"
+                ki "Проблема в том, что ты подверг остальных опасности!"
                 
         show kaori ann at r3 with dissolve
         show mayu ner at l3 with dissolve
         show shou neu at cc with dissolve
-        "Shou steps forward in an attempt to calm Kaori down, while Mayu hangs back, staring intently at a spot on the ground."
+        "Сё подошёл к каори, пытаясб успокоить её, а Маю отошла нахад, пристально глядя на землю."
         voice "audio/voice/E1/D4/S5/Shou/8.ogg"
-        ss "Kaori--"
-        "Kaori ignores Shou and continues her tirade."
+        ss "Каори--"
+        "Каори игнорировала Сё и продолжала свою тираду."
         show kaori ang at r3
         show shou ner at cc
         voice "audio/voice/E1/D4/S5/Kaori/15.ogg"
-        ki "You did {i}not{/i} do what was best for the team. You did what was best for yourself, and Shou and Mayu paid the price for your actions. You might have scored some points for us, but we could have scored even more if half the team hadn't been shut down."
+        ki "Ты {i}не сделал{/i} то, что было лучше для команды. Ты сделал то, что было лучше для тебяЮ а Сё и Маю поплатились за твои действия. Ты возможно и заработал нам очков, но мы бы бы заработали больше, если бы половина команды не была разбита."
         voice "audio/voice/E1/D4/S5/Kaori/16.ogg"
-        ki "We work as a {i}team{/i}, which means we look out for each other!"
+        ki "Мы работаем в {i}команде{/i}, а это значит, что мы прикрываем друг друга!"
         show kaori ann at r3
         show shou wor at cc
-        pf "And I'm a part of this team too, which means I shouldn't have been sidelined."
+        pf "И я тоже часть этой команды, что значит, что я не должен оставаться в стороне."
         show kaori ang at r3
         voice "audio/voice/E1/D4/S5/Kaori/17.ogg"
-        ki "Did you ever think that I sidelined you in order to avoid something like this from happening? What would have happened to you if we hadn't stepped in?"
+        ki "Ты вообще понимаешь, что оставила тебя в стороне, чтобы избежать того, что произошло? Что бы случилось с тобой, если бы мы не вмешались?"
         show kaori ann at r3
         show mayu sad at l3
-        "I stay silent, but cross my arms defiantly."
+        "Я молчал, но демонстративно скрестил руки."
         voice "audio/voice/E1/D4/S5/Kaori/18.ogg"
-        ki "You would have been taken out. And frankly, you should have been."
+        ki "Тебя бы выбили. И, честно говоря, тебя должны были выбить."
         show mayu wor at l3
         show shou ang at cc
         show exclamation:
@@ -200,7 +200,7 @@ label E1D4S5:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D4/S5/Shou/9.ogg"
-        ss "Kaori!"
+        ss "Каори!"
         show kaori ang at r3
         show shou ann at cc
         show vein:
@@ -209,12 +209,12 @@ label E1D4S5:
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D4/S5/Kaori/19.ogg"
-        ki "What?"
+        ki "Что?"
         show kaori ann at r3
-        "She glares at Shou, but hesitates when she sees the hardened expression on his face."
+        "Она посмотрела на Сё, но заколебалась, когда увидела ожесточённое выражение на его лице."
         show shou ang at cc
         voice "audio/voice/E1/D4/S5/Shou/10.ogg"
-        ss "Give the guy a break! Didn't you see what his GEAR did out there? That was {i}incredible{/i}! We should be figuring out how he did that instead of arguing over what should have happened."
+        ss "Отстань от парня! Ты видела, что его GEAR сделал там? Это было {i}невероятно{/i}! Мы должны выяснить как он это сделал, а не спорить о том, что должно было случиться."
         show kaori dis at r3
         show shou ann at cc
         show dots:
@@ -222,32 +222,32 @@ label E1D4S5:
             yoffset 110
             xzoom .75
             yzoom .75
-        "Kaori's frown deepens with Shou's every word."
+        "С каждым словом Сё, Каори больше хмурилась."
         show shou dis at cc
         voice "audio/voice/E1/D4/S5/Shou/11.ogg"
-        ss "What's done is done. We still won, and as much as you hate to admit it, you know that our victory was in large part due to him."
+        ss "Что сделано, то сделано. Мы выйграли, и как бы тебе не хотелось это признавать, ты знаешь, что по большей части победа была достигнула благодаря ему."
         show kaori ang at r3
-        "Kaori opens her mouth to speak, but I interrupt her before she can. I'm so tired of listening to her argue."
+        "Каори собралась что-то сказать, но я перебил её прежде, чем она успела. Я так устал слушать её споры."
         show kaori ann at r3
-        pf "Mayu, what do you think?"
+        pf "Маю, что ты думаешь?"
         show mayu sur at l3 with dissolve
         show panic:
             xoffset 230
             yoffset 135
             xzoom .75
             yzoom .75
-        "Mayu looks up in surprise and hesitates before answering. Both Shou and Kaori stare intently at her, waiting."
+        "Маю удивлённо подняла голову, и колебалась, прежде чем ответить. Каори и Сё пристально смотрели на неё."
         show mayu ner at l3
         voice "audio/voice/E1/D4/S5/Mayu/2.ogg"
-        ma "Um… I don't want to cause trouble."
+        ma "Эм… Я не хочу доставлять неприятности."
         show shou neu at cc
         voice "audio/voice/E1/D4/S5/Shou/12.ogg"
-        ss "It's okay, you won't cause any trouble. Just tell us what you think."
+        ss "Всё в порядке, ты не доставляешь неприятности. Просто скажи нам, что думаешь."
         show mayu neu at l3
         stop music fadeout 5
         voice "audio/voice/E1/D4/S5/Mayu/3.ogg"
-        ma "Well… I think--maybe we shouldn't be so angry. After all, we scored pretty well and now we know that we have a secret weapon among us."
-        "Kaori crosses her arms and grudgingly shrugs. Then she turns towards me, her eyes brimming with curiosity."
+        ma "Ну… Я думаю--мы не должны так злиться. Всё-таки мы хорошо выступили, и теперь знаем, что среди нас есть секретное оружие."
+        "Каори скрестила руки и неохотно пожала плечами. Затем она повернулась ко мне, её глаза были наполнены любопытством."
         
     show kaori ske at r3
     show question:
@@ -256,13 +256,13 @@ label E1D4S5:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S5/Kaori/20.ogg"
-    ki "Yeah, what exactly was that max power mode thing anyway? Why didn't you tell us you could do that when we ran the simulation?"
+    ki "Ладно, что это был за режим максимальной мощности? Почему ты не сказал нам, что можешь такое, когда мы запусками симуляцию?"
     show shou neu at cc
     play music "audio/music/Evening Out (GAME VERSION).ogg" fadein 1
     
     menu:
-        "Because I didn't know.":
-            pf "I would have if I'd known about it."
+        "Потому что я не знал.":
+            pf "Я бы сказал, если знал об этом."
             show kaori dis at r3
             show storm:
                 xoffset 1175
@@ -270,17 +270,17 @@ label E1D4S5:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S5/Kaori/21.ogg"
-            ki "Is that sarcasm?"
-            pf "No, I'm just as surprised as you guys."
+            ki "Это сарказм?"
+            pf "Нет, я удивлён так же, как и вы."
     
-        "You didn't ask.":
-            "I shrug."
-            pf "You didn't ask."
+        "Ты не спрашивала.":
+            "Я ухмыльнулся."
+            pf "Ты не спрашивала."
             show kaori dis at r3
-            "Kaori puts her hands on her hips."
+            "Каори положила руки на бёдра."
             voice "audio/voice/E1/D4/S5/Kaori/22.ogg"
-            ki "Because it's totally normal to ask everyone if they have a unique core or not."
-            pf "Hey, I'm not a mind reader."
+            ki "Потому что это абсолютно нормально спрашивать, есть ли у людей уникальное ядро, или нет."
+            pf "Эй, я не умею читать мысли."
             show kaori ang at r3
             show vein:
                 xoffset 1175
@@ -288,13 +288,13 @@ label E1D4S5:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S5/Kaori/23.ogg"
-            ki "Well, I'm asking now! What did you do with your core?"
+            ki "Хорошо, я спрашиваю сейчас! Что ты сделал со своим ядром?"
             show kaori ann at r3
-            "I shrug again."
-            pf "Couldn't tell you."
+            "Я снова ухмыльнулся."
+            pf "Не скажу."
     
-        "We had bigger things to worry about.":
-            pf "I didn't exactly have time to think about my core since all of my weapons were missing!"
+        "Есть вещи посерьёзнее, о которых нужно волноваться.":
+            pf "У меня точно не было времени думать о ядре, когда всё оружие пропало!"
             show kaori dis at r3
             show storm:
                 xoffset 1175
@@ -302,8 +302,8 @@ label E1D4S5:
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D4/S5/Kaori/24.ogg"
-            ki "You still could have mentioned you had this ability that could have negated your loss of weaponry."
-            pf "Well, yeah, I could have… if I had known about it."
+            ki "Ты все ещё мог упомянуть, что у тебя есть способность, которая может свести на нет потерю оружия."
+            pf "Ну да, я мог… если бы знал о ней."
             
     show kaori ske at r3
     show question:
@@ -312,10 +312,10 @@ label E1D4S5:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S5/Kaori/25.ogg"
-    ki "Huh?"
+    ki "Что?"
     show mayu cur at l3
     show shou cur at cc
-    "Mayu and Shou blink."
+    "Маю и Сё моргали."
     show shou ske at cc
     show question:
         xoffset 720
@@ -323,36 +323,36 @@ label E1D4S5:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S5/Shou/13.ogg"
-    ss "You mean you did that by accident?"
-    pf "Yeah… basically."
+    ss "То есть, ты хочешь сказать, что сделал это случайно?"
+    pf "В целом… да."
     
     if (E1D4S4_FollowMatchPlan == 0):
         show kaori ann at r3
         voice "audio/voice/E1/D4/S5/Kaori/26.ogg"
-        ki "Well, you should know your GEAR like the back of your hand. If we'd known about your core we could have assessed you better. I wouldn't have asked you to stay back and we wouldn't have had that previous conversation."
-        "We both fall silent. She kind of has a point…"
+        ki "Ну, ты должен знать свой GEAR как свои пять пальцев. Если бы мы знали о твоём ядре, то лучше бы оценили тебя. Я бы не просила тебя стоять в стороне, и у нас бы не было прошлого разговора."
+        "Мы оба молчали. Она в чём-то права…"
         show kaori dis at r3
         voice "audio/voice/E1/D4/S5/Kaori/27.ogg"
-        ki "But since you didn't tell us--"
+        ki "Но раз ты не сказал нам--"
         show shou neu at cc
         voice "audio/voice/E1/D4/S5/Shou/14.ogg"
-        ss "Kaori, don't start this again…"
+        ss "Каори, не начинай снова…"
         show kaori thi at r3
         stop music fadeout 3
         voice "audio/voice/E1/D4/S5/Kaori/28.ogg"
-        ki "Start what? I'm just saying--"
+        ki "Что начинать? Я просто говорю--"
     
     else:
         show shou cur at cc
         voice "audio/voice/E1/D4/S5/Shou/15.ogg"
-        ss "That's some accident."
+        ss "Вот это случайность."
         show kaori dis at r3
         voice "audio/voice/E1/D4/S5/Kaori/29.ogg"
-        ki "Could you do it again?"
-        pf "I really don't know. Maybe?"
+        ki "Ты можешь сделать это снова?"
+        pf "Не знаю. Можеть быть?"
         show kaori thi at r3
         voice "audio/voice/E1/D4/S5/Kaori/30.ogg"
-        ki "Hm…"
+        ki "Хммм…"
         show dots:
             xoffset 1175
             yoffset 110
@@ -360,57 +360,57 @@ label E1D4S5:
             yzoom .75
         show shou neu at cc
         stop music fadeout 3
-        "I don't like that thoughtful look on her face."
+        "Мне не нравилось это задумчивое выражение лица."
         
     show mayu neu at l3
-    "The crackle of the intercom interrupts us."
+    "Звук интеркома прервал нас."
     voice "audio/voice/E1/D4/S5/ACE Academy Announcer/1.ogg"
-    an "Thank you to everyone who participated. The first phase of matches have been completed."
+    an "Спасибо всем, кто участвовал. Первый этам матчей завершён."
     play music "audio/music/Isnt This Nice (GAME VERSION).ogg" fadein 1
     show shou hap at cc with dissolve
-    "Shou grins."
+    "Сё ухмыльнулся"
     show note:
         xoffset 720
         yoffset 20
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S5/Shou/16.ogg"
-    ss "Alright! Round one complete. Victory party at my place?"
+    ss "Отлично! Первый раунд завершён. Победная вечеринка у меня дома?"
     show kaori neu at r3
     show mayu smi at l3
     voice "audio/voice/E1/D4/S5/Kaori/31.ogg"
-    ki "Sorry, Shou. I've got someplace to be."
+    ki "Прости Сё. Мне другая встреча."
     show shou cur at cc
     voice "audio/voice/E1/D4/S5/Shou/17.ogg"
-    ss "Really? Where?"
+    ss "Правда? Где?"
     show kaori ann at r3
     voice "audio/voice/E1/D4/S5/Kaori/32.ogg"
-    ki "N-None of your business!"
+    ki "Н-Не твоё дело!"
     show shou mis at cc
     voice "audio/voice/E1/D4/S5/Shou/18.ogg"
-    ss "It's not like you have any other friends--"
+    ss "Не то чтобы у тебя были другие друзья--"
     show kaori ang at r3
     voice "audio/voice/E1/D4/S5/Kaori/33.ogg"
-    ki "Yes, I do!"
+    ki "Они есть!"
     show shou cur at cc
     voice "audio/voice/E1/D4/S5/Shou/19.ogg"
-    ss "Who?"
+    ss "Кто?"
     show kaori ann at r3
     voice "audio/voice/E1/D4/S5/Kaori/34.ogg"
-    ki "You just don't know them."
+    ki "Ты просто не знаешь их."
     show shou mis at cc
     voice "audio/voice/E1/D4/S5/Shou/20.ogg"
-    ss "Is it because they aren't real?"
+    ss "Потому что их не существует?"
     show kaori ang at r3
-    "Kaori raises her fist."
+    "Каори подняла кулак."
     show vein:
         xoffset 1175
         yoffset 110
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S5/Kaori/35.ogg"
-    ki "I'll show you real--"
-    "Shou jumps away."
+    ki "Я покажу тебе настоящих--"
+    "Сё отпрыгнул."
     show kaori ann at r3
     show shou hap at cc
     show drop:
@@ -419,61 +419,61 @@ label E1D4S5:
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D4/S5/Shou/21.ogg"
-    ss "It was a joke! I'm sorry!"
+    ss "Это была шутка! Извини!"
     show kaori dis at r3 with dissolve
     show kaori neu at r3 with dissolve
     voice "audio/voice/E1/D4/S5/Kaori/36.ogg"
-    ki "Whatever. I need to go before I'm late anyway. See you, Mayu."
+    ki "Плевать. Мне нужно идти, пока я не опоздала. Увидимся, Маю."
     show mayu hap at l3
-    "Mayu waves, as Kaori disappears around the corner."
+    "Маю махала, пока Каори не скрылась за углом."
     hide kaori with dissolve
     show mayu smi at l3 with dissolve
     show shou smi at cc with dissolve
     voice "audio/voice/E1/D4/S5/Shou/22.ogg"
-    ss "So, what about you two?"
-    "Mayu smiles, but shakes her head."
+    ss "Так, что насчёт вас двоих?"
+    "Маю улыбалась, но качала головой."
     voice "audio/voice/E1/D4/S5/Mayu/4.ogg"
-    ma "I wish I could, but Father is visiting tonight. He will be very eager to hear about today's match."
+    ma "Я бы хотела, но сегодня приезжает отец. Ему будет интересно услышать о сегодняшнем матче."
     show shou hap at cc
     voice "audio/voice/E1/D4/S5/Shou/23.ogg"
-    ss "Tell him \"Hi\" for me."
+    ss "Передай ему \"Привет\" от меня."
     show mayu hap at l3
     show note:
         xoffset 230
         yoffset 135
         xzoom .75
         yzoom .75
-    "She nods, says goodbye to the both of us and leaves."
+    "Она кивнула, попрощалась с нами и ушла."
     hide mayu with dissolve
     show shou mis at cc with dissolve
     voice "audio/voice/E1/D4/S5/Shou/24.ogg"
-    ss "Party of two? What do you say?"
+    ss "Вечеринка вдвоём? Что скажешь?"
     play sound "audio/sfx/Technology/Phone Vibration Once.ogg" fadein 1 fadeout 1
-    "Before I can answer, Shou gets a text."
+    "Прежде чем я успел ответить, Сё пришло смс."
     show shou cur at cc
     voice "audio/voice/E1/D4/S5/Shou/29.ogg"
-    ss "Hold on."
+    ss "Погоди."
     show shou neu at cc
-    "He quickly reads over the message."
+    "Он быстро прочитал сообшение."
     voice "audio/voice/E1/D4/S5/Shou/25.ogg"
-    ss "Actually, we might need a rain check on that party."
-    pf "What's up?"
+    ss "Вообще-то придётся отложить вечеирнку на другой раз."
+    pf "Что такое?"
     show shou thi at cc
     voice "audio/voice/E1/D4/S5/Shou/26.ogg"
-    ss "It's just Takeshi. He set yet another trashcan bonfire."
-    pf "What?!"
+    ss "Это Такеши. Он устроил ещё один костёр в мусорном баке."
+    pf "Что?!"
     show shou smi at cc
     voice "audio/voice/E1/D4/S5/Shou/27.ogg"
-    ss "It's no big deal. They just had to evacuate everyone in the building. Anyway, since I'm temporarily homeless, I'm going to go hang out in the rec center."
-    pf "Alright... I guess I'll let you handle that then."
+    ss "Ничего особенного. Им просто пришлось эвакуировать всех из здания. Во всяком случае, так как я временно бездомный, я собираюсь потусоваться в центре отдыха."
+    pf "Хорошо... Полагаю, тебе сначала нужно разобраться с этим."
     show shou hap at cc
-    "He nods."
+    "Он кивнул."
     voice "audio/voice/E1/D4/S5/Shou/28.ogg"
-    ss "Looks like farewells are in order. Goodnight to you then, Mr. Broseph."
+    ss "Похоже прощания в порядке вещей. Тогда спокойной ночи, мистер братан."
     stop music fadeout 3
-    pf "Yeah, you too."
+    pf "Ага, тебе тоже."
     hide shou with dissolve
-    "After saying goodbye, I head towards the parking lot."
+    "Просле прощаний я направился на парковку."
     $ kaoOut = "sUniform"
     $ mayOut = "sUniform"
     $ shoOut = "sUniform"
