@@ -1,9 +1,9 @@
 label E1D5S2:
 
 
-"I pull out my phone and start browsing technology articles."
-"There's one about a new simulator at a nearby arcade. The game gives us a chance to check out prototypes that aren't tested or distributed yet. Plus the weaponry sounds wicked! It would be worth taking a look." 
-"I grab my bike and head to the arcade." 
+"Я достал телефон и начал просматривать технические статьи."
+"Была одна о новом симуляторе в соседней аркаде. Игра давала возможность проверить прототипы, которые еще не были протестированы или распространены. Плюс оружие звучало опасно! Стоило бы посмотреть." 
+"Я взял байк и поехал к аркадам." 
 
 label E1D5S2_ArcadeConvergence:
 
@@ -19,60 +19,60 @@ $renpy.pause(1.5)
 
 scene bg activity arcade day with fade
 
-"It looks busy, but most of the people are crowded around one particular simulator, watching an intense match." 
-"In the rightmost seat, there's a gelatinous looking guy about my age. He's got a determined look on his chubby face and shouts a string of non-stop taunts and insults at his opposing player." 
+"Тут было людно, однако большинство этих людей толпились вокрун одного симулятора, наблюдая за напряжённым матчем." 
+"В правом кресле был студёнистый парень моего возраста. На его пухлом лице был решительный взляд и он кричал ряд безостановочных насмешек и оскорблений на своего противника." 
 
-"The machine dings as his most recent challenger is knocked out in a few short minutes." 
+"Машина звенела - его последний соперник нокаутирован за несколько минут.." 
 show gosunerd extra at cc with dissolve
 voice "audio/voice/E1/D5/S2/GosuArcade/1.ogg"
-fk "Hahaha! Another one bites the dust! Who's next?" 
-"His eyes scan the surrounding crowd, but no one steps forward." 
+fk "Хахаха! Ещё один повержен в прах! Кто следующий?" 
+"Он осматривал толпу, но никто не вышел вперёд." 
 
 menu: 
-    "I'll take a crack at it!" :
-        pf "Looks like fun! I could have a go." 
+    "Я попробую!" :
+        pf "Выглядит весело! Можно попробовать." 
         show gosunerd extra with dissolve:
             xzoom -1
         $renpy.pause(.25)
-        "His gaze falls on me and narrows as he gives me a once over." 
+        "Его взгляд упал на меня и он нахмурился, когда снова осмотрел." 
         voice "audio/voice/E1/D5/S2/GosuArcade/2.ogg"
-        fk "It's your funeral." 
-        pf "Can't we just have a friendly game?" 
+        fk "Это твои похороны." 
+        pf "Разве мы не можем провести дружеский матч?" 
         voice "audio/voice/E1/D5/S2/GosuArcade/3.ogg"
-        fk "Says the loser." 
-        pf "What ever happened to sportsmanship?" 
+        fk "Слова неудачников." 
+        pf "Что вообще случилось со спортивным духом?" 
         voice "audio/voice/E1/D5/S2/GosuArcade/4.ogg"
-        fk "Sit down and I'll show you."
+        fk "Садись и я покажу тебе."
 
-    "Only the best player around.":
-        pf "I'll be next. The game is calling to me." 
+    "Я буду лучшим игроком.":
+        pf "Я буду следующим. Эта игра зовёт меня." 
         show gosunerd extra with dissolve:
             xzoom -1
         $renpy.pause(.25)
         voice "audio/voice/E1/D5/S2/GosuArcade/5.ogg"
-        fk "Calling for you to lose." 
-        pf "I can only hear calls to win. That must be for you."
+        fk "Зовёт тебя проиграть." 
+        pf "Я слышу только зов победы. Должно быть проигрыш зовёт тебя."
         voice "audio/voice/E1/D5/S2/GosuArcade/6.ogg"
-        fk "I don't lose!" 
-        pf "There's always a first for everything." 
+        fk "Я не проиграю!" 
+        pf "Всё бывает в первый раз." 
 
-    "I'm next.": 
-        pf "My turn." 
+    "Я следующий.": 
+        pf "Мой черёд." 
         show gosunerd extra with dissolve:
             xzoom -1
         $renpy.pause(.25)
         voice "audio/voice/E1/D5/S2/GosuArcade/7.ogg"
-        fk "Your turn to lose." 
-        pf "We'll see." 
-        "He opens his mouth to retort but I give him a hard glare." 
-        pf "Are we talking or playing?" 
+        fk "Черёд проиграть." 
+        pf "Посмотрим." 
+        "Он открыл рот, чтобы ответить, но я сурово посмотрел на него." 
+        pf "Мы здесь на разговор собрались или играть будем?" 
         voice "audio/voice/E1/D5/S2/GosuArcade/8.ogg"
-        fk "Playing!" 
+        fk "Играем!" 
 
-    "Don't challenge him.":
+    "Не соревноваться с ним.":
         hide gosunerd extra with dissolve
-        "I didn't come here to feed the trolls. I came here to practice."
-        "After finding an empty simulator station, I start a game."
+        "Я пришёл сюда не для того, чтобы кормить троллей. Мне нужно практиковаться."
+        "Найдя пустой симулятор, я начал игру."
         stop music fadeout 3.0
         stop ambient fadeout 3.0
         scene black with fade
@@ -118,16 +118,16 @@ menu:
         play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 3
         $renpy.pause(1.5)
         scene bg activity arcade day with fade
-        "I shut down the simulator."
+        "Я выключил игру."
         $ E1D5S2Score = survived
         if (E1D5S2_SoloWon == 1):
             "Heh, still got it."
 
         else:
-            "Hm, guess it's a good thing I came here to practice."
+            "Хм, полагаю, хорошо, что я пришёл сюда практиковаться."
 
-        "Exiting the simulator, I glance around the arcade. There's still a group of people crowded around the annoying guy, who's still baiting the group with taunts."
-        "I've had enough practice for one day and don't feel like listening to him, so I head out of the arcade and go home."
+        "Выйдя из симулятора, я оглянул аркаду. Вокруг надоедливого парня все еще толпилась группа людей, который привлекал их насмешками."
+        "Я достаточно практиковался сегодня, и слушать его не хотелось. Выйдя из аркады я взял байк и поехал домой."
         stop music fadeout 3.0
         stop ambient fadeout 3.0
         scene black with fade
@@ -138,7 +138,7 @@ menu:
 
         
 hide gosunerd extra with dissolve
-"He turns back to the simulator. I take my place and boot up the screen." 
+"Он повернулся к симулятору. Я сел и включил экран." 
 stop music fadeout 3.0
 stop ambient fadeout 3.0
 
@@ -189,7 +189,7 @@ if (E1D5S2_ArcadeMatchWon == 1):
     
     scene bg activity arcade day with fade
     
-    "My screen lights up with flashing words indicating me as the winner." 
+    "Экран загорелся, указывая на меня, как на победителя." 
     
     show exclamation:
         xoffset 720
@@ -198,49 +198,49 @@ if (E1D5S2_ArcadeMatchWon == 1):
         yzoom .75
     show gosunerd extra at cc with dissolve
     voice "audio/voice/E1/D5/S2/GosuArcade/9.ogg"
-    fk "No! That's not fair!" 
+    fk "Нет! Это не честно!" 
 
     menu: 
-        "I just got lucky.": 
-            "I can't help but grin as I turn towards him." 
-            pf "Beginner's luck, I guess." 
+        "Мне просто повезло.": 
+            "Поворачиваясь к нему я не мог сдержать усмешку." 
+            pf "Полагаю, новичкам везёт." 
             hide gosunerd extra with dissolve
-            "He mumbles something I can't quite make out before pushing back from the simulator and storming off. The crowd cheers for my win… {w}Or his loss. {w}It's hard to tell which." 
+            "Он бормотал что-то, что я не мог разобрать, прежде чем встал и ушёл. Толпа приветствовала мою победу… {w}Или его поражение. {w}Трудно сказать что именно." 
 
-        "This is what a champion looks like.": 
-            pf "You look like a guy who just got his ass handed to him."
-            "He narrows his eyes and crosses his thick arms over his chest."
+        "Вот как выглядит чемпион.": 
+            pf "Ты выглядишь как парень, которому только что надрали зад."
+            "Он нахмурился и скрестил свои толстые руки на груди."
             show vein:
                 xoffset 720
                 yoffset 70
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D5/S2/GosuArcade/10.ogg"
-            fk "You must have cheated!" 
-            pf "No need to cheat when you're this good." 
+            fk "Ты должно быть жульничал!" 
+            pf "Когда ты так хорош, жульничество не нужно." 
             voice "audio/voice/E1/D5/S2/GosuArcade/11.ogg"
-            fk "I'm reporting you for cheating. No one can beat me at this game!" 
+            fk "Я доложу на тебя за жульничество. Никто не может победить меня в этой игре!" 
             hide gosunerd extra with dissolve
-            "The cheering crowd drowns out his half-hearted threat, and he storms away in a huff. I wave after him." 
-            pf "Better luck next time!" 
+            "Радостная толпа заглушила его нерешительную угрозу, и он с гневом ушёл. Я махал ему вслед." 
+            pf "Повезёт в следующий раз!" 
 
-        "Game over.":
-            "I look at him but say nothing." 
-            "His face has gone beet red and his eyes narrow to slits. I start to leave when he stops me."
+        "Игра окончена.":
+            "Я посмотрел на него, но ничего не сказал." 
+            "Его лицо покраснело, а глаза сильно щурились. Я начал уходить, когда он остановил меня."
             voice "audio/voice/E1/D5/S2/GosuArcade/12.ogg"
             show vein:
                 xoffset 720
                 yoffset 70
                 xzoom .75
                 yzoom .75
-            fk "Where do you think you're going? We aren't done here!"
-            "I glance back at the flashing \"End\" screen."
-            pf "Yes, we are."
+            fk "Куда это ты идёшь? Мы ещё не закончили!"
+            "Я глянул на экран \"Конца игры\"."
+            pf "Нет, закончили."
             hide gosunerd extra with dissolve
-            "Then I walk away and leave him to his protests."
+            "После, я ушёл оставив его наедине с протестами."
 
 
-    "Slowly, the crowd begins to disperse. The angry nerd is nowhere to be found." 
+    "Потихоньку толпа начала расходиться. Сердитого задрота нигде не было видно." 
 
 else:
 
@@ -251,61 +251,61 @@ else:
     scene bg activity arcade day with fade
     
     show gosunerd extra at cc with dissolve
-    "His screen dings obnoxiously, naming him as the winner. {w}He grins smugly." 
+    "Его экран неприятно звенел, называя его победителем. {w}Он самодовольно усмехался." 
     voice "audio/voice/E1/D5/S2/GosuArcade/13.ogg"
-    fk "Hmph, guess you're all talk, loser!" 
+    fk "Хммм, думаю, ты только умеешь говорить, лузер!" 
 
     menu: 
-        "Good Game.":
-            pf "Good match." 
+        "Хорошая игра.":
+            pf "Хороший матч." 
             show gosunerd extra:
                 xzoom -1
                 easein .45 xoffset 325
-            "I offer him a congratulatory pat on the shoulder, but he slides away from me."
+            "Я предложил ему поздравительное похлопывание по плечу, но он ускользнул от меня."
             voice "audio/voice/E1/D5/S2/GosuArcade/14.ogg"
-            fk "Don't touch me, scrub. Your \"bad\" is probably contagious."
-            "I pat him anyway and he jerks violently away."
+            fk "Не трогай меня, ничтожество. Твоя \"неудача\" iопределённо заразна."
+            "Я всё равно похлопал его, и он резко дернулся."
             show vein:
                 xoffset 1000
                 yoffset 70
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D5/S2/GosuArcade/15.ogg"
-            fk "Stop it! You're ruining my mojo!"
-            "I shrug, and step away from the simulator."
+            fk "Прекрати! Ты рушишь мою магию!"
+            "Я пожал плечами и отошёл от симулятора."
 
-        "I let you win.":
+        "Я позволил тебе победить.":
             pf "You're just lucky I went easy on you." 
             voice "audio/voice/E1/D5/S2/GosuArcade/16.ogg"
-            fk "I don't need luck when I'm this skilled." 
-            pf "Oh yeah? Play me again and we'll see." 
-            "He laughs a nasally guffaw. It reminds me of a choking donkey."
+            fk "Мне не нужна удача, с моими-то умениями." 
+            pf "Вот как? Давай сыграем ещё раз и посмотрим." 
+            "Он противно заржал. Это напомнило мне о задыхающемся осле."
             voice "audio/voice/E1/D5/S2/GosuArcade/17.ogg"
-            fk "Haha! No way! I'm not gonna waste any more time on a n00b like you."
+            fk "Хаха! Ни за что! Это определённо тратой времени на нуба, вроде тебя."
 
         "...":
-            "Silently, I turn to leave." 
+            "Я молча развернулся." 
             voice "audio/voice/E1/D5/S2/GosuArcade/18.ogg"
-            fk "Guess you're not such a big shot after all." 
-            "Shrugging off his words, I slip out of the simulator."
+            fk "Полагаю, в итоге ты не так хорош." 
+            "Пожав плечами я вышел из-за симулятора."
             voice "audio/voice/E1/D5/S2/GosuArcade/19.ogg"
-            fk "Well, aren't you going to say something?"
-            "Once he realises I'm not going to answer he tries again."
+            fk "Ну, не хочешь ничего сказать?"
+            "Поняв, что я не собирался отвечать, он попробовал снова."
             voice "audio/voice/E1/D5/S2/GosuArcade/20.ogg"
-            fk "You're just upset that you're a loser!" 
-            "This guy talks too much."
+            fk "Ты просто расстроен, что ты неудачник!" 
+            "Этот парень слишком много говорит."
 
     show gosunerd extra:
         xzoom 1
         easein .45 xoffset 0
     "He glances around."
     voice "audio/voice/E1/D5/S2/GosuArcade/21.ogg"
-    fk "Who's next?"
-    "The crowd shuffles in silence while I walk away."
+    fk "Кто следующий?"
+    "Толпа что-то тихо копошилась пока я уходил."
     hide gosunerd extra with dissolve
 
 $renpy.pause(.5)
-"I do a quick circle around the arcade, but none of the other games catch my interest. Exiting the building, I find my bike and drive home."
+"Я быстро обошёл зал автоматов, но ни одна из других игр не заинтересовала меня. Выйдя, я взял байк и поехал домой."
 
 
 stop music fadeout 3.0
