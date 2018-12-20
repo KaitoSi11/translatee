@@ -1,38 +1,38 @@
 label E1D5S3:
 
 
-"I know we have a whole week to work on our project, but I like getting my assignments done early. Hopefully Yuuna's the same way."
+"Я знаю, что у нас есть целая неделя для работы над нашим проектом, но мне нравится быстро расправляться с заданиями. Надеюсь, Юна такая же."
 play sound "audio/sfx/Technology/Phone Dial.ogg"
-"I dial her number and wait."
+"Я набрал её номер и ждал."
 
 play sound "audio/sfx/Technology/Phone Answer.ogg"
-"She picks up after a few rings."
+"Через несколько секунд она подняла трубку."
 
 
 voice "audio/voice/E1/D5/S3/yuuna/1.ogg"
-ym "Hello?"
-pf "Hi, Yuuna. It's [pfirst]."
+ym "Алло?"
+pf "Привет Юна. Это [pfirst]."
 voice "audio/voice/E1/D5/S3/yuuna/2.ogg"
-ym "Hi! How are you?"
-pf "Good. So, I was wondering if you wanted to get together and work on the project today."
+ym "Привет! Как ты?"
+pf "Хорошо. Я тут думал, хочешь всттетиться сегодня и работать над проектом?"
 voice "audio/voice/E1/D5/S3/yuuna/3.ogg"
-ym "Sure! I'm actually glad you called. I wasn't sure about you, but I like getting a head start on my assignments."
-"I can't help but smile."
-pf "So do I."
-"She laughs."
+ym "Конечно! Вообще-то я рада, что ты позвонил. Я не була уверена насчёт тебя, но мне нравится побыстрее делать поручения."
+"Я улыбнулся."
+pf "Я тоже."
+"Она посмеялась."
 voice "audio/voice/E1/D5/S3/yuuna/4.ogg"
-ym "Good thing we're partners! When are you free?"
-pf "I'm free whenever. What about you?"
+ym "Хорошо, что мы партнёры! Когда ты свободен?"
+pf "Я всегда свободен. Что насчёт тебя?"
 voice "audio/voice/E1/D5/S3/yuuna/5.ogg"
-ym "Same."
-pf "Okay, do you want to meet around noon?"
+ym "То же самое."
+pf "Хорошо, как насчёт встретиться около полудня?"
 voice "audio/voice/E1/D5/S3/yuuna/6.ogg"
-ym "Sure, at the library on campus?"
-pf "Yeah, let's do that."
+ym "Конечно, в библиотеке кампуса?"
+pf "Да, пойдёт."
 voice "audio/voice/E1/D5/S3/yuuna/7.ogg"
-ym "Great, I'll see you then!"
-pf "See you."
-"We hang up."
+ym "Отлично, тогда, увидимся!"
+pf "Пока."
+"Мы положили трубки."
 
 stop music fadeout 3.0
 stop ambient fadeout 3.0
@@ -42,7 +42,7 @@ $renpy.pause(3.0)
 play sound2 "audio/sfx/Vehicles/Bike driving off.ogg" fadein 3 fadeout 5
 $renpy.pause(5.5)
 
-"When I arrive on campus, I park my bike and wait in front of the library."
+"Приехав в кампус, я припарковал ьайк и ждал перед библиотекой."
 
 play ambient "audio/ambience/Campus.ogg" fadein 3
 play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 3
@@ -52,18 +52,18 @@ scene bg campus building day with fade
 
 
 
-"It's a few minutes until noon. I hope Yuuna gets here soon."
-"Every few minutes I check the time on my phone… {w}12:07… {w}12:13… {w}12:20… {w}She still hasn't arrived, so I text her."
-"{i}Hey I'm here where are you?{/i}"
+"Осталось пара минут до полудня. Надеюсь, Юна скоро придёт."
+"Каждые несколько минут я проверял время на телефоне… {w}12:07… {w}12:13… {w}12:20… {w}Она так и не пришла, так что я написал ей."
+"{i}Я тут, а где ты?{/i}"
 
 $renpy.pause(1.5)
 play sound "audio/sfx/Technology/Phone Vibration Once.ogg" 
 $renpy.pause(1.5)
 
-"I don't have to wait long for my phone to vibrate."
-"{i}Sorry! I'm still waiting for the bus. It should be getting here soon I think{/i}"
-"{i}Ok I'll find us a room in the library{/i}"
-"{i}Okay thanks{/i}"
+"Ответа долго ждать не пришлось."
+"{i}Прости! Я всё ещё жду автобус. Я думаю, он должен скоро прибыть.{/i}"
+"{i}Я пока найду нам место в библиотеке.{/i}"
+"{i}Хорошо, спасибо{/i}"
 
 stop ambient fadeout 3.0
 scene black with fade
@@ -74,12 +74,12 @@ scene bg campus library day with fade
 $renpy.pause(1.0)
 
 
-"The library is mostly empty, which makes sense. Not too many people spend their Saturdays studying. Fortunately, that also means most of the collaborative spaces are open."
+"Библиотека была в основном пуста, что имело смысл. Не слишком много людей учится по выходным. К счастью, это также означает, что большая часть пространства для совместной работы открыта."
 stop music fadeout 6
-"Wandering the shelves, I gather a few reference books I think will be helpful, but I can't find the specific case study I'm looking for. Shrugging, I head into an empty room to wait for Yuuna. Flipping a nearby book to a random page, I half-heartedly skim it."
-"I check the time again: 12:45. It doesn't seem like she's coming…"
+"Блуждая по полкам, я собрал несколько справочников, которые могли быть полезны, но не мог найти конкретный книгу. Пожав плечами, я направился в пустую комнату ждать Юну. Открыв книгу на случайной странице, я без энтузиазма просматривал её."
+"Я снова проаерил время: 12:45. Не похоже, что она идёт…"
 play music "audio/music/Isokaze (GAME VERSION).ogg" fadein 5.0
-"Suddenly, I spot a flash of pink hair. {w}Yuuna is on the far side of the library searching for me. I wave at her and she smiles in acknowledgement before hurrying over."
+"Внезапно, я заметил розовые волосы {w}Юна была в дальнем конце библиотеки, разыскивая меня. Я помахал ей, и она улыбнувшись поторопилась ко мне."
 
 $ yuuOut = "sCasual"
 
@@ -87,84 +87,84 @@ show yuuna ner at cc with dissolve
 $renpy.pause(.5)
 
 voice "audio/voice/E1/D5/S3/yuuna/8.ogg"
-ym "I'm sorry I'm so late. The bus showed up way behind schedule, which is really unusual. I hope you aren't too angry with me."
-"I return her smile."
-pf "It's fine. I'm just glad you made it."
+ym "Прости, что я так поздно. Автобус отстал от графика, что очень необычно. Я надеюсь, ты не слишком зол на меня."
+"Я улыбнулся ей в ответ."
+pf "Всё хорошо. Я просто рад, что ты добралась."
 show yuuna smi with dissolve
-"She slides into the chair across from me. I finally notice she isn't wearing her uniform."
+"Юна села напротив меня. Я заметил, что она была одета не в свою форму."
 
 menu:
-    "I never realised how cute she is.":
-        pf "You look really nice today. I like your outfit."
+    "Никогда не думал, что она такая милая.":
+        pf "Ты сегодня выглядишь очень хорошо. Мне нравится твой стиль."
         show regBlush:
             xoffset 720
             yoffset 100
             xzoom .75
             yzoom .75
         show yuuna smi b1 with dissolve
-        "She blushes shyly."
+        "Она покраснела."
         show yuuna hap b1 with dissolve
         voice "audio/voice/E1/D5/S3/yuuna/9.ogg"
-        ym "Oh! Thanks. You look nice too."
-        pf "Thanks."
+        ym "Ох! Спасибо. Ты тоже хорошо выглядишь."
+        pf "Спасибо."
 
-    "She looks hot!":
-        pf "I wish I could get you out of your uniform more often."
+    "Она горяча!":
+        pf "Я бы хотел чаще ыидеть тебя без формы."
         show yuuna neu
         voice "audio/voice/E1/D5/S3/yuuna/10.ogg"
-        ym "What?"
-        "She furrows her brow."
-        pf "Because that outfit really suits you."
+        ym "Что?"
+        "Она нахмурила лоб."
+        pf "Потому что эта одежда тебе очень идёт."
         show yuuna cur
         voice "audio/voice/E1/D5/S3/yuuna/11.ogg"
-        ym "Oh…"
+        ym "Ох…"
         show yuuna smi
         voice "audio/voice/E1/D5/S3/yuuna/12.ogg"
-        ym "Thank you."
+        ym "Спасибо."
         
-    "It's weird seeing her out of uniform.":
-        pf "You look… different."
+    "Странно видеть её не в форме.":
+        pf "Ты выглядишь… по-другому."
         show yuuna ner
-        "She seems concerned."
+        "Она выглядела обеспокоенной."
         voice "audio/voice/E1/D5/S3/yuuna/13.ogg"
-        ym "Is there something wrong?"
-        pf "No, it's just weird seeing you in a sweater."
+        ym "Что-то не так?"
+        pf "Нет, просто странно видеть тебя в свитере."
         show yuuna cur
         voice "audio/voice/E1/D5/S3/yuuna/14.ogg"
-        ym "O-Oh… You don't like it?"
-        pf "It's alright."
+        ym "О-Ох… Тебе не нравится?"
+        pf "Всё нормально."
 
-    "Don't say anything.":
-        "It makes sense that she's not wearing a uniform since it's Saturday and I'm not wearing one either. No point in bringing it up when we can get straight to work."
+    "Ничего не говорить.":
+        "Это нормально, что она не в форме, так как сегодня суббота, я ведь тоже не в ней. Нет смысла обсуджать это, когда мы можем приступить к работе."
         show yuuna cur
-        "I notice Yuuna looking me over too."
+        "Я заметил, что Юна тоже на меня смотрела."
 
 show yuuna smi with dissolve
-"She smiles."
+"Она улыбнулась."
 voice "audio/voice/E1/D5/S3/yuuna/15.ogg"
-ym "It's a little funny to see you out of uniform, but in a good way. It feels more personal somehow."
-pf "Yeah, I understand."
-"She points to the books beside me."
+ym "Немного забавно витель тебя не в форме, но в хорошем смысле. Это кажется более личным."
+pf Да, я понял."
+"Она показала на книгу рядом со мной."
 show yuuna cur
 voice "audio/voice/E1/D5/S3/yuuna/16.ogg"
-ym "You already picked out references?"
-"I nod."
-pf "While I was waiting for you, but I couldn't find the case study we need."
+ym "Ты уже выбрал справочники?"
+"Я кивнул."
+pf "Я не мог найти нужный пример, пока ждал тебя."
 voice "audio/voice/E1/D5/S3/yuuna/17.ogg"
-ym "Did you check the database?"
-pf "Not yet."
+ym "Ты проверил базу данных?"
+pf "Ещё нет."
 show yuuna smi
 voice "audio/voice/E1/D5/S3/yuuna/18.ogg"
-ym "Let's do that."
+ym "Давай сделаем это."
 hide yuuna with dissolve
 show yuuna smi at l3 with dissolve
 $renpy.pause(.5)
-"She stands and leads the way to the nearest computer. When we get there, she types in a quick search."
+"Она встала и направилась к ближайшему компьютеру. Мы добрались до него, и она быстро печатала в поисковике."
 show yuuna thi with dissolve
 voice "audio/voice/E1/D5/S3/yuuna/19.ogg"
-ym "It says the book is available… Let's go check the shelves again."
+ym "Тут говорится, что книга доступна… Пойдём снова поищем на стеллажах."
 hide yuuna with dissolve
-"She leads me back towards the shelves, occasionally glancing back at me. Once we arrive, she scans the shelf for the book, and frowns when she doesn't see it."
+"Она повела меня обратно к полкам, время от времени оглядываясь на меня. Как только мы пришли, она осматривала полку и хмурилась, когда увидела книгу."
 show yuuna dis at cc with dissolve
 show storm:
     xoffset 720
@@ -173,62 +173,62 @@ show storm:
     yzoom .75
 $renpy.pause(.5)
 voice "audio/voice/E1/D5/S3/yuuna/20.ogg"
-ym "I don't understand. It should be here."
-pf "Maybe the computer's wrong."
+ym "Я не понимаю. Она должна быть тут."
+pf "Может, комрьютер ошибся."
 voice "audio/voice/E1/D5/S3/yuuna/21.ogg"
-ym "Maybe… but we can't work on the project without it."
-pf "Why don't we ask the front desk? Maybe they know where it is."
+ym "Возможно… но без неё мы не можем работать над проектом."
+pf "Почему бы нам не спросить у библиотекаря? Может он знает, где она."
 show yuuna smi
-"She brightens up."
+"Она оживилась."
 voice "audio/voice/E1/D5/S3/yuuna/22.ogg"
-ym "Good idea."
-"I start to head back the way we came, when I glance at the cart beside us. It's filled with books, but a specific title catches my eye."
-pf "Wait--"
+ym "Хорошая идея."
+"Я начал возвращаться туда, откуда мы пришли, когда заметил телегу рядом с нами. Она была заполнена книгами, но в глаза бросился определенный заголовок."
+pf "Подожди-ка--"
 show yuuna cur with dissolve
-"She pauses."
-pf "Isn't that the book we need?"
-"She leans towards the cart."
+"Она остановилась."
+pf "Не эта ли книга нам нужна?"
+"Она наклонилась посмотреть."
 show yuuna hap
 voice "audio/voice/E1/D5/S3/yuuna/23.ogg"
-ym "It is!"
-pf "Great!"
-"I reach out to grab it..."
+ym "Это она!"
+pf "Отлично!"
+"Я потянулся, чтобы взять её..."
 show shocked:
     xoffset 720
     yoffset 100
     xzoom .75
     yzoom .75
 show yuuna sur with dissolve
-"...but pause when I notice the horrified expression on Yuuna's face."
-pf "What?"
+"...но остановился, когда заметил испуганную Юну."
+pf "Что?"
 voice "audio/voice/E1/D5/S3/yuuna/24.ogg"
-ym "You can't just take that."
-pf "Why not?"
+ym "Мы не можем просто взять её."
+pf "Почему нет?"
 show yuuna cur
 voice "audio/voice/E1/D5/S3/yuuna/25.ogg"
-ym "That's the return cart."
-pf "So?"
+ym "Это тележка возврата."
+pf "И?"
 voice "audio/voice/E1/D5/S3/yuuna/26.ogg"
-ym "The book hasn't been returned yet."
-pf "What do you mean? It's already been checked back into the system and it's in the cart."
+ym "Книга ещё не возвращена."
+pf "Что ты имеешь в виду? В системе написано, что она возвращена, и она в тележке."
 show yuuna neu
 voice "audio/voice/E1/D5/S3/yuuna/27.ogg"
-ym "Yeah, but it hasn't been returned to the shelf yet."
-pf "It'll be fine. We can make a copy of the section that we need and then put it back in this cart."
+ym "Да, но её ещё не вернули на свою полку."
+pf "Все будет хорошо. Мы можем сделать копию нужного нам раздела, а затем положить ее обратно в тележку."
 show yuuna ner
 voice "audio/voice/E1/D5/S3/yuuna/28.ogg"
-ym "But what if someone notices it's missing?"
-"I glance around us. There isn't a librarian in sight."
-pf "There's no one here. Besides, we'll be quick. Don't worry."
+ym "Но что если кто-то заметит пропажу?"
+"Я оглянулся. Библиотекаря нигде не было видно."
+pf "Здесь никого нет. К тому же, мы всё сделаем быстро. Не волнуйся."
 show yuuna thi
-"She chews nervously on her lip before giving me a reluctant nod."
+"Она нервно закусила губу, прежде чем неохотно кивнула."
 hide yuuna with dissolve
-"I grab the book and we head for the copy machine. Yuuna's footsteps are nimble and quick and I have to catch up with her. She glances back at me frequently, obviously uncomfortable."
-"She steps back when we reach the copy machine and let's me handle the copying. It takes a couple minutes for the machine to warm up, and Yuuna fidgets the entire time."
+"Я взял книгу, и мы направились к копировальному аппарату. Юна быстро и проворно шагала, мне нужно было её догонять. Она часто оглядывалась на меня, ей было явно некомфортно."
+"Она отступила назад, когда мы достигли копировального аппарата, занялся копированием. Машина прогрелась за пару минут, а Юуна все время ёрзала."
 show yuuna neu at cc with dissolve
 voice "audio/voice/E1/D5/S3/yuuna/29.ogg"
-ym "Is it working?"
-pf "Yeah, it just needs a minute."
+ym "Она рабоатет?"
+pf "Да, ей просто нужно пара минут."
 show panic:
     xoffset 720
     yoffset 100
@@ -236,17 +236,17 @@ show panic:
     yzoom .75
 show yuuna thi
 voice "audio/voice/E1/D5/S3/yuuna/30.ogg"
-ym "We should hurry up."
-pf "Don't worry, we'll be fine."
-"She seems unconvinced but stays quiet. The seconds seem to stretch and slow while we wait for the machine to process the copies. Yuuna continues to bite at her lip."
-"Finally, the copier spits out our papers. Yuuna immediately collects them and begins walking. She quickens her pace the closer we get to the cart and doesn't relax until I nestle the book between its brethren."
-pf "That wasn't so bad, was it?"
+ym "Мы должны поторопиться."
+pf "Не волнуйся, всё будет хорошо."
+"Она не выглядела убеждённой, но молчала. Казалось, что секунды растягивались и замедлялись, пока мы ждали, когда машина обработает копии. Юуна продолжала кусать губу."
+"Наконец, копировальный аппарат выплюнул наши документы. Юна быстро собрала их и пошла. Она ускорилась, когда мы приблизиилсь к телеге, и не расслаблялась, пока я не вернул книгу её собратьям."
+pf "было не так уж и плохо, не так ли?"
 show yuuna smi
-"She smiles faintly, but her face seems a little pale."
+"Она слабо улыбнулась, но её лицо было немного бледным."
 voice "audio/voice/E1/D5/S3/yuuna/31.ogg"
-ym "At least we have what we need."
-pf "Speaking of which, we should get to work."
-"She nods and we return to our room."
+ym "По крайней мере мы получили то, что нам нужно."
+pf "Кстати об этом, Нам нужн овернуться к работе."
+"Она кивнула и мы вернулись в нашу комнату."
 
 
 
@@ -263,30 +263,30 @@ $renpy.pause(1.0)
 
 
 
-"I type out the last couple of words on our report, then I lean back in my chair and grin at Yuuna."
-pf "And we're done!"
+"Я набрал последние пару слов в нашем отчете, и откинулся на стуле, усмехаясь Юне."
+pf "Ииии...мы закончили!"
 
 show yuuna hap at cc with dissolve
-"She breathes a sigh of relief."
+"Она вздохнула с облегчением."
 show note:
     xoffset 720
     yoffset 100
     xzoom .75
     yzoom .75
 voice "audio/voice/E1/D5/S3/yuuna/32.ogg"
-ym "I'm glad we were able to get that finished. Now we don't have to worry about it for the rest of the week."
-pf "Yeah."
+ym "Я рада, что мы закончили. Теперь не придётся беспокоиться об этом до конца недели."
+pf "Ага."
 show yuuna smi
-"We'd been working for hours and it was getting pretty late."
-"Yuuna is already packing up her laptop so I pack mine up too. She then layers the remaining reference books in her arms."
+"Мы долго занимались, и было довольно поздно."
+"Юуна уже складывала свой ноутбук, так что я тоже сложил свой. Затем она взяла справочники."
 voice "audio/voice/E1/D5/S3/yuuna/33.ogg"
-ym "I'll go ahead and return these."
-pf "Do you need help with that?"
+ym "Я пойду верну их."
+pf "Может мне помочь с этим?"
 voice "audio/voice/E1/D5/S3/yuuna/34.ogg"
-ym "No thanks. I'll just be a minute."
+ym "Нет, спасибо. Это займёт минуту."
 hide yuuna with dissolve
-"She smiles reassuringly before she leaves."
-"I tidy up the room while she takes care of the books and meet her outside of the building."
+"Она обнадёживающе улыбнулась перед уходом."
+"Я убирал комнату, пока она занималась книгами, и встретился с ней уже на улице."
 
 
 
@@ -297,16 +297,16 @@ scene bg campus building dusk with fade
 
 show yuuna smi at cc with dissolve
 voice "audio/voice/E1/D5/S3/yuuna/35.ogg"
-ym "Well, I better head to the bus stop."
-pf "I'll go with you."
+ym "Ну, мне лучше пойти на автобусную остановку."
+pf "Я провожу тебя."
 
 show yuuna cur
 voice "audio/voice/E1/D5/S3/yuuna/36.ogg"
-ym "Oh, you don't have to."
-pf "I drove here so I don't mind. Besides, it's getting kind of late and who knows how long the bus will be."
+ym "Ох, тебе не стоит."
+pf "Я приехал сюда, поэтому не проитв. К тому же, уже довольно поздно, и кто знает, сколько придётся ждать автобус."
 
 show yuuna smi
-"She nods and smiles in appreciation."
+"Она улыбнулась и кивнула."
 
 
 scene black with fade
@@ -315,63 +315,63 @@ scene bg campus intersection dusk with fade
 
 
 show yuuna smi at cc with dissolve
-"The bus shelter is empty when we arrive, and as expected, the bus is nowhere to be found."
+"Когда мы пришли автобусная остановка была пуста, и, как и ожидалось, автобуса нигде не было."
 voice "audio/voice/E1/D5/S3/yuuna/37.ogg"
-ym "We got a lot done today. You're very easy to work with."
-pf "Thanks. For a moment, I thought you were ready to bail on me."
+ym "Мы сегодня много сделали. С тобой очень легко работать."
+pf "Спасибо. На мгновение я подумал, что ты готова кинуть меня."
 show yuuna cur
-"She glances curiously at me."
+"Она с любопытством посмотрела на меня."
 voice "audio/voice/E1/D5/S3/yuuna/38.ogg"
-ym "When was that?"
-pf "When we found the case study."
+ym "Когад это?"
+pf "Когда мы нашли нужную книгу."
 voice "audio/voice/E1/D5/S3/yuuna/11.ogg"
-ym "Oh..."
+ym "Ох..."
 show yuuna thi
 "She shifts slightly."
 voice "audio/voice/E1/D5/S3/yuuna/39.ogg"
-ym "I thought about it. I've never done anything like that before."
-"Now it was my turn to look confused."
-pf "You've never borrowed a book?"
+ym "Я думала ою этом. Я никогда не делал ничего подобного раньше."
+"Теперь была моя очередь выглядеть растерянным."
+pf "Ты никогда не брала книгу?"
 show yuuna neu
 voice "audio/voice/E1/D5/S3/yuuna/40.ogg"
-ym "No, I've never borrowed a book {i}without permission{/i}."
-pf "It wasn't really without permission..."
+ym "Нет, я никогда {i}без разрешения{/i} не брала книгу."
+pf "Это не то что бы было без разрешения..."
 show yuuna dis
 voice "audio/voice/E1/D5/S3/yuuna/41.ogg"
-ym "We totally broke the rules!"
-pf "I don't know if I'd go that far."
+ym "Мы полностью нарушили правила!"
+pf "Незнаю, зашли ли мы так далеко."
 voice "audio/voice/E1/D5/S3/yuuna/42.ogg"
-ym "We did! You're not supposed to use a book that's on the return cart. It's not done being processed."
-pf "Yeah, but that's just a minor thing. It's like when you forget to clean up your tray in the cafeteria."
+ym "Мы зашли! Ты не должен использовать книгу, которая находится в корзине возврата. Она ещё не обработана."
+pf "Да, но это незначительная вещь. Это как когда забываешь убирать поднос в кафетерии."
 show yuuna neu
-"She stares blankly at me."
-pf "... Have you ever forgotten to clean up your tray?"
+"Она смотрела прямо на меня."
+pf "... Ты забываешь убирать свой поднос?"
 voice "audio/voice/E1/D5/S3/yuuna/43.ogg"
-ym "Of course not. You're supposed to clean up after yourself."
-pf "Okay, then it's like..."
+ym "Конечно нет. Ты должен убирать за собой."
+pf "Хорошо, тогда это как..."
 
 label E1D5S3_YuunaLoopbackStart:
 menu:
-    "Taking extra chopsticks and napkins." if (E1D5S3_YuunaLoopbackOption1 == 0):
+    "Взять дополнительные палочки для еды и салфетки." if (E1D5S3_YuunaLoopbackOption1 == 0):
         $ E1D5S3_YuunaLoopbackOption1 = 1
         $ E1D5S3_YuunaLoopbackCounter = E1D5S3_YuunaLoopbackCounter + 1
-        pf "When you're picking up food and you take extra chopsticks and napkins at the self-serve bar."
+        pf "Когда ты берёшь еду и ещё дополнительные палочки для еды и салфетки в баре самообслуживания."
         show yuuna dis
-        "Yuuna frowns."
+        "Юна нахмурилась."
         voice "audio/voice/E1/D5/S3/yuuna/44.ogg"
-        ym "I only need one pair of chopsticks to eat."
-        pf "They're for later."
+        ym "Мне нужна только одна пара палочек для еды."
+        pf "Они на потом."
         voice "audio/voice/E1/D5/S3/yuuna/45.ogg"
-        ym "If everyone took things in excess then that leaves nothing for others."
+        ym "Если все будут брать допольнительно чебе что-то, тогда ничего не останется для других."
 
-    "Taking the pen from a bank." if (E1D5S3_YuunaLoopbackOption2 == 0):
+    "Взять ручку из банка." if (E1D5S3_YuunaLoopbackOption2 == 0):
         $ E1D5S3_YuunaLoopbackOption2 = 1
         $ E1D5S3_YuunaLoopbackCounter = E1D5S3_YuunaLoopbackCounter + 1
-        pf "When you go to the bank--or anywhere with pens out in the open--and you take one of the pens after using it."
+        pf "Когда ты идёшь в банк--или куда-нибудь, где свободно лежат ручки--берёшь одну из ручек после использования."
         show yuuna sur
         voice "audio/voice/E1/D5/S3/yuuna/46.ogg"
-        ym "But that's {i}stealing{/i}!"
-        pf "Usually it's by accident--you don't realise you've taken it until too late."
+        ym "Но это {i}воровство{/i}!"
+        pf "Обычно это случайность--ты не понимаешь этого, пока не стало слишком поздно."
         show yuuna dis
         show storm:
             xoffset 720
@@ -380,51 +380,51 @@ menu:
             yzoom .75
         $renpy.pause(1.5)
         voice "audio/voice/E1/D5/S3/yuuna/47.ogg"
-        ym "Accident or not--it's still taking something that doesn't belong to you."
+        ym "Случайность или нет--это все ещё сбор того, что не принадлежит тебе."
 
-    "Taking more than one after-dinner mint from a restaurant." if (E1D5S3_YuunaLoopbackOption3 == 0):
+    "взять большей одной послеобеденной мятной конфеты в ресторане." if (E1D5S3_YuunaLoopbackOption3 == 0):
         $ E1D5S3_YuunaLoopbackOption3 = 1
         $ E1D5S3_YuunaLoopbackCounter = E1D5S3_YuunaLoopbackCounter + 1
-        pf "When a restaurant has a bowl of mints or candy for the customers to take after a meal and you take more than one."
+        pf "Когда в ресторане есть миска мяты или конфеты для клиентов, чтобы взять после еды, и вы берёшь больше одной."
         show yuuna thi
-        "She wrinkles her brow."
+        "Она наморщиалсь."
         voice "audio/voice/E1/D5/S3/yuuna/48.ogg"
-        ym "I don't believe that's a custom in Japan."
-        pf "Oh, must be an American thing then."
+        ym "Я не верю, что это обычай в Японии."
+        pf "Ох, должно быть это американский обычай."
 
-    "Taking extra free samples." if (E1D5S3_YuunaLoopbackOption4 == 0):
+    "Взять дополнительные бесплатные образцы." if (E1D5S3_YuunaLoopbackOption4 == 0):
         $ E1D5S3_YuunaLoopbackOption4 = 1
         $ E1D5S3_YuunaLoopbackCounter = E1D5S3_YuunaLoopbackCounter + 1
-        pf "When a store offers free samples and you wait a while before coming back again so the person handing out samples doesn't recognise you."
+        pf "Когда магазин предлагает бесплатные образцы, и ты ждёшь некоторое время, прежде чем вернуться снова, чтобы человек, раздающий образцы, не узнал тебя."
         show yuuna neu
         voice "audio/voice/E1/D5/S3/yuuna/49.ogg"
-        ym "But what about the people who haven't already received a sample?"
-        pf "What about them?"
+        ym "Но как насчет людей, которые еще не получили образец?"
+        pf "Что насчёт них?"
         show yuuna dis
         voice "audio/voice/E1/D5/S3/yuuna/50.ogg"
-        ym "If I take them, they won't have any."
-        pf "They usually have a lot that they give away…"
+        ym "Если я возьму их, у них не будет."
+        pf "У них обычно есть много того, что они отдают…"
 
-    "Using multiple emails to vote for a contest entry when it's one vote per person." if (E1D5S3_YuunaLoopbackOption5 == 0):
+    "Использование нескольких электронных писем для голосования за участие в конкурсе, когда это один голос на человека." if (E1D5S3_YuunaLoopbackOption5 == 0):
         $ E1D5S3_YuunaLoopbackOption5 = 1
         $ E1D5S3_YuunaLoopbackCounter = E1D5S3_YuunaLoopbackCounter + 1
-        pf "When a contest says it's only one vote per person so you use your other email accounts to vote for the entry you like."
+        pf "Когда в конкурсе говорится, что это только один голос на человека, вы используете свои другие учетные записи электронной почты, чтобы проголосовать за понравившуюся вам запись."
         show yuuna neu
         voice "audio/voice/E1/D5/S3/yuuna/51.ogg"
-        ym "But that would still be voting more than once per person because those emails belong to me."
-        pf "Technically, I suppose it is."
+        ym "Но это все равно будет голосование более одного раза за человека, потому что эти письма принадлежат мне."
+        pf "Технически, полагаю так и есть."
         voice "audio/voice/E1/D5/S3/yuuna/52.ogg"
-        ym "That's an unfair advantage."
-        pf "Not if everyone does it."
+        ym "Это несправедливое преимущество."
+        pf "Нет, если все это делают."
         show yuuna dis
-        "She gives me a disapproving look."
+        "Она неодобрительно посмотрела на меня."
 
         
 if (E1D5S3_YuunaLoopbackCounter == 3):
     jump E1D5S3_YuunaLoopbackEnd
 
 else:
-    pf "Okay, how about..."
+    pf "Хорошо, как насчёт..."
     jump E1D5S3_YuunaLoopbackStart
 
 
@@ -434,41 +434,41 @@ $renpy.pause(.5)
 show yuuna cur with dissolve
 $renpy.pause(.5)
 voice "audio/voice/E1/D5/S3/yuuna/53.ogg"
-ym "Do you do all of these things?"
-pf "Um... no..."
-"She stares at me with wide eyes."
+ym "Ты делаешь все эти вещи?"
+pf "Жм... нет..."
+"Она смотрела на меня с широко раскрытыми глазами."
 voice "audio/voice/E1/D5/S3/yuuna/54.ogg"
-ym "But that's breaking the rules."
-pf "They're more like guidelines anyway."
+ym "Но это наршение правил."
+pf "Они больше похожи на рекомендации."
 show yuuna thi
 voice "audio/voice/E1/D5/S3/yuuna/55.ogg"
-ym "I-I've never broken the rules."
-pf "Not even once?"
+ym "Я-Я никогда не нарушала правила."
+pf "Ни разу?"
 show yuuna dis
 voice "audio/voice/E1/D5/S3/yuuna/56.ogg"
-ym "It would lead to utter chaos if everyone ignored the rules and did what they wanted."
-pf "Kind of like this bus, right?"
+ym "Это привело бы к полному хаосу, если бы все игнорировали правила и делали то, что хотели."
+pf "Как этот автобус, да?"
 show yuuna cur
 voice "audio/voice/E1/D5/S3/yuuna/57.ogg"
-ym "Huh?"
-pf "Well, the schedule said it was supposed to be here about half an hour ago, but it's late."
+ym "Что?"
+pf "Ну, в расписании сказано, что он должен был быть здесь около получаса назад, но уже поздно."
 show yuuna thi with dissolve
 voice "audio/voice/E1/D5/S3/yuuna/11.ogg"
-ym "Oh..."
+ym "Ох..."
 show storm:
     xoffset 720
     yoffset 100
     xzoom .75
     yzoom .75
 show yuuna dis
-"She looks disappointed."
+"Она выглядела разочарованной."
 voice "audio/voice/E1/D5/S3/yuuna/58.ogg"
-ym "I was hoping the bus issue would resolve itself before I had to go home."
-pf "It doesn't seem like it's coming. Can anyone pick you up?"
-"She shakes her head."
+ym "Я надеялась, что проблема с автобусом решится сама собой, прежде чем мне нужно будет ехать домой."
+pf "Не похоже, что он приедет. Кто-нибудь может тебя подобрать?"
+"Она покачала головой."
 show yuuna neu
 voice "audio/voice/E1/D5/S3/yuuna/59.ogg"
-ym "My family is out of town this weekend. It's fine, I take the bus all the time."
+ym "Моя семья не в городе в эти выходные. Это нормально, я постоянно езжу на автобусе."
 
 label E1D5S3_StayLongerLoop:
 menu:
