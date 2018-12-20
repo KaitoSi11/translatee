@@ -472,29 +472,29 @@ ym "Моя семья не в городе в эти выходные. Это н
 
 label E1D5S3_StayLongerLoop:
 menu:
-    "Go home.":
-        pf "Are you sure you'll be okay here?"
+    "Пойти домой.":
+        pf "Ты уверена, что будешь в порядке тут?"
         show yuuna smi
-        "She nods."
+        "Она кивнула."
         voice "audio/voice/E1/D5/S3/yuuna/60.ogg"
-        ym "Yes."
-        pf "Alright, then I better get back before it gets too late."
+        ym "Да."
+        pf "орошо, тогда я лучше вернусь, пока не стало слишком поздно."
         show yuuna smi
         voice "audio/voice/E1/D5/S3/yuuna/61.ogg"
-        ym "Sure."
-        pf "Text me when you get home."
+        ym "Конечно."
+        pf "Напиши мне, когда будешь дома."
         voice "audio/voice/E1/D5/S3/yuuna/62.ogg"
-        ym "Okay."
-        "She waves goodbye and I wave back, before heading to my bike and driving home."
+        ym "Хорошо."
+        "Она помахала на прощание, и я махал в ответ, прежде чем пойти к байку и поехать домой."
         jump E1D5S7
 
-    "Stay with her longer." if (E1D5S3_StayWithYuunaLoop == 0):
+    "Остаться с ней подольше." if (E1D5S3_StayWithYuunaLoop == 0):
         $ E1D5S3_StayWithYuunaLoop = 1
-        pf "Well, I'll wait with you a while longer. Hopefully it'll show up."
+        pf "Я подожду с тобой немного. Надеюсь, он появится."
         show yuuna smi
-        "She brightens up."
+        "Она озарилась."
         voice "audio/voice/E1/D5/S3/yuuna/63.ogg"
-        ym "You don't have to do that, but thanks. It's always nice to have company."
+        ym "Тебе не нужно делать это, но спасибо. Всегда приятно иметь компанию."
         
         scene black with fade
         $renpy.pause(1.5)
@@ -502,40 +502,40 @@ menu:
         
         show yuuna thi at cc with dissolve
         
-        "After another half an hour, the bus still doesn't show up."
+        "Ещё через полчаса автобус всё равно не появился."
         jump E1D5S3_StayLongerLoop
 
-    "Offer her a ride.":
-        pf "I can take you home."
+    "Предложить подвезти.":
+        pf "Я могу отвезти тебя домой."
         show yuuna smi
-        "She smiles but shakes her head."
+        "Она улыбнулась, но покачала головой."
         voice "audio/voice/E1/D5/S3/yuuna/64.ogg"
-        ym "I don't want to cause any trouble for you. I don't mind waiting."
+        ym "Я не хочу причинять тебе неудобства. Я не против подождать."
 
         if (E1D2S2_talkwithyuunayes == 1):
-            pf "It's no trouble at all. We ride the same bus line so you're on my route home."
+            pf "Мне совсем не трудно. Мы едем по одному автобусному маршруту, так что твой дом как раз по пути."
 
         else:
-            pf "You're waiting for bus 85 which goes to my area of Isokaze as well. It's no trouble at all."
+            pf "Ты ждешь автобус 85, который также едет в мой район Isokaze. Это совсем не проблема."
 
 voice "audio/voice/E1/D5/S3/yuuna/65.ogg"
-ym "That's very kind of you, but you don't have to worry about me. I'm used to waiting for the bus."
-pf "I know, but it's getting late and if I left you here alone I'd be worried you never got home safely."
+ym "Это очень мило с твоей стороны, но не нужно беспокоиться обо мне. Я привыкла ждать автобус."
+pf "Я знаю, но уже поздно, и если я оставлю тебя здесь одну, я буду волноваться, что ты безопасно не вернёшься домой."
 show yuuna cur b1 with dissolve
-"Her cheeks tinge pink and she looks away, a small smile playing at her lips."
+"Ее щеки краснели, и она смотрела в сторону, на ее губах играла легкая улыбка."
 voice "audio/voice/E1/D5/S3/yuuna/66.ogg"
-ym "You'd be worried about me?"
-pf "Yeah."
+ym "Ты бы волновался за меня?"
+pf "Да."
 show yuuna smi b1
-"She looks back at me, a full smile on her face."
+"Она посмотрела на меня с улыбкой."
 voice "audio/voice/E1/D5/S3/yuuna/67.ogg"
-ym "Well, it will get dark soon... and I wouldn't want you to worry..."
-"I grin at her."
-pf "Come on, let's go pick up my bike."
+ym "Ну, скоро стемнеет... и я не хочу, чтобы ты волновался..."
+"Я умехнулся."
+pf "Давай, пойдём возьмём мой байк."
 show yuuna hap b1
-"She returns my smile with an even brighter smile."
+"Её улыбка стала ещё ярче."
 voice "audio/voice/E1/D5/S3/yuuna/68.ogg"
-ym "Okay, thanks."
+ym "Хорошо, спасибо."
 
 
 
@@ -545,21 +545,21 @@ $renpy.pause(1.5)
 scene bg campus parking dusk empty with fade
 
 
-"When we reach my bike, Yuuna's eyes widen in appreciation."
+"Когда мы добрались до байка, глаза Юны расширились от благодарности."
 show yuuna cur at cc with dissolve
 voice "audio/voice/E1/D5/S3/yuuna/69.ogg"
-ym "You have a beautiful ride."
-"I can't help myself from feeling a warmth of pride."
-pf "Thanks! I brought her back from the States. She goes everywhere with me."
-"I hop on my bike and pat the seat behind me. She carefully climbs on."
-pf "Are you ready?"
+ym "У тебя красивый мотоцикл."
+"Я не мог удержаться от чувства гордости."
+pf "Спасибо! Я привёз его из Штатов. Он всегда со мной."
+"Я запрыгнул на байк, и похлопал на сидение позади меня. Она осторожно села."
+pf "Ты готова?"
 show yuuna thi
 voice "audio/voice/E1/D5/S3/yuuna/70.ogg"
-ym "Um..."
-pf "What is it?"
+ym "Эм..."
+pf "Что такое?"
 voice "audio/voice/E1/D5/S3/yuuna/71.ogg"
-ym "What am I supposed to hold on to?"
-pf "Oh... well, you're kind of supposed to hold onto me..."
+ym "За что я должна держаться?"
+pf "Ох... ну, ты вроде как должна держаться за меня..."
 show shoBlush:
     xoffset 720
     yoffset 100
@@ -567,8 +567,8 @@ show shoBlush:
     yzoom .75
 show yuuna sur b2 with dissolve
 voice "audio/voice/E1/D5/S3/yuuna/72.ogg"
-ym "What?!"
-pf "What's wrong?"
+ym "Что?!"
+pf "Что не так?"
 show yuuna ner b2
 show panic:
     xoffset 720
@@ -576,8 +576,8 @@ show panic:
     xzoom .75
     yzoom .75
 voice "audio/voice/E1/D5/S3/yuuna/73.ogg"
-ym "Um, this was a bad idea. I--I should go wait for the bus."
-"I feel her squirm behind me."
+ym "Эм, Это была плохая идея. Я--Я должна подождать автобус."
+"Я чувствовал, как она ёрзала позади меня."
 
 $ qtebase = 3
 $ qtetotal = qtebase
@@ -585,27 +585,27 @@ $ t_var = qtetotal
 show screen timer_scr(place="E1D5S3_timeout")
 
 menu:
-    "Help her.":
+    "Помочь ей.":
         $ renpy.hide_screen ("timer_scr")
         $ E1D5S3_HelpedYuuna = 1
-        "Before she can hop off the bike, I reach back, grab her hands, and wrap her arms around my waist. Yuuna lets out a small gasp."
-        pf "See? This isn't so bad, right?"
+        "Прежде чем она успела слезть с байка, я потянулся назад, схватил её за руки и обнял за талию. Юуна вздохнула."
+        pf "Видишь? Это не так плохо, верно?"
         show yuuna cur b2
         voice "audio/voice/E1/D5/S3/yuuna/74.ogg"
-        ym "Umm, r--right..."
+        ym "Эмм, В--верно..."
 
-    "Let her go.":
+    "Отпустить её.":
         label E1D5S3_timeout:
         $ renpy.hide_screen ("timer_scr")
-        "In one smooth motion she slides off the bike. Her cheeks are as pink as her hair."
+        "Одним плавным движением она соскальзывает с байка. Её щеки были розовыми, как волосы."
         show yuuna smi b2
         voice "audio/voice/E1/D5/S3/yuuna/75_2.ogg"
-        ym "Thank you for the offer."
-        pf "Are you sure you don't want a ride?"
+        ym "Спасибо за предложение."
+        pf "Ты уверена, что не хочешь прокатиться?"
         voice "audio/voice/E1/D5/S3/yuuna/76_2.ogg"
-        ym "Yeah, I'll see you another time."
-        pf "Okay..."
-        "She gives me one last smile before turning away. Once she's out of sight, I start my engine and go home."
+        ym "Да, увидимся в другой раз."
+        pf "Хорошо..."
+        "Она подарила мне ещё одну улыбку, прежде чем отвернулась. Как только она исчезла из виду, я завёл байк и поехал домой."
         jump E1D5S7
 
 
@@ -617,16 +617,16 @@ $renpy.pause(3.0)
 play sound2 "audio/sfx/Vehicles/Bike driving off.ogg" fadein 3 fadeout 5
 $renpy.pause(3.0)
 
-"I can feel the warmth of Yuuna against me and the softness of her chest pressing against my back...{w} I try not to think about it."
+"Я чувствовал тепло Юны напротив меня и мягкость ее груди, прижимающейся к моей спине...{w} Я пытался не думать об этом."
 stop music fadeout 12
 
-"Her grip tightens around my waist as we continue down the freeway."
-"Yuuna diligently directs me towards her house. The scenery blends into a blur of colour as we drive by."
-"After a few minutes, Yuuna's directions sound more confident and there's a tinge of excitement in her voice. Her grip relaxes slightly and I'm acutely aware of every time she presses close to me to speak."
-"I feel her hand slip away for a moment--I assume to push the hair out of her eyes--and her chest pushes up against me again as she sighs."
-pf "Are you okay?"
+"Она сильнее держалась за меня, пока мы езали по автостраде."
+"Юуна старательно направляла меня к своему дому. Пейзаж сливался с размытым фоном, пока мы ехали мимо."
+"Через несколько минут указания Юны звучали более уверенно, и в её голосе был лёгкий восторг. Ее хватка немного расслабилась, и я остро ощущал каждый раз, когда она прижималась ко мне, чтобы говорить."
+"Я почувствовал, как ее рука на мгновение ускользнула--полагаю, чтобы смахнуть волосы с глаз--и ее грудь снова прижалась ко мне, пока она вздыхала."
+pf "Ты в порядке?"
 voice "audio/voice/E1/D5/S3/yuuna/75.ogg"
-ym "Yes--sorry--I just love sunsets and the view right now is breath-taking."
+ym "Да--Извини--Я просто люблю закаты, и вид сейчас захватывающий."
 
 play music "audio/music/Tender Moments (GAME VERSION).ogg" fadein 3.0
 
@@ -648,22 +648,22 @@ show cg yuuna bike evening:
 
 $renpy.pause(2.0)
 
-"I quickly glance towards the sun as it hovers over the horizon, reflecting a trail of golden fire on the glittering waves of the ocean."
-pf "You definitely don't see sunsets like these in New York. I could get used to this."
+"Я быстро глянул на солнце, пока оно парило над горизонтом, отражая след золотого огня на сверкающих волнах океана."
+pf "Ты определённо не увидишь таких закатов в Нью-Йорке. Я мог бы привыкнуть к этому."
 voice "audio/voice/E1/D5/S3/yuuna/76.ogg"
-ym "Are you liking it in Isokaze so far?"
-pf "Yeah, but I haven't seen much outside of ACE."
+ym "Тебе пока что нравится в Исоказе?"
+pf "Да, но я не видел много вне ACE."
 voice "audio/voice/E1/D5/S3/yuuna/77.ogg"
-ym "You should go to the park. It's so beautiful--especially in spring when the cherry blossoms bloom. I used to go there all the time and play on the statues."
+ym "Ты должен пойти в парк. Он очень красивый--особенно весной, когда цветёт вишня. Я все время ходила туда и играла на статуях."
 voice "audio/voice/E1/D5/S3/yuuna/78.ogg"
-ym "You'll learn a lot about the town's culture and history there too. Although I haven't been there since--a while so I'm not sure if it's changed at all."
-pf "Maybe you can come with me and show me."
-"She pauses." 
+ym "Ты также узнаешь много нового о культуре и истории города. Хотя я не была там с тех пор-- некоторое время, поэтому я не уверена, изменился ли он."
+pf "Может быть, мы прогуляемся там, и ты покажешь мне."
+"Она замолкла." 
 
 voice "audio/voice/E1/D5/S3/yuuna/79.ogg"
-ym "Sure… After all, Isokaze is a pretty special place."
-pf "Yeah, I'm beginning to see that."
-"She leans closer into me, but doesn't say anything more." 
+ym "Конечно… В конце концов, Исоказе это довольно особенное место."
+pf "Да, я начинаю замечать это."
+"Она наклонилась ближе ко мне, но больше ничего не говорила." 
 
 show cg yuuna bike evening:
     parallel:
@@ -682,39 +682,39 @@ stop music fadeout 3.0
 scene black with fade     
 $renpy.pause(1.0)
 
-"Before long, we arrive at her house."
+"Вскоре мы приехали к её дому."
 
 play music "audio/music/Yuuna Misaki (GAME VERSION).ogg" fadein 4.0
 scene bg isokaze neighborhood night with fade
 
-"She slips off the bike and waits for me to do the same. As I walk her to her front door, she turns to me. I don't anticipate her stopping and almost trip into her, but catch myself just in time. Still, I hear a slight gasp when she notices how close we are to each other. She suddenly becomes shy and takes a small step back."
+"Она слезла с байка и ждала, пока я сделаю то же самое. Пока я шёл к двери она повернулась ко мне. Я не ожидал, что она остановится, и чуть не врезался в неё, но быстро спохватился. Тем не менее, я услышал легкий вздох, когда она заметила, как близко мы были друг к другу. Внезапно она застеснялась и отшагнула от меня."
 
 show yuuna smi b1 at cc with dissolve
 
 voice "audio/voice/E1/D5/S3/yuuna/80.ogg"
-ym "Thanks for taking me home. I had a nice time today."
-pf "Me too. Maybe we can hang out again?"
+ym "Спасибо, что отвёз меня домой. Я сегодня хорошо провела время."
+pf "Я тоже. Может, мы как-нибудь снова погуляем?"
 voice "audio/voice/E1/D5/S3/yuuna/61.ogg"
-ym "Sure."
-pf "And do something besides study."
+ym "Конечно."
+pf "И делать что-то кроме учёбы."
 
 show yuuna hap b1
-"She laughs."
+"Она засмеялась."
 show regBlush:
     xoffset 720
     yoffset 100
     xzoom .75
     yzoom .75
 voice "audio/voice/E1/D5/S3/yuuna/81.ogg"
-ym "I'd like that."
+ym "Мне нравится это."
 
 show yuuna smi b1 with dissolve
 voice "audio/voice/E1/D5/S3/yuuna/82.ogg"
-ym "Have a good night. Get home safely, okay?"
-pf "I will. Talk to you later."
+ym "Спокойной ночи. Вернись благополучно домой, хорошо?"
+pf "Хорошо. Поговорим позже."
 hide yuuna with dissolve
 $renpy.pause(.5)
-"She turns towards her door while I go back to my bike. As I switch on the engine, I see her turn around. She gives me a brief wave before heading inside, and I wave back before heading home."
+"Она повернулась к двери, и я вернулся к байку. Заведя его, я заметил, как она обернулась. Она помахала мне, прежде чем вошла внутрь, я сделал то же самое, прежде чем поехать домой."
 
 stop music fadeout 3.0
 scene black with fade
