@@ -7,60 +7,60 @@ $renpy.pause(1.5)
 
 scene bg homekaito main night with fade
 
-"As I walk into the room, I'm assaulted by the sound of laughter. Seated in the living room is Nikki and two other girls. They glance up at me as I enter."
+"Войдя в комнату меня окружил смех. Никки и две девушки сидели в гостинной. Они заметили меня."
 
 show nikki hap at cc
 show highschoolgirl extra at l3
 show highschoolgirl2 extra at r3
 with dissolve
 
-"Nikki greets me with a wide grin and waves me over, while the two girls begin whispering to each other." 
+"Никки встретила меня широкой улыбкой и махала мне, пока две другие перешёптывались." 
 show nikki smi
 voice "audio/voice/E1/D5/S7/Nikki/1.ogg"
-sf "Hey, you're back! Where did you go?"
+sf "Эё, ты вернулся! Где ты был?"
 
 if (E1D5S1_EventAlone == 1):
-    pf "I just went to the arcade to practice on the simulation stations."
+    pf "Я ходил практиковаться в аркадных симуляторах."
     "Nikki's friends both perk up."
     voice "audio/voice/E1/D5/S7/HSS1/1.ogg"
-    hstu1f "You mean GEAR simulations?"
-    pf "Yeah."
+    hstu1f "Симуляции GEAR?"
+    pf "Ага."
     voice "audio/voice/E1/D5/S7/HSS2/1.ogg"
-    hstu3f "Were there a lot of other pilots there?"
-    pf "Um, not that I know of."
+    hstu3f "Там было много других пилотов?"
+    pf "Хм, не тех, кого бы я знал."
     show nikki ske
     voice "audio/voice/E1/D5/S7/HSS1/2.ogg"
-    hstu1f "Ooh, the only pilot there…"
-    "Nikki gives them a weird look, then shrugs."
+    hstu1f "Ох, единственный пилот…"
+    "Никки странно посмотрела на них, затем пожала плечами."
 
 elif (E1D5S1_EventKaori == 1):
-    pf "I went to the store to check out tablets."
+    pf "Я ходил в магазин, смотрел планшеты."
     voice "audio/voice/E1/D5/S7/Nikki/2.ogg"
-    sf "Oh, really? Did you see anything good?"
-    pf "Yeah."
+    sf "О, правда? Нашёл что-нибудь хорошее?"
+    pf "Да."
     show nikki cur
-    "She looks at my empty hands."
+    "Она посмотрела на мои пустые руки."
     voice "audio/voice/E1/D5/S7/Nikki/3.ogg"
-    sf "But nothing good enough to buy?"
-    pf "Oh, Kaori was the one who wanted a new tablet. I was just there to show her which one was good."
+    sf "Но недостаточно хорошее для покупки?"
+    pf "О, Каори хотела новый планшет. Я просто показывал ей варианты."
     show nikki dis
     voice "audio/voice/E1/D5/S7/Nikki/4.ogg"
-    sf "That's kind of a lame date. I'm disappointed in you."
-    "Nikki's friends seem to be on alert."
-    pf "It wasn't a date!"
+    sf "Это довольно отстойное свидание. Я разочарована в тебе."
+    "Друзья Никки, похоже, были начеку."
+    pf "Это было не свидание!"
     show nikki mis
     voice "audio/voice/E1/D5/S7/Nikki/5.ogg"
-    sf "Suuure, whatever you say."
-    "Nikki's friend leans into her and whispers."
+    sf "Кооооонечно, как скажешь."
+    "Подруга Никки наклонилась и шептала."
     voice "audio/voice/E1/D5/S7/HSS2/2.ogg"
-    hstu3f "Does he have a girlfriend?"
+    hstu3f "У него есть девушка?"
     show nikki smi
     voice "audio/voice/E1/D5/S7/Nikki/6.ogg"
-    sf "Nah--he wishes."
-    "The two girls glance at each other and giggle."
+    sf "Ха--в его мечтах."
+    "Девушки посмотрели друг на друга и захихикали."
 
 elif (E1D5S1_EventShou == 1) or (E1D5S1_EventMayu == 1):
-    pf "I hung out with friends."
+    pf "Я болтался с друзьями."
     show nikki mis
     show question:
         xoffset 720
@@ -68,36 +68,36 @@ elif (E1D5S1_EventShou == 1) or (E1D5S1_EventMayu == 1):
         xzoom .75
         yzoom .75
     voice "audio/voice/E1/D5/S7/Nikki/7.ogg"
-    sf "Oh yeah? You have friends?"
-    pf "Very funny."
-    "Nikki grins."
+    sf "О, да? У тебя есть друзья?"
+    pf "Очень смешно."
+    "Никки ухмыльнулась."
     show nikki neu
     voice "audio/voice/E1/D5/S7/Nikki/8.ogg"
-    sf "Who?"
-    pf "Just Shou and Mayu from my team."
-    "Nikki's friends lean into her and whisper."
+    sf "Кто?"
+    pf "Просто Сё и Маю из команды."
+    "Подружки Никки наклонились к ней и шептали."
     voice "audio/voice/E1/D5/S7/HSS1/3.ogg"
-    hstu1f "What team is he talking about?"
+    hstu1f "О какой команде он говорит?"
     voice "audio/voice/E1/D5/S7/Nikki/9.ogg"
-    sf "His pilot team."
+    sf "Его команда пилотов."
     voice "audio/voice/E1/D5/S7/HSS2/3.ogg"
-    hstu3f "Oooh."
-    "They both glance appreciatively at me again."
+    hstu3f "Оооооо."
+    "Они обе глянули на меня, оценивая."
 
 elif (E1D5S1_EventYuuna == 1):
-    pf "I met up with Yuuna to work on our project."
+    pf "Я встретился с Юной, для работы над нашим проектом."
     show nikki ske
     voice "audio/voice/E1/D5/S7/Nikki/10.ogg"
-    sf "Seriously? You did homework on a Saturday?"
-    pf "Yeah…"
+    sf "Серьёзно? Ты делал домашку в субботу?"
+    pf "Ага…"
     voice "audio/voice/E1/D5/S7/Nikki/11.ogg"
-    sf "Riiiiight, I'm sure it had nothing to do with seeing a cute girl."
-    "Nikki's friends suddenly seem to be on alert."
-    pf "We really did do homework. In fact, we finished the project."
+    sf "Тооооооочно, это никак не связано со встречей с милой девушкой."
+    "Подружки Никки внезапно напряглись."
+    pf "Мы действительно делали домашнюю работу. По факту, мы закончили проект."
     show nikki cur
     voice "audio/voice/E1/D5/S7/Nikki/12.ogg"
-    sf "You're telling me that you were alone with a cute girl for hours, and all you did was schoolwork?"
-    pf "Um, yeah."
+    sf "Ты говоришь, что часами был наедине с милой девушкой, и все, что делал, это учился?"
+    pf "Эм, да."
     "She sighs."
     show drop:
         xoffset 720
@@ -106,48 +106,48 @@ elif (E1D5S1_EventYuuna == 1):
         yzoom .75
     show nikki dis
     voice "audio/voice/E1/D5/S7/Nikki/13.ogg"
-    sf "You're so hopeless!"
-    "Nikki's friends glance at each other and giggle."
+    sf "Ты так безнадёжен!"
+    "Девушки посмотрели друг на друга и захихикали."
 
-pf "What are you guys doing?" 
+pf "Чем вы занмаетесь?" 
 show nikki neu
 voice "audio/voice/E1/D5/S7/Nikki/14.ogg"
-sf "Playing Draw-it."
-pf "What's that?" 
-"The first girl speaks before Nikki can." 
+sf "Играем в Нарисуй это."
+pf "Что это?" 
+"Первая девушка заговрила вперёд Никки." 
 voice "audio/voice/E1/D5/S7/HSS1/4.ogg"
-hstu1f "It's a fun game! You pick a word from the pile and draw it and people guess what it is." 
-pf "Sounds easy enough."
+hstu1f "Это весёлая игра! Выбираешь слово из кучи, рисуешь, и люди догадываются, что это." 
+pf "Звучит довольно легко."
 show note:
     xoffset 1175
     yoffset 160
     xzoom .75
     yzoom .75
 voice "audio/voice/E1/D5/S7/HSS2/4.ogg"
-hstu3f "Join us! Then we can play in teams of two."
+hstu3f "Присоединяйся! Так мы сможем играть командами по двое."
 voice "audio/voice/E1/D5/S7/HSS1/5.ogg"
-hstu1f "Yeah! Join us!"
-pf "Uh…"
-"I glance at Nikki, who shrugs."
+hstu1f "Да! Присоединяйся!"
+pf "Хм…"
+"Я глянул на Никки, она пожала плечами."
 voice "audio/voice/E1/D5/S7/Nikki/15.ogg"
-sf "Sure, why not?"
-pf "Okay."
-"The two girls jump up excitedly."
+sf "Конечно, почему бы и нет?"
+pf "Хорошо."
+"Обе девушки радостно подпрыгнули."
 show nikki cur
-"The first one gets up from the couch and grabs my arm, then drags me back to sit with her."
+"Первая встала с дивана и схватила меня за руку, затем потащила назад, чтобы я сел с ней."
 voice "audio/voice/E1/D5/S7/HSS1/6.ogg"
-hstu1f "Yay! You can be on my team." 
+hstu1f "Ура! Ты будешь в моей команде." 
 voice "audio/voice/E1/D5/S7/HSS2/5.ogg"
-hstu3f "No! He should be on my team."
-"The other girl grabs my other arm."
-pf "Um."
+hstu3f "Нет! Он должен быть в моей команде."
+"Другая девушка схватиа меня за вторую руку."
+pf "Эм."
 voice "audio/voice/E1/D5/S7/HSS1/7.ogg"
-hstu1f "Why? You and Nikki are like best friends. You two should be on a team!"
+hstu1f "Почему? Ты с Никки лучшие подруги. Вы должны быть в команде!"
 show nikki sur
-"She tugs tighter on my arm."
+"Она крепче обхватила мою руку."
 voice "audio/voice/E1/D5/S7/HSS2/6.ogg"
-hstu3f "But he's a pilot at ACE which means he's smarter and should be on my team!"
-"I feel like I'm going to be ripped in half."
+hstu3f "Но он пилот в ACE, значит он умён, и должен быть в моей команде!"
+"Похоже меня собрались разорвать надвое."
 show crying:
     xoffset 720
     yoffset 160
@@ -155,28 +155,28 @@ show crying:
     yzoom .75
 show nikki dis with dissolve
 voice "audio/voice/E1/D5/S7/Nikki/16.ogg"
-sf "Ouch! I thought you guys were my friends not his?"
+sf "Ой! Я думала, что вы мои друзья, а не его?"
 
 #hstu1f and hstu3f speaking simultaneously
 voice "audio/voice/E1/D5/S7/HSS1/8.ogg"
-hstu1f "We are!"
+hstu1f "Так и есть!"
 voice "audio/voice/E1/D5/S7/HSS2/7.ogg"
-hstu3f "We are!"
+hstu3f "Так и есть!"
 show nikki ske
 voice "audio/voice/E1/D5/S7/Nikki/17.ogg"
-sf "Then how come you guys don't want to be on my team?"
-"They glance at each other, but neither girl lets go of me. Nikki crosses her arms."
+sf "Тогда почему вы не хотите быть в моей команде?"
+"Они глянули друг на друга, но ни одна из них не отпустила меня. Никки скрестила руки."
 show nikki smi
 voice "audio/voice/E1/D5/S7/Nikki/18.ogg"
-sf "Fine. Well, he's my brother so he's going to be on my team."
-"Both girls pout in disappointment and let go." 
+sf "Хорошо. Что ж, он мой брат, поэтому будет в моей команде."
+"Обе девушки разочарованно надулись и отпустили меня." 
 voice "audio/voice/E1/D5/S7/HSS2/8.ogg"
-hstu3f "You're no fun, Nikki."
+hstu3f "Ты зануда, Никки."
 show nikki neu
 voice "audio/voice/E1/D5/S7/Nikki/19.ogg"
-sf "Whatever. You guys can go first!" 
+sf "Плевать. Вы можете ходить первыми!" 
 voice "audio/voice/E1/D5/S7/HSS1/9.ogg"
-hstu1f "Fine." 
+hstu1f "Хорошо." 
 
 hide nikki
 hide highschoolgirl extra
@@ -192,15 +192,15 @@ show nikki neu at l3
 with dissolve
 $renpy.pause(.5)
 
-"Nikki's friend picks up a card and smiles when she sees the word."
-"She glances at me quickly then starts drawing. It's a guy with blond hair… wearing something eerily familiar."
-"The second girl answers immediately." 
+"Подруга Никки взяла карточку, и улыбнулась, увидя слово."
+"Она быстро глянула на меня, затем начала рисовать. На рисунке был лондин… одеты в что-то жутко знакомое."
+"Дторая двушка сразу ответила." 
 voice "audio/voice/E1/D5/S7/HSS2/9.ogg"
-hstu3f "Hot! The word is hot!" 
+hstu3f "Горячий! Это слово - горячий!" 
 show nikki cur
 voice "audio/voice/E1/D5/S7/HSS1/10.ogg"
-hstu1f "Yes!" 
-"They both burst into a fit of giggles. Nikki grabs the paper and looks at it."
+hstu1f "Да!" 
+"Они обе захихикали. Никки схватила листок и взглянула на него."
 show question:
     xoffset 230
     yoffset 160
@@ -208,32 +208,32 @@ show question:
     yzoom .75
 show nikki ske
 voice "audio/voice/E1/D5/S7/Nikki/20.ogg"
-sf "What? How did you guess \"hot\" from that?"
-"She shoves the drawing in my face."
+sf "Что? Как ты догадалась из этого, что это \"горячий\"?"
+"Она ткнула рисунок мне в лицо."
 show nikki cur
 voice "audio/voice/E1/D5/S7/Nikki/21.ogg"
-sf "Would you have known this was \"hot\"?"
+sf "Ты бы знал, что это \"горячий\"?"
 
 menu:
-    "No, but it's probably a girl thing.":
-        pf "No, but I think you girls would know better than I would if a guy is hot or not."
+    "Нет, но это определённо женские штучки.":
+        pf "Нет, но я уверен, что вы, девушки, лучше меня знаете, горяч парень или нет."
         show nikki dis
-        "Nikki blinks at me."
+        "Никки просто смотрела на меня."
         voice "audio/voice/E1/D5/S7/Nikki/22.ogg"
-        sf "Okay, never mind."
+        sf "Хорошо, забей."
 
-    "How else would you describe me?":
-        pf "It's pretty obvious to me."
-        "I grin at the girls, who both blush."
+    "Как ещё бы ты описала меня?":
+        pf "Это довольно очевидно для меня."
+        "Я усмехнулся девушким, они покраснели."
         show nikki dis
         voice "audio/voice/E1/D5/S7/Nikki/23.ogg"
-        sf "What? Shut up. You're no help."
+        sf "Что? Заткнись. От тебя никакого толку."
 
-    "Probably not.":
-        pf "I don't think \"hot\" is the word I would have gone for."
+    "Определённо нет.":
+        pf "Я не думаю, что \"горячий\", это именно то слово."
         show nikki neu
         voice "audio/voice/E1/D5/S7/Nikki/24.ogg"
-        sf "Thank you!"
+        sf "Спасибо!"
 
 show confused:
     xoffset 230
@@ -242,7 +242,7 @@ show confused:
     yzoom .75
 show nikki cur
 voice "audio/voice/E1/D5/S7/Nikki/25.ogg"
-sf "Why wouldn't you draw fire or like, a cup of coffee or something? Who is this even supposed to be?" 
+sf "Почему ты не нарисовала огонь, или например, кружку кофе, или что-нибудь такое? Кто это вообще должен быть?" 
 
 show heart:
     xoffset 875
@@ -256,7 +256,7 @@ show heart2:
     xzoom -.75
     yzoom .75
 
-"Both girls look at me and giggle again."
+"Обе девушки посмотрели на меня и снова захихикали."
 $renpy.pause(.75)
 show shocked:
     xoffset 230
@@ -266,35 +266,35 @@ show shocked:
 show nikki sur b1 with dissolve
 $renpy.pause(1.0)
 
-"Nikki glances between the three of us then frowns." 
+"Никки посмотреал на нах троих, затем нахмурилась." 
 
 show nikki ann b1
 voice "audio/voice/E1/D5/S7/Nikki/26.ogg"
-sf "You guys, he's my brother!"
+sf "Девочки, он мой брат!"
 voice "audio/voice/E1/D5/S7/HSS2/10.ogg"
-hstu3f "So?"
+hstu3f "И?"
 voice "audio/voice/E1/D5/S7/HSS1/11.ogg"
-hstu1f "He's cute…"
+hstu1f "Он милый…"
 
 show nikki ang b1
 voice "audio/voice/E1/D5/S7/Nikki/27.ogg"
-sf "But he's {i}my brother{/i}!" 
+sf "Но он {i}мой брат{/i}!" 
 show nikki ann b1
-"The girls exchange a glance then gasp."
+"Девушки посмотрели друг на друга, потом вздохнули."
 voice "audio/voice/E1/D5/S7/HSS1/12.ogg"
-hstu1f "Ohhh, we had no idea."
+hstu1f "Аааа, мы понятия не имели."
 voice "audio/voice/E1/D5/S7/HSS2/11.ogg"
-hstu3f "Yeah, we're sorry! But you should have said something."
+hstu3f "Да, нам жаль! Но ты должна была нам сказать."
 show nikki cur with dissolve
-"Nikki blinks in confusion."
+"Никки смотрела в замешательстве."
 voice "audio/voice/E1/D5/S7/Nikki/28.ogg"
-sf "Huh? Said what?"
+sf "Хм? Что сказать?"
 voice "audio/voice/E1/D5/S7/HSS1/13.ogg"
-hstu1f "That you and him--you know."
-"She nudges her head towards me."
+hstu1f "Что ты с ним--ты знаешь."
+"Она показала головой на меня."
 voice "audio/voice/E1/D5/S7/HSS1/14.ogg"
-hstu1f "The relationship you have with him…"
-"Nikki continues to look blank for a few seconds..."
+hstu1f "У тебя с ним отношения…"
+"Никки продолжала смотреть несколько секунд..."
 show frightful:
     xoffset 230
     yoffset 160
@@ -302,29 +302,29 @@ show frightful:
     yzoom .75
 show nikki sur with dissolve
 $renpy.pause(.5)
-"...then her expression changes to horror."
+"...затем выражение ее лица превращается в ужас."
 voice "audio/voice/E1/D5/S7/Nikki/29.ogg"
-sf "Oh my god, no!"
+sf "О мой Бог, нет!"
 voice "audio/voice/E1/D5/S7/HSS2/12.ogg"
-hstu3f "It makes sense as to why you got so protective over him." 
+hstu3f "Понятно, почему ты так защищала его." 
 voice "audio/voice/E1/D5/S7/HSS1/15.ogg"
-hstu1f "And why you wanted him on your team." 
+hstu1f "И хотела его в свою команду." 
 voice "audio/voice/E1/D5/S7/HSS2/13.ogg"
-hstu3f "Nikki, you don't have to be embarrassed. It's okay!"
+hstu3f "Никки, тебе не нужно смущаться. Это нормально!"
 show nikki win
 voice "audio/voice/E1/D5/S7/Nikki/30.ogg"
-sf "Gross, gross, gross!" 
-"Things just got really weird."
-pf "I'm going to head upstairs." 
+sf "Отвратительно, отвратительно, отвратительно!" 
+"Дела стали отчень странными."
+pf "Я пойду наверх." 
 voice "audio/voice/E1/D5/S7/HSS1/16.ogg"
-hstu1f "Oh no! Stay and play with us." 
+hstu1f "О нет! Останься и поиграй с нами." 
 voice "audio/voice/E1/D5/S7/HSS2/14.ogg"
-hstu3f "Yeah, stay!" 
+hstu3f "Да, останься!" 
 show nikki ann
-"Nikki stands and pushes me towards the stairs." 
+"Никки встала и толкала меня к лестнице." 
 voice "audio/voice/E1/D5/S7/Nikki/31.ogg"
-sf "Don't listen to them. Just go!" 
-pf "I'm going, I'm going!" 
+sf "Не слушай их. Просто иди!" 
+pf "Иду я, иду!" 
 
 
 stop ambient fadeout 3.0
@@ -332,37 +332,37 @@ scene black with fade
 $renpy.pause(.5)
 
 
-"I rush up the stairs but can still hear them arguing below." 
+"Я поднялся по лестнице, все ещё слыша, как они ругались." 
 voice "audio/voice/E1/D5/S7/HSS2/15.ogg"
-hstu3f "Why did you send him away, Nikki? We were having a good time."
+hstu3f "Почему ты прогнала его, Никки? Мы хорошо проводили время."
 voice "audio/voice/E1/D5/S7/HSS1/17.ogg"
-hstu1f "Yeah, plus he's hot."
+hstu1f "Да, к тому же он горяч."
 voice "audio/voice/E1/D5/S7/Nikki/32.ogg"
-sf "Ew, you guys, stop it." 
+sf "Фу, девочки, прекратите." 
 voice "audio/voice/E1/D5/S7/HSS2/16.ogg"
-hstu3f "It's not a crime to look." 
+hstu3f "Смотерть - не преступление." 
 voice "audio/voice/E1/D5/S7/Nikki/33.ogg"
-sf "Well, it should be! Excuse me, I'm just going to go throw up." 
-"Their voices drift away as I enter my room and flop onto my bed."
+sf "Ну, а должно быть! Извините, но я собираюсь это прекратить." 
+"Когда я зашёл в комнату и повалился на кровать из голоса исчезли."
 
 
 $renpy.pause(.5)
 stop music fadeout 20
 scene bg homekaito myroom night with fade
 
-"I will never understand girls. But it is kind of funny that they thought I was hot. Actually, they weren't so bad to look at…"
-"I grin as I remember them clutching my arm close to their chests. With assets like that you kind of forget things... {w}like that they're only in high school."
-"The smile drops off my face. Maybe it's a good thing Nikki doesn't bring her friends home very often."
+"Я никогда не пойму девушек. Но забавно, что они подумали, что я горяч. На самом деле, они не были так плохи на вид…"
+"Я усмехался, вспоминая, как они сжимали мои руки рядом со своими грудями. С такими формами забываешь то... {w}что они ещё в старшей школе."
+"Улыбка пропала. Может быть и хорошо, что Никки не часто приводит своих друзей домой."
 
 play sound "audio/sfx/Technology/Phone Vibration Once.ogg"
-"Just then, my phone dings, announcing an email. Breathing in relief, I eagerly reach over and open the email."
-"All team rankings will be posted on Monday." 
-"I guess I'll find out my ranking when I go to school."
+"В этот момент на телефон пришло смс. Вздохнув с облегчением, я с нетерпением протянул руку и открывл его."
+"Все рейтинги команд будут опубликованы в понедельник." 
+"Полагаю, посмотрю рейтинг, когда пойду в школу."
 
 scene black with fade
 
-"I spend the rest of my evening browsing online for cat videos until it's time for bed."
-"As soon as my head hits the pillow, I fall asleep. Who knows what tomorrow will hold."
+"Остаток вечера я провёл просматривая видео про котов, пока не пришло время ложиться спать."
+"Как толкьо голова коснулась подушки, я уснул. Кто знал, что ждало меня завтра."
 
 #jump E1END
 
