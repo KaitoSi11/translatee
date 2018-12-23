@@ -5,179 +5,179 @@ if (E1D2S3_MetKaoriWasRudeNoHelmet == 1) or (E1D2S3_MetKaoriWasNice == 1) or (E1
     $renpy.pause(1.5)
     play sound "audio/sfx/Technology/Phone Vibration Once.ogg" 
     $renpy.pause(1.5)
-    "Just as I reach for my phone, I'm startled by a loud buzzing sound. Kaori's name flashes across the screen."
+    "Дойдя до телефона, громкий звонок поразил меня. Звонила Каори."
     play sound "audio/sfx/Technology/Phone Answer.ogg"
-    "... That's weird."
-    pf "Hey Kaori. I was just about to call--"
+    "... Это странно."
+    pf "Привет Каори. Я как раз собирался звонить--"
     play music "audio/music/Idle Conversation (GAME VERSION).ogg" fadein 5
     voice "audio/voice/E1/D5/S4/Kaori/1.ogg"
-    ki "You broke my tablet!" 
-    pf "U-Uh, what?"
+    ki "Ты сломал мой планшет!" 
+    pf "Э-эм, что?"
     voice "audio/voice/E1/D5/S4/Kaori/2.ogg"
-    ki "You broke my tablet so you owe me a working one." 
+    ki "Ты сломал мой планшет, так что должен мне новый." 
 
     menu: 
-        "When did I do that?":
-            pf "When have I even gone near your tablet?"
+        "Когда я это сделал?":
+            pf "Когда я вообще был у твоего планшета?"
             voice "audio/voice/E1/D5/S4/Kaori/3.ogg"
-            ki "When you nearly mowed me down with your bike."
-            "I pause."
-            pf "Ohhh…"
+            ki "Когда ты чуть не сбил меня нв своём байке."
+            "Я превался."
+            pf "Оууу…"
             voice "audio/voice/E1/D5/S4/Kaori/4.ogg"
-            ki "Exactly. Anyway, it's broken now because of you."
+            ki "Именно. В любом случае, он сломан из-за тебя."
 
-        "I don't give gifts until the second or third date.":
-            pf "At least wait until we've gone on a date before you start asking for gifts."
+        "Я не дарю подарки до второго или третьего свидания.":
+            pf "По крайней мере, подожди, пока мы не сходим на свидание, прежде чем начать просить подарки."
             voice "audio/voice/E1/D5/S4/Kaori/5.ogg"
-            ki "It's not a present if you're the reason I need a replacement!"
-            pf "You want me to buy it, don't you?"
+            ki "Это не подарок, если ты причина, по которой мне нужна замена!"
+            pf "Ты хочешь, чтобы я купил его, не так ли?"
             voice "audio/voice/E1/D5/S4/Kaori/6.ogg"
-            ki "Of course! You broke it!"
-            pf "Sounds like a gift to me."
+            ki "Конечно! Ты сломал его!"
+            pf "По мне, звучит как подарок."
             voice "audio/voice/E1/D5/S4/Kaori/7.ogg"
-            ki "It's not!"
-            pf "Hey, I get it--"
+            ki "Это не так!"
+            pf "Эй, я понял--"
             voice "audio/voice/E1/D5/S4/Kaori/8.ogg"
-            ki "I don't have time for this. You owe me a replacement."
+            ki "У меня нет времени на это. Ты должен мне замену."
 
-        "I've never gone near your tablet.":
-            pf "No, I didn't."
+        "Я никогда не был рядом с твоим планшетом.":
+            pf "Нет, я не делал этого."
             voice "audio/voice/E1/D5/S4/Kaori/9.ogg"
-            ki "Yes, you did!"
-            pf "How could I have broken it when I've never used it?"
+            ki "Да, ты делал!"
+            pf "Как я вообще мог его сломать, если даже никогда им не пользовался?"
             voice "audio/voice/E1/D5/S4/Kaori/10.ogg"
-            ki "When you nearly killed me, you actually killed my tablet instead."
-            pf "What?"
+            ki "Когда ты чуть не убил меня, ты ,вообще-то, вместо этого убил мой планшет."
+            pf "Что?"
             voice "audio/voice/E1/D5/S4/Kaori/11.ogg"
-            ki "You shattered the screen when my bag was thrown across the pavement, and now it won't even turn on."
-            pf "That still sounds like it's {i}your{/i} problem."
-            "There's a pause before Kaori's rage breaks loose."
+            ki "Ты разбил экран, когда моя сумка упала на тротуар, теперь он даже не включается."
+            pf "Это всё ещё звучит как {i}твоя{/i} проблема."
+            "На секунду ярость Каори поутихла."
             voice "audio/voice/E1/D5/S4/Kaori/12.ogg"
-            ki "{i}My{/i} problem? Idiot! {i}You{/i} were the one who ran the red light. {i}You{/i} were the one who almost ran me down. And {i}you{/i} were the one who caused my bag--a bag with valuable things, I might add--to fly across the pavement, thereby completely shattering said valuable things. And if it weren't for you, I'd--"
-            pf "God, this {i}again{/i}? What will it take for you to shut up about this?"
+            ki "{i}Моя{/i} проблема? Идиот! {i}Ты{/i} проехал на красный. {i}Ты{/i} чуть не сбил меня. И {i}из-за тебя{/i} моя сумка--должна добавить,сумка с важными вещами--полетела по тротуару, разбив эти самые ценные вещи. И если бы не ты, я--"
+            pf "Боже, {i}снова{/i} это? Что заставит тебя заткнуться насчёт этого?"
             voice "audio/voice/E1/D5/S4/Kaori/13.ogg"
-            ki "The tablet."
+            ki "Планшет."
 
-    pf "Fine."
-    pf "What model did you have? I'll replace it with the same. You won't notice a difference." 
+    pf "Хорошо."
+    pf "Какой планшет у тебя был? Я заменю его тем же. Разницы не заметишь." 
     voice "audio/voice/E1/D5/S4/Kaori/14.ogg"
-    ki "I had an EN85…"
-    pf "No, really, what did you have?"
+    ki "У меня был EN85…"
+    pf "Нет, правда, какой у тебя был?"
     voice "audio/voice/E1/D5/S4/Kaori/15.ogg"
-    ki "That's what I had!"
-    pf "I would have thought you'd had a newer model."
+    ki "Именно такой и был!"
+    pf "Я думал, у тебя будет модель новее."
     voice "audio/voice/E1/D5/S4/Kaori/16.ogg"
-    ki "Why? It worked fine until you broke it."
-    pf "Well, okay. How long did you have it for?"
+    ki "Почему? Он хорошо работал, пока ты не сломал его."
+    pf "Ну, хорошо. Как долго он у тебя был?"
     voice "audio/voice/E1/D5/S4/Kaori/17.ogg"
-    ki "Two years."
-    pf "That's kind of a long time… How much for the replacement?"
+    ki "Два года."
+    pf "Это довольно долго… Сколько стоит замена?"
     voice "audio/voice/E1/D5/S4/Kaori/18.ogg"
-    ki "399.99 credits, plus tax."
-    pf "399.99 credits?{w} {i}Plus{/i} tax?!"
+    ki "399.99 кредитов, плюч налог."
+    pf "399.99 кредитов?{w} {i}Плюс{/i} налог?!"
     voice "audio/voice/E1/D5/S4/Kaori/19.ogg"
-    ki "It's how much that cost."
-    pf "It's used. Do you not know what depreciation is? I'll give you 150 credits and that's being generous."
+    ki "Он столько стоит."
+    pf "Он б/у. Ты знаешь, что такое амортизация? Я жам тебе 150 кредитов, и это щедро."
     voice "audio/voice/E1/D5/S4/Kaori/20.ogg"
-    ki "What?! That's not even close to how much I paid for it!"
-    pf "Of course not, it's an old model, but that's about how much it'd be worth now."
+    ki "Что?! Это даже не близко к тому, сколько я за него заплатила!"
+    pf "Конечно нет, Эт остарая модель, но сейчас бы она стоила именно столько."
     voice "audio/voice/E1/D5/S4/Kaori/21.ogg"
-    ki "I paid more than double that price when I bought it so that's how much it's worth."
-    pf "That's not how it works."
+    ki "Я заплатила вдвое больше этого, когда покупала, так что вот сколько он стоит."
+    pf "Это не так работает."
     voice "audio/voice/E1/D5/S4/Kaori/22.ogg"
-    ki "That's how much it was worth to me!"
-    pf "Maybe I can get you a used one then."
+    ki "Это так работает для меня!"
+    pf "Может я достану тебе б/у модель."
     voice "audio/voice/E1/D5/S4/Kaori/23.ogg"
-    ki "No! People don't take care of their things. Knowing your luck you'll buy me a faulty tablet and I'll have to replace it again almost immediately."
-    pf "I know how to pick out electronics. I'm not so stupid that I'd buy you a damaged one."
+    ki "Нет! Люди не забоятся о своих вещах. Зная тебя, ты купишь мне немиправный планшет, и его придётся сразу же заменить."
+    pf "Я умею выбирать электронику. Я не настолько туп, чтобы купить тебе сломанный."
     voice "audio/voice/E1/D5/S4/Kaori/24.ogg"
-    ki "Debatable."
-    "She is making this really difficult." 
-    pf "Look, I'm not going to pay the original cost, {i}plus tax{/i}, of something that is no longer worth that amount." 
+    ki "Сомнительно."
+    "Она очень усложняет это." 
+    pf "Слушай, я не собираюсь платить изначальную цену, {i}и налог{/i}, или что-то, если он уже не стоит этого." 
     voice "audio/voice/E1/D5/S4/Kaori/25.ogg"
-    ki "Fine, but you should at least get me something comparable to my old one--like the YX140." 
+    ki "Хорошо, но ты должен по крайней мере принести мне что-то сопоставимое с моим старым--например YX140." 
 
 else:
-    "Hmm, Kaori never sent over the strategies she wanted me to look over before our meeting on Monday. {w}What time is that meeting anyway? May as well ask her."
+    "Хмм, Каори никогда не отправляла информацию о стратегиях, которые она хотела, чтобы я изучил до нашей встречи в понедельник. {w}В какое время эта встреча? Лучше спрошу её."
     play sound "audio/sfx/Technology/Phone Dial.ogg"
-    "I grab my phone and dial her number."
+    "Я взял телефон и набрал её."
     play sound "audio/sfx/Technology/Phone Answer.ogg"
-    "The phone rings a few times before Kaori answers." 
+    "Прошло несколько гудков, прежде чем Каори подняла трубку." 
     voice "audio/voice/E1/D5/S4/Kaori/26.ogg"
-    ki "Hello?" 
+    ki "Алло?" 
     play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 5
-    pf "Hey, Kaori, it's [pfirst]." 
+    pf "Привет, Каори, это [pfirst]." 
     voice "audio/voice/E1/D5/S4/Kaori/27.ogg"
-    ki "Oh, hi." 
-    pf "Hey, you never sent me the strategies you wanted me to learn." 
+    ki "О, привет." 
+    pf "Слушай, ты не отправляла мне стратегии для изучения." 
     voice "audio/voice/E1/D5/S4/Kaori/28.ogg"
-    ki "Of course I sent them. Check your email again."
-    "I flip through my emails, and as expected, do not see one from Kaori."
-    pf "Well, it's not sitting in my inbox so if you sent it I don't know who you sent it to."
+    ki "Конечно я посылала их. Ещё раз проверь свою почту."
+    "Я пролистал почту, и как ожидалось, не видел ничего от Каори."
+    pf "Ну, там ничего нет, так что я не знаю кому ты отправляла."
     voice "audio/voice/E1/D5/S4/Kaori/29.ogg"
-    ki "Isn't this your email?"
-    "She reads me an incorrect address."
-    pf "No, there's no \"7\" in my email."
+    ki "Разве это не твоя почта?"
+    "Она написала неправильный адрес."
+    pf "Нет, в моём нет \"7\"."
     voice "audio/voice/E1/D5/S4/Kaori/30.ogg"
-    ki "Ugh, idiot! Why did you give me the wrong email?"
-    pf "I didn't give you the wrong--"
+    ki "Ух, идиот! Почему ты дал мне неправильный email?"
+    pf "Я не давал тебе неправильный--"
     voice "audio/voice/E1/D5/S4/Kaori/31.ogg"
-    ki "Wait, I'll send it again."
-    "I hear a commotion on the other end of the phone and something that sounds like a frustrated groan." 
+    ki "Подожди, я пошлю снова."
+    "Я слышал шум на другом конце телефона и что-то похожее на разочарованный стон." 
     voice "audio/voice/E1/D5/S4/Kaori/32.ogg"
-    ki "Ugh, my tablet still isn't working so I have to grab my laptop. Hold on."
+    ki "Тьфу, планшет все ещё не работает, так что придётся взять ноутбук. Подожди."
      
     if (E1D2S3_EncounteredKaori == 0):
         menu: 
-            "What did you do to it?":
-                pf "What happened to your tablet?" 
+            "Что ты с ним сделала?":
+                pf "Что с твоим планшетом?" 
                 voice "audio/voice/E1/D5/S4/Kaori/33.ogg"
-                ki "I don't know. It's been weird for a while but ever since yesterday it won't even turn on." 
-                pf "That sucks." 
+                ki "Не знаю. Ч ним была какая-то хрень, а со вчерашнего дня он вообще не включается." 
+                pf "Отстой." 
                 voice "audio/voice/E1/D5/S4/Kaori/34.ogg"
-                ki "I'm so fed up with it. I'm heading to the mall later to grab the YX140 to replace it."
+                ki "Мне это так надоело. Я потом пойду в торговый центр, чтобы купить YX140."
 
-            "Sounds like you need a man to fix it.":
-                pf "I could come by to fix it for you." 
+            "Похоже, тебе нужен мужчина, чтобы починить его.":
+                pf "Я могу прийти и починить его для тебя." 
                 voice "audio/voice/E1/D5/S4/Kaori/35.ogg"
-                ki "You can't fix this. It's completely dead." 
-                pf "I can, I have very skilled hands…" 
+                ki "Ты не сможешь починить. Он полностью мёртв." 
+                pf "Я могу, у меня очень умелые руки…" 
                 voice "audio/voice/E1/D5/S4/Kaori/36.ogg"
-                ki "Skilled enough to bring it back to life?" 
-                pf "Skilled enough to make you forget about the damage." 
+                ki "Достаточно умелые, чтобы вернуть его к жизни?" 
+                pf "Достаточно умелые, чтобы заставить тебя забыть о поломке." 
                 voice "audio/voice/E1/D5/S4/Kaori/37.ogg"
-                ki "What? Whatever--I'm just going to head to the mall and get the YX140 to replace it." 
+                ki "Что? Плевать--Я просто пойду в торговый центр, и куплю YX140." 
 
-            "I still haven't gotten an email…":  
-                pf "Have you resent it yet?" 
+            "Я все ещё не получил сообшение…":  
+                pf "Ты уже переслала сообшение?" 
                 voice "audio/voice/E1/D5/S4/Kaori/38.ogg"
-                ki "No, my computer is slow. That's why I always use my tablet." 
-                pf "Then get a new tablet." 
+                ki "Нет, мой компьютер медленно работает. Вот почему я всегда использовала планшет." 
+                pf "Так купи новый." 
                 voice "audio/voice/E1/D5/S4/Kaori/39.ogg"
-                ki "Like I didn't think of that! I'm heading to the mall today to get the YX140."
+                ki "Как будто я не думала об этом! Я сегодня пойду в торговый центр, чтобы купить YX140."
 
     if (E1D2S3_MetKaoriWasRudeYesHelmet == 1):
-        pf "What happened? Did you break it?" 
+        pf "Что случилось? Ты сломала его?" 
         voice "audio/voice/E1/D5/S4/Kaori/40.ogg"
-        ki "No, {i}I{/i} didn't break it." 
-        pf "Someone else did?" 
+        ki "Нет, {i}Я{/i} я не ломала его." 
+        pf "Кто-то другой сделал это?" 
         voice "audio/voice/E1/D5/S4/Kaori/41.ogg"
-        ki "Some idiot ran me over on the first day of school and it hasn't been working since!"
-        "Oops…" 
-        pf "Wow, what a jerk!" 
+        ki "Какой-то идиот сбил меня в первый день занятий, и с тех пор он не работает!"
+        "Упс…" 
+        pf "Ого, что за придурок!" 
         voice "audio/voice/E1/D5/S4/Kaori/42.ogg"
-        ki "I know! I'm heading to the mall later to grab the YX140 to replace it, but I wish I knew who it was so I could make them get me a new one."
+        ki "Я знаю! Я пойду в торговый центр, чтобы купить YX140, но я желала бы знать, кто это был, чтобы заставить его купить новый."
             
-pf "What about the Z90 model? It has better specs and it's cheaper." 
+pf "Что насчёт Z90? У него лучше характеристики, и он дешевле." 
 voice "audio/voice/E1/D5/S4/Kaori/43.ogg"
-ki "No, it doesn't! The YX140 is the model that replaced the EN85. It offers more GB than the Z90 and has better connectivity options."
-pf "What are you talking about? Everything else is comparable and you can get it with a higher GB. Plus, the Z90 is made by Macrohard which we all know is better than Pineapple." 
+ki "Нет, это не так! YX140 заменил EN85. У него больше GB, чем у Z90, и лучше связь."
+pf "О чём ты говоришь? Все совместимо, и ты можешь получить его с большим GB. Кроме того, Z90 сделан Macrohard, который лучше, чем Pineapple." 
 voice "audio/voice/E1/D5/S4/Kaori/44.ogg"
-ki "Are you kidding me? Pineapple is the better choice. It runs faster and it doesn't get viruses either so it has a better shelf-life."
-pf "Is this a joke? Meet me at the store. I'll show you that the Z90 is just as good--if not better--than the YX140. If after that you still don't believe me then I'll concede." 
+ki "Ты шутишь? Pineapple лучше. Он работает быстрее и не получает вирусов, поэтому имеет лучший срок годности."
+pf "Это шутка? Встретимся в магазине. Я покажу, что Z90 так же хорош--если не лучше--чем YX140. Если после этого ты все еще не поверишь мне, я уступлю." 
 voice "audio/voice/E1/D5/S4/Kaori/45.ogg"
-ki "Fine, but only because I know you're wrong! Meet you there in half an hour." 
-"The phone clicks without another word. {w}Well goodbye to you too! {w}I grab my jacket and head for the door." 
+ki "Хорошо, ео только потому, что я знаю, что ты не прав! Встретимся там через полчаса." 
+"Разговор прекратился без лишних слов. {w}Ага, и тебе пока! {w}Я взял куртку и пошёл." 
 
 
 stop ambient fadeout 3.0
@@ -190,8 +190,8 @@ scene bg mall main day with fade
 $renpy.pause(1.0)
 
 
-"I arrive at the mall before Kaori and wait by the front south entrance."
-"It's only a minute or two before I see her walking up to me dressed in a hoodie and jeans. It's weird to see her out of uniform." 
+"Я пришёл в торговый зал до Каори и ждал у южного входа."
+"Через несколько минут я увидел её, идущей в худи и джинсах. Странно видеть её без формы." 
 
 $ kaoOut = "sCasual"
 $ kaoHairF = "long"
@@ -200,20 +200,20 @@ $ kaoHairB = "long"
 show kaori neu at cc with dissolve
 
 menu: 
-    "You look nice.":
+    "Хорошо выглядишь.":
         play music "audio/music/Isnt This Nice (GAME VERSION).ogg" fadein 2
-        pf "I like your outfit."
+        pf "Мне нравится твой наряд."
         show kaori dis
         voice "audio/voice/E1/D5/S4/Kaori/46.ogg"
-        ki "Why? It's nothing special."
-        pf "It's just nice to see what you like to wear."
+        ki "Почему? Ничего особенного."
+        pf "Просто приятно видеть, что ты любишь носить."
         show kaori thi
         voice "audio/voice/E1/D5/S4/Kaori/47.ogg"
-        ki "I-I suppose…"
+        ki "Я-Я полагаю…"
 
-    "Do you meet all your dates in a hoodie?": 
+    "Ты на все свидания ходишь в худи?": 
         play music "audio/music/Isnt This Nice (GAME VERSION).ogg" fadein 2
-        pf "A little casual for a date, but I can dig it."
+        pf "Немного посредственно для свидания, но я не против."
         show vein:
             xoffset 720
             yoffset 110
@@ -221,12 +221,12 @@ menu:
             yzoom .75
         show kaori dis 
         voice "audio/voice/E1/D5/S4/Kaori/48.ogg"
-        ki "This isn't a date!"
-        pf "Don't get me wrong, I'm not complaining! You still look good."
+        ki "Это не свидание!"
+        pf "Не пойми меня неправильно, я не возражаю! Ты все ещё хорошо выглядишь."
         show kaori ann with dissolve
         voice "audio/voice/E1/D5/S4/Kaori/49.ogg"
-        ki "Shut up! I wouldn't wear this on a date."
-        pf "What would you wear?"
+        ki "Заткнись! Я не одеваюсь так на свидания."
+        pf "А как ты одеваешься на свидания?"
         show tsuBlush:
             xoffset 720
             yoffset 110
@@ -234,36 +234,36 @@ menu:
             yzoom .75
         show kaori dis b1 with dissolve
         voice "audio/voice/E1/D5/S4/Kaori/50.ogg"
-        ki "I-It doesn't matter!"
+        ki "Э-Это не важно!"
 
-    "What are you wearing?!": 
+    "Во что ты одета?!": 
         play music "audio/music/Isnt This Nice (GAME VERSION).ogg" fadein 2
-        pf "You could have picked anything in your closet and you chose that?" 
+        pf "Из всего своего гардероба ты выбрала это?" 
         show kaori dis
         voice "audio/voice/E1/D5/S4/Kaori/51.ogg"
-        ki "What's that supposed to mean?" 
-        pf "That you could look better."
+        ki "Что это значит?" 
+        pf "Что ты могла бы выглядеть лучше."
         show kaori ann
         voice "audio/voice/E1/D5/S4/Kaori/52.ogg"
-        ki "What's wrong with how I look now?" 
-        pf "It's like you aren't even trying." 
-        "Kaori clenches her jaw." 
+        ki "Что не так с тем, как я сейчас выгляжу?" 
+        pf "Как быдто ты даже не старалась." 
+        "Каори стиснула челюсть." 
         show vein:
             xoffset 720
             yoffset 110
             xzoom .75
             yzoom .75
         voice "audio/voice/E1/D5/S4/Kaori/53.ogg"
-        ki "I don't dress for you. I dress for me."
+        ki "Я не для тебя одеваюсь. А для себя."
 
-    "Don't say anything.":
+    "Ничего не говорить.":
         play music "audio/music/Isnt This Nice (GAME VERSION).ogg" fadein 2
-        "Who cares about what she's wearing? I'm not wearing a uniform either. It's Saturday."
+        "Кого волнует, как она одета? На мне так же нет формы. Воскресенье же."
 
 show kaori neu with dissolve
 voice "audio/voice/E1/D5/S4/Kaori/54.ogg"
-ki "Let's just go in." 
-pf "You're the boss!" 
+ki "Пойдём внутрь." 
+pf "Ты босс!" 
 
 stop ambient fadeout 3.0
 scene black with fade
@@ -273,53 +273,53 @@ scene bg store electronics day with fade
 
 $renpy.pause(1.0)
 
-"I follow Kaori into the electronics store."
+"Я следовал за Каори в магазин электроники."
 
 
-"She heads straight for the aisle of tablets and points to the XY140."
+"Она направилась сразу к планшетам и показала на XY140."
 
 show kaori neu at cc with dissolve
 voice "audio/voice/E1/D5/S4/Kaori/55.ogg"
-ki "There it is." 
-pf "And there's mine." 
-"I point to the Z90 and read the details." 
-pf "Optic display with Hexa-HD resolution at 750 ppi with a V9Z chip and 256 bit architecture. It even has an antireflective coating on the screen. You must admit this is an amazing tablet. And…" 
-"I point to the price on the XY140."
-pf "... It's cheaper." 
-"Kaori crosses her arms." 
+ki "Вот он." 
+pf "А здесь мой." 
+"Я показал на Z90 и прочитал описание." 
+pf "Оптический дисплей с Hexa-HD разрешением 750 ppi, чипом V9Z и 256-битной архитектурой. У него даже есть антиотражающее покрытие на экране. Вы должны признать, что это удивительный планшет. А также…" 
+"Я показал на XY140."
+pf "... Он дешевле." 
+"Каори скрестила руки." 
 show kaori ske with dissolve
 voice "audio/voice/E1/D5/S4/Kaori/56.ogg"
-ki "So? The XY140 costs a bit more because you get more. Look, it holds three times the number of files and even though the displays match, the XY140 has amazing video stabilization and built in data connection options." 
+ki "И? XY140 стоит немного дороже, потому что ты получаешь больше. Смотри, он содержит в три раза больше файлов, и, хотя дисплеи совпадают, XY140 обладает потрясающей стабилизацией видео и встроенными опциями подключения к данным." 
 
 if (E1D2S3_MetKaoriWasRudeNoHelmet == 1) or (E1D2S3_MetKaoriWasNice == 1) or (E1D2S11_ComingCleanAboutRunningOverKaori == 1):
-    pf "Nothing you just said makes me believe it's worth the extra money." 
+    pf "Всё, что ты сказала, не заставило меня поверить, что это стоит больших денег." 
     show kaori ann
     voice "audio/voice/E1/D5/S4/Kaori/57.ogg"
-    ki "I can't believe you want to get me an inferior model to {i}make up{/i} for breaking my stuff in the first place." 
-    pf "It's not inferior! It's a great tablet." 
+    ki "Не могу поверить, что ты хочешь купить мне модель хуже, чтобы {i}компенсировать{/i} мои разбитые вещи." 
+    pf "Он не хуже! Это отличный планшет." 
     voice "audio/voice/E1/D5/S4/Kaori/58.ogg"
-    ki "But not comparable to my E85." 
-    pf "Why are you so difficult?" 
+    ki "Но не сравним с моим E85." 
+    pf "Почему ты такая упрямая?" 
     show kaori dis
     voice "audio/voice/E1/D5/S4/Kaori/59.ogg"
-    ki "Why did you have to break my tablet?"
-    pf "You're killing me."
+    ki "Почему тееб нужно было ломать мой планшет?"
+    pf "Ты убиваешь меня."
     voice "audio/voice/E1/D5/S4/Kaori/60.ogg"
-    ki "Serves you right for trying to kill me."
+    ki "Так тебе и надо, за попытку убить меня."
 
 else:
-    pf "The Z90 is still better." 
+    pf "Z90 все ещё лучше." 
     show kaori ann
     voice "audio/voice/E1/D5/S4/Kaori/61.ogg"
-    ki "It isn't, and since it's my tablet, I'm getting the XY140."
-    pf "You're impossible." 
+    ki "Нет, и так как это мой планшет, я возьму XY140."
+    pf "Ты невозможна." 
     show kaori dis
     voice "audio/voice/E1/D5/S4/Kaori/62.ogg"
-    ki "And you're still wrong."
+    ki "А ты все ещё не прав."
 
 stop music fadeout 1.0
 voice "audio/voice/E1/D5/S4/GosuElectronics/1.ogg"
-rn "Just so you know, you're {i}both{/i} wrong." 
+rn "Просто, чтобы вы знали, вы {i}оба{/i} не правы." 
 show exclamation:
     xoffset 720
     yoffset 110
@@ -327,7 +327,7 @@ show exclamation:
     yzoom .75
 show kaori cur with dissolve
 $renpy.pause(.5)
-"Kaori and I turn to face the voice."
+"Каори и я развернулись."
 
 hide kaori with dissolve
 
@@ -337,28 +337,28 @@ show gosunerd extra at l2 with dissolve:
 
 show kaori cur at r3 with dissolve
     
-"Standing behind us is a stubby guy with round glasses. He reaches between us and grabs another model off the shelf." 
+"Позади нас стоял коротышка в круглых очках. Он встал мжду нами и взял другую модель с полки." 
 play music "audio/music/Baka! (GAME VERSION).ogg" fadein 3
 voice "audio/voice/E1/D5/S4/GosuElectronics/2.ogg"
-rn "This is the IB760 by Bensang. It's the fastest on the market with a vector core CPU at 6.00 GHz, redtooth technologies, and a fingerprint identity sensor in the screen. Not to mention the superior resolution with advanced multi-touch technology." 
-"He reaches by and grabs something else."
+rn "Это IB760 от Bensang. У него самый быстрый на рынке процессор с векторным ядром на частоте 6,00 ГГц, технологиями redtooth, и датчик отпечатков пальцев на экране. Не говоря уже о превосходном разрешении с передовой технологией Multi-Touch." 
+"Он потянулся и взял что-то ещё."
 voice "audio/voice/E1/D5/S4/GosuElectronics/3.ogg"
-rn "Plus, it comes with the cover built in so you don't have to pay more to buy accessories." 
+rn "К тому же, он идёт со встроенным чехлом, так что не придётся тратиться на дополнительные аксессуары." 
 
 show gosunerd extra:
     xzoom 1
 
-"He glances over at Kaori." 
+"Он взглянул на Каори." 
 voice "audio/voice/E1/D5/S4/GosuElectronics/4.ogg"
-rn "Which, from what I heard, you could really use." 
-"Kaori and I exchange a look." 
+rn "Что, из того, что я слышал, вы могли бы действительно использовать." 
+"Я обменялся с Каори взглядом." 
 
 show kaori dis
 
 voice "audio/voice/E1/D5/S4/Kaori/63.ogg"
-ki "Nobody asked for your opinion." 
+ki "Никто не спрашивал твоего мнения." 
 voice "audio/voice/E1/D5/S4/GosuElectronics/5.ogg"
-rn "Clearly you need it if you're considering the XY140 like some sort of technological pleb."
+rn "Очевидно тебе нужно это, раз ты рассматриваешь XY140 как какой-то сорт технологическх плебеев."
 show kaori ang
 show vein:
     xoffset 1175
@@ -366,26 +366,26 @@ show vein:
     xzoom .75
     yzoom .75
 voice "audio/voice/E1/D5/S4/Kaori/64.ogg"
-ki "Why you--!"
+ki "Чего тебе--!"
 show kaori ann
-pf "That's what I was saying all along! I told you the XY140 was no good."
+pf "Об этом я тебе и говорил! Говорил же, что XY140 не так хорош."
 
 show gosunerd extra:
     xzoom -1
 
 voice "audio/voice/E1/D5/S4/GosuElectronics/6.ogg"
-rn "Woah, calm down \"Mr. High and Mighty\", the Z90 is an even {i}worse{/i} choice!"
-pf "What?"
+rn "Воу, успокойтесь \"Мистер Всемогущий\", Z90 более {i}худший{/i} выбор!"
+pf "Что?"
 voice "audio/voice/E1/D5/S4/GosuElectronics/7.ogg"
-rn "Who would want to use a machine built on the Frame operating system? The last time that piece of junk worked was Frame XP!"
-pf "Frame 7 was good!"
-"He snickers loudly."
+rn "Кто захочет использовать машину, построенную на операционной системе Frame? Последний раз, когда этот кусок барахла работал, был Frame XP!"
+pf "Frame 7 был хорош!"
+"Он громко хихмкал."
 voice "audio/voice/E1/D5/S4/GosuElectronics/8.ogg"
-rn "How cute. No wonder you're together, you both have a taste for inferior tablets."
+rn "Как мило. Не удивительно, что вы вместе, у вас обоих вкус к плохим планшетам."
 
 show kaori sur b1 with dissolve
 voice "audio/voice/E1/D5/S4/Kaori/65.ogg"
-ki "Together?!"
+ki "Вместе?!"
 
 show kaori ang b1:
     xzoom -1
@@ -398,29 +398,29 @@ show gosunerd extra:
     easein .33 xoffset -70
 
 $renpy.pause(.5)
-"Kaori stomps a foot forward as her hands clench into fists. The nerd is clearly shaken but tries to keep his cool."
+"Каори топнула ногой вперед, ее руки сжались в кулаки. Ботаник был явно потрясен, но старался сохранять спокойствие."
 voice "audio/voice/E1/D5/S4/Kaori/66.ogg"
-ki "You have no idea what you're talking about!"
+ki "Ты понятия не имеешь, о чём говоришь!"
 show kaori ann b1
-pf "No kidding! Macrohard has the entire business market."
+pf "Без шуток! Macrohard имеет весь бизнес-рынок."
 voice "audio/voice/E1/D5/S4/Kaori/67.ogg"
-ki "And Pineapple makes premium, cutting edge devices!"
-pf "Also, nowadays, all models come with Redtooth 3.0 built in!"
+ki "И Pineapple делает премиальные, передовые устройства!"
+pf "Так же, сейчас все модели поставляются со встроенным Redtooth 3.0!"
 voice "audio/voice/E1/D5/S4/Kaori/68.ogg"
-ki "And fingerprint ID sensors, and advanced multi-touch technologies!"
-"He opens his mouth to speak again but Kaori interrupts him." 
+ki "И с датчиками отпечатков пальцев, и улучшенной технологией Multi-Touch!"
+"Он открыл рот, чтобы что-то сказать, но Каори перебила его." 
 show kaori ang b1 with dissolve
 voice "audio/voice/E1/D5/S4/Kaori/69.ogg"
-ki "And we are not together!"
+ki "И мы не всместе!"
 show kaori dis b1 with dissolve
-pf "Yeah, go mind your own business!"
+pf "Ага, иди занимайся своими делами!"
 voice "audio/voice/E1/D5/S4/GosuElectronics/9.ogg"
-rn "You n00bs! Your vision is too clouded to see the light! Otherwise you'd understand that Andzoid is the best hardware, software, {i}and{/i} value for your money!"
+rn "Вы нубы! Ваш взор слишком затуманен, чтобы видеть свет! Иначе, вы бы поняли, что у Andzoid лучшее оборудование, программное обеспечение, {i}и{/i} он стоит ваших денег!"
 
 hide gosunerd extra with dissolve
 $renpy.pause(.5)
 
-"Before either of us can say another word, he turns around and confidently waddles away. A bag of cheese puffs seem to materialise in his hand."
+"Прежде чем кто-либо из нас успел что-то сказать, он развернулся и уверенно ушёл. Кажется, в его руке материализовались сырные хлопья."
 hide kaori with dissolve
 show vein:
     xoffset 720
@@ -430,51 +430,51 @@ show vein:
 show kaori ann at cc with dissolve
 $renpy.pause(.5)
 voice "audio/voice/E1/D5/S4/Kaori/70.ogg"
-ki "Idiot! Sticking his nose where it doesn't belong." 
-pf "I know, right?"
+ki "Идиот! Суёт свой нос куда не следует." 
+pf "Я знаю, да?"
 $renpy.pause(.5)
 show kaori thi with dissolve
 stop music fadeout 3.0
-"We fall silent as I look over the IB760 demo model."
+"Мы замолкли, когда я посмотрел на демонстрационную модель IB760."
 
 $renpy.pause(1.0)
 "..."
-pf "Actually Kaori…"
+pf "Вообще-то, Каори…"
 show kaori neu
 voice "audio/voice/E1/D5/S4/Kaori/71.ogg"
-ki "What?" 
-pf "I think he might have been onto something." 
+ki "Что?" 
+pf "Я полагаю, он в чём-то прав." 
 voice "audio/voice/E1/D5/S4/Kaori/72.ogg"
-ki "Let me see." 
+ki "Дай я посмотрю." 
 play music "audio/music/Bright New Day (GAME VERSION).ogg" fadein 5
-"We both review the \"specifications\" card next to the tablet."
+"Мы оба посмотрели \"характеристики\" планшета."
 show kaori cur
 voice "audio/voice/E1/D5/S4/Kaori/73.ogg"
-ki "Huh, the features here definitely outweigh the XY140…" 
-pf "And hardware-wise it blows the Z90 out of the water."
-"I watch as Kaori swipes the tablet screen and tweaks the settings and configuration. A moment later, she grabs an IB760 box off the shelf and looks it over."
-pf "So... Do you want this one then?" 
+ki "Хм, функции тут определенно перевешивают XY140…" 
+pf "И аппаратно он выкидывает Z90 из гонки."
+"Я наблюдал, как Каори проводила пальцем по экрану планшета и подправляла настройки и конфигурацию. Мгновение спустя она взяла коробку IB760 с полки и осмотрела её."
+pf "Так... Значит, ты хочешь этот?" 
 show kaori neu
 voice "audio/voice/E1/D5/S4/Kaori/74.ogg"
-ki "As much as I hate to admit it, it makes the most sense."
-pf "Just don't let {i}him{/i} hear you saying that."
+ki "Как бы мне не хотелось это признавать, это имеет смысл."
+pf "Только не позволь {i}ему{/i} услышать это."
 
 if (E1D2S3_MetKaoriWasRudeNoHelmet == 1) or (E1D2S3_MetKaoriWasNice == 1) or (E1D2S11_ComingCleanAboutRunningOverKaori == 1):
     hide kaori with dissolve
-    "I take the tablet from her and head to the counter." 
-    pf "Glad we got that sorted out." 
+    "Я взял у неё планшет и пошёл к кассе." 
+    pf "Рад, что мы разобрались с этим." 
     show kaori neu at l3 with dissolve
-    "As I go to pay, Kaori cuts me off from the cashier and pulls out her wallet."
-    pf "Uh?" 
+    "Когда я собирался заплатить, Каори отпихнула меня от кассы и достала свой кошелек."
+    pf "Что?" 
     voice "audio/voice/E1/D5/S4/Kaori/75.ogg"
-    ki "Whatever, I don't need you to pay for it."
+    ki "Как бы то ни было, мне не нужно, чтобы ты заплатил за это."
 
     menu:
-        "I still need to take responsibility.":
-            "I shake my head."
-            pf "No, but it's still my fault you need to buy a new one in the first place."
+        "Мне все ещё нужно взять ответственность.":
+            "Я покачал головой."
+            pf "Нет, но это все ещё моя вина, что тебе нужен новый планшет."
             show kaori sur with dissolve
-            "Before she has a chance to reply, I tap my card against the register. An \"Approved\"! notification displays on the machine."
+            "Прежде чем она успела ответить, Я приложил свою карту. \"Подтверждено\"! появилось на дисплее."
             show kaori ske
             show exclamation:
                 xoffset 230
@@ -482,50 +482,50 @@ if (E1D2S3_MetKaoriWasRudeNoHelmet == 1) or (E1D2S3_MetKaoriWasNice == 1) or (E1
                 xzoom .75
                 yzoom .75
             voice "audio/voice/E1/D5/S4/Kaori/76.ogg"
-            ki "Y-You idiot! I just let you off the hook and you paid anyways…"
-            "I flash her a smile."
-            pf "Oh well, too late now."
+            ki "Т-Ты идиот! Я просто позволила тебе сорваться с крючка, и ты все равно заплатил…"
+            "Я улыбнулся ей."
+            pf "Ох, ну уже слишком поздно."
             show kaori cur b1 with dissolve
-            "Kaori appears flustered. I offer the bag to her."
-            pf "Here."
+            "Каори казалась взволнованной. Я протянул ей сумку."
+            pf "Вот."
             show kaori neu b1
-            "She blinks at the bag a few times before reluctantly accepting it. I'm glad after that whole choosing a tablet ordeal she doesn't fight me on this too. I guess she understands that we're both equally stubborn."
+            "Несколько секунд она смотрела на сумку, прежде чем неохотно взяла её. Я рад, что после всего этого испытания выбора планшена, она не будет сопротивляться. Поалгаю, она понимала, что мы оба одинаково упрямы."
             voice "audio/voice/E1/D5/S4/Kaori/77.ogg"
-            ki "... Thanks."
+            ki "... Спасибо."
 
-        "I won't argue against that!":
-            pf "A strong independent woman who don't need no man! I like it."
+        "Не буду спорить с этим!":
+            pf "Сильная, независимая женщина, которой не нужен мужчина! Мне нравится."
             show kaori dis
             voice "audio/voice/E1/D5/S4/Kaori/78.ogg"
-            ki "Wow, I try to do something nice and you still manage to be a complete ass."
-            pf "What? I didn't mean it sarcastically!"
+            ki "Ух ты, я пытаюсь сделать что-то хорошее, а ты все еще продолжаешь быть полным придурком."
+            pf "Что? Эт оне был сарказм!"
             show kaori ann
-            "She glares at me, then pays for the tablet and grabs the bag."
+            "Она посмотрела на меня, потом заплатила за планшет и взяла сумку."
 
-        "I'll pay for part of it.":
-            pf "Let me cover half. You might be getting an upgrade but it's my fault you have to make the purchase sooner rather than later."
+        "Я частично заплачу.":
+            pf "Позволь оплатить половину. Ты хоть и получаешь новый планшет, но я виноват, что тебе приходится делать это раньше, чем позже."
             show kaori thi
-            "She mulls the thought over."
-            pf "At least that way we can call it even and you won't hold this over my head."
+            "Она обдумывала это."
+            pf "По крайней мере мы сможем нахвать это разрешённой ситуацией."
             show kaori neu
             voice "audio/voice/E1/D5/S4/Kaori/79.ogg"
-            ki "Fine."
-            "The cashier sets up the bill and we both tap our respective cards. Kaori grabs the bag shortly after."
+            ki "Хорошо."
+            "Кассир выставил счет, и мы оба оплатили картами. После этого Каори взяла сумку."
             voice "audio/voice/E1/D5/S4/Kaori/80.ogg"
-            ki "Thanks, I guess."
-            pf "No problem."
+            ki "Спасибо, полагаю."
+            pf "Без проблем."
 
 else:
     hide kaori with dissolve
-    "She takes the tablet and heads to the counter." 
+    "Она взяла планшет и пошла к кассе." 
     show kaori neu at l3 with dissolve
     
-    pf "Glad we got that sorted out."
+    pf "Рад, что мы разобрались с этим."
     voice "audio/voice/E1/D5/S4/Kaori/81.ogg"
-    ki "Me too."
-    "Kaori pulls out her wallet and pays for it."
+    ki "Я тоже."
+    "Каори достала кошелёк и заплатила."
 
-"We exit the store."
+"Мы вышли из магазина."
     
 stop ambient fadeout 3.0
 scene black with fade
@@ -538,13 +538,13 @@ $renpy.pause(1.0)
 show kaori neu at cc with dissolve
 $renpy.pause(.25)
 
-"Kaori turns towards me outside the store."
+"На улице Каори повернулась ко мне."
 show kaori thi at cc with dissolve
 $renpy.pause(.5)
 voice "audio/voice/E1/D5/S4/Kaori/82.ogg"
-ki "Thanks for coming out, I guess… I mean, some of the stuff you said was helpful, but mostly you just gave me a headache."
-"I grin at her."
-pf "You're really bad at giving compliments."
+ki "Спасибо, что пришёл, полагаю… Я имею в виду, кое-что, что ты говорил было полезно, но в основном ты доставлял головную боль."
+"Я ухмыльнулся ей."
+pf "Ты действительно плоха в комплиментах."
 show tsuBlush:
     xoffset 720
     yoffset 110
@@ -552,63 +552,63 @@ show tsuBlush:
     yzoom .75
 show kaori ann b1 with dissolve
 voice "audio/voice/E1/D5/S4/Kaori/83.ogg"
-ki "It wasn't a compliment!"
-"But I can see a blush creeping up her cheeks."
-pf "Anyway, don't worry about it. We're teammates which means we look out for each other, right?"
+ki "Это не был комплимент!"
+"Но я заметил румянец, подкрадывающийся к ее щекам."
+pf "Во всяком случае, не беспокойся об этом. Мы команда, а значит, что мы заботимся друг о друге, верно?"
 show kaori neu b1
 voice "audio/voice/E1/D5/S4/Kaori/84.ogg"
-ki "Yeah, that's how we were able to defeat that loser when he came by."
-pf "Ha! Did you see how he left in a huff?"
+ki "Да, вот как мы смогли победить того неудачника, когда он пришел."
+pf "Ха! Ты видела, как он раздражённо ушёл?"
 show kaori mis b1
 voice "audio/voice/E1/D5/S4/Kaori/85.ogg"
-ki "Maybe that'll teach him to stop butting in where he doesn't belong."
-"I laugh, and I think I see Kaori crack a smile."
+ki "Может быть, это научит его перестать бодаться там, где не нужно."
+"Я засмеялся, и показалось, что Каори улыбнулась."
 
 if (E1D2S3_MetKaoriWasRudeNoHelmet == 1) or (E1D2S3_MetKaoriWasNice == 1) or (E1D2S11_ComingCleanAboutRunningOverKaori == 1):
-    pf "So, are we good?"
+    pf "Так, всё хорошо?"
     show kaori neu at cc with dissolve
     voice "audio/voice/E1/D5/S4/Kaori/86.ogg"
-    ki "Huh?"
-    pf "You know--about that whole almost running you over thing."
+    ki "Что?"
+    pf "Ты знаешь--насчёт всего этой ситуации, когда я чуть не сбил тебя."
     show kaori cur
     voice "audio/voice/E1/D5/S4/Kaori/87.ogg"
-    ki "Oh."
-    "She glances at her bag and nods."
+    ki "Ох."
+    "Она посмотрела на свою сумку и кивнула."
     show kaori neu
     voice "audio/voice/E1/D5/S4/Kaori/88.ogg"
-    ki "Yeah, we're good."
-    pf "Cool, because I don't want to start this friendship on a sour note."
-    "She blinks at the mention of \"friendship\" and waves off what I said."
+    ki "Ага, всё хорошо."
+    pf "Круто, потому что я не хотел начинать дружбу на плохой ноте."
+    "Она моргнула при упоминании \"дружбы\" и отмахнулась от этого."
 
 else:
-    pf "At least now you can email me those strategies."
+    pf "По крайней мере ты сможешь послать стратегии."
     show kaori neu with dissolve
     voice "audio/voice/E1/D5/S4/Kaori/89.ogg"
-    ki "Heh, yeah. I'll send them over once I get this thing set up."
-    pf "You gonna need advice on how to do that too?"
-    "She puts a hand on her hip."
+    ki "Хех, да. Я отправлю их, когда настрою его."
+    pf "Тебе нужен совет, как это сделать?"
+    "Она положила руку на бок."
     show kaori dis
     voice "audio/voice/E1/D5/S4/Kaori/90.ogg"
-    ki "No."
-    "I smile at her stern expression."
-    pf "It was a joke, Kaori. That's what friends do. They joke around with each other."
+    ki "Нет."
+    "Я убылнулся на её суровое выражение."
+    pf "Я пошутил, Каори. Это то, что делают друзья. Они шутят друг с другос."
     show kaori neu with dissolve
-    "She blinks at the mention of \"friends\" and the frown eases off her face."
+    "Она моргнула при упоминании \"друзей\" и хмурый взгляд исчез."
 
 show kaori neu
 voice "audio/voice/E1/D5/S4/Kaori/91.ogg"
-ki "Whatever, I better get going. See you on Monday."
-pf "Yeah, see you."
+ki "Как бы то ни было, я лучше пойду. Увидимся в понедельник."
+pf "Ага, увидимся."
 hide kaori with dissolve
-"With a nod, she turns away and disappears into the crowd of people."
+"Кивнув, она развернулась и исчезла в толпе людей."
 
 
 
 stop music fadeout 3.0
 stop ambient fadeout 3.0
 scene black with fade
-"I head in the opposite direction towards a GEAR equipment store I've been meaning to check out. "
-"Once it gets late, I head home."
+"Я пошёл в противоположном направлении к магазину оборудования GEAR, который хотел проверить."
+"Как только стало поздно, я пошёл домой."
 
         
         
