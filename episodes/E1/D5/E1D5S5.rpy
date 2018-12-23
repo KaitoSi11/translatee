@@ -1,20 +1,20 @@
 label E1D5S5:
 
 
-"I wonder what Shou's doing."
+"Интересно, что делает Сё."
 play sound "audio/sfx/Technology/Phone Dial.ogg"
-"I grab my phone and dial his number."
+"Я взял телефон и набрал его."
 play sound "audio/sfx/Technology/Phone Answer.ogg"
-"He picks up after a few rings."
+"Через пару секунд он ответил."
 voice "audio/voice/E1/D5/S5/Shou/1.ogg"
-ss "Broseph, what can I do for you?"
-pf "Hey man, want to chill or something?"
+ss "Братан, что я могу для тебя сделать?"
+pf "Здрарова, хочешь отдохнуть, или что-то такое?"
 voice "audio/voice/E1/D5/S5/Shou/2.ogg"
-ss "Yeah! I'm at the cafe near campus. Why don't you drop by?"
-pf "Sounds good. I'll head out now."
+ss "Ага! Я в кафе кампуса. Почему бы тебе не завалиться сюда?"
+pf "Звучит как план. Выхожу."
 voice "audio/voice/E1/D5/S5/Shou/3.ogg"
-ss "Cool, see you soon!"
-"I say a quick goodbye before hopping on my bike."
+ss "Круто, увидимся!"
+"Быстро попрощавшись, я пошёл к байку."
 
 stop music fadeout 3.0
 stop ambient fadeout 3.0
@@ -40,137 +40,137 @@ if (E1D5S1_EventShou == 1):
     show shou smi at l2
     show mayu neu at r2
     with dissolve
-    "I enter the cafe and see Shou waving at me from the back corner of the room."
-    "As I make my way over I'm surprised to see Mayu staring silently at me."
+    "Зайдя в кафе, я заметил как Сё махал мне из дальнего угла."
+    "Подойдя ближе я удивился, каогда заметил Маю, смотревшую молча на меня."
     show mayu smi with dissolve
-    "She smiles politely when she notices my gaze."
+    "Она вежливо улыбнулась, заметив мой взгляд."
     show shou hap
     voice "audio/voice/E1/D5/S5/Shou/4.ogg"
-    ss "Good to see you, man."
-    pf "Hey Shou, Mayu. I didn't know you'd both be here."
+    ss "Приятно видеть тебя, дружище."
+    pf "Привет Сё, Маю. Я не знал, что вы оба тут."
     show shou cur
-    "Shou blinks in surprise."
+    "Сё удивлённо взглянул."
     voice "audio/voice/E1/D5/S5/Shou/5.ogg"
-    ss "That's not a problem is it? Mayu was actually the one who wanted to come here."
-    "Wait--Mayu invited him...?"
-    pf "Of course not, but if you two already made plans I can always hang out with you later."
+    ss "Это ведь не проблема? Маю сама хотела сюда прийти."
+    "Погоди-ка--Маю пригласила его..?"
+    pf "Конечно нет, но если у вас уже есть планы, то я всегда могу зависнуть с вами позже."
     show shou hap
     voice "audio/voice/E1/D5/S5/Shou/6.ogg"
-    ss "Don't be ridiculous! I invited you so you should stay. Mayu doesn't mind."
-    "I glance at her and she shakes her head."
+    ss "Не глупи! Я пригласил тебя, так что ты должен остаться. Маю не возражает."
+    "Я взглянул на неё, и она покачала головой."
     voice "audio/voice/E1/D5/S5/Mayu/1.ogg"
-    ma "No, please, join us."
+    ma "Нет, пожалуйста, присоединяйся."
     voice "audio/voice/E1/D5/S5/Shou/7.ogg"
-    ss "Have a seat."
+    ss "Присаживайся."
 
     menu:
-        "I don't want to interrupt them.":
+        "Я не хочу мешать им.":
             $ E1D5S1_EventShou = 0
             $ E1D5S1_EventAlone = 1
-            pf "Actually, you two look like you're in the middle of something so I'll hang out with you later."
+            pf "На самом деле, вы выглядите, как будто в середине чего-то, так что посидим как-нибудь потом."
             show mayu cur
             show shou neu
             voice "audio/voice/E1/D5/S5/Shou/8.ogg"
-            ss "You don't have to go."
+            ss "Не уходи."
             show mayu sad
             voice "audio/voice/E1/D5/S5/Mayu/2.ogg"
-            ma "Please don't leave on my account."
-            pf "No, no, it's not you. I have some stuff I need to get done anyway. You two have fun okay? I'll see you later!"
+            ma "Пожалуйста, не уходи из-за меня."
+            pf "Нет, нет, это не из-за теюя. Мне всё равно нужно было кое-что сделать. Веселитесь, хорошо? Позже как-нибудь увидимся!"
             show mayu cur
-            "Shou looks like he wants to protest, but I wave and leave before he can."
+            "Сё собирался протестовать, но я вышел прежде, чем он успел."
             hide mayu
             hide shou
             with dissolve
-            "I heard a new GEAR simulator came out at an arcade nearby, I might as well go check it out."
-            "I return to my bike and head out."
+            "Я слышал о номом симуляторе GEAR вышедшем недавно в аркаде неподалёку. Можно как раз его проверить."
+            "Я вернулся к байку и поехал."
             jump E1D5S2_ArcadeConvergence
 
-        "Sit down.":
-            pf "Thanks."
-            "I sit down beside Shou."
+        "Сесть.":
+            pf "Спасибо."
+            "Я сел рядом с Сё."
 
 elif (E1D5S1_EventMayu == 1):
 
     show shou smi at l2
     show mayu neu at r2
     with dissolve
-    "Shou waves me over to the back of the cafe where he and Mayu are sitting."
+    "Сё махал мне с задней части кафе, где он сидел с Маю."
     show mayu smi with dissolve
-    "Mayu smiles when she notices me."
+    "Заметив меня, Маю улыбнулась."
     voice "audio/voice/E1/D5/S5/Mayu/3.ogg"
-    ma "Hi."
-    pf "Hey Mayu, Shou."
+    ma "Привет."
+    pf "Привет Маю, Сё."
     show shou hap
     voice "audio/voice/E1/D5/S5/Shou/4.ogg"
-    ss "Good to see you, man!"
+    ss "Приятно видеть тебя, дружище!"
     voice "audio/voice/E1/D5/S5/Shou/7.ogg"
-    ss "Have a seat."
-    pf "Thanks."
-    "I sit down beside Mayu."
+    ss "Присаживайся."
+    pf "Спасибо."
+    "Я сел рядом с Маю."
 
 show shou smi
 show mayu smi
-"Shou slides me a menu. I quickly scan it, and when the waitress comes over I ask for a green tea latte. The waitress leaves as soon as I order."
-pf "What about you guys?"
+"Сё протянул мне меню. Я быстро посмотрел его, и когда подошла официантка, заказал латте с зеленым чаем. Как толкьо я заказал, офицантка ушла."
+pf "Что насчёт вас?"
 voice "audio/voice/E1/D5/S5/Shou/9.ogg"
-ss "It's okay, we already ordered."
-pf "Oh..."
+ss "Всё в порядке, мы уже заказали."
+pf "Оо..."
 voice "audio/voice/E1/D5/S5/Shou/10.ogg"
-ss "So, what rank do you think we earned?"
-pf "Huh?"
+ss "Ну, как думаешь, какой ранг ты получил?"
+pf "Что?"
 show shou mis
 voice "audio/voice/E1/D5/S5/Shou/12.ogg"
-ss "From the qualifiers."
+ss "С квалификации."
 
 menu:
-    "Probably somewhere mid-range.":
-        pf "Hm, I think we'll fall somewhere mid-range."
+    "Вероятно, где-то в середине.":
+        pf "Хм, Я думаю, мы попали куда-нибудь в середину."
         voice "audio/voice/E1/D5/S5/Shou/13.ogg"
-        ss "Yeah? Why's that?"
-        pf "Well, I know I certainly could have done better if I had my weapons, but we still did well despite that. I think that'll average things out."
+        ss "Да? Почему это?"
+        pf "Ну, я знаю, что, безусловно, мог бы добиться большего, если бы у меня было оружие, но мы все равно хорошо справились. Я думаю, что это усреднило всё."
         show shou hap
         voice "audio/voice/E1/D5/S5/Shou/14.ogg"
-        ss "I'm with you there!"
+        ss "Я согласен!"
 
-    "Top ten for sure!":
-        pf "Oh, we'll definitely be up top!"
+    "В десятку лучших, конечно же!":
+        pf "Мы определённо будем на вершине!"
         show shou cur
         voice "audio/voice/E1/D5/S5/Shou/15.ogg"
-        ss "You think so?"
-        pf "Yeah! Did you see those AI's? By the time we were done with them they were as good as scrap metal."
+        ss "Думаешь?"
+        pf "Да! Ты видел эти ИИ? Когда мы закончили они были металлоломом."
         show shou hap
-        "Shou just laughs."
+        "Сё засмеялся."
 
-    "Somewhere on the lower end of the spectrum.":
-        pf "I'm not sure... We could have done better."
+    "Где-то в низу, может в конце.":
+        pf "Я не уверен... Мы могли справиться лучше."
         show shou thi
         show mayu cur
         voice "audio/voice/E1/D5/S5/Shou/16.ogg"
-        ss "I thought we did well."
-        pf "Yeah, but there were a lot of factors against us and I don't think we were at our peak."
+        ss "Я думал, мы хорошо справились."
+        pf "Да, но против нас было много факторов, и я не думаю, что мы были на пике."
         show shou neu
         show mayu neu
         voice "audio/voice/E1/D5/S5/Shou/17.ogg"
-        ss "Hmm."
+        ss "Хммм."
 voice "audio/voice/E1/D5/S5/Shou/18.ogg"
-ss "Well, I think we're going to get a good ranking! What do you think, Mayu?"
+ss "Ну, я думаю, мы получим хороший рейтинг! Что ты думаешь, Маю?"
 show mayu cur
 voice "audio/voice/E1/D5/S5/Mayu/4.ogg"
-ma "We'll probably be somewhere in the 20's range."
+ma "Мы, вероятно, будем где-то в двадцатке."
 show shou hap
 voice "audio/voice/E1/D5/S5/Shou/19.ogg"
-ss "That's pretty good!"
+ss "Это довольно хорошо!"
 show mayu smi
-"The waitress sets down my latte. I breathe in the fragrant tea and take a sip. It tastes even better than it smells--the perfect mixture of tea and milk."
+"офицантка поставила латте. Я вдохнул аромат чая и сделал глоток. На вкус он был даже лучше, чем пахнул - идеальная смесь чая и молока."
 show shou smi
 voice "audio/voice/E1/D5/S5/Shou/20.ogg"
-ss "How is it?"
-pf "Amazing."
+ss "Как оно?"
+pf "Замечательный."
 show shou mis
-"Shou grins."
+"Сё ухмыльнулся."
 voice "audio/voice/E1/D5/S5/Shou/21.ogg"
-ss "Now you know our worst kept secret. This is the best cafe on campus."
-pf "Worst kept secret?"
+ss "Теперь ты знаешь наш худший секрет. Это лучшее кафе в кампусе."
+pf "Хужший секрет?"
 show note:
     xoffset 1040
     yoffset 135
@@ -178,163 +178,163 @@ show note:
     yzoom .75
 show mayu hap
 voice "audio/voice/E1/D5/S5/Mayu/5.ogg"
-ma "Because everyone else knows this place is good too."
+ma "Потому что все остальные тоже знают, что это хорошее место."
 show mayu smi
 show shou smi
 voice "audio/voice/E1/D5/S5/Shou/22.ogg"
-ss "Yeah!"
-pf "Ohh."
-"They both wait patiently while I sip my drink."
-pf "Didn't you guys order too?"
-"Mayu nods."
-pf "So where are your drinks?"
+ss "Ага!"
+pf "Ох."
+"Они терпеливо ждали, пока я пил."
+pf "Разве вы не заказывали тоже?"
+"Маю кивнула."
+pf "Так где ваши напитки?"
 voice "audio/voice/E1/D5/S5/Shou/23.ogg"
-ss "We finished them."
-pf "You mean you guys had ordered and finished your drinks before I even arrived?"
+ss "Мы уже выпили их."
+pf "То есть вы заказали и выпили свои напитки еще до того, как я приехал?"
 voice "audio/voice/E1/D5/S5/Shou/24.ogg"
-ss "Yeah."
-pf "Oh."
-"Another silence falls. Suddenly my tea seems very interesting."
-"After a few minutes, Mayu stands."
+ss "Да."
+pf "Оу."
+"И снова наступило молчание. Внезапно мой чай показался очень интересным."
+"Через несколкьо минут Маю встала."
 voice "audio/voice/E1/D5/S5/Mayu/6.ogg"
-ma "I'm sorry but I just remembered I need to go. I promised my father I'd meet him later today."
+ma "Извините, но я только что вспомнила, что мне нужно идти. Я обещала позже встретиться с отцом."
 show exclamation:
     xoffset 365
     yoffset 20
     xzoom .75
     yzoom .75
 show shou cur
-"Shou seems surprised."
+"Сё выглядел удивлённым."
 voice "audio/voice/E1/D5/S5/Shou/25.ogg"
-ss "Really? I thought earlier you said you were free all day."
+ss "Правда? Я мне казалось ранее ты сказала, что весь день свободна."
 show mayu ner with dissolve
 stop music fadeout 5
 voice "audio/voice/E1/D5/S5/Mayu/7.ogg"
-ma "I'm sorry, I had forgotten about this. I'll catch up with you later."
+ma "Мне жаль, я забыла об этом. Поговорим позже."
 show mayu smi with dissolve
 $renpy.pause(.5)
 hide mayu
 with dissolve
 $renpy.pause(.5)
 hide shou with dissolve
-"We exchange goodbyes and she leaves."
+"Мы попрощались и она ушла."
 show shou neu at cc with dissolve
 play music "audio/music/Hanging Out (GAME VERSION).ogg" fadein 10
-"I continue to sip at my drink while Shou watches her walk away, his face a mirror of curiosity and skepticism. Once she is completely out of earshot, I turn back towards Shou."
-pf "Mayu left in kind of a hurry…"
+"Я продолжал потягивать напиток, пока Сё смотрел, как она уходила. Его лицо - зеркало любопытства и скептицизма. Как только она вышла за пределы слышимости, я повернулся к Сё."
+pf "Маю довольно быстро выбежала…"
 voice "audio/voice/E1/D5/S5/Shou/26.ogg"
-ss "Yeah…"
-pf "Is that normal?"
+ss "Ага…"
+pf "Это нормально?"
 show shou thi
 voice "audio/voice/E1/D5/S5/Shou/27.ogg"
-ss "No."
-"I wonder if she's disappointed I dropped in and interrupted them."
-pf "Do you think she left because of me?"
+ss "Нет."
+"Интересно, она была разочарована тем, что я пришёл и прервал их?"
+pf "Ты думаешь, она ушла из-за меня?"
 show shou cur
-"He glances at me in surprise."
+"Он удивлённо посмотрел на меня."
 voice "audio/voice/E1/D5/S5/Shou/28.ogg"
-ss "Why would you think that?"
-pf "Well, I don't know. She left pretty soon after I arrived… Is there anything going on between you two?"
+ss "Почему ты об этом подумал?"
+pf "Ну, не знаю. Она ушла довольно скоро после моего прихода… Что-то между вами есть?"
 show shou neu
 voice "audio/voice/E1/D5/S5/Shou/29.ogg"
-ss "Nothing. We're just friends."
-pf "Does she know that?"
+ss "Ничего. Мы просто друзья."
+pf "А она знает об этом?"
 show question:
     xoffset 720
     yoffset 20
     xzoom .75
     yzoom .75
 voice "audio/voice/E1/D5/S5/Shou/30.ogg"
-ss "Huh?"
-pf "I kind of get the feeling that she might be into you…"
+ss "Что?"
+pf "У меня такое ощущение, что у неё есть к тебе чувства…"
 show shou cur
 $renpy.pause(.75)
 show shou hap with dissolve
 $renpy.pause(.5)
-"Shou pauses, then bursts out laughing."
+"Сё подумал, а потом рассмеялся."
 show shou smi
 voice "audio/voice/E1/D5/S5/Shou/31.ogg"
-ss "That's silly! Mayu and I have known each other for years. I'm pretty sure she sees me as her older brother."
+ss "Это глупо! Я с Маю знаком много лет. Я уверен, что она видит во мне старшего брата."
 
 if (E1D5S1_EventMayu == 1):
-    pf "So… you wouldn't mind if I maybe ask her out sometime?"
+    pf "Значит… ты не против, если я приглашу её куда-нибудь?"
     show shou mis
-    "Shou flashes me a wide grin."
+    "Сё широко ухмыльнулся."
     voice "audio/voice/E1/D5/S5/Shou/32.ogg"
-    ss "For real? You two would be great together! Mayu's an awesome girl."
-    pf "Yeah, I can tell."
+    ss "Правда что ли? Вам двоим было был обы здорово вместе! Маю отличная девушка."
+    pf "Да, я вижу."
 
     menu:
-        "Talk to Shou about something else.":
+        "Поговорить с Сё о чём-нибудь другом.":
             $ E1D5S5_MechConversation = 1
             jump E1D5S7_MechConvergence
 
-        "Since Mayu's already left I have no reason to stay.":
-            "I down the last bit of my drink."
-            pf "It was good to see you again, Shou, but I need to be heading out too. I've got to do something with Nikki."
+        "Раз Маю уже ушла, у меня нет причин оставаться.":
+            "Я допил чай."
+            pf "Приятно было повидаться Сё, но мне тоже нужно идти. Нужно позаниматься с Никки."
             show shou smi
-            "He looks a bit surprised but nods."
+            "Он выглядел немного удивлённым, но кивнул."
             voice "audio/voice/E1/D5/S5/Shou/38.ogg"
-            ss "No problem. We can hang out another time."
-            pf "Yeah."
+            ss "Без проблем. Можем позависать в другое время."
+            pf "Да."
             
             stop music fadeout 3.0
             stop ambient fadeout 3.0
             scene black with fade
             $renpy.pause(2.0)   
             
-            "We both get up and pay for our orders, then leave the cafe and head our separate ways."
-            "I spend some time at the mall checking out GEAR equipment. Once it gets late, I head home."
+            "Мы оба встали и оплатили заказы, затем покинули кафе и разошлись."
+            "Я провёл некоторое время в торговом центре, проверяя оборудование GEAR. Как только стало поздно, я направился домой."
             jump E1D5S7
             
 elif (E1D5S1_EventShou == 1):
     menu:
-        "Continue this conversation.":
-            pf "How long have you two known each other anyway?"
+        "Продолжать этот разговор.":
+            pf "Как долго вы знакомы?"
             show shou smi
             voice "audio/voice/E1/D5/S5/Shou/39.ogg"
-            ss "Since forever--we grew up together."
-            pf "Oh wow."
-            ss "Yeah."
-            pf "You two have really different personalities. I never would have guessed that you guys were such old friends."
-            "Shou laughs again."
+            ss "Вечность--мы выросли вместе."
+            pf "Вот как."
+            ss "Ага."
+            pf "Вы двое очень разные. Я бы и предположить не мог, что вы такие давние друзья."
+            "Сё снова засмеялся."
             show shou hap
             voice "audio/voice/E1/D5/S5/Shou/40.ogg"
-            ss "Yeah, I get that a lot. I think we compliment each other."
+            ss "Да, я это понимаю. Думаю, что мы дополняем друг друга."
             show shou smi
             voice "audio/voice/E1/D5/S5/Shou/40_1.ogg"
-            ss "We understand each other because we watched each other become the person we are today."
-            pf "And you don't think that kind of bond creates feelings?"
+            ss "Мы понимаем друг друга, так как мы выдели как мы становились теми, кто мы сейчас."
+            pf "И ты не думаешь, что такая связь создаёт чувства?"
             voice "audio/voice/E1/D5/S5/Shou/41.ogg"
-            ss "Nah, not that kind of feelings."
-            pf "Hm… What about this cafe date then?"
+            ss "Нет, не такие чувства."
+            pf "Хм… Тогда что насчёт этого свидания в кафе?"
             show shou cur
             voice "audio/voice/E1/D5/S5/Shou/42.ogg"
-            ss "It wasn't a date. We do this all the time."
-            pf "Do what?"
+            ss "Это не был свиданимем. Мы делаем это постоянно."
+            pf "Делаете что?"
             show shou thi
             voice "audio/voice/E1/D5/S5/Shou/43.ogg"
-            ss "Come here for coffee, maybe lunch… Sometimes we'll go see a movie afterwards or go to the mall or just hang out. It'd be no different than if you or I did that."
+            ss "Приходим за кофе, может ланчем… Иногда потом мыходим смотреть кино, или в торговый центр, или просто гуляем. Это не отличается от того, как если бы ты и я делали это."
 
             menu:
-                "That is the definition of a date.":
-                    pf "Everything you just described sounds like a typical date."
+                "Это описание свидания.":
+                    pf "Всё, что ты только расказал, выглядит как типичное свидание."
                     show shou ske
                     voice "audio/voice/E1/D5/S5/Shou/44.ogg"
-                    ss "What? No."
-                    pf "If you wanted to ask someone out on a date, what activity would you ask them to do with you?"
+                    ss "Что? Нет."
+                    pf "Если бы ты хотел пойти на свидание, куда бы ты пригласил человека?"
                     show shou thi
                     voice "audio/voice/E1/D5/S5/Shou/45.ogg"
-                    ss "I'd ask if they wanted to see a movie, or maybe go to dinner, or get coffee… That's everything I just listed, isn't it?"
+                    ss "Я бы спросил, хочет ли она посмотреть фильм, или, может быть, поужинать или выпить кофе… Всё, что я только что описал, не так ли?"
                     show shou thi
-                    pf "Yup."
+                    pf "Ага."
 
-                "No homo.":
-                    pf "If I didn't know any better, I'd think you wanted to do all of that with me at once."
+                "Никакого гомосексуальства.":
+                    pf "Если бы я не знал ничего лучше, то думал, что ты хотел это всё тоже сделать со мной."
                     show shou hap
                     voice "audio/voice/E1/D5/S5/Shou/46.ogg"
-                    ss "Would that be so bad?"
-                    pf "Sorry man, you're just not my type."
+                    ss "Почему это так плохо?"
+                    pf "Прости друг, ты просто не в моём вкусе."
                     show shocked:
                         xoffset 720
                         yoffset 20
@@ -342,122 +342,122 @@ elif (E1D5S1_EventShou == 1):
                         yzoom .75
                     show shou sur
                     voice "audio/voice/E1/D5/S5/Shou/47.ogg"
-                    ss "What? No! That is not what I meant! I just meant I'd be cool to hang out as friends."
-                    pf "Like how you and Mayu hang out as friends?"
+                    ss "Что? Нет! Это не то, что я имел в виду! Я имел в виду, что было бы круто так гулять как друзья."
+                    pf "Прямо как ты с Маю гуляешь как друзья?"
                     show shou cur
-                    ss "Yeah."
-                    pf "But do all those date things?"
+                    ss "Ага."
+                    pf "Но делаешь все эти штучки свиданий?"
                     show shou sur
                     voice "audio/voice/E1/D5/S5/Shou/48.ogg"
-                    ss "Yeah--Wait, no!"
+                    ss "Ага--Подожди, нет!"
                     show shou thi
-                    "Shou leans back into his chair looking thoughtful."
+                    "Сё откинулся на спинку стула с задумчивым видом."
 
-                "It'd be very different.":
-                    pf "If we did that together we'd be going on a date."
+                "Это было бы совсем иначе.":
+                    pf "Если бы мы сделали это вместе, это было бы свиданием."
                     show shou cur
                     voice "audio/voice/E1/D5/S5/Shou/49.ogg"
-                    ss "What? Guys can't do things together as friends?"
-                    pf "No, we can--just maybe not all of it at once."
+                    ss "Что? Парни не делают такое как друзья?"
+                    pf "Нет, мы можем--просто не всё сразу"
                     show shou thi
                     voice "audio/voice/E1/D5/S5/Shou/50.ogg"
-                    ss "... I guess that would be a little weird."
-                    pf "Yeah."
+                    ss "... Полагаю, это было бы немного странно."
+                    pf "Именно."
 
             show shou neu
             voice "audio/voice/E1/D5/S5/Shou/51.ogg"
-            ss "The point is--it's different with Mayu."
-            pf "Sure."
+            ss "Дело в том--с Маю всё по-другому."
+            pf "Конечно."
             voice "audio/voice/E1/D5/S5/Shou/52.ogg"
-            ss "And she knows that we're just friends."
-            pf "Uh-huh, and the fact that she left early today has nothing to do with me being here crashing your date."
+            ss "И она знает, что мы просто друзья."
+            pf "Ага-ага, и то, что она так рано ушла не имеет никакого отношения к тому, что я пришёл и разрушил ваше свидание."
             show shou cur
             voice "audio/voice/E1/D5/S5/Shou/53.ogg"
-            ss "No, of course not. She had something with her dad."
-            pf "Right."
+            ss "Нет, конечно нет. У неё просто дела с отцом."
+            pf "Точно."
             show shou smi
-            "He's a lost cause."
+            "Он безнадёжен."
 
-        "Talk about something else.":
+        "Поговорить очём-нибудь другом.":
             $ E1D5S5_MechConversation = 1
-            "I'm unconvinced, but I don't want to push it."
+            "Я не уверен, но не хочу влезать в это."
             jump E1D5S7_MechConvergence
 
             
             
 label E1D5S7_MechConvergence:
 if (E1D5S5_MechConversation == 1):
-    pf "So how's your GEAR doing after the qualifiers? Obviously mine has seen better days."
+    pf "Как твой GEAR после квалификации? Очевидно мой видал лучшие дни."
     show shou mis
     voice "audio/voice/E1/D5/S5/Shou/33.ogg"
-    ss "She's hanging in there."
-    pf "Okay, I've got to ask--why do you call your GEAR a \"she\"?"
+    ss "Она держится."
+    pf "Хорошо, должен спросить--почему ты относишься к своему GEAR как к \"ней\"?"
     show shou smi
     voice "audio/voice/E1/D5/S5/Shou/34.ogg"
-    ss "Well, you know how people call their cars and boats a \"she\"? Well, Emerald is my boat."
-    pf "Okay, but then how come she hasn't got a female frame?"
+    ss "Ну, ты знаешь как люди обращаются к своей машине, или лодке как к \"ней\"? Так вот, Изумруд, моя лодка."
+    pf "Хорошо, тогда почему у неё не женский каркас?"
     voice "audio/voice/E1/D5/S5/Shou/35.ogg"
-    ss "Because that's me."
-    pf "What?"
+    ss "Потому что это я."
+    pf "Что?"
     show shou cur
     voice "audio/voice/E1/D5/S5/Shou/36.ogg"
-    ss "You know--the GEAR embodies the pilot."
-    pf "Yeah, I know that. But if the essence of your GEAR is a female… and the GEAR embodies the pilot… then you--"
+    ss "Ты знаешь--GEAR является воплощением пилота."
+    pf "Да, я знаю это. Но если у твоего GEAR женская сущность… И GEAR - воплощение пилота… тогда ты--"
     show shou mis
     voice "audio/voice/E1/D5/S5/Shou/37.ogg"
-    ss "I can see where you're going with this and I'm going to stop you right there because that's not it. As a vessel, I refer to her as female, but the aesthetics and frame and whatnot are a reflection of me."
-    pf "Oh… right."
+    ss "Я вижу, куда ты клонишь, и я собираюсь остановить тебы прямо тут, потому что это не так. Как сосуд, я называю ее женщиной, но эстетика, рама и все такое - это мое отражение."
+    pf "Ох… Точно."
     show shou hap
-    "I nod, but I'm still not sure if I completely understand."
+    "Я кивнул, но не был все ещё уверен, что понял до конца."
 
 show shou smi
-"As the conversation lulls to a close, I take another sip from what I'm surprised to find is an empty cup."
+"Когда разговор подходил к концу, я сделал еще один глоток из того, что с удивлением оказалось пустой чашкой."
 voice "audio/voice/E1/D5/S5/Shou/54.ogg"
-ss "You done with that?"
-pf "Apparently, yeah."
+ss "Ты закончил с этим?"
+pf "Видимо да."
 voice "audio/voice/E1/D5/S5/Shou/55.ogg"
-ss "Want another one?"
-pf "No, I'm good thanks."
+ss "Хочешь ещё одну?"
+pf "Нет, мне хватит, спасибо."
 
 menu:
-    "Go home.":
-        pf "Well, it was good to see you again but I should be heading out."
-        "He nods."
+    "Пойти домой.":
+        pf "Что ж, было приятно повидаться, но мне пора уходить."
+        "Он кивнул."
         show shou hap
         voice "audio/voice/E1/D5/S5/Shou/56.ogg"
-        ss "Yea, we can hang out again another time."
+        ss "Ага, можем в другой раз собраться."
         show shou smi
-        pf "Yeah."
+        pf "Да."
         
         stop music fadeout 3.0
         stop ambient fadeout 3.0
         scene black with fade
         $renpy.pause(2.0)           
 
-        "We both get up and pay for our orders, then leave the cafe and head our separate ways."
-        "I spend some time at the mall checking out GEAR equipment. Once it gets late, I head home. "
+        "Мы оба встали и оплатили заказы, затем покинули кафе и разошлись."
+        "Я провёл некоторое время в торговом центре, проверяя оборудование GEAR. Как только стало поздно, я направился домой."
         jump E1D5S7
 
-    "Let's go to the arcade.":
-        pf "Are you doing anything after this?"
+    "Погнали в аркаду.":
+        pf "У тебя ещё есть дела?"
         show shou cur
         voice "audio/voice/E1/D5/S5/Shou/57.ogg"
-        ss "Not that I know of."
-        pf "I'm thinking of heading to the arcade to practice. We could play a few rounds?"
+        ss "Ничего, что бы я знал."
+        pf "Я думаю пойти в аркаду потренироваться. Мы могли бы сыграть пару раундов."
         show shou hap
         voice "audio/voice/E1/D5/S5/Shou/58.ogg"
-        ss "Sounds good to me!"
-        pf "I only know of the one by my house. Is there a closer one?"
+        ss "Звучит неплохо!"
+        pf "Я знаю только тот, что рядом с моим домом. Тут поблизости есть какой-нибудь?"
         show shou smi
         voice "audio/voice/E1/D5/S5/Shou/59.ogg"
-        ss "Yeah, there's a good one nearby. I'll take you there."
-        pf "Cool."
+        ss "Да, есть одна рядом. Я отведу тебя туда."
+        pf "Круто."
         
         stop music fadeout 3.0
         stop ambient fadeout 3.0
         scene black with fade
         $renpy.pause(2.0)   
         
-        "We both pay for our orders, then Shou leads me to the arcade. We play simulated GEAR matches until it gets late. Then we say our goodbyes and head home."
+        "Мы оплатили наши заказы, и Сё показал мне путь к аркаде. Мы играли симуляционные матчи GEAR допоздна. Потом мы попрощались и разошлись по домам."
         jump E1D5S7
 
