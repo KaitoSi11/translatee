@@ -39,7 +39,7 @@ label E2D1S1:
     stop ambient fadeout 5
     scene black with fade
     $renpy.pause(1)
-    "Nikki is already downstairs, and after a quick breakfast, we both head to school."
+    "Никки уже была внизу, и после быстрого завтрака мы оба пошли в школу."
     scene bg campus auditorium day with fade
     #play ambient "audio/ambience/Ace Academy Library.ogg" fadein 1
     $renpy.pause(1)
